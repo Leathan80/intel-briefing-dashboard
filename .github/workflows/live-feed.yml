@@ -26,7 +26,12 @@ jobs:
       - name: Crawl live headlines (GDELT)
         run: node crawler/crawl.js
 
+      - name: Prepare deploy credentials
+        run: printf '%s' "$FIREBASE_SERVICE_ACCOUNT" > "$RUNNER_TEMP/sa.json"
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+
       - name: Deploy to Firebase Hosting
         run: npx -y firebase-tools deploy --only hosting --project intel-briefing-dashboard --non-interactive
         env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/sa.json
