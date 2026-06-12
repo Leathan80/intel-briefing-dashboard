@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Intel Briefing Dashboard</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  :root {
+    --bg: #f3f5f9;
+    --card: #ffffff;
+    --border: #d9e1ec;
+    --navy: #10294a;
+    --navy-2: #1d4e89;
+    --text: #22324a;
+    --muted: #5d6f88;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', Calibri, sans-serif; min-height: 100vh; }
+
+  .header { background: var(--navy); padding: 18px 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  .header-title { font-size: 15px; font-weight: 700; color: #fff; letter-spacing: 1px; text-transform: uppercase; }
+  .header-sub { font-size: 11px; color: #9fc0e8; margin-top: 3px; }
+  .header-date { font-size: 12px; color: #b9c9de; }
+  .classif { font-size: 10px; color: #cfe0f5; border: 1px solid #ffffff33; padding: 3px 10px; border-radius: 3px; }
+
+  .tabs { background: var(--card); border-bottom: 1px solid var(--border); display: flex; padding: 0 16px; overflow-x: auto; gap: 2px; position: sticky; top: 0; z-index: 1000; box-shadow: 0 1px 4px rgba(16,41,74,0.06); }
+  .tab { padding: 12px 16px; font-size: 12px; font-weight: 600; color: var(--muted); cursor: pointer; border-bottom: 3px solid transparent; white-space: nowrap; transition: color 0.15s, border-color 0.15s; text-transform: uppercase; letter-spacing: 0.5px; user-select: none; }
+  .tab:hover { color: var(--navy-2); }
+  .tab.active { color: var(--navy-2); border-bottom-color: var(--navy-2); }
+
+  .panel { display: none; padding: 20px 24px; max-width: 1500px; margin: 0 auto; }
+  .panel.active { display: block; }
+
+  .overview-box { background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--navy-2); padding: 14px 18px; margin-bottom: 20px; border-radius: 6px; }
+  .overview-title { font-size: 10px; color: var(--navy-2); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; }
+  .overview-item { font-size: 12px; color: var(--text); margin-bottom: 7px; padding-left: 14px; position: relative; line-height: 1.5; }
+  .overview-item::before { content: "•"; position: absolute; left: 0; color: var(--navy-2); }
+
+  .summary-row { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+  .summary-card { flex: 1; min-width: 100px; background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 10px 14px; text-align: center; }
+  .summary-count { font-size: 26px; font-weight: 700; }
+  .summary-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
+
+  .country-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+  .country-card { background: var(--card); border: 1px solid var(--border); border-radius: 6px; overflow: hidden; box-shadow: 0 1px 3px rgba(16,41,74,0.05); }
+  .card-header { padding: 10px 14px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border); }
+  .card-name { font-size: 13px; font-weight: 700; color: var(--navy); display: flex; align-items: center; gap: 8px; }
+  .card-flag { font-size: 16px; }
+  .badge { font-size: 9px; font-weight: 700; padding: 3px 8px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.5px; }
+  .trend-arrow { font-size: 12px; font-weight: 700; margin-left: 6px; }
+
+  .card-body { padding: 10px 14px; }
+  .incidents-title { font-size: 9px; color: var(--navy-2); font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 8px; }
+  .incident { font-size: 11px; color: var(--text); margin-bottom: 6px; padding-left: 12px; position: relative; line-height: 1.45; }
+  .incident::before { content: "•"; position: absolute; left: 0; color: #9bb0c9; }
+  .coa-box { margin-top: 10px; background: #f5f8fc; border-left: 2px solid var(--navy-2); padding: 8px 10px; border-radius: 0 4px 4px 0; }
+  .coa-label { font-size: 9px; color: var(--navy-2); font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 5px; }
+  .coa-text { font-size: 11px; color: var(--muted); line-height: 1.5; font-style: italic; }
+
+  .section-title { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+
+  .map-box { background: var(--card); border: 1px solid var(--border); border-radius: 6px; overflow: hidden; margin-bottom: 20px; }
+  .map-region { height: 300px; }
+  .map-world { height: 560px; }
+  .legend { display: flex; gap: 16px; flex-wrap: wrap; padding: 10px 14px; border-top: 1px solid var(--border); font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; }
+  .legend-swatch { width: 14px; height: 14px; border-radius: 3px; display: inline-block; }
+  .leaflet-popup-content { font-family: 'Segoe UI', Calibri, sans-serif; font-size: 12px; }
+  .popup-name { font-weight: 700; font-size: 13px; color: var(--navy); margin-bottom: 4px; }
+  .popup-incident { font-size: 11px; color: var(--text); margin-top: 6px; line-height: 1.4; }
+  .popup-region { font-size: 10px; color: var(--muted); margin-top: 6px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+  .movers-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; margin-bottom: 24px; }
+  .mover-card { background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 12px 14px; display: flex; align-items: center; justify-content: space-between; }
+  .no-changes { background: var(--card); border: 1px dashed var(--border); border-radius: 6px; padding: 22px; text-align: center; color: var(--muted); font-size: 12px; margin-bottom: 24px; }
+
+  .trend-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin-bottom: 24px; }
+  .trend-card { background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 10px 12px; }
+  .trend-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
+  .trend-name { font-size: 12px; font-weight: 700; color: var(--navy); display: flex; align-items: center; gap: 6px; }
+  .trend-dates { font-size: 9px; color: var(--muted); margin-top: 4px; }
+  .region-label { font-size: 10px; color: var(--muted); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin: 18px 0 10px; }
+
+  .feed-box { background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 14px 18px; margin-bottom: 20px; }
+  .feed-updated { font-size: 10px; color: var(--muted); margin-bottom: 10px; }
+  .live-label { font-size: 9px; color: #b3261e; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; margin: 10px 0 6px; display: flex; align-items: center; gap: 5px; }
+  .live-dot { width: 7px; height: 7px; border-radius: 50%; background: #b3261e; animation: pulse 2s infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+  .headline { font-size: 11px; line-height: 1.45; margin-bottom: 7px; padding-left: 12px; position: relative; }
+  .headline::before { content: "›"; position: absolute; left: 0; color: #9bb0c9; }
+  .headline a { color: var(--navy-2); text-decoration: none; }
+  .headline a:hover { text-decoration: underline; }
+  .headline .meta { color: var(--muted); font-size: 10px; white-space: nowrap; }
+
+  .footer { text-align: center; padding: 16px; font-size: 10px; color: #8a99ad; border-top: 1px solid var(--border); margin-top: 20px; }
+  .loading { padding: 60px; text-align: center; color: var(--muted); font-size: 13px; letter-spacing: 1px; }
+
+  @media (max-width: 600px) {
+    .country-grid, .movers-grid { grid-template-columns: 1fr; }
+    .summary-card { min-width: 70px; }
+    .map-world { height: 380px; }
+    .map-region { height: 220px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="header-title" id="hdr-title">Intelligence Briefing Dashboard</div>
+    <div class="header-sub" id="hdr-sub"></div>
+  </div>
+  <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+    <div class="header-date" id="hdr-date"></div>
+    <div class="classif" id="hdr-classif"></div>
+  </div>
+</div>
+
+<div class="tabs" id="tabs"></div>
+<div id="panels"><div class="loading">LOADING BRIEFING DATA…</div></div>
+<div class="footer" id="footer"></div>
+
+<script>
+const THREAT = {
+  CRITICAL: { color: '#b3261e', bg: '#fcebea', map: '#c0392b' },
+  HIGH:     { color: '#c25600', bg: '#fdf0e3', map: '#e67e22' },
+  MODERATE: { color: '#9a7b00', bg: '#fbf6e0', map: '#e3b505' },
+  LOW:      { color: '#4f6b8f', bg: '#e9eff7', map: '#94b0c7' }
+};
+const LEVEL_NUM = { LOW: 1, MODERATE: 2, HIGH: 3, CRITICAL: 4 };
+const GEO_NAME_MAP = { 'Gaza': 'West Bank' };
+const REGION_BOUNDS = {
+  'Middle East':    [[8, 0],     [42, 66]],
+  'Ukraine/Russia': [[37, 18],   [62, 53]],
+  'Sahel':          [[2, -18],   [24, 42]],
+  'Asia-Pacific':   [[-12, 58],  [46, 148]],
+  'Americas':       [[-22, -88], [26, -55]]
+};
+const TILE_URL = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png';
+const TILE_ATTR = '&copy; OpenStreetMap contributors &copy; CARTO';
+
+let DATA, HISTORY, GEO, LIVE = null;
+let countryLookup = {};   // geojson name -> { country, regionName }
+const mapInits = {};      // panel index -> { inited, init, map }
+const FLAG_OF = {};       // country name -> emoji flag
+
+function el(tag, cls, text) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text !== undefined) e.textContent = text;
+  return e;
+}
+
+function makeBadge(threat) {
+  const t = THREAT[threat] || THREAT.LOW;
+  const b = el('span', 'badge', threat);
+  b.style.background = t.bg;
+  b.style.color = t.color;
+  b.style.border = '1px solid ' + t.color + '44';
+  return b;
+}
+
+function timeAgo(iso) {
+  if (!iso) return '';
+  const mins = Math.round((Date.now() - new Date(iso).getTime()) / 60000);
+  if (mins < 1) return 'just now';
+  if (mins < 60) return mins + 'm ago';
+  const hrs = Math.round(mins / 60);
+  if (hrs < 24) return hrs + 'h ago';
+  return Math.round(hrs / 24) + 'd ago';
+}
+
+function headlineEl(item, prefix) {
+  const div = el('div', 'headline');
+  if (prefix) div.appendChild(document.createTextNode(prefix + ' '));
+  const a = document.createElement('a');
+  a.href = item.url;
+  a.target = '_blank';
+  a.rel = 'noopener noreferrer';
+  a.textContent = item.title;
+  div.appendChild(a);
+  const meta = el('span', 'meta', '  — ' + (item.source || '') + (item.date ? ' · ' + timeAgo(item.date) : ''));
+  div.appendChild(meta);
+  return div;
+}
+
+function updateFeeds() {
+  const countries = (LIVE && LIVE.countries) || {};
+
+  document.querySelectorAll('[data-live]').forEach(box => {
+    const items = countries[box.dataset.live];
+    box.innerHTML = '';
+    if (!items || !items.length) { box.style.display = 'none'; return; }
+    box.style.display = '';
+    const lbl = el('div', 'live-label');
+    lbl.appendChild(el('span', 'live-dot'));
+    lbl.appendChild(document.createTextNode('Live feed'));
+    box.appendChild(lbl);
+    items.slice(0, 3).forEach(it => box.appendChild(headlineEl(it)));
+  });
+
+  const list = document.getElementById('global-headlines');
+  if (list) {
+    list.innerHTML = '';
+    const all = [];
+    Object.keys(countries).forEach(name => countries[name].forEach(it => all.push({ ...it, country: name })));
+    all.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+    if (!all.length) {
+      list.appendChild(el('div', 'feed-updated', 'No live headlines available yet — the hourly crawler will populate this feed.'));
+    } else {
+      all.slice(0, 20).forEach(it => list.appendChild(headlineEl(it, (FLAG_OF[it.country] || '') + ' ' + it.country + ' —')));
+    }
+  }
+
+  const upd = document.getElementById('feed-updated');
+  if (upd) upd.textContent = LIVE && LIVE.updated
+    ? 'Raw headlines via GDELT · crawler last ran ' + timeAgo(LIVE.updated) + ' · refreshes hourly · analysis (threat levels & COA) updates daily'
+    : '';
+}
+
+async function refreshLive() {
+  try {
+    const r = await fetch('live.json?t=' + Date.now(), { cache: 'no-store' });
+    if (r.ok) { LIVE = await r.json(); updateFeeds(); }
+  } catch (e) { /* keep showing previous feed */ }
+}
+
+function trendFor(name) {
+  const snaps = HISTORY && HISTORY.snapshots;
+  if (!snaps || snaps.length < 2) return 0;
+  const last = snaps[snaps.length - 1].levels[name];
+  const prev = snaps[snaps.length - 2].levels[name];
+  if (!last || !prev) return 0;
+  return LEVEL_NUM[last] - LEVEL_NUM[prev];
+}
+
+/* ---------- region panels ---------- */
+
+function buildRegion(region, panelIdx, regionIdx) {
+  const panel = el('div', 'panel');
+  panel.id = 'panel-' + panelIdx;
+
+  const mapBox = el('div', 'map-box');
+  const mapDiv = el('div', 'map-region');
+  mapDiv.id = 'map-region-' + regionIdx;
+  mapBox.appendChild(mapDiv);
+  panel.appendChild(mapBox);
+
+  const ov = el('div', 'overview-box');
+  ov.appendChild(el('div', 'overview-title', 'Strategic Overview'));
+  region.overview.forEach(item => ov.appendChild(el('div', 'overview-item', item)));
+  panel.appendChild(ov);
+
+  const counts = {};
+  region.countries.forEach(c => counts[c.threat] = (counts[c.threat] || 0) + 1);
+  const row = el('div', 'summary-row');
+  for (const level of ['CRITICAL', 'HIGH', 'MODERATE', 'LOW']) {
+    if (!counts[level]) continue;
+    const card = el('div', 'summary-card');
+    const n = el('div', 'summary-count', String(counts[level]));
+    n.style.color = THREAT[level].color;
+    const lbl = el('div', 'summary-label', level);
+    lbl.style.color = THREAT[level].color;
+    card.appendChild(n); card.appendChild(lbl);
+    row.appendChild(card);
+  }
+  const totCard = el('div', 'summary-card');
+  const totN = el('div', 'summary-count', String(region.countries.length));
+  totN.style.color = 'var(--navy)';
+  const totL = el('div', 'summary-label', 'Countries');
+  totL.style.color = 'var(--muted)';
+  totCard.appendChild(totN); totCard.appendChild(totL);
+  row.appendChild(totCard);
+  panel.appendChild(row);
+
+  panel.appendChild(el('div', 'section-title', 'Country Assessments · Last 7 Days'));
+
+  const grid = el('div', 'country-grid');
+  region.countries.forEach(c => {
+    const t = THREAT[c.threat] || THREAT.LOW;
+    const card = el('div', 'country-card');
+    card.style.borderTop = '3px solid ' + t.map;
+
+    const head = el('div', 'card-header');
+    const name = el('div', 'card-name');
+    name.appendChild(el('span', 'card-flag', c.flag));
+    name.appendChild(document.createTextNode(c.name));
+    const d = trendFor(c.name);
+    if (d !== 0) {
+      const arrow = el('span', 'trend-arrow', d > 0 ? '▲' : '▼');
+      arrow.style.color = d > 0 ? THREAT.CRITICAL.color : '#2e7d32';
+      arrow.title = d > 0 ? 'Escalated since previous briefing' : 'De-escalated since previous briefing';
+      name.appendChild(arrow);
+    }
+    head.appendChild(name);
+    head.appendChild(makeBadge(c.threat));
+    card.appendChild(head);
+
+    const body = el('div', 'card-body');
+    body.appendChild(el('div', 'incidents-title', 'Key Incidents'));
+    c.incidents.forEach(i => body.appendChild(el('div', 'incident', i)));
+    const coa = el('div', 'coa-box');
+    coa.appendChild(el('div', 'coa-label', 'COA · 90-day horizon'));
+    coa.appendChild(el('div', 'coa-text', c.coa));
+    body.appendChild(coa);
+    const liveBox = el('div');
+    liveBox.dataset.live = c.name;
+    liveBox.style.display = 'none';
+    body.appendChild(liveBox);
+    card.appendChild(body);
+    grid.appendChild(card);
+  });
+  panel.appendChild(grid);
+  return panel;
+}
+
+/* ---------- maps ---------- */
+
+function popupHtml(entry) {
+  const c = entry.country;
+  const t = THREAT[c.threat] || THREAT.LOW;
+  let html = '<div class="popup-name">' + c.flag + ' ' + c.name +
+    ' <span class="badge" style="background:' + t.bg + ';color:' + t.color + ';border:1px solid ' + t.color + '44">' + c.threat + '</span></div>';
+  c.incidents.slice(0, 2).forEach(i => { html += '<div class="popup-incident">• ' + i + '</div>'; });
+  html += '<div class="popup-region">' + entry.regionName + ' · see region tab for full assessment</div>';
+  return html;
+}
+
+function styleFeature(feature, regionFilter) {
+  const entry = countryLookup[feature.properties.name];
+  if (!entry || (regionFilter && entry.regionName !== regionFilter)) {
+    return { fillColor: '#000', fillOpacity: 0, color: '#b9c6d6', weight: regionFilter ? 0 : 0.3, opacity: regionFilter ? 0 : 0.5 };
+  }
+  const t = THREAT[entry.country.threat] || THREAT.LOW;
+  return { fillColor: t.map, fillOpacity: 0.65, color: '#ffffff', weight: 1, opacity: 1 };
+}
+
+function addGeoLayer(map, regionFilter) {
+  L.geoJSON(GEO, {
+    style: f => styleFeature(f, regionFilter),
+    onEachFeature: (feature, layer) => {
+      const entry = countryLookup[feature.properties.name];
+      if (!entry || (regionFilter && entry.regionName !== regionFilter)) return;
+      layer.bindPopup(popupHtml(entry), { maxWidth: 280 });
+      layer.on('mouseover', () => layer.setStyle({ fillOpacity: 0.85 }));
+      layer.on('mouseout',  () => layer.setStyle({ fillOpacity: 0.65 }));
+    }
+  }).addTo(map);
+}
+
+function initWorldMap() {
+  const map = L.map('map-world', { worldCopyJump: true, minZoom: 2, maxZoom: 7 });
+  L.tileLayer(TILE_URL, { attribution: TILE_ATTR }).addTo(map);
+  map.setView([22, 15], 2);
+  addGeoLayer(map, null);
+  return map;
+}
+
+function initRegionMap(regionIdx) {
+  const region = DATA.regions[regionIdx];
+  const map = L.map('map-region-' + regionIdx, { scrollWheelZoom: false, maxZoom: 8 });
+  L.tileLayer(TILE_URL, { attribution: TILE_ATTR }).addTo(map);
+  addGeoLayer(map, region.name);
+  const b = REGION_BOUNDS[region.name];
+  if (b) map.fitBounds(b); else map.setView([20, 0], 2);
+  return map;
+}
+
+function buildLegend() {
+  const legend = el('div', 'legend');
+  for (const level of ['CRITICAL', 'HIGH', 'MODERATE', 'LOW']) {
+    const item = el('div', 'legend-item');
+    const sw = el('span', 'legend-swatch');
+    sw.style.background = THREAT[level].map;
+    item.appendChild(sw);
+    const lbl = el('span', '', level);
+    lbl.style.color = THREAT[level].color;
+    item.appendChild(lbl);
+    legend.appendChild(item);
+  }
+  const note = el('div', 'legend-item', 'Click a country for details');
+  note.style.color = 'var(--muted)';
+  note.style.marginLeft = 'auto';
+  note.style.fontWeight = '400';
+  legend.appendChild(note);
+  return legend;
+}
+
+function buildWorldPanel(panelIdx) {
+  const panel = el('div', 'panel');
+  panel.id = 'panel-' + panelIdx;
+  panel.appendChild(el('div', 'section-title', 'Global Threat Map · ' + DATA.period));
+  const mapBox = el('div', 'map-box');
+  const mapDiv = el('div', 'map-world');
+  mapDiv.id = 'map-world';
+  mapBox.appendChild(mapDiv);
+  mapBox.appendChild(buildLegend());
+  panel.appendChild(mapBox);
+
+  const counts = {};
+  DATA.regions.forEach(r => r.countries.forEach(c => counts[c.threat] = (counts[c.threat] || 0) + 1));
+  const row = el('div', 'summary-row');
+  let total = 0;
+  for (const level of ['CRITICAL', 'HIGH', 'MODERATE', 'LOW']) {
+    if (!counts[level]) continue;
+    total += counts[level];
+    const card = el('div', 'summary-card');
+    const n = el('div', 'summary-count', String(counts[level]));
+    n.style.color = THREAT[level].color;
+    const lbl = el('div', 'summary-label', level);
+    lbl.style.color = THREAT[level].color;
+    card.appendChild(n); card.appendChild(lbl);
+    row.appendChild(card);
+  }
+  const totCard = el('div', 'summary-card');
+  const totN = el('div', 'summary-count', String(total));
+  totN.style.color = 'var(--navy)';
+  const totL = el('div', 'summary-label', 'Countries monitored');
+  totL.style.color = 'var(--muted)';
+  totCard.appendChild(totN); totCard.appendChild(totL);
+  row.appendChild(totCard);
+  panel.appendChild(row);
+
+  const feedBox = el('div', 'feed-box');
+  const fbTitle = el('div', 'live-label');
+  fbTitle.appendChild(el('span', 'live-dot'));
+  fbTitle.appendChild(document.createTextNode('Latest Headlines'));
+  fbTitle.style.fontSize = '10px';
+  feedBox.appendChild(fbTitle);
+  const updDiv = el('div', 'feed-updated');
+  updDiv.id = 'feed-updated';
+  feedBox.appendChild(updDiv);
+  const list = el('div');
+  list.id = 'global-headlines';
+  feedBox.appendChild(list);
+  panel.appendChild(feedBox);
+  return panel;
+}
+
+/* ---------- risk tracker ---------- */
+
+function sparkline(name) {
+  const snaps = HISTORY.snapshots;
+  const w = 150, h = 34, pad = 4;
+  const pts = [];
+  snaps.forEach((s, i) => {
+    const lvl = LEVEL_NUM[s.levels[name]];
+    if (!lvl) return;
+    const x = snaps.length === 1 ? w / 2 : pad + (w - 2 * pad) * (i / (snaps.length - 1));
+    const y = h - pad - (h - 2 * pad) * ((lvl - 1) / 3);
+    pts.push([x, y, s.levels[name]]);
+  });
+  if (!pts.length) return null;
+  const svgNS = 'http://www.w3.org/2000/svg';
+  const svg = document.createElementNS(svgNS, 'svg');
+  svg.setAttribute('width', w); svg.setAttribute('height', h);
+  svg.setAttribute('viewBox', '0 0 ' + w + ' ' + h);
+  for (let lvl = 1; lvl <= 4; lvl++) {
+    const gy = h - pad - (h - 2 * pad) * ((lvl - 1) / 3);
+    const line = document.createElementNS(svgNS, 'line');
+    line.setAttribute('x1', pad); line.setAttribute('x2', w - pad);
+    line.setAttribute('y1', gy); line.setAttribute('y2', gy);
+    line.setAttribute('stroke', '#e8edf4'); line.setAttribute('stroke-width', '1');
+    svg.appendChild(line);
+  }
+  const poly = document.createElementNS(svgNS, 'polyline');
+  poly.setAttribute('points', pts.map(p => p[0] + ',' + p[1]).join(' '));
+  poly.setAttribute('fill', 'none');
+  poly.setAttribute('stroke', 'var(--navy-2)');
+  poly.setAttribute('stroke-width', '2');
+  svg.appendChild(poly);
+  const lastPt = pts[pts.length - 1];
+  const dot = document.createElementNS(svgNS, 'circle');
+  dot.setAttribute('cx', lastPt[0]); dot.setAttribute('cy', lastPt[1]); dot.setAttribute('r', '3.5');
+  dot.setAttribute('fill', (THREAT[lastPt[2]] || THREAT.LOW).map);
+  svg.appendChild(dot);
+  return svg;
+}
+
+function buildTrackerPanel(panelIdx) {
+  const panel = el('div', 'panel');
+  panel.id = 'panel-' + panelIdx;
+
+  const snaps = (HISTORY && HISTORY.snapshots) || [];
+  const last = snaps[snaps.length - 1];
+  const prev = snaps[snaps.length - 2];
+
+  panel.appendChild(el('div', 'section-title', 'Threat Level Movers' + (prev ? ' · ' + prev.date + ' → ' + last.date : '')));
+
+  const movers = [];
+  if (last && prev) {
+    for (const name of Object.keys(last.levels)) {
+      if (!(name in prev.levels)) { movers.push({ name, kind: 'new' }); continue; }
+      const d = LEVEL_NUM[last.levels[name]] - LEVEL_NUM[prev.levels[name]];
+      if (d !== 0) movers.push({ name, kind: d > 0 ? 'up' : 'down', from: prev.levels[name], to: last.levels[name] });
+    }
+  }
+
+  if (!movers.length) {
+    panel.appendChild(el('div', 'no-changes',
+      prev ? 'No threat-level changes between ' + prev.date + ' and ' + last.date + '. All ' +
+             Object.keys(last.levels).length + ' monitored countries unchanged.'
+           : 'Not enough history yet — movers appear after the next daily update.'));
+  } else {
+    const grid = el('div', 'movers-grid');
+    const flagOf = {};
+    DATA.regions.forEach(r => r.countries.forEach(c => flagOf[c.name] = c.flag));
+    movers.sort((a, b) => (a.kind === 'up' ? -1 : 1) - (b.kind === 'up' ? -1 : 1));
+    movers.forEach(m => {
+      const card = el('div', 'mover-card');
+      const left = el('div', 'card-name');
+      left.appendChild(el('span', 'card-flag', flagOf[m.name] || ''));
+      left.appendChild(document.createTextNode(m.name));
+      card.appendChild(left);
+      const right = el('div');
+      if (m.kind === 'new') {
+        right.appendChild(el('span', '', 'added to watchlist '));
+        right.appendChild(makeBadge(last.levels[m.name]));
+      } else {
+        right.appendChild(makeBadge(m.from));
+        const arrow = el('span', 'trend-arrow', m.kind === 'up' ? ' ▲ ' : ' ▼ ');
+        arrow.style.color = m.kind === 'up' ? THREAT.CRITICAL.color : '#2e7d32';
+        right.appendChild(arrow);
+        right.appendChild(makeBadge(m.to));
+      }
+      card.appendChild(right);
+      grid.appendChild(card);
+    });
+    panel.appendChild(grid);
+  }
+
+  panel.appendChild(el('div', 'section-title', 'Threat Trend by Country · since ' + (snaps[0] ? snaps[0].date : '—')));
+  const note = el('div', 'trend-dates', 'Trend lines grow as daily snapshots accumulate (' + snaps.length + ' snapshot' + (snaps.length === 1 ? '' : 's') + ' so far). Dot colour = current threat level.');
+  note.style.marginBottom = '12px';
+  panel.appendChild(note);
+
+  DATA.regions.forEach(r => {
+    panel.appendChild(el('div', 'region-label', r.name));
+    const grid = el('div', 'trend-grid');
+    r.countries.forEach(c => {
+      const card = el('div', 'trend-card');
+      const head = el('div', 'trend-head');
+      const nm = el('div', 'trend-name');
+      nm.appendChild(el('span', 'card-flag', c.flag));
+      nm.appendChild(document.createTextNode(c.name));
+      head.appendChild(nm);
+      head.appendChild(makeBadge(c.threat));
+      card.appendChild(head);
+      const spark = sparkline(c.name);
+      if (spark) card.appendChild(spark);
+      if (snaps.length) card.appendChild(el('div', 'trend-dates', snaps[0].date + ' — ' + snaps[snaps.length - 1].date));
+      grid.appendChild(card);
+    });
+    panel.appendChild(grid);
+  });
+  return panel;
+}
+
+/* ---------- shell ---------- */
+
+function switchTab(idx) {
+  document.querySelectorAll('.tab').forEach((t, i) => t.classList.toggle('active', i === idx));
+  document.querySelectorAll('.panel').forEach((p, i) => p.classList.toggle('active', i === idx));
+  const m = mapInits[idx];
+  if (m) {
+    if (!m.inited) { m.map = m.init(); m.inited = true; }
+    else if (m.map) setTimeout(() => m.map.invalidateSize(), 50);
+  }
+}
+
+async function load() {
+  try {
+    const bust = '?t=' + Date.now();
+    const [dataRes, histRes, geoRes, liveRes] = await Promise.all([
+      fetch('data.json' + bust, { cache: 'no-store' }),
+      fetch('history.json' + bust, { cache: 'no-store' }),
+      fetch('world.geo.json'),
+      fetch('live.json' + bust, { cache: 'no-store' }).catch(() => null)
+    ]);
+    DATA = await dataRes.json();
+    HISTORY = histRes.ok ? await histRes.json() : { snapshots: [] };
+    GEO = await geoRes.json();
+    LIVE = (liveRes && liveRes.ok) ? await liveRes.json() : null;
+  } catch (e) {
+    document.getElementById('panels').innerHTML = '<div class="loading">FAILED TO LOAD BRIEFING DATA — REFRESH TO RETRY</div>';
+    return;
+  }
+
+  countryLookup = {};
+  DATA.regions.forEach(r => r.countries.forEach(c => {
+    countryLookup[GEO_NAME_MAP[c.name] || c.name] = { country: c, regionName: r.name };
+    FLAG_OF[c.name] = c.flag;
+  }));
+
+  document.title = DATA.title + ' — ' + DATA.generated;
+  document.getElementById('hdr-title').textContent = DATA.title;
+  document.getElementById('hdr-sub').textContent = DATA.subtitle;
+  document.getElementById('hdr-date').textContent = DATA.period;
+  document.getElementById('hdr-classif').textContent = DATA.classification;
+
+  const tabs = document.getElementById('tabs');
+  const panels = document.getElementById('panels');
+  tabs.innerHTML = ''; panels.innerHTML = '';
+
+  const tabDefs = [{ label: 'Global Map' }]
+    .concat(DATA.regions.map(r => ({ label: r.name })))
+    .concat([{ label: 'Risk Tracker' }]);
+
+  tabDefs.forEach((d, i) => {
+    const tab = el('div', 'tab', d.label);
+    tab.onclick = () => switchTab(i);
+    tabs.appendChild(tab);
+  });
+
+  panels.appendChild(buildWorldPanel(0));
+  mapInits[0] = { inited: false, init: initWorldMap };
+  DATA.regions.forEach((r, ri) => {
+    panels.appendChild(buildRegion(r, ri + 1, ri));
+    mapInits[ri + 1] = { inited: false, init: () => initRegionMap(ri) };
+  });
+  panels.appendChild(buildTrackerPanel(DATA.regions.length + 1));
+
+  const footer = document.getElementById('footer');
+  footer.innerHTML = '';
+  footer.appendChild(document.createTextNode('Sources: ' + DATA.sources));
+  footer.appendChild(document.createElement('br'));
+  footer.appendChild(document.createTextNode('Generated: ' + DATA.generated + ' · ' + DATA.classification));
+
+  switchTab(0);
+  updateFeeds();
+  setInterval(refreshLive, 10 * 60 * 1000);
+}
+
+load();
+</script>
+</body>
+</html>

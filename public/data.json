@@ -1,0 +1,530 @@
+{
+  "title": "Intelligence Briefing Dashboard",
+  "subtitle": "Weekly Conflict Monitor · All Regions",
+  "period": "5 – 12 June 2026",
+  "generated": "12 June 2026",
+  "classification": "UNCLASSIFIED // FOR OFFICIAL USE ONLY",
+  "sources": "Reuters · AP News · Al Jazeera · ACLED · US Embassy Alerts · LiveUAMap · BNO News · ISW · British Defence Intelligence",
+  "regions": [
+    {
+      "name": "Middle East",
+      "overview": [
+        "Iran-Israel missile exchange (7–8 Jun): Iran fires 20+ ballistic missiles at Israel after Beirut suburb airstrikes; partial ceasefire re-established; nuclear talks remain stalled on HEU disposal and enrichment freeze duration.",
+        "Lebanon: Israel strikes Beirut's southern suburbs 7 Jun — first attack since ceasefire renewed 3 Jun; tens of thousands flee; Hezbollah continues to reject US-brokered framework.",
+        "Gaza: IDF special forces rescue 4 hostages in central Gaza (8 Jun); 270+ Palestinians killed in operation; October 2025 ceasefire fragile — 700+ Palestinians killed since truce.",
+        "Red Sea resumption: Houthis rejoin Iran war 8 Jun, announce ban on Israeli shipping and renewed Red Sea attacks after October 2025 pause; Saudi Arabia diverts 70% of crude exports via Yanbu."
+      ],
+      "countries": [
+        {
+          "name": "Gaza", "flag": "🇵🇸", "threat": "CRITICAL",
+          "incidents": [
+            "8 Jun — Central Gaza: IDF special forces conduct covert hostage rescue; 4 Israelis freed; 270+ Palestinians killed in fighting.",
+            "8 Jun — Gaza City: Israeli airstrike kills 3 senior Palestinian Islamic Jihad commanders.",
+            "7 Jun — Northern Gaza: Israeli strikes on Hamas positions; 14 Palestinians killed, aid convoy blocked.",
+            "5 Jun — Rafah: Ceasefire violation — 9 Palestinians killed in Israeli strikes; UN condemns targeting of residential structure."
+          ],
+          "coa": "The October 2025 ceasefire is in name only — 700+ Palestinians killed since truce. Hostage rescue operation demonstrates IDF retains freedom of action in Gaza. Hamas leadership degraded but functional. Phase-two ceasefire talks remain deadlocked over disarmament and governance terms. No political resolution within 90 days."
+        },
+        {
+          "name": "Lebanon", "flag": "🇱🇧", "threat": "CRITICAL",
+          "incidents": [
+            "8 Jun — Tyre (Sur): IDF issues evacuation order for area near Tyre; strikes target Hezbollah weapons stores.",
+            "7 Jun — Beirut (Dahiyeh): Israeli airstrikes on southern suburbs — first attack on Beirut since ceasefire renewed 3 Jun; tens of thousands flee.",
+            "7 Jun — S. Lebanon: Hezbollah drone attack on IDF military position triggers Beirut retaliation.",
+            "5 Jun — Bekaa Valley: Israeli airstrike on Hezbollah arms depot; 4 Hezbollah fighters killed."
+          ],
+          "coa": "Ceasefire renewed 3 Jun is already failing — Israeli Beirut strikes and Hezbollah drone attacks confirm mutual rejection of framework. Hezbollah will not accept ceasefire without IDF withdrawal from south Lebanon. Escalation risk HIGH as both sides resume city-level targeting. Iran-Israel missile exchange has emboldened Hezbollah to resume offensive posture."
+        },
+        {
+          "name": "Iran", "flag": "🇮🇷", "threat": "CRITICAL",
+          "incidents": [
+            "8 Jun — Iran/Israel: Iran launches 20+ ballistic missiles at Israel following Israeli strike on Beirut; majority intercepted; partial ceasefire re-established.",
+            "7 Jun — Iran/Israel: Ceasefire fractures as Iran-Israel trade worst strikes since April truce.",
+            "6 Jun — Tehran: Iran calls 5 Jun US radar strike 'flagrant violation' of truce; demands accountability.",
+            "5 Jun — Gulf: IRGC-QF coordinates proxy repositioning across Iraq and Syria in response to Lebanon escalation."
+          ],
+          "coa": "Iran chose calibrated retaliation (20+ missiles, no Israeli casualties) to demonstrate reach while avoiding full war restart. Nuclear talks are stalled on HEU disposal (Iran rejects transfer out of country) and freeze duration (US demands 20 years, Iran offers 5). Second major kinetic exchange possible within 90 days if Lebanon escalation continues. Iranian proxy network on standby for further orders."
+        },
+        {
+          "name": "Yemen", "flag": "🇾🇪", "threat": "CRITICAL",
+          "incidents": [
+            "8 Jun — Sana'a: Houthis announce resumption of Red Sea attacks and ban on Israeli-linked shipping in solidarity with Iran.",
+            "8 Jun — Red Sea/Bab al-Mandab: MARAD advisory issued; first Houthi missile targeting since October 2025 ceasefire pause.",
+            "7 Jun — Hodeidah: US Navy intercepts Houthi ballistic missile; coalition assets at elevated readiness.",
+            "5 Jun — Marib: Houthi offensive resumes against Saudi-backed positions; 8 casualties."
+          ],
+          "coa": "Houthi Red Sea disruption is back in force after a 7-month pause. Saudi Arabia has diverted 70% of crude exports to Yanbu as contingency. Global shipping will face renewed diversion costs. No political resolution in Yemen within 90 days; Houthi operations fully linked to Iran war trajectory."
+        },
+        {
+          "name": "Israel", "flag": "🇮🇱", "threat": "HIGH",
+          "incidents": [
+            "8 Jun — Central Gaza: Special forces hostage rescue operation extracts 4 Israelis; Netanyahu hails mission.",
+            "8 Jun — Israel (national): Iran fires 20+ ballistic missiles; Iron Dome and Arrow systems intercept majority; no casualties reported.",
+            "7 Jun — Beirut: IDF strikes Dahiyeh suburbs following Hezbollah drone attack on IDF military.",
+            "6 Jun — West Bank: IDF CT operation in Tulkarm; 2 militants killed, weapons cache seized."
+          ],
+          "coa": "Israel is managing three simultaneous fronts (Lebanon, Gaza, West Bank) plus direct Iranian missile threat. Hostage rescue reinforces IDF operational reach but at high Palestinian casualty cost. Netanyahu government prioritises military objectives over diplomatic framework. Risk of Lebanon ground escalation HIGH if Hezbollah maintains Beirut-level drone attacks."
+        },
+        {
+          "name": "Iraq", "flag": "🇮🇶", "threat": "HIGH",
+          "incidents": [
+            "10 Jun — Baghdad: PMF units conduct mobilisation exercises in solidarity with Iran following missile exchange.",
+            "9 Jun — Ain al-Asad: US base on force protection Bravo; drone threat elevated; 1 drone intercepted.",
+            "8 Jun — Basra: Kata'ib Hezbollah issues statement of support for Iranian retaliation against Israel.",
+            "6 Jun — Kirkuk: ISIS-linked cell disrupted; weapons cache and IED materials seized."
+          ],
+          "coa": "Iraq's Iran-backed PMF groups are at elevated readiness following Iran-Israel missile exchange. Risk of US-PMF direct confrontation increases if Iran escalates beyond current posture. ISIS reconstitution in Kirkuk and Anbar is a secondary but growing concern."
+        },
+        {
+          "name": "Saudi Arabia", "flag": "🇸🇦", "threat": "HIGH",
+          "incidents": [
+            "10 Jun — Red Sea/Yanbu: Saudi Arabia diverts 70%+ of crude exports via Yanbu following Houthi Red Sea threat resumption.",
+            "8 Jun — Riyadh: Saudi Arabia calls for restraint following Iran-Israel missile exchange; backchannel communication with Tehran.",
+            "7 Jun — Eastern Province: Aramco on elevated security status; Houthi threat to oil infrastructure renewed.",
+            "5 Jun — Red Sea: Saudi naval assets assist US in monitoring Houthi Red Sea threat."
+          ],
+          "coa": "Saudi Arabia faces renewed proxy threat from Houthis and Iran-linked networks. Oil export diversion to Yanbu provides resilience but cannot be sustained indefinitely. MBS pursuing dual-track: US military cooperation plus Tehran communication channels. Saudi-Iran rapprochement under strain."
+        },
+        {
+          "name": "Syria", "flag": "🇸🇾", "threat": "HIGH",
+          "incidents": [
+            "10 Jun — Deir ez-Zor: ISIS attack on government checkpoint; 4 killed.",
+            "8 Jun — Homs: Israeli air force targets IRGC weapons convoy amid broader Iran-Israel exchange.",
+            "7 Jun — Damascus: Israeli airstrike on Iranian weapons transfer site as Iran-Israel escalation escalates.",
+            "6 Jun — Idlib: HTS-Turkish backed faction clash; 3 fighters killed."
+          ],
+          "coa": "Syria remains a multi-actor battlespace and active front in the Iran-Israel war. Israeli strikes on Iranian assets will intensify following missile exchange. ISIS reconstitution in eastern Syria is a growing concern. HTS governance of Idlib is consolidating but contested."
+        },
+        {
+          "name": "Egypt", "flag": "🇪🇬", "threat": "MODERATE",
+          "incidents": [
+            "11 Jun — N. Sinai: Security forces neutralise ISIS-affiliated cell; 2 militants killed.",
+            "10 Jun — Rafah: Egypt opens emergency humanitarian corridor following Gaza hostage operation; 22 aid trucks enter.",
+            "8 Jun — Cairo: Egyptian FM calls for immediate ceasefire as Iran-Israel exchange escalates."
+          ],
+          "coa": "Egypt maintains internal security stability. North Sinai ISIS threat persists at low level. Egypt's mediation role continues — Cairo is key interlocutor for any future Gaza ceasefire negotiation. Regional escalation elevates risk of Sinai spillover."
+        },
+        {
+          "name": "Jordan", "flag": "🇯🇴", "threat": "MODERATE",
+          "incidents": [
+            "10 Jun — Amman: King Abdullah calls emergency UN Security Council meeting over Lebanon-Iran escalation.",
+            "8 Jun — E. Border: Weapons smuggling from Syria intercepted; 5 suspects arrested.",
+            "6 Jun — Zarqa: Security forces monitor Iranian-linked network activity; no arrests."
+          ],
+          "coa": "Jordan stable but under elevated pressure from regional spillover. Iran-Israel escalation has increased risk of proxy activity on Jordanian soil. King Abdullah's UNSC call reflects growing alarm. Iranian network disruption remains a key security priority."
+        },
+        {
+          "name": "Libya", "flag": "🇱🇾", "threat": "HIGH",
+          "incidents": [
+            "10 Jun — Tripoli: GNU and LNA forces exchange artillery fire near Sirte; 2 fighters killed.",
+            "8 Jun — Benghazi: LNA intercepts Turkish-supplied weapons shipment; maritime interdiction continues.",
+            "6 Jun — Sabha: Arms transfer network to Sahel disrupted; 4 suspects arrested.",
+            "5 Jun — Mediterranean: 280+ migrants rescued; 3 drowning deaths; departure rate remains high."
+          ],
+          "coa": "Libya remains a dual-government failed state. Arms and migrant flows to Europe and Sahel continue unabated. No unification pathway visible. GNU-LNA tensions periodically kinetic but below full-conflict threshold."
+        },
+        {
+          "name": "Tunisia", "flag": "🇹🇳", "threat": "MODERATE",
+          "incidents": [
+            "10 Jun — Tunis: Security services detain 4 ISIS affiliates in ongoing crackdown.",
+            "8 Jun — Medenine: Border security reinforced following Libya spillover assessment.",
+            "6 Jun — Sfax: Migrant departure facilitation network interdicted; 3 suspects linked to criminal networks."
+          ],
+          "coa": "Tunisia faces low-level jihadist threat from Libya-linked networks. Political repression under President Saied continues. No major escalation expected within 90 days."
+        }
+      ]
+    },
+    {
+      "name": "Ukraine/Russia",
+      "overview": [
+        "Ukrainian drone overmatch intensifying (June 10–12): strikes on Kuibyshev and Afipsky oil refineries plus multiple petrochemical plants up to 1,200 km inside Russia; logistics disruption accelerating.",
+        "Frontline: Russia gained ~6 sq miles in week of June 2–9 (Pokrovsk axis); net loss of 1 sq mile over 4 weeks — attritional stalemate phase; neither side has breakthrough capacity.",
+        "Russian air campaign: 221 drones and 2 Iskander-M missiles launched overnight June 10–11; Ukraine intercepts majority; civilian infrastructure targeted.",
+        "Strategic stalemate: war entering attritional-manoeuvre phase in which drones, long-range strikes, and logistics interdiction increasingly determine outcomes over massed assaults."
+      ],
+      "countries": [
+        {
+          "name": "Ukraine", "flag": "🇺🇦", "threat": "CRITICAL",
+          "incidents": [
+            "12 Jun — Multiple Russian regions: Ukrainian drones strike petrochemical plants up to 1,200 km from border in largest deep-strike campaign of 2026.",
+            "11 Jun — Pokrovsk sector: Continued urban fighting; Russian pressure sustained but advance rate slowed.",
+            "10 Jun — Ukraine (national): Russia launches 221 drones and 2 Iskander-M missiles overnight; majority intercepted; infrastructure damage reported.",
+            "9 Jun — Sumy Region: Cross-border artillery fire injures 2 civilians."
+          ],
+          "coa": "Ukraine's drone overmatch strategy is degrading Russian logistics and oil revenue simultaneously. Pokrovsk axis remains under pressure but Russian advance rate has slowed markedly. Western aid continuity remains critical. No major Ukrainian offensive operation expected within 90 days — strategy is attrition via long-range strike."
+        },
+        {
+          "name": "Russia", "flag": "🇷🇺", "threat": "HIGH",
+          "incidents": [
+            "11 Jun — Krasnodar Krai: Afipsky Oil Refinery hit by Ukrainian drone; fire breaks out, processing suspended.",
+            "10 Jun — Samara Oblast: Kuibyshev oil refinery (Rosneft) suspends crude processing following drone strike.",
+            "10 Jun — Multiple regions: Russia launches 221-drone and 2-Iskander-M barrage against Ukraine.",
+            "9 Jun — Belgorod Oblast: Ukrainian drone strikes military logistics depot; secondary explosions reported."
+          ],
+          "coa": "Russia will maintain attritional strategy: slow urban warfare on Pokrovsk axis to exhaust Ukrainian defenders. Ukrainian deep-strike campaign is imposing real economic costs on oil exports. Russian recruitment rates declining; tactical drone overmatch has shifted to Ukraine. No major operational breakthrough expected in 90-day window."
+        },
+        {
+          "name": "Belarus", "flag": "🇧🇾", "threat": "MODERATE",
+          "incidents": [
+            "10 Jun — Gomel Oblast: Russian military equipment transit observed; logistics corridor active.",
+            "8 Jun — Minsk: Lukashenko hosts Russian military delegation; coordination on logistics discussed.",
+            "6 Jun — Poland Border: Hybrid pressure campaign continues; 310 crossing attempts in 48 hrs."
+          ],
+          "coa": "Belarus remains primary Russian logistics enabler. Lukashenko will not commit Belarusian forces directly. Hybrid pressure on Polish and Baltic borders will continue as a low-cost destabilisation tool."
+        },
+        {
+          "name": "Moldova", "flag": "🇲🇩", "threat": "MODERATE",
+          "incidents": [
+            "9 Jun — Chisinau: Moldova requests additional EU border monitoring; Transnistria movement reports elevated.",
+            "7 Jun — Transnistria: Pro-Russian separatists conduct small-scale military parade.",
+            "5 Jun — Chisinau: Government activates energy contingency plan; Russian gas supply disruption continues."
+          ],
+          "coa": "Moldova at moderate risk from Russian hybrid pressure and Transnistria destabilisation. EU accession track provides political insulation. No kinetic escalation expected within 90 days."
+        },
+        {
+          "name": "Georgia", "flag": "🇬🇪", "threat": "MODERATE",
+          "incidents": [
+            "10 Jun — Tbilisi: Pro-EU protest dispersed by police; 38 detained; Georgian Dream government accelerates Russia-aligned legislation.",
+            "8 Jun — S. Ossetia: Russian forces conduct unannounced exercise; Georgia lodges formal protest.",
+            "6 Jun — Abkhazia: Occupied territory continues to deny EU humanitarian mission access."
+          ],
+          "coa": "Georgia faces dual threat: Russian military presence in occupied territories and internal political crisis as Georgian Dream shifts toward Moscow. EU and NATO integration at serious risk. Domestic civil resistance movement remains active."
+        },
+        {
+          "name": "Armenia", "flag": "🇦🇲", "threat": "MODERATE",
+          "incidents": [
+            "10 Jun — Yerevan: PM Pashinyan confirms EU observer mission extension on Azerbaijan border.",
+            "8 Jun — Armenia-Azerbaijan border: Minor incident; 2 soldiers wounded; EU monitors present.",
+            "6 Jun — Yerevan: CSTO membership crisis deepens — Armenia suspends participation in joint exercises."
+          ],
+          "coa": "Armenia pivoting toward EU and West following 2023 Nagorno-Karabakh defeat. Risk of renewed Azerbaijani military action remains moderate. Relations with Russia will continue deteriorating — CSTO withdrawal likely within 12 months."
+        },
+        {
+          "name": "Azerbaijan", "flag": "🇦🇿", "threat": "MODERATE",
+          "incidents": [
+            "9 Jun — Baku: Aliyev renews pressure on Armenia over Zangezur corridor access.",
+            "7 Jun — Karabakh: Azerbaijani forces consolidate control; minority Armenian population displacement continues.",
+            "5 Jun — AZ-Iran Border: Military patrolling increased amid regional tension; no incidents."
+          ],
+          "coa": "Azerbaijan leverages strategic position confidently. Zangezur corridor negotiations are primary diplomatic focus. AZ-Iran relations remain tense amid broader regional escalation."
+        }
+      ]
+    },
+    {
+      "name": "Sahel",
+      "overview": [
+        "JNIM Bamako siege ongoing: April 25 coordinated JNIM/FLA offensive — largest in Mali War history — declared a Bamako siege; Defense Minister Camara killed; JNIM holds territory from Kidal to Mopti.",
+        "Sudan post-El Fasher (Oct 2025): UN Fact-Finding Mission confirms RSF genocide in Darfur (Feb 2026); RSF blocking all humanitarian access; 270,000+ killed over 3-year civil war.",
+        "Burkina Faso: JNIM cordon around Dori tightening; information blackouts signal growing regime fragility; MSF suspending operations across multiple districts.",
+        "Nigeria: Joint Nigeria-US precision strike kills 21 ISWAP fighters in Borno (10 Jun); ISWAP remains operationally capable; Lake Chad and northwest banditry ongoing."
+      ],
+      "countries": [
+        {
+          "name": "Mali", "flag": "🇲🇱", "threat": "CRITICAL",
+          "incidents": [
+            "10 Jun — Mopti Region: JNIM ambush on FAMa patrol; 7 soldiers KIA; supply convoy diverted.",
+            "9 Jun — Bamako: Junta extends siege counter-measures; fuel rationing reaches northern Bamako districts.",
+            "8 Jun — Kidal: FLA/JNIM continue to hold territory; Wagner advisors deny outside access to region.",
+            "6 Jun — Gao: JNIM sniper activity in market district; 3 civilians killed."
+          ],
+          "coa": "JNIM's Bamako siege declared after the April 25 offensive — the largest coordinated militant attack in Mali's history — continues to strangle supply lines. FAMa cannot dislodge JNIM without Russian-Wagner reinforcement. Junta legitimacy declining rapidly as civilian protection collapses. Bamako itself at risk of encirclement within 90 days if current trajectory holds."
+        },
+        {
+          "name": "Niger", "flag": "🇳🇪", "threat": "CRITICAL",
+          "incidents": [
+            "10 Jun — Tillabéri: ISWAP attack on gendarmerie post; 6 killed.",
+            "8 Jun — Diffa: Cross-border incursion; 3 villages raided, 500+ displaced.",
+            "7 Jun — Niamey: CNSP announces expanded bilateral security agreements with Russia.",
+            "5 Jun — Agadez: JNIM-linked smuggling network interdicted; 12 arrested."
+          ],
+          "coa": "ISWAP and JNIM cross-border coordination in Tillabéri and Diffa zones will intensify. CNSP is consolidating Russia-Iran security arrangements. Western security assistance fully expelled — no external counter-terrorism pressure on militants."
+        },
+        {
+          "name": "Burkina Faso", "flag": "🇧🇫", "threat": "CRITICAL",
+          "incidents": [
+            "10 Jun — Dori (Sahel Region): JNIM cordon tightens further; aid convoy turned back; 3 VDP militia killed.",
+            "9 Jun — Ouagadougou: Internet blackout imposed; 8 journalists detained.",
+            "8 Jun — Est Region: MSF suspends operations in 3 districts following direct threats.",
+            "6 Jun — Boucle du Mouhoun: Village attack displaces 2,800; IDP camp at capacity."
+          ],
+          "coa": "Burkina Faso has the most severe humanitarian trajectory in the region. JNIM encirclement of Dori is tightening — siege conditions possible within 30–45 days. Information blackouts signal growing regime fragility. Junta survival depends on Russian-Wagner support remaining uninterrupted."
+        },
+        {
+          "name": "Sudan", "flag": "🇸🇩", "threat": "CRITICAL",
+          "incidents": [
+            "11 Jun — Kordofan: RSF drone strike on market; 11 killed including 4 children.",
+            "10 Jun — Darfur: RSF continues blocking all humanitarian access to El Fasher; UN confirms genocide findings remain unaddressed.",
+            "9 Jun — Khartoum/Omdurman: SAF airstrikes on RSF positions; civilian infrastructure hit.",
+            "8 Jun — Port Sudan: RSF long-range drone reaches SAF administrative capital outskirts; strategic reach maintained."
+          ],
+          "coa": "World's largest humanitarian crisis — 270,000+ killed. El Fasher fell to RSF in October 2025 with genocide conditions confirmed by UN. RSF maintains strategic drone reach to Port Sudan. Kordofan is the active kinetic front. No ceasefire pathway evident; international pressure insufficient to alter RSF behaviour."
+        },
+        {
+          "name": "Chad", "flag": "🇹🇩", "threat": "HIGH",
+          "incidents": [
+            "10 Jun — Lake Chad: ISWAP attack on fishing settlement; 6 killed.",
+            "9 Jun — Tibesti: ANT patrol clashes with armed group; 2 soldiers wounded.",
+            "8 Jun — N'Djamena: Transitional council delays election roadmap for fourth time.",
+            "6 Jun — Bol: Cross-border incursion from Niger; Chadian border posts temporarily withdrawn."
+          ],
+          "coa": "Chad maintains relative stability as regional stabiliser. ISWAP Lake Chad operations will not significantly escalate without Borno-side enablement. Mahamat Déby will continue delaying elections — no viable democratic transition visible within 90 days."
+        },
+        {
+          "name": "Mauritania", "flag": "🇲🇷", "threat": "MODERATE",
+          "incidents": [
+            "10 Jun — Hodh Ech Chargui: Security forces intercept JNIM-linked weapons cache; 4 arrested.",
+            "8 Jun — Néma: Precautionary village evacuation near Mali border due to spillover threat.",
+            "6 Jun — Nouakchott: President Ghazouani holds bilateral security meeting with Senegalese counterpart."
+          ],
+          "coa": "Mauritania remains the most stable Sahel state. Primary risk is Mali spillover into border zone. No kinetic escalation expected within 90 days — strong security services and community engagement provide buffer."
+        },
+        {
+          "name": "Nigeria", "flag": "🇳🇬", "threat": "HIGH",
+          "incidents": [
+            "10 Jun — Borno State: Joint Nigeria-US precision strike kills 21 ISWAP fighters in Arege; weapons factory destroyed.",
+            "9 Jun — Zamfara: Bandits kidnap 18 students from rural school.",
+            "8 Jun — Kaduna/Niger States: Gunmen storm 3 army bases; 17 soldiers killed.",
+            "6 Jun — Lake Chad (Borno): ISWAP naval base assault on Kukawa area repelled with air support."
+          ],
+          "coa": "Nigeria faces simultaneous multi-front pressure: ISWAP (northeast), banditry (northwest), secessionist pressure (southeast). Joint Nigeria-US strikes in Borno are degrading ISWAP but not decisively. ISWAP expansion toward Adamawa is a 90-day risk. Lake Chad naval base attacks signal ISWAP targeting shift toward military infrastructure."
+        }
+      ]
+    },
+    {
+      "name": "Asia-Pacific",
+      "overview": [
+        "North Korea: Xi Jinping concludes 2-day Pyongyang state visit (8–9 Jun); China-DPRK strategic partnership reaffirmed; 7th ballistic missile test of 2026 fired before Xi's arrival.",
+        "South China Sea: US-Philippines-Australia conduct first joint patrol of 2026; PLA exercises east of Luzon in response to Balikatan 2026; CCG 6th Kinmen incursion in restricted waters.",
+        "Myanmar: Junta conducting 3,300+ airstrikes in 2025–2026; nearly 5.2 million displaced; resistance fragmented but holding in Shan, Rakhine, and Sagaing.",
+        "India-Pakistan: May 2025 ceasefire holding at 13 months; LoC tensions remain; Pakistan-Afghanistan border clashes and BLA/TTP activity ongoing."
+      ],
+      "countries": [
+        {
+          "name": "North Korea", "flag": "🇰🇵", "threat": "CRITICAL",
+          "incidents": [
+            "9 Jun — Pyongyang: Xi Jinping concludes 2-day state visit; China-DPRK strategic partnership and economic cooperation reaffirmed.",
+            "8 Jun — Pyongyang: Xi Jinping arrives for first Chinese leader state visit in 7 years; DPRK seeks economic guarantees.",
+            "7 Jun — East Sea: DPRK fires 7th ballistic missile of 2026 (IRBM-class) hours before Xi's arrival.",
+            "5 Jun — DMZ: North Korean troops expand fortification works on southern border."
+          ],
+          "coa": "Xi visit designed to give DPRK economic relief while maintaining strategic ambiguity. China-DPRK partnership deepening complicates US-ROK deterrence calculus. Denuclearisation probability in 90-day window: zero. Expect additional missile tests as Xi visit leverage converts to further demands."
+        },
+        {
+          "name": "Myanmar", "flag": "🇲🇲", "threat": "CRITICAL",
+          "incidents": [
+            "11 Jun — Shan State: Arakan Army advances; junta loses village cluster near Lashio.",
+            "10 Jun — Rakhine State: Junta airstrike on Arakan Army position; 9 civilians killed.",
+            "9 Jun — Sagaing: PDF ambush on junta supply column; 6 soldiers killed.",
+            "8 Jun — Naypyidaw: Junta announces expanded conscription amid battlefield losses across multiple states."
+          ],
+          "coa": "Junta conducting over 3,300 airstrikes in 2025–2026 as ground position deteriorates. Shan and Rakhine states most contested. Resistance is more organised than at any point since 2021 coup but remains fragmented. Possible junta territorial collapse in key provinces within 6–12 months if resistance unifies command."
+        },
+        {
+          "name": "Pakistan", "flag": "🇵🇰", "threat": "HIGH",
+          "incidents": [
+            "10 Jun — Balochistan: BLA attack on gas pipeline; energy infrastructure disrupted.",
+            "9 Jun — KPK: TTP ambush on FC patrol near Peshawar; 4 soldiers killed.",
+            "8 Jun — Kabul-Islamabad: Pakistan-Afghanistan border clashes continue; Pakistani airstrikes on Afghan Taliban positions.",
+            "6 Jun — LoC: Exchange of small-arms fire; ceasefire technically intact."
+          ],
+          "coa": "Pakistan faces simultaneous internal and external pressures: TTP in KPK, BLA in Balochistan, Afghan border tensions. India-Pakistan ceasefire holding at 13 months but structurally fragile. Economic deterioration compounds internal security challenges."
+        },
+        {
+          "name": "India", "flag": "🇮🇳", "threat": "HIGH",
+          "incidents": [
+            "10 Jun — Kashmir (LoC): BSF reports continued cross-border firing; ceasefire technically intact.",
+            "9 Jun — Arunachal Pradesh: PLA troops reportedly cross LAC briefly; India lodges protest.",
+            "8 Jun — New Delhi: Modi government advances border infrastructure programme along LAC.",
+            "6 Jun — Manipur: Ethnic violence continues in Churachandpur; security forces deployed."
+          ],
+          "coa": "India maintains elevated military posture vs. both Pakistan and China. LAC tensions are a secondary but persistent concern. Manipur ethnic conflict drains domestic security resources. India-China border standoff remains a structural feature of bilateral relations."
+        },
+        {
+          "name": "China", "flag": "🇨🇳", "threat": "HIGH",
+          "incidents": [
+            "10 Jun — East China Sea/Luzon: PLA Southern Theatre Command exercises east of Luzon — response to Balikatan 2026 joint exercises.",
+            "9 Jun — Kinmen Islands: CCG conducts 6th incursion into restricted Kinmen waters in 2026.",
+            "9 Jun — Pyongyang: Xi Jinping concludes North Korea state visit; China-DPRK strategic partnership deepened.",
+            "6 Jun — Scarborough Shoal: China coast guard maintains presence; Philippines protests continue."
+          ],
+          "coa": "China will maintain grey-zone pressure on Taiwan and the Philippines while avoiding direct kinetic action. CCG Kinmen incursions are normalisation strategy. PLA exercises east of Luzon counter US-Philippines military cooperation. No major military action vs. Taiwan expected within 90 days but grey-zone intensity increasing."
+        },
+        {
+          "name": "Taiwan", "flag": "🇹🇼", "threat": "HIGH",
+          "incidents": [
+            "10 Jun — Taiwan Strait: PLA conducts transit exercise with 10 vessels; Taiwan scrambles aircraft.",
+            "9 Jun — Kinmen Islands: CCG enters restricted waters for 6th time in 2026; Taiwan coast guard responds.",
+            "8 Jun — Taipei: Taiwan defence ministry condemns Xi-Kim summit; requests UNSC response.",
+            "6 Jun — Pratas Island: 39 CCG incursions into restricted Pratas waters recorded since Feb 2025; pattern continues."
+          ],
+          "coa": "Taiwan faces sustained grey-zone pressure designed to normalise PLA presence around outlying islands and ADIZ. CCG incursion pattern at Kinmen and Pratas is a systematic desensitisation strategy. Cross-strait kinetic conflict risk LOW in 90 days but grey-zone intensity will increase through remainder of 2026."
+        },
+        {
+          "name": "Philippines", "flag": "🇵🇭", "threat": "MODERATE",
+          "incidents": [
+            "10 Jun — South China Sea: US-Philippines-Australia conduct first joint patrol of 2026; France-Philippines SOFA now in force.",
+            "8 Jun — Luzon: PLA exercises east of Luzon prompt Philippines protest; Manila calls for restraint.",
+            "6 Jun — Scarborough Shoal: Philippines coast guard confronts Chinese vessels; water cannon deployed.",
+            "5 Jun — Mindanao: Abu Sayyaf kidnap-for-ransom operation; 3 hostages taken."
+          ],
+          "coa": "Philippines faces persistent Chinese grey-zone pressure in South China Sea. US-Philippines alliance plus new France SOFA strengthens Manila's deterrent posture. Mindanao internal security manageable. Risk of miscalculation at Scarborough Shoal remains elevated."
+        },
+        {
+          "name": "South Korea", "flag": "🇰🇷", "threat": "MODERATE",
+          "incidents": [
+            "9 Jun — Seoul: ROK emergency NSC convenes over Xi-Kim summit and China-DPRK partnership deepening.",
+            "8 Jun — Seoul: ROK condemns DPRK ballistic missile test; requests emergency UNSC meeting.",
+            "7 Jun — Yellow Sea: US-ROK joint naval exercise; USS Reagan carrier group participating.",
+            "5 Jun — DMZ: ROK forces on heightened alert following DPRK fortification works."
+          ],
+          "coa": "South Korea will intensify US-ROK combined deterrence posture following Xi-Kim summit. China-DPRK strategic partnership deepening is the primary concern — complicates pressure pathway. ROK will accelerate trilateral cooperation with US and Japan."
+        },
+        {
+          "name": "Vietnam", "flag": "🇻🇳", "threat": "MODERATE",
+          "incidents": [
+            "9 Jun — S. China Sea: Vietnamese fishing vessels harassed by Chinese coast guard; 2 boats damaged.",
+            "8 Jun — Hanoi: Vietnam lodges diplomatic protest over Chinese activity at Paracel Islands.",
+            "6 Jun — Ho Chi Minh City: US-Vietnam defence cooperation framework extended."
+          ],
+          "coa": "Vietnam engaged in persistent grey-zone friction with China. 'Bamboo diplomacy' maintains relations with all major powers. US-Vietnam defence cooperation quietly deepening. No kinetic escalation expected within 90 days."
+        },
+        {
+          "name": "Japan", "flag": "🇯🇵", "threat": "LOW",
+          "incidents": [
+            "9 Jun — Tokyo: Japan requests UNSC emergency session over Xi-Kim summit; calls for trilateral US-Japan-ROK response.",
+            "8 Jun — E. China Sea: Chinese survey vessel operates in Japan's EEZ; Japan coast guard maintains surveillance.",
+            "7 Jun — Tokyo: Japan condemns DPRK-China summit outcome; Japan-US security consultations intensify."
+          ],
+          "coa": "Japan faces deteriorating strategic environment — China-DPRK summit adds complexity to Northeast Asian deterrence — but no imminent kinetic threat. Counter-strike capability programme accelerating. Japan-US alliance is the primary deterrent."
+        },
+        {
+          "name": "Indonesia", "flag": "🇮🇩", "threat": "LOW",
+          "incidents": [
+            "9 Jun — Natuna Sea: Indonesia deploys additional navy vessels following Chinese fishing fleet incursion.",
+            "7 Jun — Papua: OPM separatist group ambushes military post; 2 soldiers wounded."
+          ],
+          "coa": "Indonesia maintaining non-aligned posture while quietly strengthening maritime security. Natuna Sea incursions are persistent Chinese grey-zone tactic. Papua OPM remains low-level internal concern."
+        },
+        {
+          "name": "Thailand", "flag": "🇹🇭", "threat": "LOW",
+          "incidents": [
+            "9 Jun — Deep South: Separatist IED attack on road; 1 soldier wounded.",
+            "7 Jun — Bangkok: Government announces third round of renewed dialogue with MARA Patani."
+          ],
+          "coa": "Thailand's Deep South separatist conflict remains a contained low-level challenge. Bangkok's political stability has improved. MARA Patani dialogue showing limited progress."
+        },
+        {
+          "name": "Bangladesh", "flag": "🇧🇩", "threat": "LOW",
+          "incidents": [
+            "9 Jun — Dhaka: Interim government extends crackdown on Islamist networks; 12 JMB suspects arrested.",
+            "7 Jun — Cox's Bazar: Rohingya camp inter-gang violence; 4 killed."
+          ],
+          "coa": "Bangladesh faces internal governance challenges post-2024 transition. Rohingya crisis in Cox's Bazar remains a source of instability. External threat level LOW."
+        },
+        {
+          "name": "Sri Lanka", "flag": "🇱🇰", "threat": "LOW",
+          "incidents": [
+            "8 Jun — Colombo: IMF third review completed positively; economic reform programme on track.",
+            "6 Jun — Northern Province: Tamil political tensions over land restitution; demonstrations remain peaceful."
+          ],
+          "coa": "Sri Lanka in economic recovery mode post-2022 crisis. Security environment stable — no active conflict. Chinese debt diplomacy remains a strategic competition concern."
+        }
+      ]
+    },
+    {
+      "name": "Americas",
+      "overview": [
+        "Venezuela: Post-Maduro transitional authority consolidating; Maduro loyalist guerrilla resistance ongoing; oil infrastructure sabotage by loyalist networks disrupting exports.",
+        "Colombia: Presidential runoff 21 Jun — far-right de la Espriella (44%) vs. left-wing Cepeda (41%); ELN unilateral ceasefire until vote; EMC/EMBF active in Nariño and Cauca.",
+        "Haiti: MSS transitioning to UN Gang Suppression Force (5,500 mandated); only 1,200 Kenyan troops deployed; 5,500+ killed March 2025–Jan 2026; gangs control 70%+ of Port-au-Prince.",
+        "Cuba: Deepening energy crisis following Venezuelan fuel dependency collapse; 32 Cuban soldiers killed in Venezuela intervention; protests over fuel and power shortages; USS Nimitz in Caribbean."
+      ],
+      "countries": [
+        {
+          "name": "Venezuela", "flag": "🇻🇪", "threat": "CRITICAL",
+          "incidents": [
+            "10 Jun — Caracas: Transitional authority disrupts Maduro loyalist cell; 8 arrested, weapons seized.",
+            "9 Jun — Valencia: US military supports transitional government operation; loyalist network degraded.",
+            "8 Jun — Maracaibo: Oil infrastructure partially restored after loyalist sabotage; exports recovering.",
+            "6 Jun — Colombia Border: Joint Colombia-Venezuela operation against irregular Venezuelan armed group active in Apure."
+          ],
+          "coa": "Venezuela faces protracted post-intervention stabilisation. Maduro loyalist networks will continue asymmetric resistance targeting oil infrastructure. Transitional authority is consolidating but lacks full territorial control. International recognition remains divided. Cuban security personnel withdrawal adds further instability."
+        },
+        {
+          "name": "Haiti", "flag": "🇭🇹", "threat": "CRITICAL",
+          "incidents": [
+            "11 Jun — Port-au-Prince: Gang Suppression Force deployment preparations ongoing; 1,200 Kenyan troops remain deployed pending full 5,500-strong mandate.",
+            "10 Jun — Cité Soleil: Viv Ansanm coalition attacks GSF patrol; 1 Kenyan officer wounded, 4 gang members killed.",
+            "9 Jun — Artibonite: Gang expansion into agricultural zone continues; food supply disrupted, 1,400 displaced.",
+            "8 Jun — Port-au-Prince: MSS/HNP joint operation liberates 22 kidnap victims in Tabarre."
+          ],
+          "coa": "Kenyan-led force (now transitioning to GSF) lacks the 5,500 mandated personnel to achieve meaningful gang degradation. Gang territorial control will expand. Risk of capturing additional urban centres within 90 days is HIGH. GSF force generation must accelerate or Haiti will remain ungovernable."
+        },
+        {
+          "name": "Colombia", "flag": "🇨🇴", "threat": "HIGH",
+          "incidents": [
+            "10 Jun — Nariño: EMBF attacks Colombian military unit; 4 combatants killed.",
+            "9 Jun — Cauca: EMC ambush on police patrol; 3 officers wounded.",
+            "8 Jun — Bogotá: ELN confirms unilateral ceasefire until June 21 runoff; Arauca violations continue.",
+            "5 Jun — Venezuela Border: Joint Colombia-Venezuela op disrupts Maduro loyalist armed group in Apure zone."
+          ],
+          "coa": "Colombia's June 21 presidential runoff is the defining event of the next 90 days. De la Espriella (far-right, 44%) vs. Cepeda (left-wing, 41%) — result will determine approach to peace process and US relations. ELN ceasefire is tactical pause ahead of vote; expect resumption post-election. EMC and EMBF will continue regardless of electoral outcome."
+        },
+        {
+          "name": "Cuba", "flag": "🇨🇺", "threat": "HIGH",
+          "incidents": [
+            "10 Jun — Havana: Fuel shortage protests erupt; 45 detained; government extends fuel rationing.",
+            "9 Jun — Santiago de Cuba: Power outages trigger spontaneous demonstrations; riot police deployed.",
+            "8 Jun — Caribbean: USS Nimitz carrier strike group conducts exercises near Cuba; Havana protests 'provocation'.",
+            "6 Jun — Havana: Government acknowledges 32 Cuban soldiers killed in Venezuela intervention; state ceremony held."
+          ],
+          "coa": "Cuba experiencing its deepest humanitarian and energy crisis in decades, compounded by loss of Venezuelan oil supply. Protest movement gaining cross-class composition. Government will suppress militarily. Acknowledgement of Venezuela losses is an unusual admission of cost — signals regime under internal pressure. Risk of regime-threatening upheaval within 6–12 months is elevated."
+        },
+        {
+          "name": "Ecuador", "flag": "🇪🇨", "threat": "MODERATE",
+          "incidents": [
+            "10 Jun — Esmeraldas: Cartel sicarios attack coastal town; 6 killed including 1 police.",
+            "9 Jun — Guayaquil: Prison riot linked to Los Lobos/R7 gang conflict; 3 inmates killed.",
+            "7 Jun — Quito: Government extends state of exception in 5 provinces.",
+            "5 Jun — Colombian Border: Ecuador-Colombia joint op disrupts cocaine processing lab."
+          ],
+          "coa": "Ecuador faces entrenched cartel violence (Los Lobos, R7, La Firma) that has outpaced state capacity. State of exception provides temporary relief. Drug trafficking will continue. No improvement expected within 90 days."
+        },
+        {
+          "name": "Peru", "flag": "🇵🇪", "threat": "MODERATE",
+          "incidents": [
+            "9 Jun — VRAEM: SL-VRAEM attack on coca eradication team; 2 police killed.",
+            "8 Jun — Lima: Anti-government protest over economy; 12,000 demonstrators.",
+            "6 Jun — Loreto: 3 killed in illegal mining territorial dispute."
+          ],
+          "coa": "Peru's challenges primarily internal: SL-VRAEM insurgency, illegal mining violence, and political instability. President Boluarte government fragile. No external threat."
+        },
+        {
+          "name": "Bolivia", "flag": "🇧🇴", "threat": "MODERATE",
+          "incidents": [
+            "9 Jun — Santa Cruz: Protests over court ruling disrupt transport; 2 days of road blockades.",
+            "8 Jun — La Paz: MAS faction conflict between Arce and Morales camps intensifies.",
+            "6 Jun — Chapare: Cocalero mobilisation over development programme funding cuts."
+          ],
+          "coa": "Bolivia faces political instability rather than security crisis. MAS internal factional conflict creates governance uncertainty. No armed conflict or organised violence at scale expected within 90 days."
+        },
+        {
+          "name": "Dominican Republic", "flag": "🇩🇴", "threat": "LOW",
+          "incidents": [
+            "9 Jun — Santo Domingo: Government deports 1,400 irregular Haitian migrants.",
+            "7 Jun — Dajabón: Border crossing closed due to gang proximity in Haiti; trade disrupted."
+          ],
+          "coa": "Dominican Republic faces Haiti spillover risks but maintains internal security stability. Primary monitoring requirement: Haitian gang advance toward Dominican border zone."
+        },
+        {
+          "name": "Jamaica", "flag": "🇯🇲", "threat": "LOW",
+          "incidents": [
+            "9 Jun — Kingston: West Kingston state of public emergency extended for 90 days; gang violence continues.",
+            "7 Jun — Montego Bay: Tourism zone security operation; 2 gang members killed, 9 arrested."
+          ],
+          "coa": "Jamaica faces persistent gang violence in Kingston and tourism zone security challenges. No geopolitical or state-level threat; organised crime is the primary concern."
+        }
+      ]
+    }
+  ]
+}
