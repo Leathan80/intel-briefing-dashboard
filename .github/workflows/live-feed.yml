@@ -1,13 +1,14 @@
-name: Hourly live feed
+name: Live feed
 
 on:
   schedule:
-    - cron: "12 * * * *"
+    - cron: "12 */4 * * *"
   workflow_dispatch:
 
 jobs:
   crawl-and-deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
 
@@ -17,21 +18,21 @@ jobs:
 
       # The daily analysis run deploys from the local machine, so the live site
       # always has the newest data.json/history.json. Pull those in first so
-      # this deploy never overwrites them with stale repo copies.
-      - name: Sync latest analysis data from live site
+      # this deploy never overwrites them with stale repo copies. The current
+      # live.json comes along too, so failed countries keep their last feed.
+      - name: Sync latest data from live site
         run: |
           curl -sf https://intel-briefing-dashboard.web.app/data.json -o public/data.json
           curl -sf https://intel-briefing-dashboard.web.app/history.json -o public/history.json
+          curl -sf https://intel-briefing-dashboard.web.app/live.json -o public/live.json || true
 
       - name: Crawl live headlines (GDELT)
         run: node crawler/crawl.js
 
-      - name: Prepare deploy credentials
-        run: printf '%s' "$FIREBASE_SERVICE_ACCOUNT" > "$RUNNER_TEMP/sa.json"
-        env:
-          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
-
       - name: Deploy to Firebase Hosting
-        run: npx -y firebase-tools deploy --only hosting --project intel-briefing-dashboard --non-interactive
-        env:
-          GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/sa.json
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          channelId: live
+          projectId: intel-briefing-dashboard

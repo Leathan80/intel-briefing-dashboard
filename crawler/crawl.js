@@ -10,9 +10,9 @@ const PUBLIC_DIR = path.join(__dirname, "..", "public");
 const GDELT = "https://api.gdeltproject.org/api/v2/doc/doc";
 const PER_COUNTRY = 4;
 const TIMESPAN = "24h";
-const DELAY_MS = 6500;  // GDELT rate-limits aggressively (~1 req/5s per IP)
-const RETRIES = 3;
-const BACKOFF_MS = 20000;
+const DELAY_MS = 5500;  // GDELT rate-limits aggressively (~1 req/5s per IP)
+const RETRIES = 1;      // keep runs short; failed countries fall back to the previous feed
+const BACKOFF_MS = 15000;
 
 // Countries whose bare name is ambiguous or collides with other meanings.
 const QUERY_OVERRIDES = {
@@ -86,6 +86,10 @@ async function main() {
   const data = JSON.parse(fs.readFileSync(path.join(PUBLIC_DIR, "data.json"), "utf8"));
   const countries = data.regions.flatMap(r => r.countries.map(c => c.name));
 
+  // Previous feed: countries that fail this run keep their last headlines.
+  let prev = {};
+  try { prev = JSON.parse(fs.readFileSync(path.join(PUBLIC_DIR, "live.json"), "utf8")).countries || {}; } catch {}
+
   const live = { updated: new Date().toISOString(), countries: {} };
   let ok = 0, failed = 0;
 
@@ -93,9 +97,11 @@ async function main() {
     try {
       const items = await fetchCountry(name);
       if (items.length) live.countries[name] = items;
+      else if (prev[name]) live.countries[name] = prev[name];
       ok++;
     } catch (e) {
       failed++;
+      if (prev[name]) live.countries[name] = prev[name];
       console.error(`  ${name}: ${e.message}`);
     }
     await sleep(DELAY_MS);
