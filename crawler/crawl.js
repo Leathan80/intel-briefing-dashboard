@@ -10,9 +10,9 @@ const PUBLIC_DIR = path.join(__dirname, "..", "public");
 const GDELT = "https://api.gdeltproject.org/api/v2/doc/doc";
 const PER_COUNTRY = 4;
 const TIMESPAN = "24h";
-const DELAY_MS = 5000;  // GDELT rate-limits aggressively (~1 req/5s per IP)
+const DELAY_MS = 6500;  // GDELT rate-limits aggressively (~1 req/5s per IP)
 const RETRIES = 3;
-const BACKOFF_MS = 15000;
+const BACKOFF_MS = 20000;
 
 // Countries whose bare name is ambiguous or collides with other meanings.
 const QUERY_OVERRIDES = {
@@ -25,7 +25,9 @@ const QUERY_OVERRIDES = {
 const CONFLICT_TERMS = "(war OR attack OR strike OR military OR conflict OR security OR killed OR insurgent)";
 
 function buildQuery(name) {
-  const base = QUERY_OVERRIDES[name] || `"${name}" ${CONFLICT_TERMS}`;
+  // GDELT rejects quoted phrases shorter than ~5 chars; only quote multi-word names.
+  const term = name.includes(" ") ? `"${name}"` : name;
+  const base = QUERY_OVERRIDES[name] || `${term} ${CONFLICT_TERMS}`;
   return `${base} sourcelang:english`;
 }
 
