@@ -1,179 +1,119 @@
 // Live-feed crawler for the Intel Briefing Dashboard.
-// One GDELT DOC 2.0 query per REGION (5 total, not 49 — GDELT throttles
-// shared IPs such as GitHub runners hard). Articles are attributed to
-// countries by title matching; countries without a match keep the headlines
-// from the previous run (carry-over). Writes public/live.json.
+// One Google News RSS query per monitored country (no API key, no aggressive
+// rate-limiting — unlike GDELT, which throttles shared CI IPs into oblivion).
+// Countries that fail keep the headlines from the previous run (carry-over).
+// Writes public/live.json. No analysis here — threat levels & COAs stay daily.
 
 const fs = require("fs");
 const path = require("path");
 
 const PUBLIC_DIR = path.join(__dirname, "..", "public");
-const GDELT = "https://api.gdeltproject.org/api/v2/doc/doc";
+const GNEWS = "https://news.google.com/rss/search";
 const PER_COUNTRY = 4;
-const TIMESPAN = "24h";
-const DELAY_MS = 7000;
-const RETRIES = 3;
-const BACKOFF_MS = 20000;
-const CHUNK = 7; // max landen per query — GDELT weigert te lange queries
-const FETCH_TIMEOUT_MS = 30000;
-const CONFLICT_TERMS = "(war OR attack OR strike OR military OR conflict OR security OR killed OR insurgent)";
+const WINDOW = "3d";              // headlines from the last 3 days
+const DELAY_MS = 250;            // polite spacing; ~49 * 250ms = ~12s total
+const RETRIES = 2;
+const FETCH_TIMEOUT_MS = 15000;
+const CONFLICT_TERMS = "war OR attack OR strike OR military OR conflict OR security OR killed OR protest OR unrest";
 
-// Title patterns per country (lowercase regex). Aliases catch capitals,
-// actors and hotspots so attribution works when the country name is absent.
-const MATCH = {
-  "Gaza": /gaza|rafah|khan younis/, "Lebanon": /lebanon|beirut|hezbollah/,
-  "Iran": /\biran\b|iranian|tehran/, "Yemen": /yemen|houthi/,
-  "Israel": /israel|idf\b/, "Iraq": /\biraq\b|iraqi|baghdad/,
-  "Saudi Arabia": /saudi/, "Syria": /syria|damascus/,
-  "Egypt": /egypt|cairo|sinai/, "Jordan": /jordan|amman/,
-  "Libya": /libya|tripoli|benghazi/, "Tunisia": /tunisia|tunis\b/,
-  "Ukraine": /ukrain|kyiv|kharkiv|donetsk|zaporizh|kherson/,
-  "Russia": /russia|moscow|kremlin|putin/, "Belarus": /belarus|minsk/,
-  "Moldova": /moldova|transnistria/, "Georgia": /georgia|tbilisi|abkhazia|ossetia/,
-  "Armenia": /armenia|yerevan/, "Azerbaijan": /azerbaijan|baku/,
-  "Mali": /\bmali\b|bamako|timbuktu/, "Niger": /\bniger\b|niamey|tillab/,
-  "Burkina Faso": /burkina|ouagadougou/, "Sudan": /\bsudan\b|darfur|khartoum|el fasher/,
-  "Chad": /\bchad\b|djamena/, "Mauritania": /mauritania|nouakchott/,
-  "Nigeria": /nigeria|borno|zamfara|maiduguri/,
-  "North Korea": /north korea|dprk|pyongyang|kim jong/, "Myanmar": /myanmar|burma|rakhine/,
-  "Pakistan": /pakistan|islamabad|balochistan|peshawar/, "India": /\bindia\b|indian|kashmir|new delhi|manipur/,
-  "China": /\bchina\b|chinese|beijing|\bpla\b/, "Taiwan": /taiwan|taipei/,
-  "Philippines": /philippin|manila|mindanao/, "South Korea": /south korea|seoul|\brok\b/,
-  "Vietnam": /vietnam|hanoi/, "Japan": /japan|tokyo/,
-  "Indonesia": /indonesia|jakarta|papua/, "Thailand": /thailand|bangkok/,
-  "Bangladesh": /bangladesh|dhaka|rohingya/, "Sri Lanka": /sri lanka|colombo/,
-  "Venezuela": /venezuela|caracas|maduro/, "Haiti": /haiti|port-au-prince/,
-  "Colombia": /colombia|bogot/, "Cuba": /\bcuba\b|cuban|havana/,
-  "Ecuador": /ecuador|quito|guayaquil/, "Peru": /\bperu\b|peruvian|lima\b/,
-  "Bolivia": /bolivia|la paz/, "Dominican Republic": /dominican|dajab/,
-  "Jamaica": /jamaica|kingston/
+// Ambiguous names need a disambiguating phrase instead of the bare country name.
+const QUERY_OVERRIDES = {
+  "Georgia": '("Georgia" AND (Tbilisi OR Abkhazia OR Caucasus OR Russia))',
+  "Jordan": '("Jordan" AND (Amman OR Jordanian))',
+  "Chad": '("Chad" AND (Ndjamena OR Chadian OR Sahel))',
+  "Niger": '("Niger" AND (Niamey OR Nigerien OR Sahel))',
+  "Gaza": '(Gaza OR Rafah OR "Khan Younis")'
 };
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
-function parseSeenDate(s) {
-  const m = /^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})Z$/.exec(s || "");
-  if (!m) return null;
-  return new Date(Date.UTC(+m[1], +m[2] - 1, +m[3], +m[4], +m[5], +m[6]));
+function decodeEntities(s) {
+  return s
+    .replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"').replace(/&apos;/g, "'").replace(/&#0?39;/g, "'")
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(+n))
+    .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCharCode(parseInt(n, 16)))
+    .trim();
 }
 
-function buildRegionQuery(countryNames) {
-  // Quoted phrases under ~5 chars are rejected by GDELT; only quote multi-word names.
-  const terms = countryNames.map(n => n.includes(" ") ? `"${n}"` : n);
-  return `(${terms.join(" OR ")}) ${CONFLICT_TERMS} sourcelang:english`;
+function buildUrl(name) {
+  const base = QUERY_OVERRIDES[name] || `"${name}" (${CONFLICT_TERMS})`;
+  const q = `${base} when:${WINDOW}`;
+  return GNEWS + "?" + new URLSearchParams({ q, hl: "en-US", gl: "US", ceid: "US:en" });
 }
 
-async function fetchRegion(regionName, countryNames) {
-  const url = GDELT + "?" + new URLSearchParams({
-    query: buildRegionQuery(countryNames),
-    mode: "ArtList",
-    format: "json",
-    maxrecords: "120",
-    timespan: TIMESPAN,
-    sort: "DateDesc"
-  });
+function tag(block, name) {
+  const m = block.match(new RegExp("<" + name + "[^>]*>([\\s\\S]*?)</" + name + ">"));
+  return m ? m[1].replace(/^<!\[CDATA\[|\]\]>$/g, "") : "";
+}
+
+async function fetchCountry(name) {
+  const url = buildUrl(name);
   for (let attempt = 1; ; attempt++) {
     const ctrl = new AbortController();
     const timer = setTimeout(() => ctrl.abort(), FETCH_TIMEOUT_MS);
     try {
-      const res = await fetch(url, {
-        headers: { "User-Agent": "intel-briefing-dashboard/1.0" },
-        signal: ctrl.signal
-      });
-      const text = await res.text();
-      if (res.ok) {
-        try { return JSON.parse(text).articles || []; }
-        catch { throw new Error("GDELT: " + text.slice(0, 120)); }
+      const res = await fetch(url, { headers: { "User-Agent": "intel-briefing-dashboard/1.0" }, signal: ctrl.signal });
+      if (!res.ok) {
+        if (attempt <= RETRIES) { await sleep(1500 * attempt); continue; }
+        throw new Error("HTTP " + res.status);
       }
-      if (res.status === 429 && attempt <= RETRIES) {
-        await sleep(BACKOFF_MS * attempt);
-        continue;
+      const xml = await res.text();
+      const items = [];
+      for (const m of xml.matchAll(/<item>([\s\S]*?)<\/item>/g)) {
+        const block = m[1];
+        let title = decodeEntities(tag(block, "title"));
+        const source = decodeEntities(tag(block, "source"));
+        // Google appends " - Source" to titles; strip it when redundant.
+        if (source && title.endsWith(" - " + source)) title = title.slice(0, -(source.length + 3));
+        const link = decodeEntities(tag(block, "link"));
+        const pub = tag(block, "pubDate");
+        const d = pub ? new Date(pub) : null;
+        if (!title || !link) continue;
+        items.push({ title, url: link, source, date: d && !isNaN(d) ? d.toISOString() : null });
+        if (items.length >= PER_COUNTRY) break;
       }
-      throw new Error("HTTP " + res.status + " " + text.slice(0, 80));
+      return items;
     } catch (e) {
-      if (e.name === "AbortError") {
-        if (attempt <= RETRIES) { await sleep(BACKOFF_MS); continue; }
-        throw new Error("timeout after " + RETRIES + " retries");
-      }
-      throw e;
+      if (attempt <= RETRIES && (e.name === "AbortError")) { await sleep(1500); continue; }
+      throw (e.name === "AbortError" ? new Error("timeout") : e);
     } finally {
       clearTimeout(timer);
     }
   }
 }
 
-function attribute(articles, countryNames, out, seenTitles) {
-  for (const a of articles) {
-    if (!a.url || !a.title) continue;
-    const key = a.title.toLowerCase().replace(/\W+/g, " ").trim();
-    if (seenTitles.has(key)) continue;
-    const lower = a.title.toLowerCase();
-    const country = countryNames.find(n => MATCH[n] && MATCH[n].test(lower));
-    if (!country) continue;
-    out[country] = out[country] || [];
-    if (out[country].length >= PER_COUNTRY) continue;
-    seenTitles.add(key);
-    const d = parseSeenDate(a.seendate);
-    out[country].push({
-      title: a.title.trim(),
-      url: a.url,
-      source: a.domain || "",
-      date: d ? d.toISOString() : null
-    });
-  }
-}
-
 async function main() {
   const data = JSON.parse(fs.readFileSync(path.join(PUBLIC_DIR, "data.json"), "utf8"));
+  const countries = data.regions.flatMap(r => r.countries.map(c => c.name));
 
   let prev = {};
   try { prev = JSON.parse(fs.readFileSync(path.join(PUBLIC_DIR, "live.json"), "utf8")).countries || {}; } catch {}
 
-  const fresh = {};
-  const seenTitles = new Set();
-  let ok = 0, failed = 0;
+  const live = { updated: new Date().toISOString(), countries: {} };
+  let ok = 0, failed = 0, carried = 0;
 
-  for (const region of data.regions) {
-    const names = region.countries.map(c => c.name);
-    const chunks = [];
-    for (let i = 0; i < names.length; i += CHUNK) chunks.push(names.slice(i, i + CHUNK));
-    let articles = [];
-    let chunkFails = 0;
-    for (const chunk of chunks) {
-      try {
-        articles = articles.concat(await fetchRegion(region.name, chunk));
-      } catch (e) {
-        chunkFails++;
-        console.error(`${region.name} (${chunk[0]}…): ${e.message}`);
-      }
-      await sleep(DELAY_MS);
-    }
-    attribute(articles, names, fresh, seenTitles);
-    if (chunkFails < chunks.length) {
-      ok++;
-      console.log(`${region.name}: ${articles.length} artikelen opgehaald`);
-    } else {
+  for (const name of countries) {
+    try {
+      const items = await fetchCountry(name);
+      if (items.length) { live.countries[name] = items; ok++; }
+      else if (prev[name]) { live.countries[name] = prev[name]; carried++; }
+    } catch (e) {
       failed++;
+      if (prev[name]) { live.countries[name] = prev[name]; carried++; }
+      console.error(`  ${name}: ${e.message}`);
     }
+    await sleep(DELAY_MS);
   }
 
   if (ok === 0) {
-    console.error("All GDELT region queries failed — keeping previous live.json");
+    console.error("All Google News queries failed — keeping previous live.json");
     process.exit(1);
   }
 
-  // Carry-over: countries without fresh headlines keep their previous feed.
-  const live = { updated: new Date().toISOString(), countries: {} };
-  const allCountries = data.regions.flatMap(r => r.countries.map(c => c.name));
-  for (const name of allCountries) {
-    if (fresh[name] && fresh[name].length) live.countries[name] = fresh[name];
-    else if (prev[name]) live.countries[name] = prev[name];
-  }
-
   fs.writeFileSync(path.join(PUBLIC_DIR, "live.json"), JSON.stringify(live, null, 1));
-  const freshCount = Object.keys(fresh).length;
   const total = Object.values(live.countries).reduce((n, a) => n + a.length, 0);
-  console.log(`live.json: ${total} koppen, vers voor ${freshCount} landen, ${Object.keys(live.countries).length - freshCount} via carry-over (${failed}/${data.regions.length} regio-queries gefaald)`);
+  console.log(`live.json: ${total} koppen — vers voor ${ok} landen, ${carried} via carry-over, ${failed} fouten`);
 }
 
 main().catch(e => { console.error(e); process.exit(1); });

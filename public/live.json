@@ -1,322 +1,1278 @@
 {
- "updated": "2026-06-12T22:12:37.229Z",
+ "updated": "2026-06-13T05:40:28.151Z",
  "countries": {
+  "Gaza": [
+   {
+    "title": "How Gaza's students are still learning despite shattered schools and displacement",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNWHV3aDRMZHNKWmdHbE42MG5wckU5bkg4UEdYMXZ5c29EdmNWQ0lCTGJ0X0JGc3RUbkNUcHFsMFZBMmxfUFg0d3p1b2NMcTh5bzM2WG4wOVZycjFEcFlySzdLMjNVQlY0ZzB3SzdVeEVvSE9iMFEwNF9XVGt3ZzB0MHZGdFZPUml5VlltaDVjMjd5M1gxcml5RUkxbmhTaTNDX1JDNFphNFRrekNnR3l6OE5xQzU?oc=5",
+    "source": "PBS",
+    "date": "2026-06-12T22:35:54.000Z"
+   },
+   {
+    "title": "Rachel Goldberg-Polin on Losing a Son in Gaza",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOM21SWVl0amJXOHRJMUFDM1owRFZYdXpFNmdkVlpucTE3RlZuUlRxMWJqRW1TNkg4bGM2MzJoSHFqaDF5SXdvd1MxOURmYnNOaGJnZjZSWG82bFF2d0hWTzNKbWt6U3VJNG1NdXU2WFNsNGxHMHVlLXJWUVhsQVc2QWFSckJHbVJTZzFtMlNKd1JaMVFhY2RmWENFMlM0bXJxdWRIblNxTQ?oc=5",
+    "source": "The New Yorker",
+    "date": "2026-06-12T18:00:00.000Z"
+   },
+   {
+    "title": "10-foot-tall installation honoring children killed in Gaza displayed in Dearborn",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPZlN6QjRsQ0FhZ2EweEl6Q1poZTFRS29RWXBjRHhmUEh1M1FsSEFTXzdrOXFzbmVVS2pkVmVPRVh4dndxWkUyTko2RmdIQ01OOU1Wa3hhV0NJelhuLWdZeTk5S1V3VllBV3NqZGpxbHh5Z2ZiNEpjZDg4bUcxaDJaXzRhTURVUlFNc1NXWnN3dw?oc=5",
+    "source": "Spectrum News",
+    "date": "2026-06-12T17:42:00.000Z"
+   },
+   {
+    "title": "AH&H in Gaza: What We Are Seeing and Doing",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPNk5wdFlLSGhuVUJfaVR6UHdVU2doV094NExMd2ZYV1FIc3dUa0xGQXJoR0dMWUkxNTFLc05CY0kzcnIwVU9YQ2tIdzRzTjVURG1mNEtTRXV0V2FQdnhCbnZ4S1BuM3NzeTlUV3E5TVVUODNvOWJpTkwwUGo2cDA4Zg?oc=5",
+    "source": "All Hands & Hearts",
+    "date": "2026-06-12T13:57:47.000Z"
+   }
+  ],
+  "Lebanon": [
+   {
+    "title": "Despite Talk of an Iran Peace Deal, Lebanon’s War Grinds On",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNVDhXZHZ3ZFFGcXZnZ1Rha21Vbm4xaDhxTHRvT3Y5c3d5TVRzdUJoS2M4ZDNVREktc2FEUV9mUDViLWVGQVFmRXc0RVBzSDNXeGJuVERITTRWdEtMcldSazJYLTdycUdtRy1rZ1E4OEtzakN2NWp4RVpJci1BMjc4U3VyZks2cjVvclRUMm1Wbw?oc=5",
+    "source": "The New York Times",
+    "date": "2026-06-12T16:17:51.000Z"
+   },
+   {
+    "title": "One injured as Israel hits southern Lebanon with air raids, artillery",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNdVRDNDN3a1ptTmVJUV93T1NGMGF0QnVJRjhfb2hzMlh2NkVNVW9KTmxmVzNrWkJaRi1aODNFTER5anFrVEQwTmIyc3lzRkFmTHdWNGJBR09mZWFDLXdMSmQ3M0kyUDd2STM2OG0wS1dxWUtwMUxqZjM1LXpUOU82bVU4bnc4R0lDNnZyQ3ZlLW9HMUVrdGhNbV9wMzN6ZG5DU0VBLUhnYkViaVB5S0HSAbMBQVVfeXFMUEtxaTdZcXNrSmFYQkV5WXlaN29Mdk5xcXg4bmZtelJKVHJnSE9kcGMzSnBtcVpYOVVxWTZ4d0lxT0diMjJRUG5YMGM5SkxtWF9uTElTODg3VzBMcVVtQ2FDZXBqWjhYQnc2MFZLM1JhZXNIR0E2TzZLbnpIRWpkdkIycjY2U2dfVUVfZFdUam1JOU5CeXB5bFVlNEFvcDdYR0JYZVhaWDlheGEtS2Z4dng3ZFE?oc=5",
+    "source": "Al Jazeera",
+    "date": "2026-06-12T12:05:41.000Z"
+   },
+   {
+    "title": "Archeologists unearth Revolutionary War artifacts in Lebanon",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPZ1luY2ZfcTZRa0ZyWGlha2oyajhMbm1nQUpTUDc4SU00T2Y0NUtwZ0x3RWhLVzNXbXpjY0N4a3dCcWxYcmtDT1M1bXNNaGRTSV9mdTMwaF8wUVR1bTBsWUF2SzY1QnFrbGxDdTBoZnBhQUdQUnBXRUJxYmx1bEJzSHNNR1c1Y2g4MUZNcTNxT1hpRXJ10gGoAUFVX3lxTE1UYlBRQ2JOdXp5R0hkbVRheVVycHNSdURPQUd4WXFlTHFjNDl1eHY1dnpraHdkWlJmODBuNUxXNGtobTh1WVN4bVJXcE5odUtHMFhhSVBYX3pxRUp0Z1pyUXlVeHB3LTVxVUlLajEwOHEwWDFwSFdkcGxCMVJQWFlGVUI3UnlNaUxhV3pKcWJtUWMtQUpKWGQ1OHlOQ2wwWXVlUGFuOUZWUw?oc=5",
+    "source": "WFSB",
+    "date": "2026-06-12T20:26:00.000Z"
+   },
+   {
+    "title": "Israeli Displacement and Killings of Civilians in Lebanon Rage On",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOT0sxaVpnTERla2JNSlNIblppYTdLMjlvbFNuWXE3VUVIbmNaMnd3REVCVVRJVzVpMk5rM0N1dWZCRkFhemM4akNlTUlsWlR1R2FUX0VncHVJWjZxQXhkRE5IWkZoQmdva2MwTjNkOGx4blV1SHdZb3ZrTzRjLXozWWhPMENjbmhMMW9iTjVkazVBQWZoTkowdGFzdnJlQ2tEMUFJ?oc=5",
+    "source": "Human Rights Watch",
+    "date": "2026-06-11T13:59:49.000Z"
+   }
+  ],
+  "Iran": [
+   {
+    "title": "How the U.S. and Iran Turned From Renewed War to the Cusp of Peace",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTFJlX2lWaDg2bUZBR0Z4ZzlhUlA4VG5La2tEdzIwd21rSlpmaHhxN1NHNmpmWC1hUDdjb1A2V0xRdXFBUlFma0doWVZJdjRRZERQZkRZRnI5Y09HRzYzb2Nyb1VsVTZDTFp0bXJ5VmFiTTRBNHFhVk1ZbWt3OE1PZTIzS2lYOER6?oc=5",
+    "source": "WSJ",
+    "date": "2026-06-13T05:27:00.000Z"
+   },
+   {
+    "title": "As officials again say Iran war could soon end, some Trump objectives are unfulfilled",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNZkc5VWI4UEVPclJUeG1lTkl3b3ROeGJxNGV3X0J2MkhwdDNKX2FkbVRSZGlLSTdYVkJ3bHFOWGJmekhmNUJkUXBxOVJMQV9hRlJhU0FpRXhSZHlvQ3VsNElKdjF4X1hoRmstVGRKTnNIZUt6RnY2WU4tOExUZWdlOVlrTFprV2paWUZfZ1lKX3p3N3QtSXRNWjFLM0ozMUdCejlGbVN0NGwxbGRXSW9ObzRwSWpCbVJXdm91TXFvONIBxAFBVV95cUxQczBXV3oxeHVoN0toelVnbDZOOHJOWjBJdndWRk4ydldZYV9yYmVSNjZ1Nl8yWGNGUkRIVkdIaDgtdGJCQTZhRUN3cUpPeFBaYWZMTXBmTWVqUU9RbGhYRzF2ODhyOVBraTd4RV9Xb19iY1Nya2JjWkdiRmRhd2tMUXRfdjRObl94N29MWVBMd1FWQmNaWVR4ZWlYbV80SC0yR3JFY05icUhWWEFnYlZOUTNaVzN4UVlHQVVhd3lEN1NQUkxZ?oc=5",
+    "source": "PBS",
+    "date": "2026-06-12T20:08:17.000Z"
+   },
+   {
+    "title": "Iran Can Hold America Hostage in Either War or Peace",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQcFpFWHlOemxqT0M4Ylo5aG90OXFyZ2R0MEZsUFpDTW5sLW9DSFFIenlhTGttRVJTNHVhS1l6MnRURnFpU1o0RnRSZ19vSmFJSUhzcEM5bm4wSC1hX2hZT0FYeWpFN0lEREZwaHNDX2kwVXI5cDA4TTJyT0JfSTB6MWhCOG9UX0Vfd251ckp1MlBQbGhUdUZF?oc=5",
+    "source": "The New Yorker",
+    "date": "2026-06-13T01:08:37.000Z"
+   },
+   {
+    "title": "Trump calls off latest threats to strike Iran, citing a breakthrough in talks to end the war",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNUxSdXNaSUpKdFBPUU45bTNwSU43cFRxY1VEY2UzcnFoZ0FmRXhjdUdmZVNaSk9WN3VodGJsS21VbzcwdXdoelhHcTFUSWtVUW9LRVhMUXZ4SmlNWEs4OUhwbWdjRVpLY2dNZHZLbk1pZmgzZE04cUhuNmtPZEJicXZjWVVMUjRqRld6R3FDVy03OFFGNTFKcTdaY1ktUEJLamNPMDA1azgzZ00?oc=5",
+    "source": "AP News",
+    "date": "2026-06-12T07:48:00.000Z"
+   }
+  ],
+  "Yemen": [
+   {
+    "title": "Yemen Could Be Sucked Into the US War on Iran",
+    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9idzlob3VjWWNMekdHU3NEdmhFNXhHQndmT2QyZ1loa2lxWnlhSFBIYXd1STZyTkhGWEdNZmp5OXB6TjdJTUNDMEFMSFVoTjFnc1dZeGpGTGRtYm1RZzYyWWw5aDZCTl9G?oc=5",
+    "source": "Jacobin",
+    "date": "2026-06-10T14:45:01.000Z"
+   },
+   {
+    "title": "A Dangerous Limbo Leaves Iran, and the World, Between Peace and War",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFByUk9vSDBJSHp0UERnSndvTEpxVnpHNm4xNmtfRXdNQW92WGQ3Ulc1eDFqbGExcFBDWjlaaExlVTd2VG9OUTBNeVc4OTN5M2pYUDFkQnlsZElUV0R0dUlXdVd2TmZzbmdraEVZUGVtT0ZBUE1fWENRNWtKQQ?oc=5",
+    "source": "The New York Times",
+    "date": "2026-06-12T09:05:31.000Z"
+   },
+   {
+    "title": "Yemen’s Houthis Ready to Join Iran War if Needed, Raising New Shipping Risk",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNT1RvZTBldy1KRkRoR0hMYUJHVFRxd2w3R19DdzJfa3pqbHQ4TGpaWUdsTUx1LU5Wb1BPbmJKWUs4b2pnUXgtTVZ5ZlhhSXNUVG5Bek9FV3pwbURtd2JNZWdQUTBuaENyaVNVSVc4aE40RlQwYnBHZ3BlZmZENWZUN2hSeVlVQzhXaFE2S2xCeFk3SVVUZWVOZU9OSVFvd2dHMEplT3VwQQ?oc=5",
+    "source": "EnergyNow.com",
+    "date": "2026-06-11T21:59:01.000Z"
+   },
+   {
+    "title": "2 Syrian doctors killed in armed attack, South Yemen",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPR3hCOTNwUHVtYnRfRE01TVJjRkNyOW5FS1dHMjR4NTFjaUdJNU1HeW03N0FjTy0zQ1VGU2NpcEpVQlZ5a0doUkMybFpHZEJjaDNzWmxDclRIeDZEVVEyTEhONUdxMXFFbEJEbENOeEtVbV9HR2w2V1FYblFSQjNDQXRB?oc=5",
+    "source": "ANHA",
+    "date": "2026-06-12T13:37:59.000Z"
+   }
+  ],
   "Israel": [
    {
-    "title": "Here we are free , say French students who came to Israel during war",
-    "url": "https://www.heritagefl.com/story/2026/06/12/news/here-we-are-free-say-french-students-who-came-to-israel-during-war/23487.html",
-    "source": "heritagefl.com",
-    "date": "2026-06-12T15:30:00.000Z"
+    "title": "As officials again say Iran war could soon end, some Trump objectives are unfulfilled",
+    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNZkc5VWI4UEVPclJUeG1lTkl3b3ROeGJxNGV3X0J2MkhwdDNKX2FkbVRSZGlLSTdYVkJ3bHFOWGJmekhmNUJkUXBxOVJMQV9hRlJhU0FpRXhSZHlvQ3VsNElKdjF4X1hoRmstVGRKTnNIZUt6RnY2WU4tOExUZWdlOVlrTFprV2paWUZfZ1lKX3p3N3QtSXRNWjFLM0ozMUdCejlGbVN0NGwxbGRXSW9ObzRwSWpCbVJXdm91TXFvONIBxAFBVV95cUxQczBXV3oxeHVoN0toelVnbDZOOHJOWjBJdndWRk4ydldZYV9yYmVSNjZ1Nl8yWGNGUkRIVkdIaDgtdGJCQTZhRUN3cUpPeFBaYWZMTXBmTWVqUU9RbGhYRzF2ODhyOVBraTd4RV9Xb19iY1Nya2JjWkdiRmRhd2tMUXRfdjRObl94N29MWVBMd1FWQmNaWVR4ZWlYbV80SC0yR3JFY05icUhWWEFnYlZOUTNaVzN4UVlHQVVhd3lEN1NQUkxZ?oc=5",
+    "source": "PBS",
+    "date": "2026-06-12T20:08:17.000Z"
    },
    {
-    "title": "Amid conflict , Israel children find joy in music , sport and study",
-    "url": "https://www.jpost.com/opinion/article-899115",
-    "source": "jpost.com",
-    "date": "2026-06-12T15:30:00.000Z"
+    "title": "Is a U.S.-Iran Deal Within Reach? Six Key Issues That Could Shape a Ceasefire",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWmRzbXB6UnZEUkNKVEpGZ0NyTWt3YlZzR3BfSUk1cE05NjA5QnNEeWFxNEZoV0ttUU9JeTVrRXV1RUJ3RHFaS0hMSFh2WDltRHJVREZReDB3NWNIVXJDRTB2ZkdNYVEyVE1UaDV6ZVJkMTVYaGotWmxFR3BhbFNiYjZoZlVoMW41c2t6b2RISW1QSUFUbU5oT0lFYzhnaGxHcjlJVVJldw?oc=5",
+    "source": "Council on Foreign Relations",
+    "date": "2026-06-12T22:29:42.000Z"
    },
    {
-    "title": "Weekly roundup of world briefs",
-    "url": "https://www.heritagefl.com/story/2026/06/12/news/weekly-roundup-of-world-briefs/23485.html",
-    "source": "heritagefl.com",
-    "date": "2026-06-12T15:30:00.000Z"
+    "title": "FIFA faces protests in Toronto over Israel ties ahead of Canada World Cup match",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZExwUGo0MVZGXy1pVElwc2RfYVljUzNFeU1pbnlTNUh6Z0ZBbzlPQk0yelhSUk53U0tnZTk4Nmh0NXl0UHBZYnhySHQ5SHQyWC1EcVFMQ3lvblpveXRNOXYxMzdMZk9HdV80Qm1fR0ZMWWFtVVdkLXFFMkVUenhYYndVWVYtNEtzSXFHRnpsQ0R3OGpDUGFWSHRoVEg0R0w4QmNZdGhHbDRuM1BNMWNlNUp4ci1BaVhGTkRhdTdRaXY?oc=5",
+    "source": "Reuters",
+    "date": "2026-06-12T19:51:44.000Z"
    },
    {
-    "title": "Hackers  repeatedly targeted  SNP digital head in Scottish elections",
-    "url": "https://www.thenational.scot/news/26189375.hackers-repeatedly-targeted-snp-digital-head-scottish-elections/",
-    "source": "thenational.scot",
-    "date": "2026-06-12T15:30:00.000Z"
+    "title": "eJP: Conflict flare-ups, surging shekel put Israel education travel at risk",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPbWZiNVFKTmZySkYwUVZkQ0JSbDFhTG9TTVJaUngxYWVwY0hRdFdrc3RqdWZQY2hLbnRRcHpxeExKRGZJSndXeUpBN3ZMT1J1eDhqMkMxa2ctcDdlRHJNbUdCdklnZlJ1eFpHSlAxZklBYkVSRlMyWldCeEFnUzBNQWgwOHY2QlU3eEJ2Mkg1SGVRd09SZTBZaG1NOGYtWnJyZGZGVmlNVmoydU54ZTlhT3ZiVXhQVkdaemFlY2dtQkY?oc=5",
+    "source": "The Jewish Federations of North America",
+    "date": "2026-06-12T16:51:54.000Z"
+   }
+  ],
+  "Iraq": [
+   {
+    "title": "What do Iraq’s latest militia disarmament pledges really mean for state authority?",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFAzYk8tbUpLZ1dIb3dzXzVCRndpTUk3a1FDX1Z6czgtWThSazRoWDJSc2g0MndvTHNOQVh5TVg0Y2RxcGYweHlOTlJvM1RxQkFiTHE3NUcwR1ZhSE9OS19qYjZleWc?oc=5",
+    "source": "arabnews.jp",
+    "date": "2026-06-13T03:12:59.000Z"
+   },
+   {
+    "title": "From Hormuz to the Four Seas: Iraq’s Search for Energy Security",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNUkRHSUcxSzJXOXJYek9WTmhVMEVDX3BNT1ExU25ndXFaLVppR05aY3p3bExzN3FNQ3hjcmZ5cVJLLVYxOHdlTGR0Z2kxZWFKOHRGZjRJelpBdTlGM2JmU01xT096N2JObjVGb1o2MnpHQTgyTGpYMHBPRDV6UzhxNHBkNGtqSHpr?oc=5",
+    "source": "Gulf International Forum",
+    "date": "2026-06-12T16:31:05.000Z"
+   },
+   {
+    "title": "Iraq’s prime minister prepares US visit amid Iran threats and militia focus",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNY09pOWVQRVg3aVVtdWdrejBVWHJjUDhMeEV2bGh2Z2ZETDdySXU5VERXRFBTLXJkTjNWRnRtTG0tQWp6RUdTYlM0S2JnVkNseDM4cHBYTnF2a25ma0pyTURVeVRTbGdfZW1hS2tld1BmSkxHZFpPR19HMVJqMFEydW5rLUJuMmhkV3JYa1g0NDk3ZVI5RTczWDBjTzJ5bTFEdDBUbmJCai1SUDJxdERoSm1BNkVFNkFuTHNhd19sYjVTQkZD?oc=5",
+    "source": "The Long War Journal",
+    "date": "2026-06-11T16:41:57.000Z"
+   },
+   {
+    "title": "S&P affirms Iraq at 'B-/B', removes CreditWatch negative amid regional conflict",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVFZ5UkFzRkp3Y0wtM3piZE9vY0lQQnotTkFLY0pRcW5VT055dEdSWHp6MWdNS3l2UVR4ZUNydnZTbWg2OHBRaHZxNkI1MGU3TnFyckdRSDlMMEZtVWhVNVhydWlGb2VHRDNvazBkbm1Dck50Z2hJOUozbnQ1LWFYNTZ6RGwxZFVqZm5GaGdKSXI2U2d4NTAwc2pzT2dYSlNsWjliT1pVaW5NM09fX1o4ZDV1X1Q1eEdvUDlJenlseklKXzA?oc=5",
+    "source": "Reuters",
+    "date": "2026-06-12T21:02:23.000Z"
+   }
+  ],
+  "Saudi Arabia": [
+   {
+    "title": "Why Saudi Arabia is redrawing its global alliances",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPeXYzX2dvOExVVm40eDJwQ05KVUhHMTc5ajh1S2RZOTVRQmFaN2dlUTk1RFNVbVNBRUhBcm9qdGlmVmhJWTRISzdGTDdVam83Sk1SZURXLVk0M25rSG1PNEZ0MmxfT3hVdWplQjZKY2E1TzhGRm4wVXUwTkpwY1M4QmhONUMtUDQycjJpRUp2ODZHb0YxbzVzZ2Y4bklWdw?oc=5",
+    "source": "dw.com",
+    "date": "2026-06-12T19:46:26.000Z"
+   },
+   {
+    "title": "How the Gulf will manage collective security after the Iran war ends",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRXdoTnpTS3Y2eDFKTHVYNUduRlhKQkJKaTQzQU52bldfeVdNUEFrX19IbVNDa0gwdjdtc3JtWmVfODBpdGhFd05TelRkWnZCWXZHbGo1cnkzMXNyZkhVZkwtakZ0SkJZUVl2RWV5UkM0a2dEWWFJYTBqLXdmbmpqMVE0RFVodERBc01xRVR3cWV3VFJvdjFIRTBrVUxrdmNVQ2NjOUQ0NlhBSl9IMHfSAbMBQVVfeXFMTTF3OEJOeFJGckhZNE9NRkFDZWpPV1k1eDF2U0VnTXFtUlo5MWY2TFJiWE4wVVdTckhCVnI3TmhvR3RZLVFOa2MxMno1d1EtZF9MSVdpai0tUkh0TE5zaVpJMzNaYnhOSjhMV0ZaNXExTmpROG00ZWY3VEhpZmc4RVlJOUVqdW05RW14NGtoSjBxejhibGhGdml1c2Uwb3p4ZDNwdzNILU5GUXo4QU1QLXZ6NEU?oc=5",
+    "source": "Al Jazeera",
+    "date": "2026-06-12T18:55:30.000Z"
+   },
+   {
+    "title": "Exclusive / Saudi firm closes first fund since start of Iran war",
+    "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQXzB3QkotbGhZZlVMVzBpalVmbkswb0FFTDhlUnlfYkNUN2lmZGZ5Q2hucUU1djd0OVp1TF8wX0pOMzMxbmtMWnpFUHBhRDU3NzRWWnRkallHMUNsVzBsbGFVVDZiMGVPNjZyMjRzNTduWXpNX3VxRk9GdGZ0UVcwUnk3b3dSdWVFRkZXUU1UaGMtb0ZjUWtzUFZSQQ?oc=5",
+    "source": "Semafor",
+    "date": "2026-06-12T13:34:00.000Z"
+   },
+   {
+    "title": "How are Saudis viewing the US‑Iran war?",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1fbldDbEZUSnlXc1llY3ZVcGpyLTBwY0FkdTlMX0Fhb3Q3QklEWTdobURva3NtUzZNbjd1NUZneDN5LU9wN1Z3c2twU0J3UV9QWWZhQVVTUzJLVVhfeDlWMklISXF1UGlfNm5rb3V6WVBtSlk?oc=5",
+    "source": "University of South Carolina",
+    "date": "2026-06-10T19:43:38.000Z"
+   }
+  ],
+  "Syria": [
+   {
+    "title": "Syria is not ready to wage war beyond its borders",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQRElINjNWWGpGb2dkcTl5MEVwMHJJall6V0x1aVZYZkM0N3U0dVYwdmpIN2x1ODFxdlB1a2t1QTVxNkljOUNkQ1g2R0FVbVNqU042R2NZZWU5d3hMa3JtWF9UVy1kNU5ZcEpLNlNCUGJNVmtNcDgxUDNudS1zUnpxMFEtYUUtM1JGRGZQSTBzY1c?oc=5",
+    "source": "Al Majalla",
+    "date": "2026-06-13T03:53:36.000Z"
+   },
+   {
+    "title": "Making Syria’s Transitional Justice Process Meaningful for Survivors and Communities",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNaDYtTXhXRmNBdUxhWDRSQjEybk9wN2xpOVd5Y3RibFVuLTlJRDZ6SXIzRnZyVzZuWnprcFNPamhnempiaXN5NkZTcUVlT0xhTC1zM1EzWFhTS1dNZ1dhc0t3ZDRHV25PLWxmd2FoWW8ySzZ1amQzMm8ySk5zOTRORk5kZGlyM1oy?oc=5",
+    "source": "Just Security",
+    "date": "2026-06-12T12:53:34.000Z"
+   },
+   {
+    "title": "Syria uncovers mass grave of 2014 opposition fighters in Sednaya",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9Zak0tbDlkRzlPVl85cWd1QXZCUllEUmNJZDAwb2FlNDd2dDF2TmVFdWNidEoyX2lYVkR4TVBkUG1PQS1scTFJdXBqdUVvXzFwMXBkRGNZcHpITlN6X19QaUNRcHI?oc=5",
+    "source": "arabnews.jp",
+    "date": "2026-06-13T01:06:26.000Z"
+   },
+   {
+    "title": "Russia says it is discussing 'reformatting' of military facilities in Syria",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNWWFGUnlWUjExWld5a3U5ckM0T0hMUGtEUmx4QzlsVy1qdkxuVG4tOHdUTVpKRW9wS2tFa2VCaS1udXRUbFhjLWJIY2pwNkhjc28tZVZRaDFFeHV1eWtLeWo3alFOS1lHRFVmSEs5LV8zRzN1QVdOd3JXQl9TcjBsWW5GY1V4SkFWWU9tTXg2REV6MS1VQktrS25jbXFvUFI4U1NHelczbXpMWTRkTFE?oc=5",
+    "source": "Reuters",
+    "date": "2026-06-10T09:33:04.000Z"
+   }
+  ],
+  "Egypt": [
+   {
+    "title": "Egypt's delicate balancing act in the Iran war",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOM1lKdmN0V1F6OXh1cW9xN2pzRHpqVjNtUFFSSFY4VmQ0TlIxS3RvUHMtakRJdWdpMHpEQUFhTFA0MGZfZUtCZHlNTThXNC1aU05ndHoxNWxQZ0VXM1QyWjdtODQ3c1hpUXNPQ1h1cFRSX25qVG9YaHY5OXgyS2c0NG5vSl_SAYQBQVVfeXFMT3JBQ09tSENUNktHaXBrakRXMVhEYkxmUTI0OHlwQ25PSHVJNVJ1WDZ3X0FBWHhDbWkzQkFaVkZDWUZTNjlwUDhmNGc1ODJxZENrYU5vUVd5SnEzTW10YjN3TER6b1NOWWRMc0xiQkUxU3lEQzZqc19OT2M5NE53aFZXY216?oc=5",
+    "source": "dw.com",
+    "date": "2026-06-12T18:26:17.000Z"
+   },
+   {
+    "title": "Egypt looks forward to final agreement between the U.S. and Iran",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPb20wc192aDJLS2F0VjU2U0FNVERQSWRKOHVNWmNEdXNrTHFwU3dxbmJuOTRkS051V0VZZHJHU1RZQ1daakNpLURFaUpzY0d6SnJldGczeW1KYmNSS0dLRG5oOGY0VFZ5ZUZmbFVvNnpYYXRWaldIZV90VzJKcG02ek1OaENTa09tenN1X05tYkpWQXdQNUxPMVZOeWxHM28?oc=5",
+    "source": "Egypt Today",
+    "date": "2026-06-12T12:03:00.000Z"
+   },
+   {
+    "title": "After years of distrust, Turkey and Africa's most powerful military have begun collaborating in the skies",
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOWW5pVTctdWU0dU5nRmJtSVFvOWpwTnRaSUJzM1RlWnZjMW9QTTl6Q0FyRE5abDhsZTk0MFI0emRyLWJiYW85NlFiRDc0ci1LREZVbTlVTUM0STNJSDB1TGZhSnhkT0NKQUlwYm5jeDBRem5rT2ZjTkVjMHBZNlNkZGZUZmlVZFpzRkNucWpRRThFM3Q2S3NidFV6ZHlLRExyVkxta2g4bEJfeWd4ZEtyV0pVR3FqNUJsTVFLR0JBZDhLdVYxNjJ5SEFyeVV4OEEw?oc=5",
+    "source": "Business Insider Africa",
+    "date": "2026-06-12T16:30:17.000Z"
+   },
+   {
+    "title": "The Iran War's Pressure on the Egyptian Pound: Fragile Stability and Expected Shocks",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNNGV5S3RtWXdfN0R0eDVHVjFnTlZSWEpRYmtySlpmRW5oTEg0bkpKRzFiWFR3OUIzUmlSX2k1RzFIUkNITE1PV29HSll4X3BxcV9vbDlLSXhjTDZyOGYzYmlzWDJRR1J4N0tZc21fbmRoWmdQQ01BaGR3RXNhVjgzdzZyVUIxQlRGVUlhbURydzUyV3g1QV93Mlg2ZzA3bG9PRk40S3RVS2Jyc1NjbFp6azZ2WjNXclpaRkp4WUd1NGo?oc=5",
+    "source": "The Washington Institute",
+    "date": "2026-06-10T07:30:37.000Z"
+   }
+  ],
+  "Jordan": [
+   {
+    "title": "Iran Wants To Punish Jordan for Hosting U.S. Forces",
+    "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPVzBjckdQQXVzVUFHWWhRcXNraDA1XzJXZVVQaU5sZkpDT1g5V3hhQnpPaHZXZkZJRnFiY1lNUm5BTGloWlMxelk4Zk1xOHdDd0JZUlVqNzZ3RTZFZUJZN3dKSXBUWlhnSGR3UlBLaUVPdjBmd0NwOGlQWTVmNkMwYzk2Y3VkekZ1b05kWXJVcURVT1NIZkE?oc=5",
+    "source": "Foundation for Defense of Democracies",
+    "date": "2026-06-12T13:20:12.000Z"
+   },
+   {
+    "title": "US Embassy in Jordan warns that 'reports indicate missiles, drones or rockets are in Jordanian airspace'",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNQVY5cnR1OW45azU3NWlmUzh2Qng1aFBhMUFVTFhWQnZoZ0FXWFRTdWZ1WUZlYWdwem9iMTZESDZGSzZkWmN4Z3ZKdnpuZnNwZkgydGJULVhjZjZWUTZiQThlTGgxbUp1a0JRTV9YcVZvQ1p4N1ZKVEh0WVRyNVFXSGZyWUlkbzBUYm1NRjhwcEptaHd2bV9EYXZqNkpkclXSAaQBQVVfeXFMTmVSY0pXYVZvaENMZzRibDJrX2dqR29kbGM3TXNiZlB0dUM2NjN3NU9oS2U4UEgwekFVN19YU3BMMXNkTFZFWXJBV3JJcGtraklwUl9tU2VYZFAxbHVMSXV6UFRuRnk0Z2J4aWRITnBvVlpLUVZTWS1GYXluNE5CMkVKVElOdEh4RGwtV2ZxRzk3Q3AtSE01Y0d2NE16OTF0NFpuSTE?oc=5",
+    "source": "ABC News - Breaking News, Latest News and Videos",
+    "date": "2026-06-11T05:05:41.000Z"
+   },
+   {
+    "title": "Jordan says it shot down 20 missiles fired from Iran after Tehran said it targeted US base",
+    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNVmlmemVGZm52SHhFdUtfV19QX1IxU1FiQ2RyRjBHZkYydUJIcjZwNXE0RzZOeUMwVmRpYUF1ay1sbUUtbXczanR0VmU3eFR5Qm50aFdzQ3pIRUhhUWtNdUNKYzhsT2hkWEs0VEZZXzY3eVBaYkhZS1JWbTVReTFWbVg5TVc2WHF5VTRzeXpRS2lhaHl5bVk3dDZoa1pzXy0wM2ZtVDBoTkV4MHI5RjNURHFsQlJjVHE1Y0lOOUpoMXZodGF6eGo4c1lTQmtXay1uOVE?oc=5",
+    "source": "The Times of Israel",
+    "date": "2026-06-11T08:06:00.000Z"
+   },
+   {
+    "title": "Sahab, Amman, Jordan Precipitation Map | MSN Weather",
+    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5zUDJMQ3phdU9FSU1XUGFJYzh3c2tnUU1zNkI5QURkNnNKVmM4VzVJRHk4ZVphbjdkOHgtTTdDWGg0VF9Sa3Vpb3lFc2dOUWhnZlVJeUdrOTd1SXRpdEpRT195U01fZnlKdkhyVUNRdTlvUDBxUXc?oc=5",
+    "source": "MSN",
+    "date": "2026-06-11T13:32:18.000Z"
+   }
+  ],
+  "Libya": [
+   {
+    "title": "Task Force Civil Affairs Team Conducts Subject Matter Expert Exchange in Libya",
+    "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQUzU4dzJ1SkhWT2NDbmMtVG5taUI4MW9mSk10SkM5VXlzampLZFRDdm5TamNMb1pkdjhkak5MdWN6RlFUaWZKSEtqTjBoTXZUSHBPX21YajdvaF93RHpDQlVpalhTc1c1dzJVVGZpSUNkbEZ4cVlvUlpzWW5RTXNaU1RhanZCcnZtQi1pMkRscktLSEI1bEhCWTNJM2s2VEF6d2xyX1pPZzBFSzg1bzZmYmpOM3FVTlV6NFZVRkVHdFBoOWMwcUdqYk1WLVU5dmJpb1hLNzlLMDY?oc=5",
+    "source": "U.S. Department of War (.gov)",
+    "date": "2026-06-11T16:46:21.000Z"
+   },
+   {
+    "title": "US Report: American Soldiers and Libyan Officers Exchange Military Expertise on a Monthly Basis",
+    "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZkU5U1hDUEdCMzdXbU82Y3FCZlRiQlZFdXRMbFJVX3poLWd5QTJkeUdFWFg5Q0J5TU5uV1lhdEZTNkxGT1c1UVp0ZXFhdlNrUFMzamQxWGNVQktEQS0tTEFoaHhJeWM5UnIwQ0xHN25yRDE2UDJQZFFqRDBnS01SVU1GdjlOWlBPX19ZYU4ta2xEQmxyMEt0elg5ZW5BUzEwYkl0WERuelFObi1xSVRGUDBTeVM0TW80RzRZ?oc=5",
+    "source": "libyaupdate.com",
+    "date": "2026-06-12T19:04:33.000Z"
+   },
+   {
+    "title": "Plan for a 'Central Region Province' in Libya is falling apart",
+    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQREN2TFBXM3MxOFJUMklPQUJKemVRYXJIYWRCYnRvU1lIc2FJbXpERldSb2FDWmF0a0dwVnZFVF9uME9XSWt1UE1fMUJZcUhYRUZNOUhPRm5sQ1pGWGhZTnhPTzdZMzlfclRucHVvdmhDMzBNeTdwT0lCLUFlemVRMkxkNNIBiAFBVV95cUxORVB3bzNHQllCaloxLS05S1h2MC1QUHhFdjFVYmI2RVp6QVhpRzdyUm5uY2oycVdoYllVdzBnQ3IwMXd0MHJza0s0aVZ4S2NyZC1EWVVJWTQ4U3dtQ2dTaFdkU0lVR3M0UmhOYXJXajh4LWVHYjVCX0xHUF9FZXgtYi1NS09WMTQt?oc=5",
+    "source": "The New Arab",
+    "date": "2026-06-12T12:13:53.000Z"
+   },
+   {
+    "title": "SETAF-AF civil affairs Soldiers conduct subject matter expert exchange with Libyan officers [Image 5 of 5]",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQenllVzNScTg0WHRzMEMyMWE2RzhTOGdrOVZYdW83OUc0OFBVWlh4RVQ0b29fMW9XUVVNR3pFTXVBRHp2QVU3NFFxYjNNV3RRQ0ZNZ2t1UFJLSTRuWVpGRHVobmhyVThwQ3BESU9CRklCTUdObjV1NjBPZTJFTWdrcEs4dEhnWEpldVFOQ051eGhVN2wzV2lIcTN6bWcyWDRaU0FuSG4yTkhGNlFoQ1g4SFRIT3BXR0hCLUMwT25TVDRHNTZoSktNTklB?oc=5",
+    "source": "DVIDS",
+    "date": "2026-06-10T13:17:00.000Z"
+   }
+  ],
+  "Tunisia": [
+   {
+    "title": "Sweden strike force faces tough Tunisia test in opener",
+    "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5ERTZaZXZnd1h5NkFEUFF1bVNfZ2Zwc1NtU0JHTGREdEZDOThjVFFxOGo5dW9Yb1ZGcThhMldySnBaRTV2a3hOSndPR1c?oc=5",
+    "source": "Arab News PK",
+    "date": "2026-06-12T20:15:01.000Z"
+   },
+   {
+    "title": "Tunisia’s Legal Trap: Saied Has Perfected the Art of Jailing Journalists",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPOExrZ1VUSnRNVG12Z2VYX2liQkZWMWxxZzJ3NEtaRVRPT3NuWG9WX2dibUtCZlZZR3Zaa3lVT3kwVGhqVlc2TTd2NW9LcXlSN2Z5RmRqUkRyTUlMekszTi1zeWE3dXFSSEIwWndIZE9xZWdmdGdfRzdiQk1VclN4aXlQaHJBYXl4QWhyaDZ1bWZKZVYyQTNxVjZtcUNwSG9rUE95T2FaRVc?oc=5",
+    "source": "Middle East Forum",
+    "date": "2026-06-11T22:00:27.000Z"
+   },
+   {
+    "title": "Tunisia Hosts Climate Resilience Talks in Medjerda Basin",
+    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOcHVpWHJJSThmQlVIUEJNZllvQzF2Q0ZNZERsZ3BwaW40dmx4YmMtQ0x3SHc0YUh1Wml6YTcyMHBQMWVaTm5ZaWhoUlI1akdqdEhsZnUwVi1tTjBpS2Z6MU14cmdCTXZIUXF2ajFWT09JM1JHOGFJY1JEeUdwaUhIRXdEYw?oc=5",
+    "source": "Mirage News",
+    "date": "2026-06-12T10:26:00.000Z"
+   },
+   {
+    "title": "Tunisia Joins Saudi Arabia, Bahrain, Jordan, Qatar, Cyprus, Israel, and Others as the Ongoing US-Iran Conflict Rewrites the Regional Travel Landscape with an Unprecedented Drop in Tourism in the First Half of This Year",
+    "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1IUlZlb0lUZjZPZ2ttUUFUemtxX0FIUnZaQnVkU2o0MXZfUHFxckdHMnlaYy1xSkVNbGpRbHU2V1FrRXg1MDRVWWdhQlhVUlprZHhxS3BPRjA0cEl0MFM2d0hJRGxiUTZwTmpZdDZR?oc=5",
+    "source": "Travel And Tour World",
+    "date": "2026-06-12T12:18:26.000Z"
    }
   ],
   "Ukraine": [
    {
-    "title": "Why EU leaders really want Zelenskys drone wisdom",
-    "url": "http://www.russiaherald.com/news/279119123/why-eu-leaders-really-want-zelenskys-drone-wisdom",
-    "source": "russiaherald.com",
-    "date": "2026-06-12T15:30:00.000Z"
+    "title": "Ukraine war briefing: Zelenskyy boosts army wages and seeks foreign recruits to counter manpower shortage",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxON0VKMEt0eDhvdXAxTjVxU3VSZVpEcVhKaEpuM0Q2Mkg2dUFjODE5M0VOLUFla1B6NkVPR2YtQkdCZTItUlI5YTE0eU10bXNsSlZ3eHphWFA3OW9EMzJ5eUVXNk1kMFJhZDdLU0FLR3YtQWZDYUltLVJlM0FoN2FTbDlhTlRBSmIzdmFwbFVzOGg2czBmRE5FdFdyenJ1SVhySWNYZjhRWjZSVUdwT29qbWdzLUJkS3BnSWxkOGhjSDVfRWs?oc=5",
+    "source": "The Guardian",
+    "date": "2026-06-13T01:23:18.000Z"
    },
    {
-    "title": "Ukrainian Drone Strikes Trigger Crimea Worst Fuel Crisis Since Russian Annexation – The Yeshiva World",
-    "url": "https://www.theyeshivaworld.com/news/general/2561575/ukrainian-drone-strikes-trigger-crimeas-worst-fuel-crisis-since-russian-annexation.html",
-    "source": "theyeshivaworld.com",
-    "date": "2026-06-12T15:30:00.000Z"
+    "title": "Putin admits Ukraine attacks hitting Russian economy, society",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbEw2cmZqRk5BTjNSTEp0R2hYMFNjN2hJVUVrMElEYmJXMVFCSWlQTTRidGJrcUFnOHZTclh3Wjg1cnJ6NUxWNWp2SHdXUmxiZDVIMGNMQWN1VXhObDI2UEdIak9NQ0VPT1BqcGRuZlRWdk40SFZweko0N2xHeGFnNzFXV1FGY0p0VG5yUkNmMEJwaDBpcmt4dExrRlJZZlpSNjZ30gGoAUFVX3lxTE42cVRlZEhyYWlrZGNnaDVtS2hIM0VHXzkwVmRnM2Jia1NsVlFQdzdfa3hZTlVNZjlaS1FhZGdiZFBfOV9TdUwtVG54WHBSNmpjTGE1ZmViN2ZkZnhPaVhRX0VPbEc5c2htZVlXdTJlT04yMGY5amxJYUUyNGc0bjF1MXJLN1BUZmFJOGRDc3AyeGFlXzh1UWJoYnRDVEdRbUVkdWZTb05HNg?oc=5",
+    "source": "Al Jazeera",
+    "date": "2026-06-12T19:34:02.000Z"
    },
    {
-    "title": "Starmer insists he will not walk away after defence resignations",
-    "url": "https://www.hamhigh.co.uk/news/national/26189626.starmer-insists-will-not-walk-away-defence-resignations/",
-    "source": "hamhigh.co.uk",
-    "date": "2026-06-12T15:30:00.000Z"
+    "title": "Ukraine’s innovative use of ground drones on the battlefield",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNaHF0MEFaZ2lTY1dvSmVaSlFtc1NyaWlydko1S3k5ZHoycklFcWtDSmU2LVJIVU1RUjdIQjVhYWNLZ1gtUUNzS3JBNTVwRGRmTy1hX2xVV0I5eEEtYTh1MlAzc1V1MEkyVFA4WXRLRXBjVkFJSDNLekprdGdObG5LbFFPVkxDTTRMV3E2MDhxOVJZMnhwOVdJcklXeDZsNEVRTEpEV0VvRQ?oc=5",
+    "source": "NPR",
+    "date": "2026-06-12T20:27:47.000Z"
    },
    {
-    "title": "Talks between Romanian and Ukrainian Foreign Ministers - Radio Romania International",
-    "url": "https://www.rri.ro/en/news-and-current-affairs/today-in-the-news/talks-between-romanian-and-ukrainian-foreign-ministers-id1028327.html",
-    "source": "rri.ro",
-    "date": "2026-06-12T15:30:00.000Z"
+    "title": "EU Reveals Evidence China Trained Russian Troops Who Later Fought in Ukraine",
+    "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE91UVM5V3pqdC1CWG1aOHdVZEpOY3kwemhpY0hkcHdnY2JhNXVUclNXSExsSUNJNmZBM200RnBWellmZnJXdGxhZ0dYbw?oc=5",
+    "source": "Kyiv Post",
+    "date": "2026-06-12T19:31:01.000Z"
+   }
+  ],
+  "Russia": [
+   {
+    "title": "Russian Offensive Campaign Assessment, June 12, 2026",
+    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQRS1zUzNiRU9fb2Qxb1lnWDlJQ1ZHYzV0ZGZvOExHY2VlSG9zOC1SLUlpM1RWdUVlS0Y1NE1ib2FGS2pEaEpXcWs4SFhoLVNrZFF1TVg5aFI0U2QwTVEtR3JudzR3WGNCZTVLYTQyazllc2I2ODQ1Q0UwdHRZSHl1YTFlQVhkeWk1c2cyMjNNMmxWdUMwSlpmcEpLNTZMcGViN2xPdUZ5UQ?oc=5",
+    "source": "Institute for the Study of War",
+    "date": "2026-06-13T01:25:50.000Z"
+   },
+   {
+    "title": "How Russia Could Escalate in Its Ukraine War",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPaEs2QnU0QXlIR1lIbFJ3Qm5qdW1yM3NBbXpqV3pUWU1NQjY1Zk4zWnQ5c1Uwc2ZjVXVrUVZCUmg5NXBGQXJCN2l6WUJRcnc3WGc0eFowMlZwNVE3YWoxR1NEYTZQcGl4RDRCRThBT2dFNFNKTUNCN0pXaUU5T2d1aGh6WEJRZVBB?oc=5",
+    "source": "Foreign Policy",
+    "date": "2026-06-12T20:05:46.000Z"
+   },
+   {
+    "title": "Ukraine war briefing: Zelenskyy boosts army wages and seeks foreign recruits to counter manpower shortage",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxON0VKMEt0eDhvdXAxTjVxU3VSZVpEcVhKaEpuM0Q2Mkg2dUFjODE5M0VOLUFla1B6NkVPR2YtQkdCZTItUlI5YTE0eU10bXNsSlZ3eHphWFA3OW9EMzJ5eUVXNk1kMFJhZDdLU0FLR3YtQWZDYUltLVJlM0FoN2FTbDlhTlRBSmIzdmFwbFVzOGg2czBmRE5FdFdyenJ1SVhySWNYZjhRWjZSVUdwT29qbWdzLUJkS3BnSWxkOGhjSDVfRWs?oc=5",
+    "source": "The Guardian",
+    "date": "2026-06-13T01:23:18.000Z"
+   },
+   {
+    "title": "Putin admits Ukraine attacks hitting Russian economy, society",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQbEw2cmZqRk5BTjNSTEp0R2hYMFNjN2hJVUVrMElEYmJXMVFCSWlQTTRidGJrcUFnOHZTclh3Wjg1cnJ6NUxWNWp2SHdXUmxiZDVIMGNMQWN1VXhObDI2UEdIak9NQ0VPT1BqcGRuZlRWdk40SFZweko0N2xHeGFnNzFXV1FGY0p0VG5yUkNmMEJwaDBpcmt4dExrRlJZZlpSNjZ30gGoAUFVX3lxTE42cVRlZEhyYWlrZGNnaDVtS2hIM0VHXzkwVmRnM2Jia1NsVlFQdzdfa3hZTlVNZjlaS1FhZGdiZFBfOV9TdUwtVG54WHBSNmpjTGE1ZmViN2ZkZnhPaVhRX0VPbEc5c2htZVlXdTJlT04yMGY5amxJYUUyNGc0bjF1MXJLN1BUZmFJOGRDc3AyeGFlXzh1UWJoYnRDVEdRbUVkdWZTb05HNg?oc=5",
+    "source": "Al Jazeera",
+    "date": "2026-06-12T19:34:02.000Z"
+   }
+  ],
+  "Belarus": [
+   {
+    "title": "Belarus Sets Up Closed Military Zone Inside Minsk Railway Control Center",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPLXFNZXY5NnZtUEUycWVqdXFpOGl5MVdzLTl4R1g4bEdDVEpXaUkyTWJuYjkxY1Q4NjRPSHo3TmxXSUN6WVNuY0o4bS1pWFJvLTZuZmwzQ20tVXh3UlEyUEFrdUI3YURPaTM0c0tPRVVVZW5LNEgzN0hOZERrQklzMFdpODBOWUR0a1l0QS0wdmRzSVpwVElwR1JxbGxIaUIxVFZjTWV6ZHVHc04zcHhr?oc=5",
+    "source": "UNITED24 Media",
+    "date": "2026-06-12T13:27:34.000Z"
+   },
+   {
+    "title": "Ukraine Again Claims Threat of Possible Offensive From Belarus",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNT0dRdWNPRUFsRWJsQzJ1QXRaQ2VfbURtdjhXNG9rUGlacEs3cHhxVXp5WHZyUW5nSUc4YVNpRERKMGp4TENhcTdFNWE3M0lIOFREdk5SV1pXek9LSTMybUhaX1BQdi1fd2J5Y1h3UXdhZkt0NGRZRmNNY0p0NFlIOHREelo0SmVZQ3ZzRUV3OHZRcVVjWmMzaEtVMDNlU0FTM3lZUWJ30gGqAUFVX3lxTE5TNGtEOEFvYXFndDJYem5CdUpBUVlGWjBaeFVJa0JSSXZFcEFEN0R1VW8xaXlSU2FoZVlhNENvSjBjTllEbTdRRHFJb2pwQ3ZFbkdtSzJKYV8xaVRzdUhtTzBZR2x0UTFWbGx5QTFfN0xnSHhXM3NqZGpzSm5QQXBuRVg1elg4eldteENod3lDSEN4a2xGTDYwMk9pS2I1bjY3R0lsSVNFRUJ3?oc=5",
+    "source": "Военное дело",
+    "date": "2026-06-12T13:19:03.000Z"
+   },
+   {
+    "title": "Budrys Reaffirms Lithuania’s Position on Belarus",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1fbXNocnFhRF9Ldnh5ZzFJa1liZEd3LTVQeTRiTmdPaWtFY3MyWVRHU0E5WjY2Tnp3bkMxQXgtT1RfYU1iMnFxTHc0LWZ2TVNhTkYxTVVLeXFxQWFGYXM3RXRiZEpTREVfb0o1aXQzM1RNelFxXzZMY25WQVPSAYABQVVfeXFMUFpJdXlWZWpaVnB0WWZMZmFQbzVWMElsMXczWEQzZFQ2OGdibDFEMi10dGRUc1p5MjNWUEcwNnNOS3AwVTZyN2ZzbDlhY28wSHhhZWVsRzFpWklwak1pNFJrc3NfMkRVLW0tZXR2QkhpaWt1bkxfOW4tUTZwMFJVZGI?oc=5",
+    "source": "REFORM.news (ранее REFORM.by)",
+    "date": "2026-06-12T10:51:21.000Z"
+   },
+   {
+    "title": "Prosecutors name Moroccan migrant suspected of killing Polish soldier in border attack",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORFFhX3JCYndyWHdFay1kMUtjdm9nVDNsaTROVC15Nm5MVkFVN1hRZHZrc1VxOTR5eG91a2o3THptbmJXcXVCTF9aRmVqcXJ3VkF1N1RBSFl4ZW11WWJhdzl3ODhQa2VHMGE2akNySFAyMHZoVm1SYUNhcDYycEI2YmFiWmgxSFJpLXVfLV9ja1U4YzZCclpqei1TeGpHbXo3Z21udGxUekFtNUhPVVFWQmVLWXczVlBpam1TclRGTVpCYU5M?oc=5",
+    "source": "Notes From Poland",
+    "date": "2026-06-10T11:58:57.000Z"
    }
   ],
   "Moldova": [
    {
-    "title": "World Bank forecast for Romania - Radio Romania International",
-    "url": "https://www.rri.ro/en/news-and-current-affairs/today-in-the-news/world-bank-forecast-for-romania-id1028290.html",
-    "source": "rri.ro",
-    "date": "2026-06-12T11:30:00.000Z"
+    "title": "‘Major step forward’: EU to open first accession cluster for Ukraine and Moldova",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdlpVLW4zWGR0MVN2dHp1cktzaTQ3NVgwa0F0bjlWNTlaWjNYS1pyM1BUT2pBY2NlSEpBdFFtSVNEdGphXzZhczRsbDlzVW43Uy05clVKcHhvb1UyM0VsbHpPWFpSeGVzSjBMSTZDNEhaRFhLNThMcHRQQWFXWUFNdFIxazJaRnk4aE5fLXVfNGgxRTdWS1lDRHc0dktZTFdJSERYRg?oc=5",
+    "source": "TVP World",
+    "date": "2026-06-12T21:21:45.000Z"
    },
    {
-    "title": "June 12 , 2026 - Radio Romania International",
-    "url": "https://www.rri.ro/en/news-and-current-affairs/newsflash/june-12-2026-id1028302.html",
-    "source": "rri.ro",
-    "date": "2026-06-12T11:30:00.000Z"
+    "title": "EU agrees to open 1st accession negotiations cluster with Ukraine, Moldova",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPMUJjaEQzME0wZFlJQzlObEEwVmdoTm94S1NSVlRLa3pKRmtDVGRXX01YWXdhb2hDVkFqdW9GWmU4eGtYRDBIeW5DR19RNUgyc01wcHFjaE5xQ2NEUERqd0dyM0xxZFR4ZVJVWm1rWWo4MzRTNktCRmV1OGhickV0RXVraEs2X19idzRfbm9rWU9hVUhsX0RzbWZxMjNyOTJCWlY4QXpFZ0Y3RGFrSmc1NmpzRQ?oc=5",
+    "source": "Anadolu Ajansı",
+    "date": "2026-06-12T19:43:36.000Z"
    },
    {
-    "title": "Newsletter : EU historic migration overhaul enters into force",
-    "url": "https://www.euronews.com/my-europe/2026/06/12/newsletter-eus-historic-migration-overhaul-enters-into-force",
-    "source": "euronews.com",
-    "date": "2026-06-12T10:15:00.000Z"
+    "title": "Co-Chairs Lawler & Ross Introduce Bill to Promote Moldovan Energy Independence",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5ET2ptTkY2NE5JXzV0TVQycVFZWU1QUzRlY2x4UGtGTk4xLXhhZzAtVGRHZFUydEI3cjVoYi1JN2RVQ3lTOVphek45RHYtVW0tWEVnMTBzOG5GZXM5TWViVjlTbXIzRFJvUDk0OTdOQW84dE0?oc=5",
+    "source": "Congressman Mike Lawler (.gov)",
+    "date": "2026-06-10T07:00:00.000Z"
    },
    {
-    "title": "World Bank Improves Armenia Economic Growth Forecasts for 2026 and 2027",
-    "url": "https://arka.am:443/en/news/economy/world-bank-improves-armenia-s-economic-growth-forecasts-for-2026-and-2027/",
-    "source": "arka.am",
-    "date": "2026-06-12T09:00:00.000Z"
+    "title": "EU agrees launch of accession process for Ukraine and Moldova",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZ2RaSUhScjY3SFVjZmxoTU5PZU1Wc2FnLWlVVktiN1pGTWZWNjV6MDdzSXhFblhSdjFEN3duUy1MakpiXzBrNk41N216R0NrLV9weXRaS3UtUWkzYkRweWtseXdsNkRFQ0RUQ2swNGZKWGlMemtSb3Uxc2VJekxiYzFPU0xNcGNoYlFwT1V6MFgyR3ktTm5lbFg5OGtDVzk3dkVpWNIBqgFBVV95cUxPZEt3U1dCOUhiY1VVQ0NvS0FrbUtQbFQyU3NFSVJnc1NsTm50TlB5V2ItV0I5d1RLandtanhTeFV6Wl9ycjlkWWJ5dWJPejV4aWI1WktLUGRlbWVibXBrQUVGM1pjaWlhR2FMaTRfZWFKZ2IweEl3ZGFFWkl4OERHNEtGV0hSMElsTnZIUzd2Vy1xeGpmMWh1aEIwalQ1QXZhUS11aTdEc3YzZw?oc=5",
+    "source": "Al Jazeera",
+    "date": "2026-06-12T21:01:51.000Z"
+   }
+  ],
+  "Georgia": [
+   {
+    "title": "Here in Georgia our festivals are full, but our poets are in prison – and now we feel abandoned by Europe | Archil Kikodze",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONHdIYWV1eWpId2oxWU4tWE94ZkZsaU0ydUs1NEtRZUlxX3FOY0lKNmZDam9sWWVnU2tKdDdiVkczejl5eVNOU2ZZQ2JPZkNhNHlzYlZPX3VnRU1NRWpZbHhSdzc4bEdNMl9sSTlNMUZsNnhOYXY0RFJpLXVVc2FOYXhSYXVPQzU3STN0NE0tYXF3ZURHLWR5dE5xblZWMDl3T0E?oc=5",
+    "source": "The Guardian",
+    "date": "2026-06-12T22:44:00.000Z"
+   },
+   {
+    "title": "Head of Georgia’s Alliance of Patriots claims ‘US defeated Russia’ in Armenia",
+    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNTTJqNXlhWkxMalBpZG1KQ3ZpWGt3d0hKbUhVdzIwdHBodlc3UnVYSU1iTzNfcEI1M1ByNWVPWTFrRFJ6djlBdXFKUUludkNNcWZzajM2SDZCbUtLbHJjbkZUMU1jU1hJQlFleTJJNnRaOUk1RkJXLU9tZldKWWxvX3VnUHc4WUpfaFAxMWpjZHlmbldrU2RyMi1qX0M?oc=5",
+    "source": "OC Media",
+    "date": "2026-06-12T10:37:39.000Z"
+   },
+   {
+    "title": "The incident with Georgian symbols on a Panama hat highlighted tensions between Abkhazia and Georgia.",
+    "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE40M21CV1VsZE9NWWwyTmc2Y256WG41dzVUR2ZycHRQVWtjdjRaRkdiWGVYSlhRSHE2VF9icW5TaXlnWVY4d0t2NnFqS0VCazVCYUhHc2RQeHY?oc=5",
+    "source": "Caucasian Knot",
+    "date": "2026-06-12T07:40:00.000Z"
+   },
+   {
+    "title": "Why Georgia’s Rulers Are Not America’s Friends",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPQ2E5RzM2eXdDcGs3WWJfSERTOFlxQ3pteUFmcmFiS1ROSkMwbjNLS05rcmtZWHYzSGkyVDZwQUdJTDY4d2EwYmZLQ1ppXzJOcUJWTWlsWG5nOHdXS1NtQXVRYlJXZE1ZWmhtcmtBVUktZVZTU1pEWWQyZ3JSYWtMOFU0dGlsZU9QazlTRnVJTHFiYy14cU45ajFYUVVVeWM?oc=5",
+    "source": "The National Interest",
+    "date": "2026-06-12T02:34:16.000Z"
+   }
+  ],
+  "Armenia": [
+   {
+    "title": "Column: Trump succeeded in Armenia where others fell short",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZDFjRUFSYUgwb0oyNzRpTzZXZ2lhNHdWaFBvRmxSSGQ4aVZhWUEyTDh6TE9QclBvUE9WWjloblpac2FqbV9aeEFCZ3RMSHBIV3Zybms2TzhTOVJ6dXBsWjFLbGpWMnhvYzdfUDkyMDg2eFBPZFZGWlMwdGhXNkFnZ2NZUUtIcFpGVHlYc2tnbWNNZ2Q5dFRSRzZKdWQ1QQ?oc=5",
+    "source": "The Virginian-Pilot",
+    "date": "2026-06-12T22:05:36.000Z"
+   },
+   {
+    "title": "Russia says Armenia's future in post-Soviet military and economic blocs must be settled soon",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQaXlMcmNIMUFmeThOdzZLZFNhcVJzZERMYU90UXgwQ0xiVFM2amRRZTRwV2U0c3hPNTVCWWRGOXktdWJhNUNyR0phcGdVTkU3QmlSdTNtaTFJczI5VGpXTVdEb0xBSnNCTzZhZVNzSW53SmRMVEprTVNRc3VFMFhySWhJVVZXUVZQMDVOaXM4R092VlUzZFhWWDJwMmdzSVFnSkxzM1dyN2hvRlpJUE5ieEh6c1FVWXBzdExxeTJn?oc=5",
+    "source": "Reuters",
+    "date": "2026-06-10T13:20:59.000Z"
+   },
+   {
+    "title": "LIVE: Key morning headlines from Armenia, Azerbaijan and Georgia",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBhdDV4M0pnOXNEeWpHbU1aT3haeVBGTWFaRjBNbFBYRl9fUlE5c2ljbV9wX19GaXFVUDJjVGJhbXVaZTktWkp0WVRvaDdYSVAzcVI5a3pyY3FaaldrNGcyMFQ1XzltaUhlX2VXS2FFeU9CVXVpazljeEdRMA?oc=5",
+    "source": "JAMnews",
+    "date": "2026-06-13T02:18:16.000Z"
+   },
+   {
+    "title": "In a world where war can disrupt the flow of compute as easily as oil, Armenia actually offers a solution",
+    "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQcUthdFN3RzlpWC1LU3E5Mk9ibzBGYmZzbkYyX295ZTcwdmx1a2pOTHBpUVVmUzdPcWEwUHV4Y05rX3o3UUdVQWZfUXdEV2UtdUl5LWxhZmRkVGRCb2plQVZyMEhRT19jbjZYV2xSdWctYWFUTWZ2a0ExbFo2dEt5dVlPZmh4VTEtOGJ5MkN1bElMTVFkN1h3UHhSOG9uc3Q2VndnLWJNbTV1SFpucTJ0eEJnNzRlb1VKRmQyRTNDXzhMLXNpTGVBS1NCNDhBVDVfbTJSQUQwVkpmUnAx?oc=5",
+    "source": "New Eastern Europe",
+    "date": "2026-06-11T16:42:03.000Z"
+   }
+  ],
+  "Azerbaijan": [
+   {
+    "title": "Azerbaijan Overflights Soar As Airlines Avoid Conflict Zones",
+    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOMmVzaUhMdjFaSzZHblMwNWNEV1hsVFNZUVZLRUNHWkdTa0pKMWlLejNDOEtyUUpwRC1aWFRBT2dqV0RxZHhrV00wUWV1RHlTbzBiS1UteTdWV0ozME92QXd1a2xyZjRfdmdFWnpNREIzUXdBN1YwdHZvd1Q4Rk8zR2ladnZ5VmpiVGRSTGZUczBCd1pHekJrajVkUXpWSmJGOXluUXFadjM4RFliWFoyeTN3WlNJdTE0dHc?oc=5",
+    "source": "Aviation Week",
+    "date": "2026-06-10T21:27:08.000Z"
+   },
+   {
+    "title": "How Azerbaijan’s pro-government media made Pashinyan’s victory all about Ilham Aliyev",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPem9aQnd3anoyamN0UUVxNS1pRmxGTjExamR5SU82QkdldE9LVVdVQmR1Tmc2TXQzejF4cXBESkhxcG5QY0s0d3lHTTFEYm9XekUwZ0ZVenlDRWMwRkpYak1OUnJHN0dLQ3VMNHExSjhLQmFmNHZ0UncyQndUMWhJQ1JxWGEtWDVJT2o0Wm9ic3pKQ1VIcHZkY2Q1MElKWEhwNXNWVW9HTEQ?oc=5",
+    "source": "OC Media",
+    "date": "2026-06-12T11:14:41.000Z"
+   },
+   {
+    "title": "How should we define peace?",
+    "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5jZW5wZ0lyQ2prWEhERnYzcXNaQmxkN2p6UDVBc3JVMXh4UUloclRBR3pkVk5lOGNvMm9WcjcxUXhYX3pScS1NbWlEenBrMmRZR25nWi1raDhqdTJUUy0yOWR0ZUlrbVRCd0Ftb29iS3U3MWs?oc=5",
+    "source": "The Armenian Weekly",
+    "date": "2026-06-10T15:29:15.000Z"
+   },
+   {
+    "title": "Exclusive: Israel sent troops to Azerbaijan during Iran war as part of secret network across region, sources say",
+    "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQNEFJWHBiWTQzdE4yNEVUbTBRQWVDZjlGRGtTXzYzN2RIcWtWOUUxVzlmdEFvbW9FT05qWDNzblEwaVNGNkZUYTBucTI2WDdJaFowbzlsV2xhOGJfRS1LMG9ZeGlybnhybV9qaE8xVE1Dbm5BOWpzR0NFQXotaURNZG96ZDQyQzdNTl9DRGpyUkhpX3JseEE5clEtdVR2Ymc1Zzl2TndyNVgtX3h4eDd2OXVQcEo5SFZDZDAtUF9waHl6b0lRcm5CazhGOWgwNWtCX1FpQjlDRmlYRkxZTG5qNEt5X2hrRnNHakZ5VnFWTUw5Z1E?oc=5",
+    "source": "hiiraan.com",
+    "date": "2026-06-12T10:40:30.000Z"
+   }
+  ],
+  "Mali": [
+   {
+    "title": "Al-Qaeda affiliate places €2 million bounty on Mali's military ruler Assimi Goïta",
+    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOTmdFUFlOWHlaQ2VxaHhRdHNfWXpzdVFibUdrcXRPNnp2SERUVjhwZ2JVOFR5NUwyQlV3cFB1a0x2RFl1dTdNVEJPRE5JU2otWXdRSFhPa0N5WjFWX0NjdE9KeXBoV05pVGJ1MElCT29oNnlKYmFrUzFrem9IZThPLVpPMzR6QTYxM3VjNE1IUURQNUVnUmtXbll2X05TQ3FGRmVxSElybUFheU9hYmI4c2pHeDJ0RjVzMlFlTG1PZWlnWXIyYnIxRlhkbHRLQm1sTllwSURldklQUQ?oc=5",
+    "source": "Business Insider Africa",
+    "date": "2026-06-12T22:07:22.000Z"
+   },
+   {
+    "title": "Sahel juntas are 'crushing' basic freedoms",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0wYTNFdGkzSTJJcnJ0ZmoyR1FlSmh0M3JkblNuSi1SOFlENDR5bDJDQmFucjZ5akZlR0VKMmxZS3Ntc25PeHd5bEVhZW5jT3RpQjlHbTNyT0MyWHY1SzByMjlPeXRPOGFsc20wYWxENDFHNmVyam0ybUtJdnViQdIBfkFVX3lxTE9RNGRiQk5NejRkZWZ4aVVYeHJGT2hBTE9leHAzcG91clZ1dE9tcnVuT0FqT3g3Q1JKRk5pTmhfclNWakhLU3dDTXlyeWRkLU9KcGdSTGR4RlZjMU1SN0podzBlZ2o2dzJEVTgyQ29acVlsank5djF0Qk04ZEFjUQ?oc=5",
+    "source": "dw.com",
+    "date": "2026-06-12T13:51:57.000Z"
+   },
+   {
+    "title": "Al Qaeda affiliate JNIM targets Mali leader with €2m bounty",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQS2ptTDhGbkp5V3VVQ01ZSUN5LTJKbFRybXNkMFF0a0JFbnktY0oycUFVOVBKNGNGYzZTTEVOVVdUVjZyRHN3RFNzaU9BSFZIRG91bFcxNmpSOEEwTUtNb01ubzJob0lnMktjYzZ0M2hHSHU0ZlM5NlFNWmppRzZPaDBXM3N1LWlrbllCcjEwUGprU2FGWFlybDF5SEZoYVlxaHN0dFg4Q0hmZw?oc=5",
+    "source": "AnewZ",
+    "date": "2026-06-12T12:34:00.000Z"
+   },
+   {
+    "title": "Mali Al Qaeda Affiliate Offers €2 Million Bounty on President",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbzFNVWxoUTNkV0RkazE0bjVlVGZSTG9qWXF4OUVtTVJQQlJGOHVUdnpkT1U0a1M1R2draGdid0tfMlVSelhhUkk3NVh6R2R5VHp6bFVROGtGc0llTWxqSWVIWXdlOG00VVJ2WG01OUZUTTY4M0hkODZqVVNVLVFzVloyREVCOUduek83UGRUMm9fYkw4OGl4dVFRX19nSnNpaHc?oc=5",
+    "source": "Modern Diplomacy",
+    "date": "2026-06-12T09:05:19.000Z"
+   }
+  ],
+  "Niger": [
+   {
+    "title": "Sahel juntas are 'crushing' basic freedoms",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0wYTNFdGkzSTJJcnJ0ZmoyR1FlSmh0M3JkblNuSi1SOFlENDR5bDJDQmFucjZ5akZlR0VKMmxZS3Ntc25PeHd5bEVhZW5jT3RpQjlHbTNyT0MyWHY1SzByMjlPeXRPOGFsc20wYWxENDFHNmVyam0ybUtJdnViQdIBfkFVX3lxTE9RNGRiQk5NejRkZWZ4aVVYeHJGT2hBTE9leHAzcG91clZ1dE9tcnVuT0FqT3g3Q1JKRk5pTmhfclNWakhLU3dDTXlyeWRkLU9KcGdSTGR4RlZjMU1SN0podzBlZ2o2dzJEVTgyQ29acVlsank5djF0Qk04ZEFjUQ?oc=5",
+    "source": "dw.com",
+    "date": "2026-06-12T13:51:57.000Z"
+   },
+   {
+    "title": "Niger military junta introduces new penal code criminalizing homosexuality with 5-10 years in prison",
+    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNSkdDX1NVQ3I0LVdtblpXdERKb0N1cTV4cUxacmNtazhfYU9qMU96WEVONENMMVdZTWx5V2tKelhEZjRqNmtzREZsVWUzQXhhNU1EeVZfdWdsVnB1TUxmdVpmVFFFNFdDbVZOQmFJOTRlZzZKWFdZOWRZSEVmZEZZLWRzOUVOanhFM0ZqNGpybVgwT0JBMWRYNnpPOWh1QjhxaTUzLWtUblRxdnp6NW4tREh1bURjNGVHTVg2U1RYTlZVSHEtTWE0UkJ1UjczWmpTOEE?oc=5",
+    "source": "WRAL",
+    "date": "2026-06-12T13:07:45.000Z"
+   },
+   {
+    "title": "Niger Set to Receive $33 Million IMF Disbursement After Staff-Level Agreement on Ninth ECF Review",
+    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdlNUZHYtUjRrNmsteTEyazJfZHI4cU5UU1JmbElHVjFJaGNiel9yNlJOVUFhdEFJemJ2bkx1MjRlWGhqclNHd09aV0pRdEw3cW5pY3ZVaGlsTENqZzVmOVpSUW1VSFdRcFRwOWtNdlNfdE94YmFraW1IWHJLUVBpTXZUMGk2cXR5Q2xFcDRLY2NlbVNTODFZQ3BB0gGYAUFVX3lxTE55dlZkcW9EQW1SMkFRTERrcWNFRC1pU1l6WlBveVNTYi1WWDlEazh0VFZFSXBXSm9xZmlfbG14TU9Fd002MVpUR1k1V01OTnBkMmFyNFctZ0dUZzdfWlNNUzlZZ2tVNE9SZEs2ckxkS1R5R1d2ejhxS0lCUVNhM1hCclY3ZTk4UHF2OUdaT2ZqNGYyZHMxMW9p?oc=5",
+    "source": "Modern Ghana",
+    "date": "2026-06-13T04:46:09.000Z"
+   },
+   {
+    "title": "Can Türkiye maintain its “African solutions to African problems” approach in Niger?",
+    "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9WektLRl9HdjZqZjMwTXNNUnFlOTlUdkxhZnIybk9fY2VmcHh2a0gtUjJJN1Iyd2U1bTUycGhfVFhGVHVoWklsLU5fUXNzX1kxX3dkeXBuRQ?oc=5",
+    "source": "AzerNews",
+    "date": "2026-06-12T10:50:00.000Z"
+   }
+  ],
+  "Burkina Faso": [
+   {
+    "title": "Sahel juntas are 'crushing' basic freedoms",
+    "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE0wYTNFdGkzSTJJcnJ0ZmoyR1FlSmh0M3JkblNuSi1SOFlENDR5bDJDQmFucjZ5akZlR0VKMmxZS3Ntc25PeHd5bEVhZW5jT3RpQjlHbTNyT0MyWHY1SzByMjlPeXRPOGFsc20wYWxENDFHNmVyam0ybUtJdnViQdIBfkFVX3lxTE9RNGRiQk5NejRkZWZ4aVVYeHJGT2hBTE9leHAzcG91clZ1dE9tcnVuT0FqT3g3Q1JKRk5pTmhfclNWakhLU3dDTXlyeWRkLU9KcGdSTGR4RlZjMU1SN0podzBlZ2o2dzJEVTgyQ29acVlsank5djF0Qk04ZEFjUQ?oc=5",
+    "source": "dw.com",
+    "date": "2026-06-12T13:51:57.000Z"
+   },
+   {
+    "title": "JNIM Escalates Sahelian Offensives Amid Fratricidal War with ISSP",
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQMjZ3RmlINFJTb1I3T21CZm1aVU02ZlNuRjRjTjZpSEtJSWJkWFB3Zmhlcm43S3B4UkdPWnN3UnVuWWVER09TY3NfZ0tKWVdrVE9sa09aSmxVNEZ5cnkyQkxGM2haakQxcnZjekFvbkp4N1RuLXlSUlh4eHc3bEhsV3pldW83TGNzNWNpZkY3aG9rZw?oc=5",
+    "source": "The Jamestown Foundation",
+    "date": "2026-06-12T20:50:20.000Z"
+   },
+   {
+    "title": "North Africa Regional Outlook: June 10, 2026",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1oWG9rLXBnY3hDY2tFT1dyMlcyeHp5T25jWENnSTQ2eE54MmJKblAwT2pjNEhOREp6QnNEN2t3RHRlRlhlZXU0TVJpeEh0cm1zQTlpNlZHWmdvcWVaZHlJWHIweHdjT1pBSFdzLS1LTnd5NEdpbWJJNHMxREs?oc=5",
+    "source": "Stimson Center",
+    "date": "2026-06-10T21:07:51.000Z"
+   },
+   {
+    "title": "Burkina Faso Key Message Update: Low incomes limit food access in the north of the country, May - September 2026",
+    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNYWJ0VmRfSEQ0UDdBcHMtNENOb00wX1FCQ1dVZkZuSWJXbGVhUjlfYVc3NW40RWk4clJrUXIyN01hOHhqeUxWQ1gxeEc4a2ZqbHMtTUxmQV95X2E1LXVndVhzQUhoRVVLVVIxNHFrckZHWVlxYWpwbmlaWHJzOU5ORWU4dF9kMFN5ZHhHYWFvdWVKSVF4N194Y0U5Tjk1Qzk0TWpMWWIwYXc2bVlOQ0VWbWhpOGxVcGpnU01wWDI5dXBKOEpPRGliMXZwV19iQzU0R1E?oc=5",
+    "source": "ReliefWeb",
+    "date": "2026-06-11T23:57:02.000Z"
+   }
+  ],
+  "Sudan": [
+   {
+    "title": "Sudan war: Deadly drone strike targets funeral procession in el-Obeid, rights groups say",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBiWXJMRll4R2x0V2UwUGUwb2pXUy03UXFIS2FIQ0dKU3dMeUtoWko2VEJ1Qk9QLVFnbDllQWhtNFJpc1RDVEV5M1BsTDZMeFdJOGljWEtiSWN6QQ?oc=5",
+    "source": "BBC",
+    "date": "2026-06-11T15:57:04.000Z"
+   },
+   {
+    "title": "Rights group urges accountability for RSF commanders who defected to Sudanese military",
+    "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNaXdQeDk4NDAxdVQ5T2ZiRzE3RzlPcHQ5cFpidUkycm1ya0w1dTF6Q1BSUGpiTHE1clRkbkJ3ZmY5UHo4UVhzWUZkTnh5OHY3OXAwT3JkdnIxOTRfN0E1d3U4QVlMSVBIRVEzNHBvdGJOMVZBeG9pZEhUMHBHU1BlbjBhTVN3UWVNOERhcEp6M0xLVjAzZFJhOW5zMkY5NWRwVElyT3hfendhWDZrQWo0MUNNUk5vbk44MkFLckdaNFA?oc=5",
+    "source": "Jurist.org",
+    "date": "2026-06-12T20:31:31.000Z"
+   },
+   {
+    "title": "AP delivers exclusive and tough reporting on Sudanese women facing sexual assault in the country’s war",
+    "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxNMnZZNUFzaWx0cTV1bXBQRHVtMXcyQjE3QzBpcHJIN3FDT2laMDBHaDBmU3BJVTcyQnBBcmZwWWdTSHlHTmpsc3N4YW9DOEFTTExZZUpVR1hUc2FhVGFoaFlJNEpueUpwM0NwMWgyRl9qa1NPQXd0MHd2TXpSSUhWQU5IMU13ZjBqZERSdDJnMVY1c1cyamNVMkpyajQ0SDhHd2ZtbnBhZ01kaFhXS1FHQ3ZQNmMxdzZYSTNtZzg2M0RKY0xVNzhORnV2akxXWFdMMGF1M0pSYXNMM0JSQnllRnRnd1pFQmFSMmJpcU5IRm00REthZnpJNmNlTGZxQTZCN2k0?oc=5",
+    "source": "ap.org",
+    "date": "2026-06-12T13:54:17.000Z"
+   },
+   {
+    "title": "Drone strikes on central Sudanese city kill up to 23: NGO",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOMUZKNUxybzcwYVlIYVZpNFA4d2d0OWFhQW52dzFhc05renN2R2FyeERBQlI2cUZIWU80UlgzVml5V25GMEx4UDlJY0Z1bFdUekwzMDBzanF0TWFpQVJCWjZtaGMwUEdkTmJzN2xJVkFGNHh3M2ZCRnFXVVZJQXZJQUU4Yk5hYUk5Mm9RZ3BkNjVYZExCUGRMc3p0RjA4d9IBowFBVV95cUxPOTZnWU1LUjFUdGE1SlVwN3hZWjFWTHpyMG1reW1PN1RVdXVRRlVXNTE2TXhnZkFGeldMLWY5MjRsWEI2TEI1U2ptTDdsRXpKYlFRQkhNaDdOTWRZS0NTd1NvRlJTWUZsdXAwNmN0R3dCOEtZV0FvdDhVQ2FGT3ZjeXZ0TmZHU1JRQTFDVVI2SXA2ZW9uR01aRDVYMWozeEdNUi1j?oc=5",
+    "source": "Al Jazeera",
+    "date": "2026-06-11T17:54:53.000Z"
    }
   ],
   "Chad": [
    {
-    "title": "Court jails five men for 25 years over arms supply to suspected Boko Haram network",
-    "url": "https://www.premiumtimesng.com/news/headlines/887103-court-jails-five-men-for-25-years-over-arms-supply-to-suspected-boko-haram-network.html",
-    "source": "premiumtimesng.com",
-    "date": "2026-06-12T10:00:00.000Z"
+    "title": "France's military quietly prepares for a return to Chad",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNamlhYUdkNWpEQmF3eDlqLUJJOFBtR1dDaHJTY09fTS13bkVDVDdUNEdsbmJsZzlDMlB2T2FtM3ZyenVObXZBQ19Fc2tOVDZoVjM2TURfTGVkNFhwb0ZlekI0d3RHN2l6TkRULU1NSkZfeWR6MWRhVl9ZV3Ntb3lvcEtoa2RacGliSmZZVC1OSWw1cFpBQ01fak4wX2NFVnJEVnlZc3pNWFREaDlmZUJ1aDNDVWg1M2I4eFJ6X19wT213bktPWlQxa0tUSTdNQQ?oc=5",
+    "source": "Le Monde.fr",
+    "date": "2026-06-13T04:01:12.000Z"
    },
    {
-    "title": "Nigerian Newspapers : 10 things you need to know Friday morning",
-    "url": "https://dailypost.ng/2026/06/12/nigerian-newspapers-10-things-you-need-to-know-friday-morning-132/",
-    "source": "dailypost.ng",
-    "date": "2026-06-12T06:45:00.000Z"
+    "title": "Keep the name, Ngaba Yaya! Chad's 18-year-old double-double machine",
+    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPQUJVbE1zZ0hodGsxQlRpMHJCQW9hbWFBUUR4SGxrY0NnbFhaZVpLdmJ5NFlRMThpOEwybVVPb3hjR1FSck1KTEZ2QzJ6WXcwcnJQR0xsczA5aVR1Y29IV0p1THNON21wUUdXM0NKcDhsbG5CUllZeXhOYjBaQjRtWFpjLUZBcXRkWTUwT1RQX1RiZTFFWUNUX3B2LWRrUktIc2c?oc=5",
+    "source": "FIBA",
+    "date": "2026-06-11T08:37:43.000Z"
    },
    {
-    "title": "Nigeria Kidnapping Crisis : Tracing the Origin of a Nationa",
-    "url": "https://punchng.com/the-origin-of-nigerian-wound/",
-    "source": "punchng.com",
-    "date": "2026-06-12T02:45:00.000Z"
+    "title": "Cameroon/Chad • Yaoundé approves Ngaoundéré-N'Djamena railway route",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPY1pwa1RkakZfdjF3WjNWVEFkYlJKUHdsd21KVFNSV1hITDhJaGFBTzNBbUVnaXdwZUxJVkZMNktIckZiam1SLTVOTVg1aGxmNEdfTkx3Tk9FdnJvdDFsRF8zR0lDMWdjVEs3bXRXN3FyM3Y2QjZEWUIwTkZ2ZDdBYUpoRk5lSHRjTmN2bWpMcmI3UWhBMHluR1VQeGRuZkhVNzN6T3RERmRyQzNVQ2lUcGNGQXJHVHRNcDk5NjFtX1A2VlVq?oc=5",
+    "source": "Africa Intelligence",
+    "date": "2026-06-11T05:01:28.000Z"
    },
    {
-    "title": "High - profile ISWAP commanders surrender under sustained military pressure",
-    "url": "https://www.nationalaccordnewspaper.com/high-profile-iswap-commanders-surrender-under-sustained-military-pressure/",
-    "source": "nationalaccordnewspaper.com",
-    "date": "2026-06-12T00:30:00.000Z"
+    "title": "Violence, Climate Shocks, and Hunger Push The Sahel To The Brink of Collapse",
+    "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5uT0lobTZEQWtHVUhsNVFpOEYzYVRqVnFzam5ja1Z4MFpoa01reVo1NTJkdmtQQ1VnVk5VUXkzZlU3M2taeEFMeUd6N21jenlhYVRSUGF2UnRGMkRoZmptYU00ajnSAWRBVV95cUxObk9JaG02REFrR1VIbDVRaThGM2FUalZxc2puY2tWeDBaaGtNa3laNTUyZHZrUENVZ1ZOVVF5M2ZVNzNrWnhBTHlHejdtY3p5YWFUUlBhdlJ0RjJEaGZqbWFNNGo5?oc=5",
+    "source": "Global Issues.org",
+    "date": "2026-06-10T07:48:26.000Z"
+   }
+  ],
+  "Mauritania": [
+   {
+    "title": "Mauritania and the Western Sahara Conflict: The Equation of Neutrality, Regional Balance",
+    "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQX2lDcnJkNzNoODVlaWU0Q0tXeXNTVlpPdFBGZHpMTTlFeTNyZTlSc3ZUalFuSGdjX1p6cGRqMGd5UDRlclBjRjdURWx6WGRvZENZMXk3RFNhcW9lc2lGTkNlRkNzdVM2bXp1MVdzNUtrUklDdkFtNzYyYk5zSnJXSlpOZlNaMHRuNTJxRDBBbnVEZUFPcGlKUlpKZGVEZ2V0SXpqSEZYaWZlbExXQzR6QmtPZnN2R251bVVtbjl4T1hfYVdKMGx0dzlVMnVXZXUx?oc=5",
+    "source": "Morocco World News",
+    "date": "2026-06-12T15:23:33.000Z"
+   },
+   {
+    "title": "US seeks broader partnership with Mauritania as ties mark 65 years",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOX0NmekludFNaNDdkYjhjLTByTkF1WlZOM0lwLWRTNUM4Q2NQZm1lSEJWMmlYakpMTU5JUEJzb29fV0xzTG4xZWNhUkxVRkZaeGE0Zmg5TlM4bU9VVUpYcEFiSDdMTnpoTkFzMGktNmNuc3FZQS10RlM2MFJJUGxhMEdJZ1QzT2NlaXJkOTEwZE1BT3pMZ1hn?oc=5",
+    "source": "middle-east-online.com",
+    "date": "2026-06-12T12:17:31.000Z"
+   },
+   {
+    "title": "U.S. Embassy Nouakchott Celebrates Freedom 250",
+    "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5LSUY5V3hHMW94c0Z0bF9wSDBoaDBXa2FwT2ltN0stMnRCTDE2SkdiZHZHTWFIT1pjMWJfVW1STzZuX0ludm01YzdTd3EwdjlMbEMtM292cUVnRXMyZ0hteVJTZWF2WS1BdUVqMkViMmN0NjdJRTFGZDFFNA?oc=5",
+    "source": "U.S. Embassy in Mauritania (.gov)",
+    "date": "2026-06-11T17:10:13.000Z"
+   },
+   {
+    "title": "Niger military junta introduces new penal code criminalizing homosexuality with 5-10 years in prison",
+    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOY1c4bTRHMXpQUHRoSzBvOTJNcUU4eXozQk9OTmNMQkpRQVRxVWtrbGlPWG5oeTQ3T2FhT1RtTF9uUVVWWEI0M253YzRGcG9HX2hlMml3UW9ocm1lZlhXNHNiSHRvTklNSXd1NzV1QVpwZ0czZWlfUTZzMGVKWkR3SGhscXRRQUlrU1c3YmF4cF9KeVJLRlB6cl85ZERydUJ3dTdPSXRRb1JVSWxNQzZEeGFsWFlRa2U1UkRLY1VRWEpmZHg3WlplTDVaYlpmV2FLZXh0amxJN0tQRmE0aVhTc3k3MkrSAeQBQVVfeXFMTmNXOG00RzF6UFB0aEswbzkyTXFFOHl6M0JPTk5jTEJKUUFUcVVra2xpT1huaHk0N09hYU9UbUxfblFVVlhCNDNud2M0RnBvR19oZTJpd1FvaHJtZWZYVzRzYkh0b05JTUl3dTc1dUFacGdHM2VpX1E2czBlSlpEd0hobHF0UUFJa1NXN2JheHBfSnlSS0ZQenJfOWREcnVCd3U3T0l0UW9SVUlsTUM2RHhhbFhZUWtlNVJES2NVUVhKZmR4N1paZUw1WmJaZldhS2V4dGpsSTdLUEZhNGlYU3N5NzJK?oc=5",
+    "source": "NEWS10 ABC",
+    "date": "2026-06-12T09:00:38.000Z"
+   }
+  ],
+  "Nigeria": [
+   {
+    "title": "Nigeria killed more than 13,000 ‘terrorists’ in past year, president says",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVGlJcERxdUI4QWp3cU9sODZwblFNY0pualBtQzU3ekdUZDNMMUZmWEwtSUhscVVMVEI5amE1aHExcXRxUnktSXBHdU03R29NelIyQlNxSV9JcG9sWU93Z3VKM1NIS0lKVTlkbHZyRVdMSjdYTkYzV2xxY1gwNEVIVkE1MFllQTcxMDFYTmZmNndyZ0pBMkhLdkVRX1JCZFNYTVdiWndwN1VGdzRjdDAw0gG0AUFVX3lxTE9PTUU3WlMxMEF3UDc0bHNObEpHWmFoeE5DRmdaNjJkMG5USXVHWGNqZGlMNENERW1MMHRXQ1F2MDNyNDh0dlJTbUgtbmdQemYxVTc3M2llWmFrbFMzc3hRR3hITkJCaWYteE8wbEpNcGtWMHZUR1lHT2RGRFdMNFpNdnRqZ2dSZE1idjV4ZHlfV0pySGJJaUNsNk9MRThEcnVyNVMwckVOM0ZhY3dpVnNsRlhvbA?oc=5",
+    "source": "Al Jazeera",
+    "date": "2026-06-12T11:15:05.000Z"
+   },
+   {
+    "title": "'Surrender or face full force' of state, Nigerian president warns armed groups",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5xZ2loQllERUhLNkJnMWowdHZwRTVQYXZHcnB3QUowR042Tko2Q2dwTmI5NFR5Y1ZqaW9rX0NYbVBNTTJzWDY0UzEzY05XMlNyU093MVJQVXh5UQ?oc=5",
+    "source": "BBC",
+    "date": "2026-06-12T14:35:44.000Z"
+   },
+   {
+    "title": "Nigeria Advances State Police Reform Amid Longstanding Security Failures",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOQWV1ZS1vRWRBT3k1RUxXMjd6WDZpd3dlbjIyNWpxODBTZ05ERG1rTnFHSnRBM2oxVUNGSWJ6cklKOTNTMEluZ1hndFljTTZhMHNpa3JvdUV0ZGptT2FoYWxHUFhjdlRaNlZHNi1SZ0NmVUdHSjVTSXEwRC1nM2EycDBQUnVhMWhiUHB2UXh0ekRvbWJyYlNRZzhLWWItSTJsbndCNXBSY01xeUpv?oc=5",
+    "source": "International Christian Concern",
+    "date": "2026-06-12T21:16:52.000Z"
+   },
+   {
+    "title": "Nigeria Protest",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNNk5HSkVlQXozMkZtT2V0Vi13dWgzdUsyMGlCWFpCdk1CTGRmT1pKd0hTQUE0dXBsNl9UVU1BdE9tRkJGX1lQZkdkRWxGYlppdlkzTjZ5b19UQlRlT3ZIR09heGVFQ2ZYZzYzOV9id2ZoanJxTFhLbXl5NG9pYzViMkJiRENVWk45YmV5dmNyS0pobU9WNmFv?oc=5",
+    "source": "The Herald Journal",
+    "date": "2026-06-12T13:38:28.000Z"
+   }
+  ],
+  "North Korea": [
+   {
+    "title": "China, North Korea, and the Xi-Kim summit",
+    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQeTlIcFJ4eUhDeGpLSXYzVVZ4YS1PcnRnOUNUZ3hCUUdQVm5xZ3lNQ0NycmJRc2hNSTBVOW1BLU5HbkxzMk1wRlplQU5JZkFZZko3VUZJY2Q0RTBQRFZDM21oaTd6NHEtRWNlNXRvaVJhS2dEbWZXb3ZycS1wbjk4MQ?oc=5",
+    "source": "Brookings",
+    "date": "2026-06-12T16:11:17.000Z"
+   },
+   {
+    "title": "Drones Flown Over North Korea Were Part of Martial Law Plot by Former South Korean President",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNa0toMXhBMHVaR1hqdEZoNG45OHRWU1dBYkdjZEc5WV90SzhtSTh3T1J1dmdydkVtemxfSHJKNmhtWEJDbWZLdk1wM0tpZ3NrSDlFbmx1RlJLTk9CRDd2RGJTRkR3MEZQVmRFbEdqUjU3dVY4b1pselZSMHpkc3pfVlBxM1U4SjQx?oc=5",
+    "source": "The New York Times",
+    "date": "2026-06-12T15:09:00.000Z"
+   },
+   {
+    "title": "North Korea condemns US missile sale approval to South Korea, KCNA says",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMUVfS3Y4MWZiZDM3M21kczdYc0dYeHhpZGo5Z0ltM3dfeTlsaWJkQUw4LU1OU0trdjhlU3k1Z1ZHRzFSaThfLVBOOE1qb3Y0YVZCeFZ6V05vaXdiQ2otZnNTR3lqeFVPbGR5c01razk1YXVfcXlDUy1oWTNrM3BhT2FDTTNHbk9MRUttVHNabG9GTEdqTkh4cjV0VzMtVjI5XzBXbWNURW8xLW1lNU5RUTFoUE5RbVphcGM0SjJ5Y1FkN1QxUk1xSU93?oc=5",
+    "source": "Reuters",
+    "date": "2026-06-12T21:30:09.000Z"
+   },
+   {
+    "title": "China & Taiwan Update, June 12, 2026",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPS3BGNUItMm5RaHpzTjV2ZFZ4dnh6YmVNQzExQUVkUndOczk3aVFSZ0NtNVh6R2c3ZUxoMEkwamhzZDA2ZEVVaUoxWHY1dFUyTUhRUkEybl9xVllhMlhfTlF4RlNYQXY1VHVfUWV1SWhnZ3N6YkJaN2FTYzZuOG56TU9IOEFXMkoyNzVrMw?oc=5",
+    "source": "Institute for the Study of War",
+    "date": "2026-06-12T20:28:53.000Z"
    }
   ],
   "Myanmar": [
    {
-    "title": "US businessman jailed in Myanmar after promoting book on coup",
-    "url": "https://www.jpost.com/international/article-899218",
-    "source": "jpost.com",
-    "date": "2026-06-12T15:30:00.000Z"
+    "title": "A Family Ravaged by Land Mines in Myanmar",
+    "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQV3hzSEFTclFRM0ZLdnEtNzBNUW5qaXJyaHU1bEJLRmtUUVR5NDBxc24xaE9GcE1rdVBoVGplQldwVlhpU1VEaVZXWkRrSDc5SjVjNVN3bjdxZW05U0g2X1B6YzlMeTJDQmNYTXdaMk13Zk5DcDhqRDdlc2RNa2lPc0xNV3BrQVJvN2plYnd5Tjk?oc=5",
+    "source": "The New York Times",
+    "date": "2026-06-13T04:01:06.000Z"
    },
    {
-    "title": "US businessman who wrote book about Myanmar coup is detained upon return to country",
-    "url": "https://www.independent.co.uk/asia/southeast-asia/myanmar-adam-castillo-detained-military-coup-book-b2994596.html",
-    "source": "independent.co.uk",
-    "date": "2026-06-12T15:00:00.000Z"
+    "title": "China and Myanmar detain U.S. citizens in separate incidents, sparking alarm",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZHBLWFRGNW5ad00ySXA5azRlQWlkdWR6LXRDVExYTS1TN0pxX0dOcUs5RTg5ZUlQTGNOb0lzVkFZMEttYjB4bEFJQmFZY0N0bEphNzI3RlhaeVZCRVE0Q2twdjhwNG9YdGZLZzNSdjRGMHR1S21qcTZqckxvcG9WbkZBRmdvRVdfZm0xYUxVLWpCMGpsdjMtSUtKVGJyTXpnSGJKd1ZhVW10SFN0NkRRbHBMQ0Y?oc=5",
+    "source": "The Washington Post",
+    "date": "2026-06-12T21:29:44.000Z"
    },
    {
-    "title": "US Citizen Arrested in China on Espionage Charge",
-    "url": "https://www.theepochtimes.com/china/us-citizen-arrested-in-china-on-espionage-charge-6047080",
-    "source": "theepochtimes.com",
-    "date": "2026-06-12T15:00:00.000Z"
+    "title": "China arrests a U.S. scholar with a history of Myanmar activism, suspected of spying",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOZEgtVFRldmhBend6TUdKc0hSOFJFV2F5WlFPSndBb2QweFNqS1lmakxNYnUycm9VdWlsUjhNVXlXU3VfN2JRYUtRTlpSdjFtbTdsMHN3ZTNRRDhPMGd0eC1Sc2g5NlJKUm1VX3phOVpCOEEzN2lYOXFVTl84d21iTWtn?oc=5",
+    "source": "NPR",
+    "date": "2026-06-12T17:04:38.000Z"
    },
    {
-    "title": "China arrests US scholar over spying allegations , foreign ministry confirms",
-    "url": "https://www.thenews.com.pk/latest/1405693-china-arrests-us-scholar-over-spying-allegations-foreign-ministry-confirms",
-    "source": "thenews.com.pk",
-    "date": "2026-06-12T14:45:00.000Z"
+    "title": "The college scam that promised students fleeing war a new life in Finland",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9KLV9nZG9hempoajFXLXNDb0NUNGxDNTk2TDh5a1N5ZGtnQjlYZ3BrXzE0S3hZVHpFY05CV0h5WmVXOUZlNmt5NGZBc1BtenVFM09EekNkR0pJdw?oc=5",
+    "source": "BBC",
+    "date": "2026-06-12T22:08:38.000Z"
+   }
+  ],
+  "Pakistan": [
+   {
+    "title": "Pakistan: ‘Final, agreed upon text’ of deal to end Iran war reached",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQTDJmZ3hQMURrTDdhT0xjaTh1ck1wcmhhd0ZqdXFFVllLVk5tRk5zc1RzV2VlNkRkbXc4QV8tZEdNb3J0d1BhUnUzakZEbHJfM2JXS3YtYjYtV21hX09oM3l2dHFqWmdjclAyUl9INmRMdUxCZHZrZGhLdXVLN0toUDV4R2szckJMWDU4dmRnN2VBMEEwa3Fj0gGcAUFVX3lxTE9nZE5MOTlKWnBaNmhSZTFEazZ0bjgwY01ZS2gzUUxnYmplekRVTFFuRFBPQ3pIT1AzdTVTTW84WWpuUkJsZG9fSGd2dXUwcEdsZWdxOUJudEhWZ0RDMXZPcU1hN2o5ZXJZOGF6TWhOUFhVam9sYTlhOENFS0JEdkJ1OUpieFRHZnNiSjVhekhEWVpCeklWOGoyNC1pUQ?oc=5",
+    "source": "The Hill",
+    "date": "2026-06-12T17:20:00.000Z"
+   },
+   {
+    "title": "Iran’s foreign minister says ceasefire deal with US has ‘never been closer’",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNMlI0RU4zcmg1MFF3UVptZ3FnbjF3Y0dOS0RwOXQtNjFsTnJqbUxwNWJFY01BT1pvME9mUnlfaFlsMXY1U1JROHZhaUxvNVRrR085U1ZLWWpuR2twNFBUazNiMHhzOFd1TERWdzBoQ0llXzRfVmVPc0dHMDdYX3QtUVNzUWh3RVYxZ3VPT3pIOGdzN05OQkxvQkpPMFdkM1lsMG4tdDFyM3dXUFVDZ281Tk130gG3AUFVX3lxTE11MWdGZzNwbXhQZVlNdjFJeVBzWWhnSVBOc05Udk5FOW1yX0pab3RTQm13NkJJclpfV3U4c3A4d3o4cTBuN3d3ck43TlJIOGkxUHF3SERNT3dzUS1jSGZfTGlXcUhoYmZXSlV5TmJpU21QbnNIaVp0SGFKbVdkUHNCdGFmb2RReVZ3eWNZaVVzVFAweTk4V3J0S2ZBdVp3RjEzQjVqaUpsZHhuVlJwQWkzbUVUaWpHUQ?oc=5",
+    "source": "Al Jazeera",
+    "date": "2026-06-12T22:41:40.000Z"
+   },
+   {
+    "title": "US and Iran have agreed to wording of a deal to end their war, Pakistan's prime minister says",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxONURwN19GREN0aGJfdmstQ0ZQc0w1eGNHRG5kYW9MWUhjRm55M0gweVdQeHQ0dWlVU2w5dWkxYXJhaW1yMzcxN2pfZnNWNm0xaURoVjAtdlY3SWVhN3lrWXV5STJVdExXTjdMM3pSb0paTUZoU2xBMHJMUVFGelFuQ0tycmlYWURDQVFjbmpjOER4SUp1SWNaeVd2MWFUUFNua1FqSi1XMl9UY2s?oc=5",
+    "source": "AP News",
+    "date": "2026-06-13T02:01:00.000Z"
+   },
+   {
+    "title": "Pakistan, US, Iran signal deal to end war close",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxObG1HV1ZsQ05acXdxTW5fcUNWS0xHbUNaUHpHbWVuVnV1T3hJTFRNanhNdGU5X2xYNjhGY0hCaVJMeTAxRjVLc2V6RWhCYXBoQ2Z4MHFLUi1aOGctWk96SExLa0dMeC1kcDVXamQtMEVfX3VJQTRrYmNaSlJjTU9JUmpnMkVXamxRNHc?oc=5",
+    "source": "dw.com",
+    "date": "2026-06-12T21:56:41.000Z"
+   }
+  ],
+  "India": [
+   {
+    "title": "Indians grieve and call for action after US strike kills sailors",
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPTDBYMkd0R3ZCN2RjU0FVcm16UHNGeElVUGhsaE5LM0F6OEFyUkFVRmllS0FmMkFfazJ3ZUxoVmxVZUFHcGF6VUVUekxtYkRsa3RzZzliVHdZbmVod2NIcllJWEV1aW1PUktPY0czSWxsQ2p0SF9TSGl6bjhvZHg5VXI4SHViNDRKajBMRWRTZjlHZzNOSF9lQ3pvUmplTHBFTWpoZjcyZFRBUW5zZFNFaGhTRjdXaTItZVhONnRCLVVCWG9nblE?oc=5",
+    "source": "Reuters",
+    "date": "2026-06-12T17:15:43.000Z"
+   },
+   {
+    "title": "Mountain of war: The India-Pakistan conflict’s deadliest battle zone",
+    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQVmVHbjB1NFBweDBjN0VSNVB1QTVPbHQtV1ZwUUJ0VHF3N0c2Qzg3QjJ3VkFqazk4TEVaVmlvbEIxaWhScUpvRnBRV2hBa3ZDdmFCTUZja29jXzFxUlQ4ZnhiejdnVEN3X1NhLWd2RHBsS3hGSHdERVNVenlhRlN2c0hDTERscWprd1pKRkFXUlhNNHEtcUF6QzRyVEh4WjBpc2lqZ1F0MXNmYk1kcWVrZm1SZzEwLWvSAbwBQVVfeXFMTlZGclBTSllTMXo1QUlrNXJMZE5GZnRWSW9CeVBGV0E0VjRoMVBYUXhqOFYydDNJTkk5UVI4Y1hFT2VBUkE1R0Q3UGVlOUItUDV6V2VZNFBwVllSN1hmVjFLSEgtZW05T2xVWVN5VlRqWUpqeXZ1Q2t0T0l6bGNhWVdyRFJ1Tk5WY0t4RV8tRnp3bnFvNlVHSHdZbGNaNTQ2bi10TGtpYzRrMHg4ZzlmaWN2RUxjU3p0RmUxMzg?oc=5",
+    "source": "Al Jazeera",
+    "date": "2026-06-12T07:23:56.000Z"
+   },
+   {
+    "title": "Fury in India as its sailors become collateral damage in Trump’s war with Iran",
+    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQRkRFX05lbHJwVFpVRTZ4QlkzM0lERTUzbmhXT3dObXFVcEZEcnNXcGVrUjhmR2N4V0pDOC0xc2tjNkR4c0tkenBDSVVPWDVwY013OW91aGstS0NJS0xVNW5od1Q5RS1LQ3BQT1JvNjhUZlcyUHZzeHlKMm81ZERBWTdadVZURERaVjlr?oc=5",
+    "source": "CNN",
+    "date": "2026-06-12T06:16:52.000Z"
+   },
+   {
+    "title": "India raises US vessel attacks with Rubio after sailors killed",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQai1UVzBCNHcweW9KQ0tHUDZVWTctWHpkSXN2blE3MFVOMDlEVzNzWFhKWUYxVXJ2R2JOeEh5My1LVlQ3cHFfYXN3VUhCZWdJUG9nUzhXQ3NUaVhGWHNKenV1M2drTGc1THJiQXVPc3lMMVg2RUI5TWhzWTM1NGstU1dHSV9NRkhycHcxd19idjVmMFpVYmNRSzVSRUVSdG1LNTVQUjlLTHRWYmY0ZHlvbHJfZng?oc=5",
+    "source": "Middle East Eye",
+    "date": "2026-06-13T03:32:00.000Z"
+   }
+  ],
+  "China": [
+   {
+    "title": "China Rebukes US Over ‘Military’ Labeling of Its Top Firms",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSktXOV94b29sb2Y3MXowTkp2dk5sSEZpbE1PNHRPbHlHdGMxTHVDMWJneEVxbHR0b3VhUjc1ZHdfdk1WWnRXQ1VTNEJQN0xoR2xOb0prdHc3YVh6NEVOUVhMQnI0TlJNdVlWVVlrRmUtUTN5T2hxMEYwRFVLb1NodnQ3ZHc1b2JvQnY0Y2M3d2gtOTBGVHhUWVJxRFU5YmFIWVRhWUR0STlXM2M?oc=5",
+    "source": "Bloomberg.com",
+    "date": "2026-06-13T02:31:00.000Z"
+   },
+   {
+    "title": "China and Myanmar detain U.S. citizens in separate incidents, sparking alarm",
+    "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPZHBLWFRGNW5ad00ySXA5azRlQWlkdWR6LXRDVExYTS1TN0pxX0dOcUs5RTg5ZUlQTGNOb0lzVkFZMEttYjB4bEFJQmFZY0N0bEphNzI3RlhaeVZCRVE0Q2twdjhwNG9YdGZLZzNSdjRGMHR1S21qcTZqckxvcG9WbkZBRmdvRVdfZm0xYUxVLWpCMGpsdjMtSUtKVGJyTXpnSGJKd1ZhVW10SFN0NkRRbHBMQ0Y?oc=5",
+    "source": "The Washington Post",
+    "date": "2026-06-12T21:29:44.000Z"
+   },
+   {
+    "title": "China 'strongly dissatisfied' with Pentagon move against top Chinese tech firms",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVi05QjBNeS1sUTl1bURBQUt6WWtZMC12VDA0V1BJcDdUN1RrR2RyNkZQTWdYNFJ2Rkh3bzBPWEdpVWxQXzFDZzBwSi1YSElaWW90cHlMQmtSVzBFTVJ4M2pNQXJjRWJYTUNOM2FmMlNPcUdDMmh1SXpZYlk0SzJzb0FuZ1ZSdFpMXzNRS1dfMzdBX2M3TnZLa3BIUnVWal9WLWl3?oc=5",
+    "source": "Yahoo",
+    "date": "2026-06-13T02:41:00.000Z"
+   },
+   {
+    "title": "China Arrests U.S. Scholar on Spying Charge",
+    "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQUHotYmxPQlFwN3p5emI0T3Z2bzQxdVN3NExsZUZMYjZ3eENUaHRJQURiUHJEZ3dRT2ZvRjZnY3Q1X1NCLVFtUWtmWmszZTlYMzhnUU5CaXdFektLeEg4SU9ldnhtb3VaM2xZVGxGNXN1TG05TTFIRmpWS1FvY25ycFlB?oc=5",
+    "source": "The New York Times",
+    "date": "2026-06-12T23:59:00.000Z"
+   }
+  ],
+  "Taiwan": [
+   {
+    "title": "China & Taiwan Update, June 12, 2026",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPS3BGNUItMm5RaHpzTjV2ZFZ4dnh6YmVNQzExQUVkUndOczk3aVFSZ0NtNVh6R2c3ZUxoMEkwamhzZDA2ZEVVaUoxWHY1dFUyTUhRUkEybl9xVllhMlhfTlF4RlNYQXY1VHVfUWV1SWhnZ3N6YkJaN2FTYzZuOG56TU9IOEFXMkoyNzVrMw?oc=5",
+    "source": "Institute for the Study of War",
+    "date": "2026-06-12T20:28:53.000Z"
+   },
+   {
+    "title": "Cheng discusses security, defense policies in the US",
+    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE13UmpMU2Qwc01tWGxvTFVFcER4VXVLcEpHZlVsY0VPcUlsQlBvWXYxaUJab01EcHJHZ2tTeDJMenB5XzM5S1JTczkwQTRVMlFzNUhGdW40eUwteWRZUmpNS3pHbU9STmxlT0RDY1VUV3JKWUx6dHNMOWF3?oc=5",
+    "source": "Taipei Times",
+    "date": "2026-06-12T16:00:00.000Z"
+   },
+   {
+    "title": "Taiwanese Forces Deploy American-made Attack Drones Against Maritime Targets",
+    "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNV0hfLWZhZzdRcWRqRkVvNFZVX0FzUVFfN3BRZF9Zcl8zalI3U2kxd2thcVp4MXlQTzN5VDRqaFRLakVrWW9ZLWpJb1RHRGF0MEVQSE0yRGExSlZZWnV3T3VQa0szcjVCT1ZIS1VFT19OdW4tMk1TdFFvY3IyTlNrZHl2RzV1M0hOS2RVRmZVMzlPYi1KblFpcF9vRldBZlNlUy1KbWJRR01EdmxKaHc?oc=5",
+    "source": "USNI News",
+    "date": "2026-06-10T22:14:00.000Z"
+   },
+   {
+    "title": "Taiwan test-fires rockets in China’s direction from US-supplied mobile launching system",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNWEt3d3JTdU5qd1g0VjhxUHM1OWlsRnZhc2dKbHNCWHJzZW9BNFRRaHNsam1nekFjYi1hWGhhY0hPQUtDT24wOUJSMkxlcjR0U2gtYWZXd3lSVHFudDctMjMwZll5bWlSbEhKb0tKN3U1aFc2N0FmaDlnRTBjc1Zsc2FGbno?oc=5",
+    "source": "CNN",
+    "date": "2026-06-10T19:01:16.000Z"
+   }
+  ],
+  "Philippines": [
+   {
+    "title": "Philippines’ Duterte to undergo another health check to decide fitness for trial",
+    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOVW9KTEFTWmowNzJyM2s0eGxxVWZFZ3k5aUJZazFLbW1sc1VqY0dlLVg3YjQ5TW9PMWhYNnlVOFYta0dJY051VVNoMS12dzhIaEgxV1lkRVBmRURhU2tUYjBmZWFGRzZ0ZkxpaDI1RUVDUUJOT1BkTHFXamRnWnlGRTFQM2lCbUw0YTJXU0FhMlBrTEZ4OVRiX3R4Wlo4VVFPbWFoTkdlcTBubFJ1dWF1QUptWWtPQ0VXTTZTeTlTdmdDSnRBZEp4MEprV2RrYkZTYXVQVdIB1AFBVV95cUxOVW9KTEFTWmowNzJyM2s0eGxxVWZFZ3k5aUJZazFLbW1sc1VqY0dlLVg3YjQ5TW9PMWhYNnlVOFYta0dJY051VVNoMS12dzhIaEgxV1lkRVBmRURhU2tUYjBmZWFGRzZ0ZkxpaDI1RUVDUUJOT1BkTHFXamRnWnlGRTFQM2lCbUw0YTJXU0FhMlBrTEZ4OVRiX3R4Wlo4VVFPbWFoTkdlcTBubFJ1dWF1QUptWWtPQ0VXTTZTeTlTdmdDSnRBZEp4MEprV2RrYkZTYXVQVQ?oc=5",
+    "source": "South China Morning Post",
+    "date": "2026-06-13T03:39:12.000Z"
+   },
+   {
+    "title": "China bars Philippines defence chief as South China Sea spat sails onwards",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNdjNtelhlUy1fWkswU1JJa3NIZ0ZpS0VkbUwzMVh1aFZ4MWVLU2hwc1JZRVpqOGd2OGFwdXY5ODJsenNfdkppbFRvcjhoX21WaVFXbVA5VHc0dktuRWNaZ1RFa3JyM2NQdGxMS0JhcF82LWE0U3daTnZrWHllMl82QVd4blN1TWdKSUQ1dWJQYkZrelZFNG9wSVRiaEJmN21xZ0wxNGV0cUF0YzZUT3l0N251eG1BQdIBuwFBVV95cUxOUEk2VE1CSEpfXzRoSmhBdm0tb1czU1ZMLWY5ek1FSGI2bFlQb0kxV0NpZ282d21TbkZBLUxvYldSblRYcDFEbnk3Sjg5S2hlOUxaQmFIYjNoZDN3YlFQUFdiUG42UUtIdWpNdmlYZlB4Tm15SVV4cVdhVGJVLVhqNVpRVDRrX0VMQ1hnMXpfQ0xVQ2ZvdHliTmFreldOb2tRSnNTTnk2RnRETkJkUGl2VEFMd1RYNlhnXzBZ?oc=5",
+    "source": "Al Jazeera",
+    "date": "2026-06-12T09:44:02.000Z"
+   },
+   {
+    "title": "Philippine defence chief vows to press on against China's 'wickedness' after sanctions",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWFJONl8zWDNPcVRISDBNV0FzeS04YWphS0pTem9wWHQ3U0UwZ2plTzlqWWE5cGNVbGcxLXZNRl85eEVKVmtPZUZFVHBvaGZNcm1ZUlY5S2loRVcxUEpTNk5CVng0czFqSGhFWURxSGNYOURUeGFRZlkzaU1GOWlQbmktVmdDTDRjbW1OZ20tOENGNEtLc3pzM2ZZZ05wT2lQSTRYNUtpclo?oc=5",
+    "source": "Reuters",
+    "date": "2026-06-11T23:03:00.000Z"
+   },
+   {
+    "title": "Q&A: As South China Sea confrontations ramp up, what’s the risk of open conflict?",
+    "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNb2NtSE9tamU1LUVfYm0zOHgxOU1EVllhV2x0d3JlU1BsMnNRaUxkVXB2RUtsMnFzd0NKZjBOQjAtVjBWMVpQVWh6YUtBQWlJYlhIYTctSmI1cU1OY1BTTllQQzhWekhFbHVDUTQzZE9McE04R3lLZUxZTTJZcnVOaEpxRnBXOHJTRldGU1EwMWRadw?oc=5",
+    "source": "ACLED",
+    "date": "2026-06-11T14:37:30.000Z"
+   }
+  ],
+  "South Korea": [
+   {
+    "title": "North Korea condemns US missile sale approval to South Korea, KCNA says",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPMUVfS3Y4MWZiZDM3M21kczdYc0dYeHhpZGo5Z0ltM3dfeTlsaWJkQUw4LU1OU0trdjhlU3k1Z1ZHRzFSaThfLVBOOE1qb3Y0YVZCeFZ6V05vaXdiQ2otZnNTR3lqeFVPbGR5c01razk1YXVfcXlDUy1oWTNrM3BhT2FDTTNHbk9MRUttVHNabG9GTEdqTkh4cjV0VzMtVjI5XzBXbWNURW8xLW1lNU5RUTFoUE5RbVphcGM0SjJ5Y1FkN1QxUk1xSU93?oc=5",
+    "source": "Reuters",
+    "date": "2026-06-12T21:30:09.000Z"
+   },
+   {
+    "title": "Drones Flown Over North Korea Were Part of Martial Law Plot by Former South Korean President",
+    "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNa0toMXhBMHVaR1hqdEZoNG45OHRWU1dBYkdjZEc5WV90SzhtSTh3T1J1dmdydkVtemxfSHJKNmhtWEJDbWZLdk1wM0tpZ3NrSDlFbmx1RlJLTk9CRDd2RGJTRkR3MEZQVmRFbEdqUjU3dVY4b1pselZSMHpkc3pfVlBxM1U4SjQx?oc=5",
+    "source": "The New York Times",
+    "date": "2026-06-12T15:09:00.000Z"
+   },
+   {
+    "title": "South Korea ex-president gets 30 years in jail over North drone incursion",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQekEwb2JpV3M0MFBxQjdXeUJxN0ZCT1BEb1ltM1ljNndSdFczLUdENDgzN2xuTGRVSFNUamN4enZ3dnhHU1I4Nlc3NzQ4SjVXSHdFdFpFOGYtNkZxS3FERW1mNmI2SGJfUjk0M05hSEdtMkIzRGxQUlluQmpFRGMxZnRiVGhJQnRaWTBHTGFQSVRDaHg0cWQzdC1GZ2NaNlVyRXhXXzFhX0dTNHBjV2sycXFUOA?oc=5",
+    "source": "Courthouse News",
+    "date": "2026-06-12T16:14:24.000Z"
+   },
+   {
+    "title": "Ousted South Korean President Yoon given prison term for drone flights over Pyongyang",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQSlRnSjZVVmljY1V3eVRLaVBobjVoSlpoUWNDdUxfTklyWC1kTkZyNWhoanFDWnYyQ3VBZU5CNUY3ZlY2NjJ4RWlVZ3phNWxYcXczdFZMRkRBSlQzNVBtdjgzUDNCZTNGR09uMXh5aHJvSGhTWlNWeHpSNnAyNTYwXzB4emU4dHRFUk83cGhoTUtIZ2ZwTmNCd00zcS1jdWxjUXYtRE94QzQ3bWdiQzFv?oc=5",
+    "source": "NPR",
+    "date": "2026-06-12T05:21:43.000Z"
    }
   ],
   "Vietnam": [
    {
-    "title": "Meyers on Trump saying he loves inflation :  Cant think of a more tone - deaf thing for a president to say",
-    "url": "https://www.aol.co.uk/articles/meyers-trump-saying-loves-inflation-145627000.html",
-    "source": "aol.co.uk",
-    "date": "2026-06-12T15:30:00.000Z"
+    "title": "Lower Bucks Bridge Dedicated for Soldier Killed in Vietnam War",
+    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4zdWc2MnVhM3M0aEp6clZ6bDZUb2ZiMWJmSTZhcjRfaE1hYjRDNEZrT1J5MW4tZC1BWUlkMWdMWUtqRi1lZkNpT1M0bkVZV3hqY1VneWUyMWNUTDQ4blV4a3dMcjY1d0k?oc=5",
+    "source": "Bucks County (.gov)",
+    "date": "2026-06-12T12:06:12.000Z"
    },
    {
-    "title": "Ambitious Budget , uncertain outcomes : CPD warns of structural weaknesses",
-    "url": "https://thebangladeshtoday.com/?p=34823",
-    "source": "thebangladeshtoday.com",
-    "date": "2026-06-12T15:00:00.000Z"
+    "title": "Coming Together to Honor Vietnam Veterans | When Good Things Happen",
+    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNZEI5RGRqSkhieW1BbG1FZHo2cGhTSnkxVHZCMnE5UVBfTXlqNXpyT1hpWnBQZE9lak9pUmRDLTlZcF9DS3FueGc0VGxSVjZJRE9CbUloY1JGUTc4UWd5LVJxdVZNLTQtUU9xc29vNGMzRkV4Rzk2XzJaV2owWnZUV3N2bmNZOEhzYXlGWW1zbkVtaUk5WFFQUXR1NmhGUG5aTXBZcGI4NVhmNU0taDZ1YnZBV3RNNmhlSjdSeS1NUDJObHVkVGdTb3c3M0NXLTgtbGc?oc=5",
+    "source": "Lehigh Valley Public Radio",
+    "date": "2026-06-12T20:32:10.000Z"
    },
    {
-    "title": "Vietnam army sets up unmanned vehicle department",
-    "url": "http://www.cambodiantimes.com/news/279118467/vietnam-army-sets-up-unmanned-vehicle-department",
-    "source": "cambodiantimes.com",
-    "date": "2026-06-12T14:30:00.000Z"
+    "title": "The underground tunnel village where Vietnamese people lived for years to hide from war",
+    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9UbHZRWlZ0djRJSnYtOFZIOElNcTE4d2FvTzhOYVFmNnYzemNMLTBkQzJmVVhMVFdXMDlVSlQ4Y2RWbC1sWFRwazFVV2lxY0k2VzRoOTJMeDZlT3RnZlhaQ0xjQTZpZXdmS3VLTnhBczVkNGFZ?oc=5",
+    "source": "CNN",
+    "date": "2026-06-12T10:59:23.000Z"
    },
    {
-    "title": "Vietnam , Switzerland eye stronger economic connectivity",
-    "url": "https://azertag.az/en/xeber/vietnam_switzerland_eye_stronger_economic_connectivity-4258535",
-    "source": "azertag.az",
-    "date": "2026-06-12T14:30:00.000Z"
+    "title": "Martinsburg veteran to be inducted into In Memory Program",
+    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVDU2S3ZtU2FjamphNS1oc1J5V052WjJjY1MzQ09MYVlqWm53UmxsdnVtY2lKdFc1S0VWUERzYnNPbkVKcjBBYmJIQ2puZUVBSDh0NHI2WWdSVEZsejh4dUdYZm8tSnZoLXN0elI0MndYd0s1OW9wRzBVZk51cGlVNXRaVlV4OThOTFJtNWpSMzV1NTM0bk94WWFRUF9rU1FEQkZYZ21sRndSa0NjUklabg?oc=5",
+    "source": "altoonamirror.com",
+    "date": "2026-06-13T04:07:36.000Z"
+   }
+  ],
+  "Japan": [
+   {
+    "title": "Deloitte Japan Advances Security Operations with Cisco Foundation AI’s Open-Source Model",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSmRlYnNyTzFkLXM0dGs1ZVlFbkRYQTBKcFpKVlhxNlRqREs1ZE4xM1N4c1FfOTVEeFkwWElZcXhLdHZpQ0EwbUFPeE5fZ1dNdDBlNHcycFB5anZ6ZzdmRmhscGNXWkpwVE5fMGJlTS04eVpEa0o1ZGJQRHhNdFpmSlF2V2Y0b1N4RVBXMDB2d2ZHbElxcnRWeFRqd01ES190ZGlGd0dHdDE4MjdEWGVUQkRCQQ?oc=5",
+    "source": "Cisco Blogs",
+    "date": "2026-06-12T19:03:03.000Z"
+   },
+   {
+    "title": "Japan’s Very Japanese Extended Nuclear Deterrence Strategy",
+    "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNdE5NUTVtUkZ5bE1BUllSVlBKb3pHRHR1MGY2X1lDVy1HMno3LUZxYkJHZHZZd3pORnVpZmFrcUdxSUNyV3llVGdwVkZvN3dqZTFHcjducnhxUXNMMkFOeU9Ydm5hRXIyMGxkX1NzbGRUajloZGlnQnR4Vlo0Z0R0c1ZLN0tzMGx0YlozNGdmQQ?oc=5",
+    "source": "Military Strategy Magazine",
+    "date": "2026-06-12T15:55:02.000Z"
+   },
+   {
+    "title": "Japan bets on arms exports for economic resilience and security",
+    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPNTR1YnhrTjFWZTVZQjJtZHVnak1ZemdiV2o0c3BtRXpKWFY2dlU1S01STmJyTkhWWFRDV0pacjFhdjYydXY1Zi1GdXRpUU1uUkpRYzN5WmRuclV5d0piVnFNaEY4aVlPOU5TZW0wekQ0MjdiUkxMay12Z3ZxdW1EMTBvZUt0T0cxZkE4WEw5VXVGOTYxQ3VYT1lJbXRPZEZtcGdz?oc=5",
+    "source": "East Asia Forum",
+    "date": "2026-06-12T12:00:00.000Z"
+   },
+   {
+    "title": "As China menaces Taiwan and US grows unpredictable, Japan stands taller",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUVlGY1lmTWEwd2h6MGg0MUhkR1h2aGFoOTAydFc5VnRSaUtOX2tDTVB1NmwtNXJkTUFQYmZiTnQxWU02dkdNbTdMVFJKT09tY196MEp6V3h3bWMwRURrOXFnWFpiM3NPSGN6dmFXRVZoeks2Qm10NS1Yd1FBbzZacm90c0hQOFV6R18ycXJVUWxXYTNMYU5PYkhQOXJQMzVfTWZNQmFJdUh5UkMxY0x3?oc=5",
+    "source": "Reuters",
+    "date": "2026-06-11T23:16:13.000Z"
+   }
+  ],
+  "Indonesia": [
+   {
+    "title": "Indonesian students protest gov’t policies amid economic strain",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNc2xWNzJrMWFlWmN4YVlNSTgwdDdFWTBza0o5QzdhZW9hYWxnNGpMaEZOWWVyZGk1ckR4VHFHZUtCb0NQODdza3kxUnQ2SzFrVDQxRW9JT3QzOHBrWEs3MlJSRl9YSjFJLUgxOHBZeHN3MFpqWTZfTzlOTDUwRUhWWU1Jb05JQlppclZ0Sjh5anRYeWFjdFV4MEs0dHpwM3lwZGdETHdn0gGrAUFVX3lxTE5vVk9YVkQ1UTZMOXFoWmNiQ19zeVEwR1kxNlJ6ZHYxQ3FFZlNiVlo1Y3otckpiUFRlemR2dEM2OF9ob2VTWjBBTnFvVHZRY3F1NHZoWEhNTktWSDZRbkZPLVhmNEprVUM1cjMtSGRRRmRGWDZzZjY5eHpmaGhaYlR3QU9GQWp1VlNnSmtQSUR2SmQ1UzZmcVllSkNtR1dCTlR0eEN0RzNTVjU3Zw?oc=5",
+    "source": "Al Jazeera",
+    "date": "2026-06-12T13:38:22.000Z"
+   },
+   {
+    "title": "Indonesian students protest against state spending, fuel price hike",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE53b2pibG50blA2aFkyaUItanVSOWw0eUxjc0dTODNITHdmaVRwVEZlb1Y2dzhZaUtVM2JhZHZMQ0Z1WFBGOFNCQmpzUk9JUTl0d2VOYUtLVUREUQ?oc=5",
+    "source": "BBC",
+    "date": "2026-06-12T11:15:32.000Z"
+   },
+   {
+    "title": "Students in anti-Prabowo protests say Indonesia 'heading' for bankruptcy",
+    "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQUVhVbVJJQVlpNUladm1pS0ZDS1VqVGtvalNPNkFrNEZVbTBHUzZHTDlBSW5xZEdrVlhpRkhleUNyR1ZRY2JhRDJ3eDVnbUgzcE5BZEhmZmhoQUh0bDhFd21SYjhuOUZJRzN4dnc4SzNOd09tNWU2NVh6eFZDeUxqTzdIUHRZTDctTjMwTVExLXA3SUx2Wjk0Um5wSVhVREFjek5hcXFFRUVockRZR0N6b2FvR1NoOE9BOXEwaEdnS0tNZ280QkRDMy1n?oc=5",
+    "source": "Reuters",
+    "date": "2026-06-12T13:15:25.000Z"
+   },
+   {
+    "title": "Jakarta Deploys Thousands of Police as Students Protest Prabowo",
+    "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPNzJUNmt6Y3poWWtid2dwZV9VRXpGWXVSN19KS2JBeTJrTjNraEgySFE0MGJ3QWJZeklvSEJ1NXZGZ2Nzb1l6dUhrX2lVdHpLd2FmUndRRmIxX2NjQU1yU2NMeXA2QjNBYms0VnpQbDFYOG9TNC1kdTBFNFZ1M3hfNG1SSC1hc0c1b2lRYTU2MVpqTmo5Y1oyU2VDQzVuRWV2ZTRuamt4Zzhnb0FHY0J1Qk9oR3BndjVncklKbUdFdUlQT0U?oc=5",
+    "source": "Bloomberg.com",
+    "date": "2026-06-12T10:14:58.000Z"
+   }
+  ],
+  "Thailand": [
+   {
+    "title": "Thailand’s Scam-Gang Crackdown Converges with U.S. Regional Interests",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPR2xhdVlqMmZDV3NuZllDUEZkS0ZvYWlJVmc2S2tvUkdQekI4c1lBdkpLQ0hnUU5FdHhrQ1prX0J3NE1SYjNiY3FUdjlkMUlGMXpUSlVsSC1OTVdGRk0wMlZmTlp4WUZkZVRsU1JOZ0lieERWcWdUeF9USnNlZklKQUF4QUY4dnVfQ1ctN1RjSlRSeFBZ?oc=5",
+    "source": "The Jamestown Foundation",
+    "date": "2026-06-12T21:05:58.000Z"
+   },
+   {
+    "title": "Thailand court sentences two men to death for 2015 Bangkok bombing",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPRFhnbzRfUkFsWGo2bVM0ejRRczl6ZmV5T0U0MEZ3RUppN2lFVXY4MDRQcGRRZlV0X0dEbXJDMlk3dWtCUFBPY3NELUljWkl2a2xkWm1zWm9wVFFDUXpnSlhMa0Z1UzZOR3FVeTh2b19KV0xBaXhCcEJ4cW1PakFuNDZSbUZpSHVJZW9obDdRdlpzV2dHTjZYSGhvaFZjbGR3SDR6Q1ZTcGpvZEXSAbABQVVfeXFMT1lUUVI4WktHRDBuRzhMSDU5ME9QX2RNMmJzNURYa3hZZzhGTVdmV0tRcnY0akRSX2pmN0VtaVlSZHQ4YnZNZzVLdFBTT3pWdU5PUE53b3M1ZUZGVGNWZ3B2NEs3ZmExVlp5NzNLS2Q5VkowX2RZT3BaZnVGTVNyd2lUV2xWUXVpQVlfbHFJa0dGdkpKM1ItNGFjZW5JSUh1eXZsSHJ3VmRCZ0lxUGg4UFU?oc=5",
+    "source": "Al Jazeera",
+    "date": "2026-06-11T11:06:21.000Z"
+   },
+   {
+    "title": "Thai court sentences two men to death over Bangkok shrine bombing",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBMZ04yQTBEMXdIcGRlTVE0d3NSRm12SFBwLXVzYXNNU2V6eldUeXROdEMxUVcwbjhuWjByTFZZZEpBOThrOENsSktKWi1kTFFWbUxCeDNtZ0hLdw?oc=5",
+    "source": "BBC",
+    "date": "2026-06-11T06:45:10.000Z"
+   },
+   {
+    "title": "Cambodia-Thailand Relations, Not Myanmar, Will Define ASEAN’s Immediate Future",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOSlBJVmZHb3JaN1h6UThzVDVDU1U0VjBpTUJfZnpjU0N0eTJKbkRjZU1Dc3g4MUxfMGRuakU5NE10VEVXRjhNY3R0LUVvVFdEVUpBdVRyVks0anl5bEJSWWxza21ocjBEanQ2RFJxa1RieDBCWE1WVEQ3ZTFkaURrX3hXWUpYb3EyQ0YwdWJHQmZLeE8yNE1GRFNLYnQzS2gyUVZJRFB0cU5TbjZ1?oc=5",
+    "source": "The Diplomat – Asia-Pacific Current Affairs Magazine",
+    "date": "2026-06-12T08:43:05.000Z"
+   }
+  ],
+  "Bangladesh": [
+   {
+    "title": "Bangladesh, India to coordinate patrols on border, share intelligence amid migrant tensions",
+    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNY3dYSGhseVhqdFRBZmcwZG9sWXM5VHJVbVdJNmwxY3RtSkE5QS0yUmRkZThMRjd4ZVoyM0g4cUp5VkFwNHJMeXF4RmZHNWRuV3Z1cUxORVRjQlM5WjB5Ml9fSVFUMUNHNkN3NW9ORXlnbklMN2hQWURTWXRaampyU1ZlYTM5NkpzQ3Bwc051VkJwX29WTFZGZktaR2ZCUV83Zk1wLWQtZTU0WlpQekZMNG0xbzVrd3F0Z0dyQjM1UzNxSUx5WmFnaw?oc=5",
+    "source": "Reuters",
+    "date": "2026-06-12T06:05:00.000Z"
+   },
+   {
+    "title": "Jamaat-led alliance announces protests over push-ins, border killings",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOOWxxZ2lPN29VOFduQnFfRTRGNDVsNVlYaGp5QnJyMnROOS1mbG84dnhoc1UyRTlPZkQ0VG9peTNTbXFwTHRPOVU4eGcwNGtLZVgzazQ4VWQ5anY2a1VtZGFDUzNsa0tHT1N1OER4Z0JDV0gyZWJvVV84cW1La200VEdIV096RjY3NFFHNDJqbHVYNXNkZXBNR2VLaGNuejVnLXN0NTdMVGpaNTBnMlpLdUpaM0xfMU1VYnlRaks3SWl0Zw?oc=5",
+    "source": "The Daily Star",
+    "date": "2026-06-12T21:38:49.000Z"
+   },
+   {
+    "title": "US energy deal leaves Bangladesh exposed",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPNk5wb01QS0hLdlhYVHdlbWd6RHFlUHVaZDlSeUdvTmlIbUdoNy12TmdDRkp2d2tkeGhwY1JtX3NtLTFuNFRJSEc5WGhIQjJXdG1Yb004S0E4Yl8yS1VSa2xaWTl3U1M0cWFDZHRJSHUxb3owRnItYmlhWjNSeHB5TmIxVm8?oc=5",
+    "source": "East Asia Forum",
+    "date": "2026-06-11T12:00:00.000Z"
+   },
+   {
+    "title": "Bangladesh’s Myanmar Border Challenge Is No Longer Just About the Rohingya",
+    "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNTkc1TlVxUTZCR3pjVEhzU3lFZXVLVEhKVUdKUGpJVlZuVmp1VVdXVnBWQzdpUzg0RnotQTRtMDNQaXEzcUhDN1VnVFhtWVNkZ21zMklLcWtYX2tRVWhZVW9tZDJsTVo1YzVJYVhPRDNwempnYi04REk2YklqRE1qb1hEV3ZtSS1jSktMbEJ2cEszX3NpS0xiZjZoWHdOZGR6V0dndndiVWMzZw?oc=5",
+    "source": "The Diplomat – Asia-Pacific Current Affairs Magazine",
+    "date": "2026-06-11T14:21:46.000Z"
    }
   ],
   "Sri Lanka": [
    {
-    "title": "Indian warship visits Colombo as defence links with Sri Lanka grow",
-    "url": "https://www.tamilguardian.com/content/indian-naval-ship-ins-sharda-arrives-colombo-operational-visit",
-    "source": "tamilguardian.com",
-    "date": "2026-06-12T15:30:00.000Z"
+    "title": "As Cambodia Cracks Down, Cyberscam Networks Test Sri Lanka",
+    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQajNCNGR2aFAzSE40Ql9HelRhNW16V0dZZlQ5WkVfWDB4bDZRdzFsSExUbG1reTlWVzlIRE01c1E0Ri1JLVJOSHJPNnAyNDlqWHRBUERWZkY0UXhBVEt4cXFlNHBDRFV5UU96M2FLTG5ucmtkSlRfSTZmWUVTNV9fVjJtNG1ZTVVHbXlGSVRIZWIwZTA2?oc=5",
+    "source": "The Diplomat – Asia-Pacific Current Affairs Magazine",
+    "date": "2026-06-12T12:53:05.000Z"
    },
    {
-    "title": "Marwari Catalysts Group Signs MOU with Tvara to Embed an AI Sales Engine Inside Portfolio Startups",
-    "url": "http://www.myanmarnews.net/news/279119112/marwari-catalysts-group-signs-mou-with-tvara-to-embed-an-ai-sales-engine-inside-portfolio-startups",
-    "source": "myanmarnews.net",
-    "date": "2026-06-12T15:30:00.000Z"
+    "title": "LankaWeb – DEFENDING SRI LANKA AT GENEVA: WAR CRIMES, LTTE & SECURITY | SARATH WEERASEKARA | INDEEWARI AMUWATTE",
+    "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPLXNuaDByckVmQjQ0amdiWnF2dzFqNF9kandocno4WURadkZUeXYwWjNfdEFSSWJ1WmJia2VvdkRXYUFJVlFmTGYtTGhZSVp0cUdqT05ybnp6T01GM0RQbTE0Ml8tb0h3UE5tY3pHMlY0MjBSZ29MWkV5R0FNcWJqUnFGSXpDSUxYWEJEMnY1cVhkMV9ZSEVvcHdiaGFSSEl0VGwxMkZ2ZlJXTFV3czRIdW9LbzMtSW1sRVMwRF9lczFPbmZHWDZabVdtelRET2JjYTJLRzhaQQ?oc=5",
+    "source": "LankaWeb",
+    "date": "2026-06-12T22:38:45.000Z"
    },
    {
-    "title": "Iran vows revenge over US attack on frigate that killed 104 sailors",
-    "url": "https://news.az/news/iran-vows-revenge-over-us-attack-on-frigate-that-killed-104-sailors",
-    "source": "news.az",
-    "date": "2026-06-12T15:00:00.000Z"
+    "title": "Bid to protect Sri Lanka’s Easter attack ‘plotter’ sparks protests",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcmlGTDVZX0hOTWlMMkx0N2QzWndXcXJYV1NBZlZRVFpjdmJMVTAtdFNvVDhuWWFVa1FtM3dvOE53X2VVSzZmbjlJdTd4WlNGSVlRcS1Zcjd1ZXBJLVVMbzMtVDBSR2lCOWt2TFl1VDBuR0ZHWUVaVkNUalNLSjA5WkNvWTRBTTEtSHNtY3dpdUVkRndLN19lVTBQaHRkaFXSAZ8BQVVfeXFMTXJpRkw1WV9ITk1pTDJMdDdkM1p3V3FyWFdTQWZWUVRaY3ZiTFUwLXRTb1Q4bllhVWtRbTN3bzhOd19lVUs2Zm45SXU3eFpTRklZUXEtWXI3dWVwSS1VTG8zLVQwUkdpQjlrdkxZdVQwbkdGR1lFWlZDVGpTS0owOVpDb1k0QU0xLUhzbWN3aXVFZEZ3SzdfZVUwUGh0ZGhV?oc=5",
+    "source": "ucanews.com",
+    "date": "2026-06-12T12:03:00.000Z"
    },
    {
-    "title": "Afghanistan among world least peaceful countries in 2026 Global Peace Index | Ariana News",
-    "url": "https://www.ariananews.af/afghanistan-among-worlds-least-peaceful-countries-in-2026-global-peace-index/",
-    "source": "ariananews.af",
-    "date": "2026-06-12T14:30:00.000Z"
+    "title": "SLPP MP vows to block recognition of Tamil Genocide Remembrance Day",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQnc2QTAxaWZfUW1CRTJFVGN3YnUtMVNZb093cko0UEZIWUdWeFlCWGtGR3QxeUdFTVFsWmR4Z1cwWEtQdENnNmJ4LU1XZ20wRVNhTEJxdlhJYnd3RVFjQ20tUUxJMlhFWm02dG85aTBiSl9FNFZland6MFFueVc1NnMtc3AtM1NmT3dZc2puaGZSZ3pLYVRScmJZZEVEb0x0UVVkUDFURUpiYUpPY3lWR2ZsRQ?oc=5",
+    "source": "Tamil Guardian",
+    "date": "2026-06-12T22:59:18.000Z"
    }
   ],
   "Venezuela": [
    {
-    "title": "Curaçao Chronicle | Venezuelan Military Launches Major Operation in Gold - Rich Mining Region",
-    "url": "https://www.curacaochronicle.com/post/unknown/venezuelan-military-launches-major-operation-in-gold-rich-mining-region",
-    "source": "curacaochronicle.com",
-    "date": "2026-06-12T21:30:00.000Z"
+    "title": "Niño Guerrero: US kills leader of Tren de Aragua gang in strike, Trump says",
+    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE00Y3lQMUtuaUJRYThrNXBUZlF6bjdYMlYxd2xFQ19SZTA1dk44NkYyOHh0MU1KdFRZSFhwbTZJZ01XVjB6N1l0cHJHdzFTOEZRaGVpRDRqRUQzQQ?oc=5",
+    "source": "BBC",
+    "date": "2026-06-13T04:09:07.000Z"
+   },
+   {
+    "title": "Trump says U.S. military strike killed leader of Tren de Aragua gang",
+    "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNc1I3ZnZQdlZzWm5mcVRNTFVtenpYUW1ReFhRSW5CNVU0bHM2NjhVMFoxRnZITnZkTTZILVN6XzZhVjJ0Y0VFVlpDeVJzQzFoTnN3Q2JnYUNQaDhJX1JQVW1LZzl3cFRxNDJvUjVlRkRTM3J1YkFMT0hkMEQzN1RHcndJR09UcTVyekJkSQ?oc=5",
+    "source": "NPR",
+    "date": "2026-06-13T03:38:54.000Z"
+   },
+   {
+    "title": "US kills Venezuela’s Tren de Aragua leader in military strike, Trump says",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNlZDR1lKR25EQXcxTDB2RmpKRmxQOEw4akZnVmtVNkdzSnN3Z1hpSlhPajhUR0QxQVltaWcySk5xOFNVWjBPXzU4d2JfOENvSTBaVkhaelJhb2V4TEY5NXlsU3pXdG9fRWk0RjhLUlk4Nzk1ZU1RZ3hWdnRBdVo5MmtBZmhLRUlnZC1ueVotSWo2QmtGSkhESXdFYm5iUjRYRU0xRkJUVUhyMGpqN2tXYjFkV3RNdWdSR3IyODN3?oc=5",
+    "source": "Politico",
+    "date": "2026-06-13T02:34:12.000Z"
+   },
+   {
+    "title": "Trump says leader of Venezuelan Tren de Aragua gang killed in US strike",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQY0w4bnE1SzU2eFU3T251SnNsU2FZby0zSTNsQm51ZmltWnZLdGZYUlRldkt5clk0NFhLVTFhQldTY1F6d0hwTDlVMTVsV1J1RFZ4cDdYdlo2ckZRTVMzcDIyd0lVenRydFZKOWpNTFI0TFgtOEhVaHUwalcwZG1kRkx2YkRadGE1dkJrUkxEcmFfVVFKUnM0?oc=5",
+    "source": "The Guardian",
+    "date": "2026-06-13T01:52:00.000Z"
    }
   ],
   "Haiti": [
    {
-    "title": "World Cup preview : Haiti vs . Scotland an intriguing battle of underdogs",
-    "url": "https://www.bostonherald.com/2026/06/12/world-cup-preview-haiti-vs-scotland-an-intriguing-battle-of-underdogs/",
-    "source": "bostonherald.com",
-    "date": "2026-06-12T21:15:00.000Z"
+    "title": "How Deedson and Haiti Reached the World Cup Despite Political Unrest: “For the country, this is everything",
+    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQNWVrWGlNODJPOGVvLVdxU2RMaXVLSVpER3JER0loV2YwdDZDaE94aEpOLXlQY0tFc1d0ejcwMUpIckxSc09VSl9jdnBnNU15aVJqRXZKaTdZYmtvLTVQYTBVcXJ4aUMxXzYwVnU3OFlvanVPZUJQRVpPeGtxMVRTU0Y0UG9VZ0w3ZENnT1hqNl95al9uRXlNZm96MXVGOUQwWWJZSVNwYllXeEdKOVlPQ0RQV3ZDN3FUelNXQmhZbmZiTS1YeXJIcHpUT2NYQQ?oc=5",
+    "source": "FC Dallas",
+    "date": "2026-06-12T16:47:00.000Z"
    },
    {
-    "title": "American Airlines to resume US flights to Haiti in November",
-    "url": "https://www.933thedrive.com/2026/06/12/american-airlines-to-resume-us-flights-to-haiti-in-november/",
-    "source": "933thedrive.com",
-    "date": "2026-06-12T18:15:00.000Z"
+    "title": "Haiti forced to change World Cup kit over war imagery",
+    "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOMXloX05IRUlydWItZUJvMjlQUHVxRVg0S2x3dTVxSVNCSmRqbUpHbXdJUTlMcVJOLXN6T0daSEczMkNZSTBZeTBfWUVKM3VXdjB1THlfM3phSjdzS3YyVHYzWElGcUFxRUZGNFBHNXhvbWFLYzc2TzIyQkpHckxERVZUQXJSZzdfYkpEa1dzRUx2Si1NMFZSay1zU3ZycGt5SXl0bDBFVG0?oc=5",
+    "source": "MSN",
+    "date": "2026-06-12T21:43:05.000Z"
    },
    {
-    "title": "Extremely cool  that everyone is talking about Haiti and Scotland , says writer",
-    "url": "https://www.glasgowtimes.co.uk/news/national/26190821.extremely-cool-everyone-talking-haiti-scotland-says-writer/",
-    "source": "glasgowtimes.co.uk",
-    "date": "2026-06-12T17:00:00.000Z"
+    "title": "FIFA World Cup 2026: Haiti forced to change kit over war imagery",
+    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQTzJKRnFZdk42aWhZdEpLMHd6bWNDejJNbWMxNU9DMDJsU3lwZmo4YzBLZlBjNUVTQzNHWTBTaGZsQjFCN2hpdXB4eHBzWlBleGZJMzg5WHRudXFDR1lQMlpPSko0WVNyeU8zSzRPRGg1ZThNa1dkZFljYVVlaHJJWGN2UzZMOWw0T21fOUMyQmxiZFZaUUdIUWlzVmhOTzBZdFFwOE44LV9VZ2RL0gGyAUFVX3lxTFA1Y1hJMG45eVE0dkRJVmpZSFF2RGVZMENGMWxoRF9uS21NZ1lVancybHdGVWZ4a2N0a1dwYzM2MUY4OExaRldwYVV6VlBnRmxsUnJQZTYwNUx4aDE0b2laWk1hMVNHOEJCdkhLeFBoUHN0RnhLeHlCbHBxczFfcUpVYkg2TEdHQ1pyLU16S0R1b1ZWb1FGT1BBX3JPT2lPQVRiN0s2c0w1NXQxMjZ3VWFlYkE?oc=5",
+    "source": "Al Jazeera",
+    "date": "2026-06-11T06:29:45.000Z"
    },
    {
-    "title": "Launch of the 2026 - 2027 Budget Preparation Work in Haiti - HaitiLibre . com : Haiti news 7 / 7",
-    "url": "https://www.haitilibre.com/en/news-47734-launch-of-the-2026-2027-budget-preparation-work-in-haiti.html",
-    "source": "haitilibre.com",
-    "date": "2026-06-12T14:45:00.000Z"
+    "title": "FIFA forces Haiti to remove political imagery from World Cup jersey",
+    "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdjVRQ3hPS212OTNQS09MaHlWQ3R0aXk4UnhqeFIyZEx0NnZwanRNQmgzYmwya3ZPRXJwNUl6X0JZUF9ScGNUMWVFUkg0OUFWbUsxMHZETkxfenI5MHEyUmJOd3c3LVJnZUhJb0NJdHh1QUoyeGtkM215OFV1S0lSWUdyUTB0dmFQRW5NX3pvb25vSnF0TGJqQ1l4UExZMjZ4OXVEeHNCVnU4U3c?oc=5",
+    "source": "ESPN",
+    "date": "2026-06-11T14:27:00.000Z"
    }
   ],
   "Colombia": [
    {
-    "title": "Colombia Iván Cepeda Unveils Links Between Abelardo de la Espriella and Paramilitary Leaders in Legal Action",
-    "url": "https://www.elciudadano.com/en/colombias-ivan-cepeda-unveils-links-between-abelardo-de-la-espriella-and-paramilitary-leaders-in-legal-action/06/12/",
-    "source": "elciudadano.com",
-    "date": "2026-06-12T20:15:00.000Z"
+    "title": "A renewed security and cooperation agenda for Colombia’s next government",
+    "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQ1M1LVVNWE1QYjBwdFd2dnNha01IbXhxdklZVWktdFpjRlNwODh0UVBpVjNxa0VpdHZyVkYtUUI1VmpKQkJ3c2otd21BZkw5WERFLXBRZHBUdURfWDh2VTFwLUJzZ1dSRUdFRkcybjB6ZWtub3hhaW1QYnJyTVVhak9oaTNUU2FlV0g1TTlvd2dyTmdpaVgtZU5kQjczSGlLOWxrdTF4Mlc1MGJZcmZxZmZxcWxlYWQ5ZGRYTXdGN29sX1Z6a0lxTmx4UEpudUtBd0RYNVlzcmI2dw?oc=5",
+    "source": "Atlantic Council",
+    "date": "2026-06-12T21:14:00.000Z"
    },
    {
-    "title": "LatAm in Focus : Sandra Borda on the Figures and Forces behind Colombia Presidential Race",
-    "url": "https://www.as-coa.org/articles/latam-focus-sandra-borda-figures-and-forces-behind-colombias-presidential-race",
-    "source": "as-coa.org",
-    "date": "2026-06-12T20:15:00.000Z"
+    "title": "Colombia: Toward a national fracture?",
+    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBDNFlSTDRTcldnVTg4a2UwdElzRklIaUpPUjZBTkNuR3VKeGZmaGN0eVY0MHBqUVEyY0pVeG9CZWNVQlB2UjlyVlFXcXJxVURHLURWV0QxbXlmQUdzYmVyamhoX3phUWI1dEdsRTRndmtfRW5Fbnc?oc=5",
+    "source": "Latinoamérica 21",
+    "date": "2026-06-12T12:00:00.000Z"
    },
    {
-    "title": "Petro Rebukes Trump Public Endorsement of Colombian Far - Right Candidate :  Allow the People to Decide Freely",
-    "url": "https://www.latintimes.com/petro-rebukes-trumps-public-endorsement-colombian-far-right-candidate-allow-people-decide-597849",
-    "source": "latintimes.com",
-    "date": "2026-06-12T14:15:00.000Z"
+    "title": "Opinion | Colombia is working with the U.S. for a safer hemisphere",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeUZ3bG9scTlLaFFhZHZyNDlDSjlSZkpEZmhfTl9FMmhFd0lWdjdtNUNkdkVydFhjeE1TelI0R29OWWVsWWtldFhZcUFrem9DVjNCRXZTVjlLa3ZpajA0cU9YQ05XTGp6N04xNEp6UWVtbWdmUVBrN1hQTHFISlAxTWx2X0JUX2M5Sl82SGJ3ejBXZ01XR0gtS1E3aTFjTXdzNXVHc0JNeE5scTFkVmhEbExn?oc=5",
+    "source": "The Washington Post",
+    "date": "2026-06-11T18:00:00.000Z"
+   },
+   {
+    "title": "Five Outcomes of Colombia’s First Round Presidential Elections",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNSnZ6dDhBdjhtZHFiVzRfMUFOQlEzRmVfTDlkNTA0Z09OdkhsdTFmZDl6QVVxVHlKYU45MWNSSGZ6Zy1iZmt1Z0VYeHlOMWctX04zRE9OQjRkLW92RTBlMG5NXzhqZ0Q5QV9vV0tGVGxBY1FwTDVzLXB3aUJGNklTaG5SVGFmQzdqU0hLMVpLY2d4Y0t0M3VF?oc=5",
+    "source": "Washington Office on Latin America | WOLA",
+    "date": "2026-06-12T18:18:25.000Z"
    }
   ],
   "Cuba": [
    {
-    "title": "Trump Sanctions Leave Cubans Waiting Months Via App For A Measly 5 Gallons Of Gas",
-    "url": "https://www.jalopnik.com/2193037/cuba-waiting-months-5-gallons-gas/",
-    "source": "jalopnik.com",
-    "date": "2026-06-12T21:15:00.000Z"
+    "title": "Trump Is Laying the Groundwork to Attack Cuba. Democrats Should Push Back.",
+    "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWWlFOTE5a25jeHZ3MnNfYUtLelpJX2hkWTFLUk1XOVZ2VDdvaFFoNExCcHc5X19ZREJnNlJQYWpXOGpmZ2pkdFVsZVluUmxtQ2FjRkVMajJId0hXWXJBUmJMQ2ZUdlB5VDdkQnlQbF9RMnVEekYtR3ZoQkFETzgtalhQRkRoSVBTME5zTjdSXzQwYzhvVDhsaWZMWDlWSE9GbXgxMg?oc=5",
+    "source": "Third Way",
+    "date": "2026-06-12T15:10:00.000Z"
    },
    {
-    "title": "Díaz - Canel unveils reforms to liberalize Cuba economy amid an oil crisis and US sanctions",
-    "url": "https://en.mercopress.com/2026/06/12/diaz-canel-unveils-reforms-to-liberalize-cuba-s-economy-amid-an-oil-crisis-and-us-sanctions",
-    "source": "en.mercopress.com",
-    "date": "2026-06-12T21:00:00.000Z"
+    "title": "Cuba: Amid blockade, Pentagon chief issues military warning",
+    "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1JWVN3N28wTVRuTXN3Qm9EaEhNYTZraTFDWkRBYmtaaGdzYjNCNS1Hd1kxQmtZUUxnMllfc1lsdFgyWGFMQnJVLU1YekNrWllJZFl4a3VNQi1LeVJiZ2pSTERJVklnWnYxR0p6Umd5MkVJaHMyMl92d0pTOGg?oc=5",
+    "source": "dw.com",
+    "date": "2026-06-10T16:45:39.000Z"
    },
    {
-    "title": "Díaz - Canel Urges Cubans to Trust :  The Nation is Moving Forward",
-    "url": "https://www.cubaheadlines.com/articles/332053",
-    "source": "cubaheadlines.com",
-    "date": "2026-06-12T20:30:00.000Z"
+    "title": "U.S. Prepared for Anything, Hegseth Tells Troops at Guantanamo Bay",
+    "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxONEppcGg0cW9FS2U2MWR4VXJMcVl6NG5KTy13eHBfSzh0ZU1aZDcxcjFDdFFqbUh6Z0Y4b3FMMWJBTzhlalZMN2tkQ2ZrWnZsZ0h0OHVMelYwSk9sRHFkcVoza25nZGxOUlV6QlBlS2VfaXZvREllVFRBN2Q2MzRzSEdYd0tkdXhENnlfRTJNeW80Z1lpaG5vVHpTdmhFM1ViNVQ2NVdQeVZwR2FwT0RZenR6X0tfdkNJNl9HSC01blBBNXBM?oc=5",
+    "source": "U.S. Department of War (.gov)",
+    "date": "2026-06-10T21:08:25.000Z"
    },
    {
-    "title": "Loving Our Neighbors : Congress Must Reverse U . S . Aggression Toward Cuba | Friends Committee On National Legislation",
-    "url": "https://www.fcnl.org/updates/2026-06/loving-our-neighbors-congress-must-reverse-us-aggression-toward-cuba",
-    "source": "fcnl.org",
-    "date": "2026-06-12T19:45:00.000Z"
+    "title": "Editorial: US should try to achieve compromise with Cuba, not military conquest",
+    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPTXRwYW1tZ2k0Q1oteFZNb1VBWUFUMmMyX0hSeGtOa3BqYUdjMFJody1lbU9maDZtMW54RGxpaVFFcVdza09YS3FlbzVjLUZmeHYzNGZQcTUzdENEeGk4VUkxY3U1c253aFFUYTRkWDdhQU5PWGgzaWU5aDlFMi1XeE9ka2tlc2FxQ1IxS0hucUMxcEQyYzZFdG9vXzlJMnRjMFgxaURaZGZGY2VUa05JNzFXUWdpRXFq?oc=5",
+    "source": "The Republic News",
+    "date": "2026-06-13T04:14:00.000Z"
    }
   ],
   "Ecuador": [
    {
-    "title": "Ecuador Court Reopens Door to Investor Arbitration",
-    "url": "https://www.riotimesonline.com/ecuador-constitutional-court-investor-arbitration-article-422-june-2026/",
-    "source": "riotimesonline.com",
-    "date": "2026-06-12T14:00:00.000Z"
+    "title": "A Taste from Ivory Coast and Ecuador",
+    "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBQOG9GVzZpYi15VDd5SVc5YlRkT2ptZjJSY1U4a3l2UjlrZmFDbEUycUhESDktSjVKbTJSd2NCTnIwRjZ3Z3RFZlpTS1ByUXhtRTJXQVNwdVVfLTNL0gFiQVVfeXFMTU1pOGhzeTdDeUxJVjVFTlBJT0ZXT2pBNmpMUTNTUVlmSFpjNGlxUnFxdW83SXlYVGdLVHlqN0hVUXY2aXBrZkkxQlE3RE8tdXM5TXNZUzBSTVpORWlqelRGUUE?oc=5",
+    "source": "FOX 29 Philadelphia",
+    "date": "2026-06-12T14:44:29.000Z"
+   },
+   {
+    "title": "ELIZA VARELA Obituary (2026) - Santa Fe, NM - Santa Fe New Mexican",
+    "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOaWdkLUVFZ09jZEI1UFJIYTFneHg2U01rY28xYUxsZWpJSEdDanNERTFSNjRuYk9pMXdvZjRPYUExNE5GSjdzWWRPQzJUcEFqVDdiVU0xU2dsaUFUUENMcUVwTkF0OHNzZmRnOWxHdXpmcVMta2pwSTRocWxXZDBpM2tPRTdJekExbUxtNzV6eldZR1lQNEpsa3dfRXRaZw?oc=5",
+    "source": "Syracuse.com",
+    "date": "2026-06-13T04:36:23.000Z"
+   },
+   {
+    "title": "Feds Deport ICE Detainee Organizer to Ecuador",
+    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWFBGdUFiNWFKdHVJTkJkSXlqbnFMRXdFbXFDOVp0Q3ZxZkxlX1dvbWVYV0NVc2g1TWc4RkdCMk1PeTNqVHUwdGFtNTRfOXhYM2JlZlNaZmdFbTJQRFJWVnkzZlVfTUl2OUQyLU5BZnhscDlFQy1yZFZvQVZjOWczeTc2UFM?oc=5",
+    "source": "The American Prospect",
+    "date": "2026-06-12T09:00:00.000Z"
+   },
+   {
+    "title": "10 things to know about the humanitarian situation in Ecuador",
+    "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPcEczYXR0ZXJoOTRudnRUdVk1VmZyczhjdC1uWTMwV3RVc3BHS21DVFZEOTZNcW5QZW5mZTMxWVFmS3pkd0ZMdnhjdlUxcW1qUEJ3RnhTeUhYZjF0QnF0T0ZOTmtjTTVxNENVRmU4SF9YempFckk0QTZPb251TGQwSkhQbUJ6WTN0RGh6RGFLdUpvZjZIeXBITg?oc=5",
+    "source": "nrc.no",
+    "date": "2026-06-10T22:34:35.000Z"
+   }
+  ],
+  "Peru": [
+   {
+    "title": "Keiko Fujimori maintains slim lead as challenger demands recount in Peru's tightening presidential runoff",
+    "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOYWpQbUFqT0UtcW1ueXo0aGRGOEg3QUxXN05JS3MzTFQ3SXdIcENmMVRpTmttbFowX1RPU0lzVTIwanNXSk9pSDRxbEs0U2hqbkd2WnBsVi1xU0h1ZmJRNlhoeVZCQ1k1U1VrcUZlNjJPX2dlQmlDVlpueDY1alJWa1dVOWNIS0oxRDd4SWJKNHpsUzNKZEI5VVRiMGdadUxyR21uX1NONjlHZENITU5hV2VjYWpQZ2o4NzhWOGJjWU83c0NKalJpSzMzSTdtTTZaNWhfMTU1RzI1UTgyRXM1UkUtYmc?oc=5",
+    "source": "Anadolu Ajansı",
+    "date": "2026-06-12T23:43:10.000Z"
+   },
+   {
+    "title": "Worker killed in USA Parkway construction accident",
+    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQcXhBeUwwNldHOWhlMEtvX21JQzVDVWU5eUhUV1duXzZHWUZ0Yl9Zb3FLM3BEelpPMVg0WHNFQXpIdWdfVUJsckd1XzRIWVY3ajBZRGZsRjZtYmQzNTBMWDhNeUxJaUhvaDFXWGN0X2xUck1wcjJWYnZjbmUxbDBkdnhHNGZsWUhIVXc?oc=5",
+    "source": "KOLO | 8 News Now",
+    "date": "2026-06-12T19:02:00.000Z"
+   },
+   {
+    "title": "Peru: a tense stalemate and a deeply divided nation",
+    "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOUGhsVlB3SFlRaktsa3BwbGU4dmR1dFVJS05SWWMtY01FVHk5eE44a1ZZNklNalBtTkV1ZEEtbzRxbFdxVjN0ZlFmb0sxelpVdHBiYjRCdHVEQmxzWjdMVGJuSHFIaFdLNTNoYzZORVMzQTJ2eE51R2ZMcDBEYWVncW1yeUZ4b3dwM0dOd0UtcHlERUhPZEdBSnFYczVlb3oxajBGRlkyQ2tuYnFTb19fb1l2c0YxdnpvcWdGS0x6Tk95TU9tQmfSAcYBQVVfeXFMTlBobFZQd0hZUWpLbGtwcGxlOHZkdXRVSUtOUlljLWNNRVR5OXhOOGtWWTZJTWpQbU5FdWRBLW80cWxXcVYzdGZRZm9LMXpaVXRwYmI0QnR1REJsc1o3TFRibkhxSGhXSzUzaGM2TkVTM0EydnhOdUdmTHAwRGFlZ3FtcnlGeG93cDNHTndFLXB5REVIT2RHQUpxWHM1ZW96MWowRkZZMkNrbmJxU29fX29ZdnNGMXZ6b3FnRktMek5PeU1PbUJn?oc=5",
+    "source": "Atalayar",
+    "date": "2026-06-12T17:00:00.000Z"
+   },
+   {
+    "title": "President Trump says US military strike killed Tren de Aragua gang leader Hector Rusthenford Guerrero Flores with Venezuela's help",
+    "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOWDlMTUI0SkxOdGJmMWNlNHhSYWN2Y0JFOGNlVDNlajVOT2E2Q1FsYjl4WXRhWTZpbU1HbVBZVEtGZ1RGU1h1Q1lXYjYyV0RqeGVhXzZYa2pualBGSU1ma0FzM1FKeFVTc3VVNVlqVVdyYTdzSzF1S2pWa05vZTRmbDBiYllFMmVDOHNUazFLV0ZwOXNxbWltbEtDNjIybTllc1RGRWNkQ1NseUVVblc4cllsY3hwUk4yTUlKeEhNNm4zUDMxeGtyUDYweklUel90a3RPQVVKSW01b0c3d0dmaXp4SWxHUnFQbzFrb0did0N0UWNHQ2fSAfsBQVVfeXFMUDZla013ZDVrR0lWZVo0WDM1blhramRrQlJzWjFVTzU0ZEE4Q3dIN3hac1FDMGY2dk04bHVlb3U5Ny02bXhycTNlQ3VoVHp2UVhCTzFjSWIzNXlZOFNXY3d6RHpWUU5UVnNxZS05SmdMVTE1X1pUR2hOOTBXMVhNUmNNMTIwWmdhRElrTlEtUnhSZDJkUjQ1THdqaDRBejJ6M3FRMXBRU3ZibnNkMlF3VFVjbnlBUFJBcGViTUdKaW1JSWNUUGVVcXMzQU5xd0JTM1Ixc0tjUzQ2eDQtc01Hb3l6SHBrLWRnM1N1bE5Nc2J6RV9fUEZSdnVfNlk?oc=5",
+    "source": "ABC7 Chicago",
+    "date": "2026-06-13T01:52:47.000Z"
    }
   ],
   "Bolivia": [
    {
-    "title": "Bolivia Blockades Ease in La Paz : A June 2026 Travel Update",
-    "url": "https://www.riotimesonline.com/bolivia-the-blockades-are-lifting-in-la-paz-dont-unpack-the-road-trip-yet/",
-    "source": "riotimesonline.com",
-    "date": "2026-06-12T14:00:00.000Z"
+    "title": "Bolivia approves military measures against nationwide protests",
+    "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOZkgwMWZwTzRlekprVHJIdmotVHZMME1BY0JoSXNYRnhGU2FpUXdkTDNkRjVfNVdGRGdzR3RydGd0eC1HcmE5aUFRWEpkcF9Da2NFSGZ2UTJ3YkV2cjhDQkc1ZkNhbm5xR1E1SW1laVAtc09BSFZMd0cwSEdDVklsYVc3TWpTdi00QWU0ME9zYjNOQi1MbEJrZ3RLeUczWlg0NVJVWVBmMFliM3ZZYlFkQ0ZvVdIBuAFBVV95cUxObDlaZ29PdVgwSDdHaUVJNkEydlF3aDNRc3JTczRsYmhQZ3VJMWhQamhnLTdDWkRHbUtDSURpRUp2c0VjQ1owSWxtYV8wWEw2UWZGZ1NJN214OTNQV0JUcjhSOXdWTGxxSWhOSkcybGVybVE2MDFkNlZyeGxFRS1yY2g5RTdmODJQVEo5MXYwamVKN3RkQTRDX2xmREYxdXQyaERoMllTTjRHb3pDblpuc1NLZGFUUFhY?oc=5",
+    "source": "Al Jazeera",
+    "date": "2026-06-10T05:42:15.000Z"
+   },
+   {
+    "title": "Bolivia’s Streets Have Erupted. Here’s Why.",
+    "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5IZlhYOF84ZkJwX0tCYXpFY2l3YmxSVWhDRUh2dHBHSDVDdHhoV2FqejA2SWRmMm1IZThVWWZEa1RnSFd5VkhZNnJaTm1PeWtwU0RIbFExM2pLZlFkdTVETUpoMGd2RHUzQ0xQYXRQVmdhMmF5NHB2YVFn?oc=5",
+    "source": "cepr.net",
+    "date": "2026-06-12T14:27:57.000Z"
+   },
+   {
+    "title": "Is it Safe to Travel to Bolivia Amid the Protests? What to Know if You Have an Upcoming Trip",
+    "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOaXN4UmtENHB4UUVDSFB1blpjTVpGa1AyQk4zNGdkaXFuX2EyMmJNTDJfbmxqckoyUHFNM2lVTldYSUQ3azc2SUc1V1ZhM2hidlRxdk5wSVVxUXc4RHhZQmdENDViWnZDLS1DQnF6U0hMMk83dGJ6ZWJDNnF5enpDM2pVRnNvS3hIVmFBNldDd1FFTnRHRjd5RGdVZlcyZmxRNlhJSGxhUTMxczBLWXhYX0dfTTVKbW9yVHhGd3k1OEd0Zw?oc=5",
+    "source": "Condé Nast Traveler",
+    "date": "2026-06-10T17:18:01.000Z"
+   },
+   {
+    "title": "Bolivia Protest",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQWkJEbTRMdWl5dlVDNkZuZ0FmazluX1lVaDBzOWZZQWQ2M25JNHRIME5VdS1yZXA5UDd6RHpva3ZJRDBHTDBMaU9kU1ZwU3pzcWdMUkRzenZ6eTU4OFlacnI3MlBDSjQxcUFFbkNFb21hQWlRRWxROFR1S1RUcFFlcnFWWndnVnNMa3dLTnFyY2RCdjBQLW9v?oc=5",
+    "source": "The Herald Journal",
+    "date": "2026-06-10T20:45:40.000Z"
    }
   ],
   "Dominican Republic": [
    {
-    "title": "Pulse nightclub massacre 10 years later : Remembering the victims",
-    "url": "https://www.kcra.com/article/orlando-pulse-shooting-massacre-10-years-later/71570581",
-    "source": "kcra.com",
-    "date": "2026-06-12T15:00:00.000Z"
+    "title": "Coast Guard repatriates 32 aliens to Dominican Republic Navy following vessel interdiction off Desecheo, Puerto Rico",
+    "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBybl9LdHhqb2QzMWNXSFBlNU1VcDgtZ1Nkck1ERDVLNjh3cE5TQXVwRUhuLWNpSjdFQTliRkJxUzJKODJhOC1aaXFNMXc2dTJueVdhMk1UQTItb1ZlSzJqaWxhQWxiWURGMko5ZTR5UTduRjV6dnc?oc=5",
+    "source": "United States Coast Guard News (.mil)",
+    "date": "2026-06-10T13:04:46.000Z"
    },
    {
-    "title": "NY 13th Congressional race gets heated as primary gets closer",
-    "url": "https://amsterdamnews.com/news/2026/06/11/ny-13-congressional-race-gets-heated-as-primary-gets-closer/",
-    "source": "amsterdamnews.com",
-    "date": "2026-06-12T10:45:00.000Z"
+    "title": "Dominican Republic pushes for tax increases to offset surge in oil prices",
+    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNcm5LRGtvVXMwWE1leWh5RmQzZ25TaEFLN2FBOWhxeXE5QjhKM2NWQWJjWm5qSWJTREx6OFNUQnhvTXdfNDZPOHdHUWhpa1NKanhubGp4R0Fxb1VHUVVvYzE0LTRRejdJYzFZTTR6XzlLaTJwM3NHZTNFOTVIbFlGTldqWW5rNGlLTTdxdi1CNmlPOUhWcTRTMl9DVmJpSDFwZXJKcTR1X0U4Qzd5UlY40gG0AUFVX3lxTE1uRldwUl9TcnJuQUZHSkEwNkhFbXAzRnY4b0g1a0JxWEJOM3c0V0tsTmpWTmkyWVJGNU1mUVJtLUVyX1JTamNGYlVjWkJSN0VQTlhCVXlNUnVMTEtpUUREeVlZS24xT0djYjJvUU5Qa0xLVVJnbHU0ZXJkMGNsYVQyY0RIQjZTWkRUMGFhdHA5dndlTkFFV2ZSdnhiRVJGNEFVRGVoZkNyUEVwRGVZVC1UMzVJYw?oc=5",
+    "source": "ABC News - Breaking News, Latest News and Videos",
+    "date": "2026-06-12T00:52:25.000Z"
    },
    {
-    "title": "World Bank Cuts Brazil 2026 Growth to 1 . 9 %",
-    "url": "https://www.riotimesonline.com/world-bank-brazil-gdp-cut-1-9-percent-oil-shock-june-2026/",
-    "source": "riotimesonline.com",
-    "date": "2026-06-12T09:30:00.000Z"
+    "title": "Coast Guard repatriates 32 aliens to Dominican Republic Navy following vessel interdiction off Desecheo, Puerto Rico",
+    "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQZUR3MGZfcVBUTl9ZLU4yWTJaODhQb2F6Zm9MMGd3STFHSjNNWG96d3RQQXpyZnUxZW43dm5FMk8tcHlnOU5Od2xKa29hc2Z0RDhZZTdkVlpIdTRJWmpiRl8xT0RHS1pZZGFfVEc2WjRHQXV0TUdJcHByMUxTX1JKVmtaNkFxbWdUWE5PeTd2TjI3ZGFTc1BiMHViMnpMNDVxTC1pdlJFOEJxZmw2RDQ4TnE4cC1hNkJkOS1sVFJwMV9pUzlQOFdEbDhYZHF6TzR1T21fdWhZcFhTamFOdmc?oc=5",
+    "source": "Seapower Magazine",
+    "date": "2026-06-10T20:27:36.000Z"
    },
    {
-    "title": "The Morning Briefing : Feds Keep Racking Up Law Enforcement Wins , Dems Hardest Hit",
-    "url": "https://pjmedia.com/stephen-kruiser/2026/06/12/the-morning-briefing-feds-keep-racking-up-law-enforcement-wins-dems-hardest-hit-n4953865",
-    "source": "pjmedia.com",
-    "date": "2026-06-12T09:00:00.000Z"
+    "title": "Dominican Republic Child Abuse Crisis Exposes the Belt’s Dark Inheritance",
+    "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPNEdXVTlaaV90clZmcE5oNmV6TEhZOWM0amFPQWhWR1RsN183TDV1YjFQcXJORFE4M2lZclV0SUpFbkJhMHhyem9naUIwNW1hWmYwU3AwSlBUb0JocEFqOGN2WmtMOVl1c01XaFI4djZtN0JDckZfNUhxTHlkQnlELVBJakNydXR3Wlk3NDNJa1hhWGFWek9sWXBwZE54ajJNRUZ3MlM4M0JEMDZBenVxSU8xSEt3QQ?oc=5",
+    "source": "LatinAmerican Post",
+    "date": "2026-06-12T17:23:20.000Z"
    }
   ],
   "Jamaica": [
    {
-    "title": "What are Jamaica foreign reserves and why do they matter now ?",
-    "url": "https://www.jamaicaobserver.com/2026/06/12/jamaicas-foreign-reserves-matter-now/",
-    "source": "jamaicaobserver.com",
-    "date": "2026-06-12T21:00:00.000Z"
+    "title": "Trump says US strike killed leader of Tren de Aragua gang",
+    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPM2QzNGlvWGhRNS1BaDYydkJPV1gzODRERGhjRVE1ZkM0aEVwSVJ0eVdVVDRxMnJPZ09TY0kzaVNHYUlQUFdJTUxaY3VnU01UMWJlNmlDd05wVUE3dTFlVlZrTjUwVDMtSmJlTGxzX09ZSGlLY3A1eE5QYlFLMDFvSmdsVTctcVV1TkNmUFNWMzZRZURlUm4teE5YMXNQTDQ?oc=5",
+    "source": "Jamaica Observer",
+    "date": "2026-06-13T02:54:27.000Z"
    },
    {
-    "title": "Scotiabank Announces Plans to Fully Acquire Scotia Group Jamaica Limited",
-    "url": "https://montrealgazette.com/press-releases/pr-newswire/scotiabank-announces-plans-to-fully-acquire-scotia-group-jamaica-limited/",
-    "source": "montrealgazette.com",
-    "date": "2026-06-12T13:30:00.000Z"
+    "title": "Jamaica – No Human Rights Problem in Country, Says Minister of Justice",
+    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNc19aTUhFWFFMVWw4MThOQjRtOWk4eUl4cmV1RWNybmVFbkZEY3BsVEJaYkQ5X0NpQ1hNS0I3S2V1NzhEUURCVExza3Y0VDZrdU1XaWpKUUVSck1fYUZjVWFVaEt0UHQ4RERJcmFkbk5ONXlqOUo2aXBtLWFHNW44MVRlMWxMalBMUU51Vk5LMmpFZmxDeUI4?oc=5",
+    "source": "NY Carib News",
+    "date": "2026-06-12T11:30:46.000Z"
+   },
+   {
+    "title": "Jamaica expert backs ZOSO model for T&T",
+    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPM0JHMWhsb0pqb01LRDVDOXo4aUFyV1k2c3VTMUw3VjREMlduZzlKaG9weS1iX1JYanptT1BDbXRpdFZ2UVpMZ2hRTndXa1UteUxqTTVsYzE0ZHpGTzI3UFpXR1dfdjM3NVRERTE4cUFwcHk1WjV2aU5LVXhMSFQ4X2VTVDVHakpvUnpDOEhvSERrREFvdHE3TERaUGF1bzI3aG4xbkZRXzk4M2djT0lFazJma1dDV3VzMEtOeV9NeWk2aDFKLWZF0gHMAUFVX3lxTE1ub3NNelBiSHlrWUZHbnExbWhwdHhWdlVqSFAtSm92MGhxYVF4ZnJUWl96RmVaNHQybVFXb2R1MW1YbEk5Z0I4T2lRQW93cWdzTkltbVZzRkpLN2phdnRJelBPUDdIZ2IzWWQ4UlNsa2JMd21RbVZ2Qkc4NnJfTnRVSF9IT2VVM0NxS0loVjlTU0EwUXYzMWx5WHVsdGFmdHRLOG5qM2E5WlNIRV9hMzBHelIxbTBXbnUtSmFidE45RUMyYW5uaGRuckdQSw?oc=5",
+    "source": "Trinidad Express Newspapers",
+    "date": "2026-06-12T09:00:00.000Z"
+   },
+   {
+    "title": "Police probing deaths of missing Manchester woman and security guard sought in connection with her disappearance",
+    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOWXVuUGtMLXFueXlyU1FIZmJPRmZXOGhPN2lvX0daUHNwejhiVkIyTVoxWHJrMFJpSFNqcGpqeEFfZkY5bWNwNDhkSFdxcXlOa1UtamRQck1BczBNQVFFWXJvMmNQWjMzNXpzbDVZUHpkaE9yTF92SVNoYkt4VVF1NUprVXNLa3djUC1EOUhrUlUwei0yN3VaNDBFSEVrN093aDEzLVdWTUxTNTdqNkpNMmd3SHBVUElwSkVHUW13?oc=5",
+    "source": "Jamaica Gleaner",
+    "date": "2026-06-11T18:43:58.000Z"
    }
   ]
  }
