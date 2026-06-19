@@ -1,12 +1,12 @@
 name: Live feed
 
-# GitHub's scheduled (cron) triggers are best-effort: during peak load they are
-# delayed or dropped entirely, especially on private repos. Running hourly (at a
-# non-zero minute to dodge top-of-hour load) maximises the chance of a fresh run
-# while staying well within the free Actions minutes (~24 runs/day * ~1.5 min).
+# The hourly trigger is driven externally by cron-job.org, which calls the
+# workflow_dispatch API on a precise schedule (GitHub's own cron is best-effort
+# and drops runs under load). This internal schedule is only a once-a-day
+# fallback heartbeat in case the external trigger ever stops.
 on:
   schedule:
-    - cron: "17 * * * *"
+    - cron: "17 6 * * *"
   workflow_dispatch:
 
 jobs:
