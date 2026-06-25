@@ -1,16 +1,16 @@
 {
   "title": "Intelligence Briefing Dashboard",
   "subtitle": "Weekly Conflict Monitor · All Regions",
-  "period": "18 – 25 June 2026",
+  "period": "19 – 25 June 2026",
   "generated": "25 June 2026",
   "classification": "UNCLASSIFIED // FOR OFFICIAL USE ONLY",
-  "sources": "Reuters · AP News · Al Jazeera · ACLED · US Embassy Alerts · LiveUAMap · BNO News · ISW · British Defence Intelligence",
+  "sources": "Reuters · AP News · Al Jazeera · ACLED · US Embassy Alerts · LiveUAMap · BNO News · ISW · British Defence Intelligence · Kyiv Post · Sudan Tribune · Irrawaddy",
   "regions": [
     {
       "name": "Middle East",
       "overview": [
-        "Nuclear inspections dispute: US-Iran disagreement over IAEA inspector scope emerged June 23, clouding finalization of the war-ending deal; road map with 60-day timeline agreed at Burgenstock round two, but specific inspection parameters for Fordow and Natanz remain contested; comprehensive talks continuing.",
-        "Lebanon framework talks: Comprehensive talks underway week of June 22 per Vance emergency trip agreement; Hezbollah still rejecting ceasefire terms requiring disarmament without simultaneous IDF withdrawal from southern Lebanon; third ceasefire renewal since March holding but structurally fragile.",
+        "IAEA inspection standoff: IAEA Director-General Grossi stated June 24 that inspections of Iran's enrichment sites at Fordow and Natanz 'are going to happen' — Iran insists access only after a final deal; US-Iran talks ongoing under 60-day Burgenstock road map but contested inspection parameters remain the key fault line in finalization of a war-ending agreement.",
+        "Lebanon fifth-round talks: A fifth round of Israel-Lebanon peace talks ran June 23-25; US-Qatar-Iran mediation maintained; Hezbollah still rejecting ceasefire terms requiring disarmament without simultaneous IDF withdrawal from southern Lebanon; current ceasefire holding but structurally fragile.",
         "Gaza intractable: No Gaza political resolution in MOU framework; cumulative IDF ceasefire violations now exceed 3,400; IDF territorial control covers 59% of the Strip; only 36% of allocated aid trucks have entered since October 2025 truce; humanitarian conditions deteriorating.",
         "Houthi standdown month nine: No Red Sea maritime attacks since September 2025 — nine consecutive months; MARAD 2026-006 still in force; readiness posture maintained; Iran-US nuclear inspections dispute strengthening MOU-sceptic faction internally."
       ],
@@ -28,22 +28,22 @@
         {
           "name": "Lebanon", "flag": "🇱🇧", "threat": "HIGH",
           "incidents": [
-            "24 Jun — Beirut: Week-of-22-June comprehensive framework talks produce preliminary points of agreement on southern Lebanon demarcation; Hezbollah maintains objection to ceasefire terms requiring disarmament without corresponding IDF withdrawal; Lebanese PM Salam calls for simultaneous Israeli withdrawal and Hezbollah disarmament.",
+            "24 Jun — Beirut: Fifth round of Israel-Lebanon peace talks under US-Qatar-Iran mediation runs June 23-25; preliminary points of agreement on southern Lebanon demarcation reported; Hezbollah continues to reject ceasefire terms requiring disarmament without corresponding IDF withdrawal.",
             "22 Jun — Southern Lebanon: IDF continues to occupy southern Lebanon buffer zone; Hezbollah has not formally accepted MOU Lebanon component; Lebanon President Aoun presses Washington for binding IDF withdrawal timeline.",
-            "20 Jun — Beirut: Following Vance emergency Switzerland talks, renewed ceasefire holding through current week; third renewal since March — none has produced durable compliance.",
+            "20 Jun — Beirut: Following Vance emergency Switzerland talks, renewed ceasefire holding through current week; third formal renewal since March — none has produced durable compliance.",
             "19 Jun — Nabatieh: IDF strikes Hezbollah logistics position; no formal Hezbollah response under current ceasefire — compliance operative if fragile."
           ],
-          "coa": "Week-of-22-June comprehensive framework talks are the key near-term indicator. Hezbollah's continued rejection of ceasefire terms requiring disarmament without IDF withdrawal creates structural incompatibility. IDF remaining in southern Lebanon without Hezbollah formal compliance is a persistent instability. HIGH maintained — de-escalation requires reciprocal steps neither party has committed to."
+          "coa": "Fifth-round talks June 23-25 are the key near-term indicator. Hezbollah's continued rejection of ceasefire terms requiring disarmament without IDF withdrawal creates structural incompatibility. IDF remaining in southern Lebanon without Hezbollah formal compliance is a persistent instability. HIGH maintained — de-escalation requires reciprocal steps neither party has committed to."
         },
         {
           "name": "Iran", "flag": "🇮🇷", "threat": "CRITICAL",
           "incidents": [
-            "23 Jun — Geneva: US-Iran nuclear inspections dispute emerges — disagreement over scope of IAEA inspector access to Fordow and Natanz enrichment sites; NPR reports dispute clouding finalization of war-ending deal; both sides confirm talks ongoing.",
+            "24 Jun — Vienna: IAEA Director-General Grossi states publicly that nuclear inspections of Iran's enrichment sites at Fordow and Natanz 'are going to happen'; Tehran insists any IAEA visit can only occur after a final deal is concluded; dispute is the primary obstacle to finalizing the Burgenstock road map within the 60-day window.",
             "21 Jun — Burgenstock: Road map to final deal agreed; Qatar and Pakistan announce 60-day timeline for comprehensive agreement; communication line established to avoid Hormuz incidents; FM Araghchi calls road map 'serious foundation.'",
             "20 Jun — Tehran: Hormuz closure declaration fully walked back; commercial shipping flows normally; IRGC-FM split over June 20 unilateral closure declaration unresolved internally — structural compliance risk.",
             "19 Jun — Tehran: IRGC Syria drawdown phase-1 confirmed complete; FM Araghchi briefs Majlis on MOU implementation; phase-2 timeline under active negotiation in comprehensive talks framework."
           ],
-          "coa": "The June 23 nuclear inspections dispute reveals that the Burgenstock road map faces contested specifics — agreeing to a timeline is easier than agreeing to inspection scope at Fordow and Natanz. The IRGC remains the key compliance risk: FM commitments are not automatically binding on IRGC commands. A final deal within the 60-day window is possible but not certain given unresolved inspection, enrichment level, and uranium stockpile questions. CRITICAL maintained."
+          "coa": "The June 24 IAEA-Iran standoff over inspection access reveals the Burgenstock road map faces deeply contested specifics. The IAEA has been blocked from enrichment sites since Israel's 12-day war in 2025; without access to Fordow and Natanz, it cannot verify uranium stockpile or centrifuge status. Iran's insistence on inspection only after a final deal effectively makes verification conditional on Iranian goodwill. A final deal within the 60-day window is possible but not certain. CRITICAL maintained."
         },
         {
           "name": "Yemen", "flag": "🇾🇪", "threat": "HIGH",
@@ -58,7 +58,7 @@
         {
           "name": "Israel", "flag": "🇮🇱", "threat": "HIGH",
           "incidents": [
-            "24 Jun — Jerusalem: Netanyahu managing far-right coalition pressures as Lebanon framework talks proceed; Smotrich and Ben-Gvir demand military resumption in Lebanon; US-Israel emergency consultations ongoing to maintain ceasefire.",
+            "24 Jun — Jerusalem: Netanyahu managing far-right coalition pressures as Lebanon fifth-round framework talks proceed June 23-25; Smotrich and Ben-Gvir demand military resumption in Lebanon; US-Israel emergency consultations ongoing to maintain ceasefire.",
             "22 Jun — Tel Aviv: IDF southern Lebanon buffer zone positions reinforced; additional intelligence assets deployed ahead of framework talks; Netanyahu faces structural tension between US pressure and coalition imperatives.",
             "20 Jun — Gaza: IDF targeted killing campaign continues; coalition imperative maintains operational pace; UN reports accumulated violations now exceeding 3,400.",
             "19 Jun — Southern Lebanon: IDF holds buffer zone per June 21 ceasefire renewal terms; no new offensive operations confirmed this week; framework talks ongoing."
@@ -80,7 +80,7 @@
           "incidents": [
             "24 Jun — Riyadh: Saudi-Iran bilateral rapprochement track reactivated following Burgenstock round-two road map; economic normalization agenda resuming; Aramco logistics returned to normal Hormuz routes.",
             "22 Jun — Gulf: Hormuz commercial shipping fully restored; Lloyd's war-risk premiums stabilising; Saudi energy ministry back to normal routing.",
-            "20 Jun — Riyadh: Saudi Arabia monitoring Iran-US nuclear inspections dispute; Riyadh has independent interest in IAEA access to Iranian enrichment sites as precondition for regional security.",
+            "20 Jun — Riyadh: Saudi Arabia monitoring Iran-US nuclear inspections dispute; Riyadh has independent interest in verified IAEA access to Iranian enrichment sites as precondition for regional security.",
             "19 Jun — Gulf of Oman: US 5th Fleet freedom-of-navigation operations continuing through Hormuz; Saudi Arabia-US security coordination maintained at elevated posture."
           ],
           "coa": "Saudi Arabia's best-case trajectory — regional normalization under a durable US-Iran agreement — remains on track if the 60-day nuclear framework produces a final deal. If the nuclear inspections dispute derails talks, Houthi resumption risk returns and Aramco's Hormuz exposure re-emerges. HIGH maintained pending nuclear talks outcome."
@@ -136,31 +136,31 @@
     {
       "name": "Ukraine/Russia",
       "overview": [
-        "Orenburg helium plant struck: Ukraine hits Russia's only helium plant and the Orenburg Gas Processing Plant — a major Gazprom facility — over 1,500 km from the border on June 23-24; a Nizhny Novgorod industrial facility also struck (2 killed); deep-strike strategy now reaching Gazprom infrastructure and dual-use industrial capacity at unprecedented range.",
-        "Russian momentum stalling: ISW June 23 assessment confirms Russian advances near Lyman/Kupyansk and Orikhiv direction slowing; fuel supply issues emerging from Ukrainian drone interdiction of Russian ground lines of communication; neither side assessed to have capacity for decisive breakthrough; Kostyantynivka remains Russia's declared main effort.",
-        "Crimea strikes continuing: Ukrainian drones struck the Balaklava thermal power plant in Sevastopol plus targets near Kerch, Bakhchysarai, and Mount Ai-Petri radar site in the June 22-25 period; systematic Crimea energy and military infrastructure degradation continuing across all fronts.",
+        "Moscow Oil Refinery struck: Ukrainian drones struck Gazprom's Moscow Oil Refinery on June 24-25, triggering a massive explosion with black smoke visible across the Russian capital; facility offline through end of 2026; simultaneously, Ukraine struck the Dubna Space Communications Center — Russia's largest ground-based satellite complex; deepest capital energy and communications infrastructure strikes of the war.",
+        "Orenburg deep-strike campaign: Ukraine hit Russia's only helium plant and the Orenburg Gas Processing Plant — over 1,500 km from the border — on June 23-24, coordinated with Black Spark underground resistance; Russia's air-interceptor consumption rate is unsustainable per western intelligence; deep-strike attrition now reaching dual-use industrial and strategic communications infrastructure.",
+        "Russian momentum stalling: ISW assessment confirms Russian advances near Lyman/Kupyansk and Orikhiv direction slowing; fuel supply issues emerging from Ukrainian drone interdiction; Russian drone strikes on Sumy Oblast June 24 injured 15+ civilians including 3 children; no breakthrough capacity assessed on either side.",
         "Armenia elections and Western pivot: Armenia held its first regularly scheduled parliamentary elections since 2017 in June 2026; Pashinyan's Western pivot strategy confirmed; US-Armenia strategic cooperation framework signed; CSTO withdrawal vote on track for Q3 2026 — South Caucasus balance shifting decisively toward Europe and US."
       ],
       "countries": [
         {
           "name": "Ukraine", "flag": "🇺🇦", "threat": "CRITICAL",
           "incidents": [
+            "25 Jun — Moscow (Russia): Ukrainian drones strike Gazprom's Moscow Oil Refinery; massive explosion sends black smoke over Russian capital; facility unlikely to resume operations before end of 2026; deepest energy infrastructure strike of the war targeting Moscow's own fuel supply.",
+            "24 Jun — Dubna (Russia): Ukrainian drone strike hits Dubna Space Communications Center near Moscow — Russia's largest ground-based satellite communications complex; operation coordinated with Black Spark underground resistance movement.",
             "23 Jun — Orenburg (Russia): Ukraine strikes Russia's only helium plant and Orenburg Gas Processing Plant, over 1,500 km from the border; fires at key Gazprom facility used in gas purification, processing, and military-linked helium production.",
-            "24 Jun — Nizhny Novgorod (Russia): Ukrainian drone strike on industrial facility; 2 killed, 2 injured; fuel and industrial infrastructure degradation campaign extending across Russia's interior.",
-            "23 Jun — Crimea: Ukrainian drones target Balaklava thermal power plant in Sevastopol; explosions reported near Kerch, Bakhchysarai, and Mount Ai-Petri radar site; systematic Crimea energy and military infrastructure degradation ongoing.",
-            "23 Jun — Pokrovsk sector: ISW June 23 assessment confirms Ukrainian drone interdiction creating Russian fuel supply issues; Russian forces in Lyman direction intensifying attacks north of the town but slowing pace."
+            "24 Jun — Sumy Oblast: Russian drone strikes injure at least 15 civilians including 3 children; frontline defensive positions in Pokrovsk and Kostyantynivka sectors holding per ISW June 24 assessment."
           ],
-          "coa": "Ukraine's deep-strike campaign has reached unprecedented strategic depth — 1,500 km to the Orenburg helium plant. Russian fuel supply issues from drone interdiction of ground lines of communication are beginning to affect frontline force sustainability. Pokrovsk and Kostyantynivka axes holding. Western arms continuity remains the critical enabler. Deep-strike attrition combined with defensive holding is the operative strategy."
+          "coa": "Ukraine's deep-strike campaign has reached unprecedented strategic depth — Moscow's own oil refinery and the Dubna satellite communications complex now struck. Russian fuel supply issues from drone interdiction of ground lines of communication are beginning to affect frontline force sustainability. Pokrovsk and Kostyantynivka axes holding. Western arms continuity remains the critical enabler. Deep-strike attrition combined with defensive holding is the operative strategy."
         },
         {
           "name": "Russia", "flag": "🇷🇺", "threat": "HIGH",
           "incidents": [
-            "24 Jun — Moscow: Russia reports air defences intercepted hundreds of Ukrainian drones nationwide over June 23-24; Nizhny Novgorod industrial facility hit despite defences (2 killed); air-defence interceptor consumption rate unsustainable per western intelligence.",
-            "23 Jun — Lyman/Kupyansk: Russian forces intensify attacks north of Lyman; advances near Kryva Luka and Hlushkivka confirmed by ISW but pace slowing; fuel supply issues from Ukrainian interdiction beginning to affect logistics.",
-            "22 Jun — Orikhiv (Zaporizhia): Russian probing assaults near Novodanilovka; advance stalled; no breakthrough in Orikhiv direction.",
-            "21 Jun — Moscow: Kremlin issues statement on Burgenstock round-two outcome; signals concern Iran-US nuclear deal must not set precedent for US pressure on Russian regional interests."
+            "25 Jun — Moscow: Gazprom's Moscow Oil Refinery struck by Ukrainian drones; explosion visible across the capital; refinery offline through 2026; air defences failed to intercept the strike on Moscow's own fuel infrastructure — strategic and symbolic escalation.",
+            "24 Jun — Moscow Oblast: Dubna Space Communications Center — Russia's largest satellite communications complex — struck by Ukrainian drones; Russia reports intercepting hundreds of drones nationwide but key strategic sites breached.",
+            "23 Jun — Lyman/Kupyansk: Russian forces continue attacks near Kryva Luka and Hlushkivka; advances confirmed by ISW but pace slowing; fuel supply issues from Ukrainian ground-line interdiction beginning to affect logistics.",
+            "24 Jun — Sumy Oblast (Ukraine): Russian drone strikes injure 15+ civilians including 3 children; civilian-infrastructure targeting campaign continuing across Kharkiv and Sumy oblasts."
           ],
-          "coa": "Russia's attritional strategy continues at mounting cost — cumulative personnel losses approaching 1.4 million, infrastructure damage from deep strikes now reaching Orenburg, and fuel supply issues beginning to affect frontline units. No major Russian operational breakthrough expected in the 90-day window. Russia will continue targeting Ukrainian civilian and energy infrastructure while managing deepening logistics problems."
+          "coa": "Russia's attritional strategy continues at mounting cost — cumulative personnel losses approaching 1.4 million, and deep strikes have now reached Moscow itself. The Moscow Oil Refinery and Dubna satellite center strikes are a significant escalation in psychological and strategic terms. No major Russian operational breakthrough expected in the 90-day window. Russia will continue targeting Ukrainian civilian and energy infrastructure while managing deepening logistics problems."
         },
         {
           "name": "Belarus", "flag": "🇧🇾", "threat": "MODERATE",
@@ -213,7 +213,7 @@
       "name": "Sahel",
       "overview": [
         "JNIM strikes Niamey airport: On 18 June, JNIM attacked the Diori Hamani International Airport in Niamey — the second such attack in 2026 — killing 13 and injuring 4; 22 attackers killed, 20 arrested; airport hosts Niger's military air force base, drone fleet, and the AES regional alliance headquarters — a strategic capital infrastructure strike confirming JNIM's expanded operational reach.",
-        "Sudan El Obeid siege: RSF drone strikes on El Obeid continued through June 25; SAF counter-drone operations disrupted RSF ground assault preparations, destroying an RSF battalion and over 50 armored vehicles in West Kordofan; approximately 30 Western nations issued joint statement June 23 warning against assault; 500,000 civilians remain at risk — situation remains highly dangerous despite assault delay.",
+        "Sudan El Obeid under siege: RSF drone strikes on El Obeid continuing through June 25; SAF counter-drone operations disrupted an RSF ground assault on June 20, destroying an RSF battalion and over 50 armored vehicles in West Kordofan; approximately 30 Western nations issued joint statement June 23 warning against assault; 500,000+ civilians at risk — RSF encirclement maintained despite assault delay.",
         "Burkina Faso Dori acute: Dori siege humanitarian situation at acute phase — hospital capacity exhausted, MSF withdrawn from 5 districts; information blackouts and journalist detentions intensifying; junta fragility at peak; Wagner support stretched thin across Mali and Burkina simultaneously.",
         "Mali drone proliferation: JNIM drone strikes on FAMa supply depots accelerating (90+ strikes in 2025-2026); FLA-JNIM joint operations maintaining control of north and east; fuel and food rationing expanding to additional Bamako-adjacent districts; encirclement strategy advancing."
       ],
@@ -251,12 +251,12 @@
         {
           "name": "Sudan", "flag": "🇸🇩", "threat": "CRITICAL",
           "incidents": [
-            "24 Jun — North Kordofan: RSF drone strikes on El Obeid continue through June 25; SAF counter-drone operations foil RSF ground assault preparations, destroying an RSF battalion and over 50 armored vehicles in West Kordofan; ground assault temporarily disrupted but RSF encirclement maintained.",
-            "23 Jun — London/Washington: Approximately 30 Western countries issue joint statement warning RSF against assault on El Obeid; US State Department separately warns of atrocity threats; UN Security Council demanded halt on June 20.",
+            "24 Jun — North Kordofan: RSF drone strikes on El Obeid continue into June 25; fears growing for 500,000+ civilians as RSF encirclement tightens; SAF counter-drone strikes on June 20 destroyed an RSF battalion and 50+ armored vehicles — ground assault temporarily disrupted but encirclement unbroken.",
+            "23 Jun — London/Washington: Approximately 30 Western countries issue joint statement warning RSF against assault on El Obeid; US State Department separately warns of atrocity threats; seven European nations (UK, France, Germany, Netherlands, Ireland, Italy, Norway) issue dedicated statement.",
             "22 Jun — El Obeid: RSF drone strikes hit fuel stations, displacement shelters, and residential areas; UN Human Rights Council reports 50+ civilians killed in drone strikes over 10-day period; 500,000 civilians at risk.",
             "20 Jun — El Fasher (North Darfur): RSF total blockade maintained; 180,000+ civilians trapped; MSF surgical unit exhausted; no resupply."
           ],
-          "coa": "El Obeid remains in acute crisis — SAF counter-drone operations disrupted the imminent RSF ground assault but have not broken the encirclement. RSF drone strikes continue causing mass civilian casualties. International warnings multiply but carry no enforcement mechanism. If El Obeid eventually falls, RSF gains the Kordofan-Darfur corridor — a potentially decisive strategic shift. The delayed but persistent threat means the next 7-14 days remain critical."
+          "coa": "El Obeid remains in acute crisis — SAF counter-drone operations disrupted the imminent RSF ground assault but have not broken the encirclement. RSF drone strikes continue causing mass civilian casualties. International warnings multiply but carry no enforcement mechanism. If El Obeid eventually falls, RSF gains the Kordofan-Darfur corridor — a potentially decisive strategic shift. The next 7-14 days remain critical."
         },
         {
           "name": "Chad", "flag": "🇹🇩", "threat": "HIGH",
@@ -279,22 +279,22 @@
         {
           "name": "Nigeria", "flag": "🇳🇬", "threat": "CRITICAL",
           "incidents": [
-            "20 Jun — Borno (Kukawa LGA): Nigerian Army rescues 47 ISWAP captives — mostly women and children — held in Kangarwa; 2 gang members killed in raid.",
+            "23 Jun — Borno (Biu LGA): Nigeria-US intelligence-led strike kills 21 ISWAP fighters and disrupts terror logistics network; Lake Chad crossing corridors under intensified interdiction pressure following joint operation.",
+            "20 Jun — Borno (Kukawa LGA): Nigerian Army rescues 47 ISWAP captives — mostly women and children — held in Kangarwa; 2 fighters killed in operation; significant humanitarian success for Operation Hadin Kai.",
             "19 Jun — Borno (Buratai): ISWAP attacks military positions at Dusten Kura and Chara Road in Biu LGA; Army repels assault with integrated air-ground response; significant ISWAP casualties; counter-offensive launched in Lake Chad corridors.",
-            "22 Jun — Zamfara: Northwest bandit coalition attacks 2 villages near Gusau; 8 civilians killed, cattle seized; delayed security force response.",
-            "21 Jun — Borno (Lake Chad corridor): Joint Nigeria-US intelligence operation disrupts ISWAP logistics network; Lake Chad crossing corridors under interdiction pressure."
+            "22 Jun — Zamfara: Northwest bandit coalition attacks 2 villages near Gusau; 8 civilians killed, cattle seized; delayed security force response."
           ],
-          "coa": "Nigeria's ISWAP threat remains CRITICAL. The June 20 Kukawa captive rescue is a significant success. However, ISWAP's mass-casualty capacity and dual-target coordination capability remain undiminished. Northwest banditry and southeast separatist pressure remain unresolved secondary threats."
+          "coa": "Nigeria's ISWAP threat remains CRITICAL. The June 23 Nigeria-US intelligence strike killing 21 fighters and the June 20 Kukawa captive rescue are significant operational successes. However, ISWAP's mass-casualty capacity and dual-target coordination capability remain undiminished. Northwest banditry and southeast separatist pressure remain unresolved secondary threats."
         }
       ]
     },
     {
       "name": "Asia-Pacific",
       "overview": [
-        "Myanmar Thandwe breakthrough: AA captures Thandwe Airport on June 23 — the first airport captured by resistance forces since the 2021 coup; fighting spreads to Ngapali Beach by June 26; AA attacking the last 2 junta bases in Thandwe town; junta now controls only Sittwe and Manaung townships in Rakhine State — complete resistance control within weeks.",
-        "China Liaoning deployment concluded: Liaoning Carrier Strike Group concludes 40-day South China Sea and Philippine Sea deployment on June 22; CNS Anhui amphibious assault ship participated in joint exercises; PLA Southern Theatre Command conducted separate naval drills near Luzon in response to Balikatan 2026; grey-zone pressure unabated.",
+        "Myanmar Thandwe consolidated: AA has secured Thandwe Airport and surrounding area; fighting extends to Ngapali Beach zone; AA is attacking the last remaining junta bases in Thandwe town; AA declares it is 'close to achieving the goals of the Rakhine Dream'; junta now controls only Sittwe and Manaung townships in Rakhine State — complete resistance control appears imminent.",
+        "China dual-theatre pressure: Liaoning Carrier Strike Group concluded 40-day South China Sea and Philippine Sea deployment June 22; PLA Southern Theatre Command conducted separate naval drills near Luzon in response to Balikatan 2026; CCG maintains confrontational posture at Scarborough Shoal and Second Thomas Shoal; CCG Yellow Sea incursions continue.",
         "North Korea cruise deployment: Kim Jong Un's June 15 weapons test (8th of 2026) confirmed tactical cruise missile system designated for ROK border deployment; ROK NSC emergency session; US-ROK combined deterrence response being updated; denuclearisation probability remains zero.",
-        "US-Philippines-Australia patrols: First joint South China Sea patrol of 2026 conducted by Philippines, US, and Australia; Japanese fleet modernization transfers via technology transfers advancing; CCG confrontations at Scarborough and Second Thomas Shoal continuing."
+        "US-Philippines-Australia patrols: First joint South China Sea patrol of 2026 conducted by Philippines, US, and Australia; Philippines shifts rhetorical strategy recasting South China Sea as 'shared vulnerability' under President Marcos June mid-month; Japanese fleet modernization transfers advancing."
       ],
       "countries": [
         {
@@ -310,12 +310,12 @@
         {
           "name": "Myanmar", "flag": "🇲🇲", "threat": "CRITICAL",
           "incidents": [
-            "23 Jun — Rakhine State (Thandwe): AA captures Thandwe Airport — first airport captured by resistance forces since 2021 coup; junta airstrikes respond, causing civilian casualties near Thandwe town.",
-            "25 Jun — Rakhine State (Thandwe/Ngapali): Fighting spreads to Ngapali Beach area; AA launches attacks on the last 2 junta bases in Thandwe town; over 45,000 civilians displaced from coastal Thandwe area.",
+            "25 Jun — Rakhine State (Thandwe): AA consolidating control of Thandwe Airport and surrounding area; AA declares it is 'close to achieving the goals of the Rakhine Dream'; junta controls only Sittwe and Manaung townships in Rakhine.",
+            "24 Jun — Rakhine State (Thandwe/Ngapali): Fighting spreads to Ngapali Beach area; AA launches attacks on the last junta bases in Thandwe town; over 45,000 civilians displaced from coastal Thandwe area; World Food Program warns 57% of Rakhine families cannot meet basic food needs.",
             "20 Jun — Rakhine State (Kyaukphyu): Heavy clashes continue near Kyaukphyu; junta relies exclusively on airstrikes and naval gunfire; China's $1.3B port investment directly under siege pressure.",
             "18 Jun — Shan State: SCEF resistance alliance captures additional territory near Lashio; junta airstrike response kills 8 civilians."
           ],
-          "coa": "AA capture of Thandwe Airport and imminent Thandwe town seizure confirm the junta is near complete expulsion from Rakhine State. Junta now controls only Sittwe and Manaung townships. Complete AA Rakhine control appears likely within weeks. China's port investment pressure on Beijing to engage AA diplomatically is at its highest point. No political resolution within 90 days; full junta collapse in Rakhine is the most likely near-term outcome."
+          "coa": "AA consolidation of Thandwe and the AA's own declaration of being close to the 'Rakhine Dream' confirms near-complete expulsion of the junta from Rakhine State. India and Bangladesh have both opened direct communications with AA as the de facto Rakhine authority. China faces maximum diplomatic pressure to engage AA given its Kyaukphyu port investment at risk. No political resolution within 90 days; full junta collapse in Rakhine is the most likely near-term outcome."
         },
         {
           "name": "Pakistan", "flag": "🇵🇰", "threat": "HIGH",
@@ -363,7 +363,7 @@
             "20 Jun — Scarborough Shoal: CCG water cannon deployed against Philippines coast guard — 6th Scarborough confrontation of June; Philippines files 6th diplomatic protest.",
             "19 Jun — Second Thomas Shoal: Philippines conducts resupply mission to BRP Sierra Madre; CCG shadow operation continues confrontational posture but resupply succeeds."
           ],
-          "coa": "Philippines faces persistent and escalating Chinese grey-zone pressure. First US-Philippines-Australia joint South China Sea patrol of 2026 strengthens deterrent posture. Japanese fleet modernization transfers advancing. Scarborough Shoal miscalculation risk remains elevated."
+          "coa": "Philippines faces persistent and escalating Chinese grey-zone pressure. First US-Philippines-Australia joint South China Sea patrol of 2026 strengthens deterrent posture. President Marcos mid-June strategy shift recasts South China Sea as 'shared vulnerability' rather than territorial dispute. Scarborough Shoal miscalculation risk remains elevated."
         },
         {
           "name": "South Korea", "flag": "🇰🇷", "threat": "MODERATE",
@@ -430,7 +430,7 @@
       "name": "Americas",
       "overview": [
         "Colombia right-wing confirmed: Cepeda concedes June 24, sealing De la Espriella's confirmed presidential win; ELN ceasefire expired June 23 — full operations resuming; De la Espriella signals termination of 'total peace' process and hardline US-Colombia counter-insurgency cooperation; 12.9M votes — most-voted president in Colombian history.",
-        "Venezuela stabilising: Tren de Aragua leader Niño Guerrero killed in joint US-Venezuela operation; oil infrastructure at ~60% pre-intervention capacity; 47-state recognition of transitional authority; Maduro loyalist asymmetric resistance weakening but sabotage cells remain active.",
+        "Venezuela stabilising: Tren de Aragua leader Niño Guerrero killed in joint US-Venezuela operation June 12-13; oil infrastructure at ~60% pre-intervention capacity; 47-state recognition of transitional authority; Maduro loyalist asymmetric resistance weakening but sabotage cells remain active.",
         "Haiti GSF crisis deepens: GSF at 25% of mandated strength (1,400 of 5,500); US travel ban on Haitian nationals in effect from June 9; Viv Ansanm expanding gang territorial control in Artibonite agricultural zone; Artibonite food security worsening; Chad replacement force training timeline uncertain.",
         "Cuba economic collapse: US blocks Visa/Mastercard payment systems in June 2026, eliminating remaining tourism revenue; UN OHCHR reports infant mortality at 9.9/1,000 (pre-crisis: 4.0); food production at 40% of normal; medicine at 30%; protest movement expanding geographically but suppressed."
       ],
@@ -438,7 +438,7 @@
         {
           "name": "Venezuela", "flag": "🇻🇪", "threat": "CRITICAL",
           "incidents": [
-            "24 Jun — Caracas: Tren de Aragua leader Niño Guerrero killed in joint US-Venezuela intelligence and security operation; major blow to Venezuela's most significant criminal organisation with international reach.",
+            "24 Jun — Caracas: Tren de Aragua leader Niño Guerrero killed in joint US-Venezuela intelligence and security operation on June 12-13 in Bolívar state; major blow to Venezuela's most significant criminal organisation with international reach.",
             "22 Jun — Maracaibo: Zulia refinery output at approximately 60% of pre-intervention capacity; Maduro loyalist sabotage cells disrupting restoration operations; US-Venezuela joint security operations ongoing.",
             "20 Jun — Apure: Colombia-Venezuela joint border security operation; 4 armed group members killed; border clearing operations continuing.",
             "18 Jun — Caracas: Transitional authority confirms 47 states formally recognise transitional government; democratic roadmap under continued pressure from opposition groups."
