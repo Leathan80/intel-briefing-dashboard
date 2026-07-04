@@ -208,6 +208,25 @@
         "Ecuador": "MODERATE", "Peru": "MODERATE", "Bolivia": "MODERATE",
         "Dominican Republic": "LOW", "Jamaica": "LOW"
       }
+    },
+    {
+      "date": "2026-07-04",
+      "levels": {
+        "Gaza": "CRITICAL", "Lebanon": "CRITICAL", "Iran": "CRITICAL", "Yemen": "HIGH",
+        "Israel": "HIGH", "Iraq": "MODERATE", "Saudi Arabia": "MODERATE", "Syria": "HIGH",
+        "Egypt": "MODERATE", "Jordan": "MODERATE", "Libya": "MODERATE", "Tunisia": "MODERATE",
+        "Ukraine": "CRITICAL", "Russia": "HIGH", "Belarus": "MODERATE", "Moldova": "HIGH",
+        "Georgia": "HIGH", "Armenia": "MODERATE", "Azerbaijan": "LOW",
+        "Mali": "CRITICAL", "Niger": "HIGH", "Burkina Faso": "CRITICAL", "Sudan": "CRITICAL",
+        "Chad": "HIGH", "Mauritania": "MODERATE", "Nigeria": "CRITICAL",
+        "North Korea": "CRITICAL", "Myanmar": "CRITICAL", "Pakistan": "CRITICAL", "India": "MODERATE",
+        "China": "HIGH", "Taiwan": "HIGH", "Philippines": "HIGH", "South Korea": "MODERATE",
+        "Vietnam": "MODERATE", "Japan": "MODERATE", "Indonesia": "HIGH", "Thailand": "LOW",
+        "Bangladesh": "LOW", "Sri Lanka": "LOW",
+        "Venezuela": "HIGH", "Haiti": "CRITICAL", "Colombia": "HIGH", "Cuba": "CRITICAL",
+        "Ecuador": "HIGH", "Peru": "HIGH", "Bolivia": "MODERATE",
+        "Dominican Republic": "LOW", "Jamaica": "LOW"
+      }
     }
   ]
 }
