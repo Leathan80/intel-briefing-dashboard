@@ -11,9 +11,9 @@ const PUBLIC_DIR = path.join(__dirname, "..", "public");
 const GNEWS = "https://news.google.com/rss/search";
 const PER_COUNTRY = 4;
 const WINDOW = "3d";              // headlines from the last 3 days
-const DELAY_MS = 250;            // polite spacing; ~49 * 250ms = ~12s total
+const CONCURRENCY = 8;           // parallel fetches — keeps total wall-time low
 const RETRIES = 2;
-const FETCH_TIMEOUT_MS = 15000;
+const FETCH_TIMEOUT_MS = 12000;
 const CONFLICT_TERMS = "war OR attack OR strike OR military OR conflict OR security OR killed OR protest OR unrest";
 
 // Ambiguous names need a disambiguating phrase instead of the bare country name.
@@ -93,18 +93,24 @@ async function main() {
   const live = { updated: new Date().toISOString(), countries: {} };
   let ok = 0, failed = 0, carried = 0;
 
-  for (const name of countries) {
-    try {
-      const items = await fetchCountry(name);
-      if (items.length) { live.countries[name] = items; ok++; }
-      else if (prev[name]) { live.countries[name] = prev[name]; carried++; }
-    } catch (e) {
-      failed++;
-      if (prev[name]) { live.countries[name] = prev[name]; carried++; }
-      console.error(`  ${name}: ${e.message}`);
+  // Fetch countries in parallel with a bounded worker pool so a slow Google News
+  // window can never push total wall-time past the workflow's 10-minute timeout.
+  const queue = countries.slice();
+  async function worker() {
+    let name;
+    while ((name = queue.shift()) !== undefined) {
+      try {
+        const items = await fetchCountry(name);
+        if (items.length) { live.countries[name] = items; ok++; }
+        else if (prev[name]) { live.countries[name] = prev[name]; carried++; }
+      } catch (e) {
+        failed++;
+        if (prev[name]) { live.countries[name] = prev[name]; carried++; }
+        console.error(`  ${name}: ${e.message}`);
+      }
     }
-    await sleep(DELAY_MS);
   }
+  await Promise.all(Array.from({ length: CONCURRENCY }, worker));
 
   if (ok === 0) {
     console.error("All Google News queries failed — keeping previous live.json");
