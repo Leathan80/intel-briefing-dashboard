@@ -470,8 +470,28 @@ function escalationsUp() {
   return out;
 }
 
+const MONTH_NUM = { Jan: 1, Feb: 2, Mar: 3, Apr: 4, May: 5, Jun: 6, Jul: 7, Aug: 8, Sep: 9, Oct: 10, Nov: 11, Dec: 12 };
+// Incidents are listed roughly oldest→newest and not strictly ordered, so rank by the
+// leading date ("D Mon" / "D-D Mon", using the last day of a range) to pick the newest.
+function incidentRank(s) {
+  const head = String(s).split('—')[0];
+  const m = [...head.matchAll(/(\d{1,2})\s*(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)/g)];
+  if (!m.length) return -1;
+  const last = m[m.length - 1];
+  return MONTH_NUM[last[2]] * 100 + parseInt(last[1], 10);
+}
+function latestIncident(incidents) {
+  if (!incidents || !incidents.length) return '';
+  let best = incidents[0], bestRank = incidentRank(incidents[0]);
+  for (let i = 1; i < incidents.length; i++) {
+    const r = incidentRank(incidents[i]);
+    if (r > bestRank) { bestRank = r; best = incidents[i]; }
+  }
+  return best;
+}
+
 // Landing overview: analysis-driven "where to focus" — CRITICAL/HIGH hotspots
-// (sorted by severity) each with their top key incident, plus an escalation callout.
+// (sorted by severity) each with their most recent key incident, plus an escalation callout.
 function buildPriorityOverview() {
   const col = el('div', 'priority-col');
   col.appendChild(el('div', 'priority-label', 'Priority Watchlist'));
@@ -523,7 +543,7 @@ function buildPriorityOverview() {
     }
     row.appendChild(head);
     if (c.incidents && c.incidents.length) {
-      row.appendChild(el('div', 'priority-inc', c.incidents[0]));
+      row.appendChild(el('div', 'priority-inc', latestIncident(c.incidents)));
     }
     col.appendChild(row);
   });
