@@ -101,6 +101,18 @@
   .headlines-col .headline:last-child { border-bottom: none; }
   @media (max-width: 900px) { .world-layout { grid-template-columns: 1fr; } .headlines-col { max-height: none; position: static; } }
 
+  .priority-col { background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 14px 16px; max-height: 620px; overflow-y: auto; position: sticky; top: 60px; }
+  .priority-label { font-size: 10px; color: var(--navy-2); font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 10px; }
+  .esc-callout { font-size: 11px; color: var(--text); background: #fdf0e3; border: 1px solid #f2d5b3; border-radius: 5px; padding: 8px 10px; margin-bottom: 12px; line-height: 1.45; }
+  .esc-callout .up { color: #b3261e; font-weight: 700; }
+  .esc-none { font-size: 10px; color: var(--muted); margin-bottom: 12px; }
+  .priority-item { padding: 9px 2px; border-bottom: 1px solid #eef2f7; cursor: pointer; border-radius: 4px; }
+  .priority-item:last-child { border-bottom: none; }
+  .priority-item:hover { background: #f5f8fc; }
+  .priority-head { display: flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 700; color: var(--navy); margin-bottom: 3px; }
+  .priority-inc { font-size: 11px; color: var(--muted); line-height: 1.4; }
+  @media (max-width: 900px) { .priority-col { max-height: none; position: static; } }
+
   .gps-intro { background: var(--card); border: 1px solid var(--border); border-left: 3px solid var(--navy-2); padding: 12px 16px; margin-bottom: 16px; border-radius: 6px; font-size: 12px; color: var(--text); line-height: 1.5; }
   .gps-card { background: var(--card); border: 1px solid var(--border); border-radius: 6px; overflow: hidden; margin-bottom: 20px; }
   .gps-card-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 10px 14px; border-bottom: 1px solid var(--border); }
@@ -226,23 +238,44 @@ function updateFeeds() {
     items.slice(0, 3).forEach(it => box.appendChild(headlineEl(it)));
   });
 
-  const list = document.getElementById('global-headlines');
-  if (list) {
-    list.innerHTML = '';
-    const all = [];
-    Object.keys(countries).forEach(name => countries[name].forEach(it => all.push({ ...it, country: name })));
-    all.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
-    if (!all.length) {
-      list.appendChild(el('div', 'feed-updated', 'No live headlines available yet — the hourly crawler will populate this feed.'));
-    } else {
-      all.slice(0, 40).forEach(it => list.appendChild(headlineEl(it, (FLAG_OF[it.country] || '') + ' ' + it.country + ' —')));
-    }
-  }
+  updateNewsFeed();
 
   const upd = document.getElementById('feed-updated');
   if (upd) upd.textContent = LIVE && LIVE.updated
-    ? 'Raw headlines via Google News · last crawled ' + timeAgo(LIVE.updated) + ' · refreshes every 4h · analysis (threat levels & COA) updates daily'
+    ? 'Raw headlines via Google News · last crawled ' + timeAgo(LIVE.updated) + ' · refreshes hourly · analysis (threat levels & COA) updates daily'
     : '';
+}
+
+// Latest News tab: live headlines grouped by region, newest first within each region.
+function updateNewsFeed() {
+  const container = document.getElementById('news-feed');
+  if (!container) return;
+  container.innerHTML = '';
+  const countries = (LIVE && LIVE.countries) || {};
+  let any = false;
+  DATA.regions.forEach(r => {
+    const items = [];
+    r.countries.forEach(c => (countries[c.name] || []).forEach(it => items.push({ ...it, country: c.name })));
+    if (!items.length) return;
+    any = true;
+    items.sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+    container.appendChild(el('div', 'region-label', r.name));
+    items.forEach(it => container.appendChild(headlineEl(it, (FLAG_OF[it.country] || '') + ' ' + it.country + ' —')));
+  });
+  if (!any) container.appendChild(el('div', 'feed-updated', 'No live headlines available yet — the crawler will populate this feed shortly.'));
+}
+
+function buildNewsPanel(panelIdx) {
+  const panel = el('div', 'panel');
+  panel.id = 'panel-' + panelIdx;
+  panel.appendChild(el('div', 'section-title', 'Latest News · by region'));
+  const upd = el('div', 'feed-updated');
+  upd.id = 'feed-updated';
+  panel.appendChild(upd);
+  const container = el('div');
+  container.id = 'news-feed';
+  panel.appendChild(container);
+  return panel;
 }
 
 async function refreshLive() {
@@ -425,6 +458,78 @@ function buildLegend() {
   return legend;
 }
 
+function escalationsUp() {
+  const snaps = (HISTORY && HISTORY.snapshots) || [];
+  const last = snaps[snaps.length - 1], prev = snaps[snaps.length - 2];
+  if (!last || !prev) return [];
+  const out = [];
+  for (const name of Object.keys(last.levels)) {
+    if (!(name in prev.levels)) continue;
+    if (LEVEL_NUM[last.levels[name]] - LEVEL_NUM[prev.levels[name]] > 0) out.push(name);
+  }
+  return out;
+}
+
+// Landing overview: analysis-driven "where to focus" — CRITICAL/HIGH hotspots
+// (sorted by severity) each with their top key incident, plus an escalation callout.
+function buildPriorityOverview() {
+  const col = el('div', 'priority-col');
+  col.appendChild(el('div', 'priority-label', 'Priority Watchlist'));
+
+  const snaps = (HISTORY && HISTORY.snapshots) || [];
+  const up = escalationsUp();
+  if (up.length) {
+    const cal = el('div', 'esc-callout');
+    const arrow = el('span', 'up', '▲ ');
+    cal.appendChild(arrow);
+    cal.appendChild(document.createTextNode(
+      (up.length === 1 ? '1 country escalated' : up.length + ' countries escalated') +
+      ' this week: ' + up.join(', ') + '.'));
+    col.appendChild(cal);
+  } else if (snaps.length >= 2) {
+    col.appendChild(el('div', 'esc-none',
+      'No threat-level escalations since ' + snaps[snaps.length - 2].date + '.'));
+  }
+
+  // Collect CRITICAL/HIGH countries with their region tab index (regions start at tab 2).
+  const items = [];
+  DATA.regions.forEach((r, ri) => {
+    r.countries.forEach(c => {
+      if (c.threat === 'CRITICAL' || c.threat === 'HIGH') {
+        items.push({ c, regionName: r.name, tabIdx: ri + 2 });
+      }
+    });
+  });
+  items.sort((a, b) => {
+    const d = (LEVEL_NUM[b.c.threat] || 0) - (LEVEL_NUM[a.c.threat] || 0);
+    if (d !== 0) return d;
+    return (trendFor(b.c.name) > 0 ? 1 : 0) - (trendFor(a.c.name) > 0 ? 1 : 0);
+  });
+
+  items.forEach(({ c, tabIdx }) => {
+    const row = el('div', 'priority-item');
+    row.title = 'Open ' + c.name + ' in its region tab';
+    row.onclick = () => switchTab(tabIdx);
+    const head = el('div', 'priority-head');
+    head.appendChild(el('span', 'card-flag', c.flag));
+    head.appendChild(document.createTextNode(c.name));
+    head.appendChild(makeBadge(c.threat));
+    const d = trendFor(c.name);
+    if (d > 0) {
+      const arrow = el('span', 'trend-arrow', '▲');
+      arrow.style.color = THREAT.CRITICAL.color;
+      arrow.title = 'Escalated since previous briefing';
+      head.appendChild(arrow);
+    }
+    row.appendChild(head);
+    if (c.incidents && c.incidents.length) {
+      row.appendChild(el('div', 'priority-inc', c.incidents[0]));
+    }
+    col.appendChild(row);
+  });
+  return col;
+}
+
 function buildWorldPanel(panelIdx) {
   const panel = el('div', 'panel');
   panel.id = 'panel-' + panelIdx;
@@ -440,19 +545,7 @@ function buildWorldPanel(panelIdx) {
   mapBox.appendChild(buildLegend());
   layout.appendChild(mapBox);
 
-  const col = el('div', 'headlines-col');
-  const fbTitle = el('div', 'live-label');
-  fbTitle.appendChild(el('span', 'live-dot'));
-  fbTitle.appendChild(document.createTextNode('Latest Headlines'));
-  fbTitle.style.fontSize = '10px';
-  col.appendChild(fbTitle);
-  const updDiv = el('div', 'feed-updated');
-  updDiv.id = 'feed-updated';
-  col.appendChild(updDiv);
-  const list = el('div');
-  list.id = 'global-headlines';
-  col.appendChild(list);
-  layout.appendChild(col);
+  layout.appendChild(buildPriorityOverview());
 
   panel.appendChild(layout);
 
@@ -815,10 +908,10 @@ async function load() {
   tabs.innerHTML = ''; panels.innerHTML = '';
 
   const regionCount = DATA.regions.length;
-  const gpsIdx = regionCount + 1;
-  const trackerIdx = regionCount + 2;
+  const gpsIdx = regionCount + 2;
+  const trackerIdx = regionCount + 3;
 
-  const tabDefs = [{ label: 'Global Map' }]
+  const tabDefs = [{ label: 'Global Map' }, { label: 'Latest News' }]
     .concat(DATA.regions.map(r => ({ label: r.name })))
     .concat([{ label: 'GPS Interference' }, { label: 'Risk Tracker' }]);
 
@@ -830,9 +923,10 @@ async function load() {
 
   panels.appendChild(buildWorldPanel(0));
   mapInits[0] = { inited: false, init: initWorldMap };
+  panels.appendChild(buildNewsPanel(1));
   DATA.regions.forEach((r, ri) => {
-    panels.appendChild(buildRegion(r, ri + 1, ri));
-    mapInits[ri + 1] = { inited: false, init: () => initRegionMap(ri) };
+    panels.appendChild(buildRegion(r, ri + 2, ri));
+    mapInits[ri + 2] = { inited: false, init: () => initRegionMap(ri) };
   });
   panels.appendChild(buildGpsPanel(gpsIdx));
   mapInits[gpsIdx] = { inited: false, init: () => initGpsFrames(gpsIdx) };
