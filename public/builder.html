@@ -50,10 +50,14 @@
   .add-btn { flex-shrink: 0; font-size: 11px; font-weight: 700; border: 1px solid var(--border); background: #eef3fa; color: var(--navy-2); border-radius: 4px; padding: 3px 9px; cursor: pointer; }
   .add-btn:hover { background: var(--navy-2); color: #fff; }
   .add-btn.added { background: #e6f2e6; color: #2e7d32; border-color: #bcd9bc; cursor: default; }
+  .src-item-coa { background: #f5f8fc; }
+  .coa-tag { font-size: 9px; font-weight: 700; color: var(--navy-2); text-transform: uppercase; letter-spacing: 0.5px; border: 1px solid var(--border); border-radius: 3px; padding: 1px 6px; }
+  .coa-preview { font-style: italic; color: var(--muted); }
 
   .badge { font-size: 9px; font-weight: 700; padding: 2px 7px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.5px; }
 
   .tray-item { border: 1px solid var(--border); border-left: 4px solid var(--navy-2); border-radius: 5px; padding: 10px 12px; margin-bottom: 10px; background: #fbfcfe; }
+  .tray-item-coa { border-left-color: #9a7b00; background: #fbf9f2; }
   .tray-head { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
   .pin-num { background: var(--navy-2); color: #fff; min-width: 22px; height: 22px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; }
   .tray-country { font-size: 12px; font-weight: 700; color: var(--navy); flex: 1; }
@@ -78,7 +82,10 @@
   .doc-field { margin-bottom: 10px; }
   .doc-field input[type="text"] { width: 100%; }
 
-  #topic-images-wrap { margin-bottom: 20px; }
+  #topic-maps-wrap, #topic-images-wrap { margin-bottom: 20px; }
+  .topic-maps-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 12px; margin-top: 12px; }
+  .topic-map-caption { font-size: 10px; font-weight: 700; color: var(--navy); text-align: center; margin-top: 5px; }
+  .topic-map-empty { display: flex; align-items: center; justify-content: center; font-size: 10px; color: var(--muted); text-align: center; padding: 6px; }
   .topic-img-hint { font-size: 11px; color: var(--muted); margin-bottom: 12px; }
   .topic-img-sec { border-top: 1px solid var(--border); padding-top: 12px; margin-top: 12px; }
   .topic-img-sec:first-child { border-top: none; padding-top: 0; margin-top: 0; }
@@ -279,8 +286,11 @@ function addEvent(o) {
     text: o.text, date: o.date || '', type: o.type || '',
     country: o.country || '', region: o.region || regionOf(o.country || ''),
     source: o.source, url: o.url || '', comment: '',
+    // lat/lng still computed for data-model consistency, but COA items are never
+    // drawn as a pin (see renderMarkers/captureMap/captureTopicMap) — a 90-day
+    // outlook is a strategic assessment, not a located incident.
     lat: o.lat != null ? o.lat : c.lat, lng: o.lng != null ? o.lng : c.lng,
-    geoQuery: ''
+    geoQuery: '', isCoa: !!o.isCoa
   });
   renderTray(); renderMarkers(); renderSources(); renderTopicImages(); save();
 }
@@ -340,6 +350,14 @@ function removeTopicImage(topic, idx) {
   renderTopicImages(); save();
 }
 function renderTopicImages() {
+  // Topic Maps box shares the same INTSUM-only visibility; its preview goes stale
+  // whenever the topic set changes, so clear it here rather than risk a mismatched
+  // preview lingering on screen (preview and output must never diverge).
+  const mapsWrap = document.getElementById('topic-maps-wrap');
+  if (mapsWrap) mapsWrap.style.display = BRIEF.template === 'intsum' ? '' : 'none';
+  const mapsList = document.getElementById('topic-maps-list');
+  if (mapsList) mapsList.innerHTML = '';
+
   const wrap = document.getElementById('topic-images-wrap');
   if (!wrap) return;
   if (BRIEF.template !== 'intsum') { wrap.style.display = 'none'; return; }
@@ -480,6 +498,21 @@ function renderSources() {
           item.appendChild(btn);
           listEl.appendChild(item);
         });
+        if (c.coa && (!q || c.coa.toLowerCase().includes(q) || c.name.toLowerCase().includes(q))) {
+          const item = el('div', 'src-item src-item-coa');
+          const txt = el('div', 'txt');
+          const head = el('div');
+          head.appendChild(el('b', '', c.flag + ' ' + c.name + ' '));
+          head.appendChild(el('span', 'coa-tag', 'COA · 90-day horizon'));
+          txt.appendChild(head);
+          txt.appendChild(el('div', 'coa-preview', c.coa));
+          item.appendChild(txt);
+          const btn = el('button', 'add-btn', inTray(c.coa, c.name) ? '✓' : '+ Add');
+          if (inTray(c.coa, c.name)) btn.classList.add('added');
+          else btn.onclick = () => addEvent({ text: c.coa, country: c.name, region: r.name, source: 'analysis', isCoa: true, type: 'COA' });
+          item.appendChild(btn);
+          listEl.appendChild(item);
+        }
       });
     });
   } else {
@@ -534,57 +567,65 @@ function renderTray() {
     tray.appendChild(el('div', 'empty-tray', 'Nog geen events geselecteerd — kies links events of voeg een eigen event toe.'));
     return;
   }
-  BRIEF.events.forEach((ev, i) => {
-    ev.num = i + 1;
-    const item = el('div', 'tray-item');
+  // Number only located (non-COA) events, sequentially — matches the pins drawn on
+  // the map (renderMarkers/captureMap). COA/outlook items get no number (no pin).
+  let n = 0;
+  BRIEF.events.forEach(ev => { ev.num = ev.isCoa ? null : ++n; });
+
+  BRIEF.events.forEach(ev => {
+    const item = el('div', 'tray-item' + (ev.isCoa ? ' tray-item-coa' : ''));
     const head = el('div', 'tray-head');
-    head.appendChild(el('span', 'pin-num', String(ev.num)));
+    head.appendChild(ev.isCoa ? el('span', 'coa-tag', 'COA') : el('span', 'pin-num', String(ev.num)));
     head.appendChild(el('span', 'tray-country', (ev.country || 'Eigen event')));
-    head.appendChild(el('span', 'tray-src', ev.source));
+    head.appendChild(el('span', 'tray-src', ev.isCoa ? '90-day horizon' : ev.source));
     const del = el('button', 'del-btn', '✕');
     del.title = 'Verwijderen';
     del.onclick = () => removeEvent(ev.id);
     head.appendChild(del);
     item.appendChild(head);
 
-    const row = el('div', 'tray-row');
-    const dateIn = document.createElement('input');
-    dateIn.type = 'text'; dateIn.className = 'short'; dateIn.placeholder = 'Datum'; dateIn.value = ev.date;
-    dateIn.oninput = () => { ev.date = dateIn.value; save(); };
-    const typeIn = document.createElement('input');
-    typeIn.type = 'text'; typeIn.className = 'short'; typeIn.placeholder = 'Type (DF/IED…)'; typeIn.value = ev.type;
-    typeIn.oninput = () => { ev.type = typeIn.value; save(); };
-    row.appendChild(dateIn); row.appendChild(typeIn);
-    item.appendChild(row);
+    if (!ev.isCoa) {
+      const row = el('div', 'tray-row');
+      const dateIn = document.createElement('input');
+      dateIn.type = 'text'; dateIn.className = 'short'; dateIn.placeholder = 'Datum'; dateIn.value = ev.date;
+      dateIn.oninput = () => { ev.date = dateIn.value; save(); };
+      const typeIn = document.createElement('input');
+      typeIn.type = 'text'; typeIn.className = 'short'; typeIn.placeholder = 'Type (DF/IED…)'; typeIn.value = ev.type;
+      typeIn.oninput = () => { ev.type = typeIn.value; save(); };
+      row.appendChild(dateIn); row.appendChild(typeIn);
+      item.appendChild(row);
+    }
 
     const txt = document.createElement('textarea');
-    txt.rows = 2; txt.value = ev.text; txt.placeholder = 'Event-tekst';
+    txt.rows = ev.isCoa ? 4 : 2; txt.value = ev.text; txt.placeholder = ev.isCoa ? 'COA / 90-day horizon' : 'Event-tekst';
     txt.oninput = () => { ev.text = txt.value; save(); };
     item.appendChild(txt);
 
-    item.appendChild(el('div', 'lbl', 'Locatie — sleep de pin op de kaart, of vul lat/lng in'));
-    const latlng = el('div', 'geo-row');
-    const latIn = document.createElement('input');
-    latIn.type = 'text'; latIn.id = 'lat-' + ev.id; latIn.placeholder = 'lat'; latIn.value = ev.lat.toFixed(4);
-    latIn.style.flex = '0 0 90px';
-    const lngIn = document.createElement('input');
-    lngIn.type = 'text'; lngIn.id = 'lng-' + ev.id; lngIn.placeholder = 'lng'; lngIn.value = ev.lng.toFixed(4);
-    lngIn.style.flex = '0 0 90px';
-    const applyLL = () => setManualLatLng(ev.id, latIn.value, lngIn.value);
-    latIn.onchange = applyLL; lngIn.onchange = applyLL;
-    latlng.appendChild(latIn); latlng.appendChild(lngIn);
-    item.appendChild(latlng);
+    if (!ev.isCoa) {
+      item.appendChild(el('div', 'lbl', 'Locatie — sleep de pin op de kaart, of vul lat/lng in'));
+      const latlng = el('div', 'geo-row');
+      const latIn = document.createElement('input');
+      latIn.type = 'text'; latIn.id = 'lat-' + ev.id; latIn.placeholder = 'lat'; latIn.value = ev.lat.toFixed(4);
+      latIn.style.flex = '0 0 90px';
+      const lngIn = document.createElement('input');
+      lngIn.type = 'text'; lngIn.id = 'lng-' + ev.id; lngIn.placeholder = 'lng'; lngIn.value = ev.lng.toFixed(4);
+      lngIn.style.flex = '0 0 90px';
+      const applyLL = () => setManualLatLng(ev.id, latIn.value, lngIn.value);
+      latIn.onchange = applyLL; lngIn.onchange = applyLL;
+      latlng.appendChild(latIn); latlng.appendChild(lngIn);
+      item.appendChild(latlng);
 
-    item.appendChild(el('div', 'lbl', 'Plaatsnaam zoeken (optioneel, vereist internet)'));
-    const geo = el('div', 'geo-row');
-    const geoIn = document.createElement('input');
-    geoIn.type = 'text'; geoIn.id = 'geo-' + ev.id; geoIn.placeholder = 'bv. Hodeidah…'; geoIn.value = ev.geoQuery || '';
-    geoIn.onkeydown = e => { if (e.key === 'Enter') geoLookup(ev.id); };
-    const geoBtn = el('button', 'geo-btn', 'Zoek');
-    geoBtn.onclick = () => geoLookup(ev.id);
-    geo.appendChild(geoIn); geo.appendChild(geoBtn);
-    item.appendChild(geo);
-    item.appendChild(el('div', 'geo-status', '')).id = 'geostat-' + ev.id;
+      item.appendChild(el('div', 'lbl', 'Plaatsnaam zoeken (optioneel, vereist internet)'));
+      const geo = el('div', 'geo-row');
+      const geoIn = document.createElement('input');
+      geoIn.type = 'text'; geoIn.id = 'geo-' + ev.id; geoIn.placeholder = 'bv. Hodeidah…'; geoIn.value = ev.geoQuery || '';
+      geoIn.onkeydown = e => { if (e.key === 'Enter') geoLookup(ev.id); };
+      const geoBtn = el('button', 'geo-btn', 'Zoek');
+      geoBtn.onclick = () => geoLookup(ev.id);
+      geo.appendChild(geoIn); geo.appendChild(geoBtn);
+      item.appendChild(geo);
+      item.appendChild(el('div', 'geo-status', '')).id = 'geostat-' + ev.id;
+    }
 
     item.appendChild(el('div', 'lbl', 'Analyst comment (optioneel)'));
     const com = document.createElement('textarea');
@@ -617,8 +658,10 @@ function initMap() {
 function renderMarkers() {
   if (!map) return;
   markerLayer.clearLayers();
-  BRIEF.events.forEach((ev, i) => {
-    const icon = L.divIcon({ className: '', html: '<div class="marker-pin">' + (i + 1) + '</div>', iconSize: [26, 26], iconAnchor: [13, 13] });
+  // COA/outlook items are a strategic assessment, not a located event — no map pin.
+  BRIEF.events.forEach(ev => {
+    if (ev.isCoa) return;
+    const icon = L.divIcon({ className: '', html: '<div class="marker-pin">' + ev.num + '</div>', iconSize: [26, 26], iconAnchor: [13, 13] });
     const m = L.marker([ev.lat, ev.lng], { icon, draggable: true });
     m.bindTooltip((ev.date ? ev.date + ' — ' : '') + ev.text.slice(0, 60));
     m.on('dragend', () => { const p = m.getLatLng(); ev.lat = p.lat; ev.lng = p.lng; syncLatLngInputs(ev.id); save(); });
@@ -626,8 +669,9 @@ function renderMarkers() {
   });
 }
 function fitToPins() {
-  if (!BRIEF.events.length) return;
-  const b = L.latLngBounds(BRIEF.events.map(e => [e.lat, e.lng]));
+  const pinned = BRIEF.events.filter(e => !e.isCoa);
+  if (!pinned.length) return;
+  const b = L.latLngBounds(pinned.map(e => [e.lat, e.lng]));
   map.fitBounds(b.pad(0.35), { animate: false });
 }
 function applyRegionPreset() {
@@ -654,7 +698,43 @@ function tracePolygon(ctx, coords) {
     ctx.closePath();
   });
 }
-function captureMap() {
+// Draws GEO country outlines + numbered pins onto a context already sized/scaled by
+// the caller. `pins` is [{ev, num}] — only these get drawn, with the given number
+// (lets callers use global tray numbers OR a topic-local 1..n renumbering).
+function drawGeoAndPins(ctx, w, h, pins) {
+  ctx.fillStyle = '#f3f5f9';
+  ctx.fillRect(0, 0, w, h);
+
+  GEO.features.forEach(f => {
+    const geom = f.geometry;
+    if (!geom) return;
+    ctx.beginPath();
+    if (geom.type === 'Polygon') tracePolygon(ctx, geom.coordinates);
+    else if (geom.type === 'MultiPolygon') geom.coordinates.forEach(poly => tracePolygon(ctx, poly));
+    else return;
+    ctx.fillStyle = '#e3e9f2';
+    ctx.fill('evenodd');
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = '#c3d0e0';
+    ctx.stroke();
+  });
+
+  pins.forEach(({ ev, num }) => {
+    const pt = map.latLngToContainerPoint([ev.lat, ev.lng]);
+    if (pt.x < -20 || pt.y < -20 || pt.x > w + 20 || pt.y > h + 20) return;
+    ctx.beginPath();
+    ctx.arc(pt.x, pt.y, 12, 0, Math.PI * 2);
+    ctx.fillStyle = '#1d4e89';
+    ctx.fill();
+    ctx.lineWidth = 2.5; ctx.strokeStyle = '#ffffff'; ctx.stroke();
+    ctx.fillStyle = '#ffffff';
+    ctx.font = 'bold 13px Segoe UI, Arial';
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillText(String(num), pt.x, pt.y + 0.5);
+  });
+}
+// Renders whatever view the interactive map is CURRENTLY at to a PNG data URL.
+function renderMapToPng(pins) {
   return new Promise((resolve) => {
     if (!map || !GEO) return resolve(null);
     try {
@@ -666,40 +746,86 @@ function captureMap() {
       canvas.width = w * scale; canvas.height = h * scale;
       const ctx = canvas.getContext('2d');
       ctx.scale(scale, scale);
-
-      ctx.fillStyle = '#f3f5f9';
-      ctx.fillRect(0, 0, w, h);
-
-      GEO.features.forEach(f => {
-        const geom = f.geometry;
-        if (!geom) return;
-        ctx.beginPath();
-        if (geom.type === 'Polygon') tracePolygon(ctx, geom.coordinates);
-        else if (geom.type === 'MultiPolygon') geom.coordinates.forEach(poly => tracePolygon(ctx, poly));
-        else return;
-        ctx.fillStyle = '#e3e9f2';
-        ctx.fill('evenodd');
-        ctx.lineWidth = 1;
-        ctx.strokeStyle = '#c3d0e0';
-        ctx.stroke();
-      });
-
-      BRIEF.events.forEach((ev, i) => {
-        const pt = map.latLngToContainerPoint([ev.lat, ev.lng]);
-        if (pt.x < -20 || pt.y < -20 || pt.x > w + 20 || pt.y > h + 20) return;
-        ctx.beginPath();
-        ctx.arc(pt.x, pt.y, 12, 0, Math.PI * 2);
-        ctx.fillStyle = '#1d4e89';
-        ctx.fill();
-        ctx.lineWidth = 2.5; ctx.strokeStyle = '#ffffff'; ctx.stroke();
-        ctx.fillStyle = '#ffffff';
-        ctx.font = 'bold 13px Segoe UI, Arial';
-        ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
-        ctx.fillText(String(i + 1), pt.x, pt.y + 0.5);
-      });
-
+      drawGeoAndPins(ctx, w, h, pins);
       resolve(canvas.toDataURL('image/png'));
     } catch (e) { resolve(null); }
+  });
+}
+// Incident Card / overview map: all non-COA events at their existing tray numbers
+// (ev.num, assigned in renderTray()), on whatever view the map is currently at.
+function captureMap() {
+  const pins = BRIEF.events.filter(e => !e.isCoa).map(ev => ({ ev, num: ev.num }));
+  return renderMapToPng(pins);
+}
+
+const MIN_TOPIC_SPAN = 5; // degrees — stops a single/near-collocated pin from over-zooming
+function numberLocally(events) {
+  const out = new Map();
+  let n = 0;
+  events.forEach(ev => out.set(ev.id, ++n));
+  return out;
+}
+// "Capture mode": moves the map to frame `topic`'s own events, captures a PNG, and
+// returns both the image and the local 1..n numbering used — callers reuse that
+// numbering so the topic's text list matches pins on its own map exactly.
+async function captureTopicMap(topic) {
+  const evts = BRIEF.events.filter(e => (e.region || 'Other') === topic && !e.isCoa);
+  if (evts.length) {
+    let bounds = L.latLngBounds(evts.map(e => [e.lat, e.lng]));
+    const sw = bounds.getSouthWest(), ne = bounds.getNorthEast();
+    if ((ne.lat - sw.lat) < MIN_TOPIC_SPAN || (ne.lng - sw.lng) < MIN_TOPIC_SPAN) {
+      const cLat = (ne.lat + sw.lat) / 2, cLng = (ne.lng + sw.lng) / 2;
+      bounds = L.latLngBounds(
+        [cLat - MIN_TOPIC_SPAN / 2, cLng - MIN_TOPIC_SPAN / 2],
+        [cLat + MIN_TOPIC_SPAN / 2, cLng + MIN_TOPIC_SPAN / 2]
+      );
+    }
+    map.fitBounds(bounds.pad(0.25), { animate: false });
+  } else if (REGION_BOUNDS[topic]) {
+    map.fitBounds(REGION_BOUNDS[topic], { animate: false });
+  } else {
+    map.setView([20, 0], 2, { animate: false });
+  }
+  const localNums = numberLocally(evts);
+  const pins = evts.map(ev => ({ ev, num: localNums.get(ev.id) }));
+  const png = await renderMapToPng(pins);
+  return { png, localNums };
+}
+// Runs captureTopicMap() for every topic in sequence, then restores the interactive
+// map to its normal "fit all pins" view. Shared by the preview button and generation.
+async function captureAllTopicMaps() {
+  const result = {};
+  for (const topic of topicsFromEvents()) {
+    result[topic] = await captureTopicMap(topic);
+  }
+  fitToPins();
+  return result;
+}
+// "Preview topic maps" button: runs the exact same capture-mode sequence used at
+// generation time and shows the results as thumbnails, so the analyst can sanity-check
+// framing before committing to HTML/PDF or PPTX — preview and output can never diverge.
+async function previewTopicMaps() {
+  if (!BRIEF.events.length) { alert('Selecteer eerst events.'); return; }
+  const btn = document.getElementById('btn-preview-maps');
+  const list = document.getElementById('topic-maps-list');
+  btn.disabled = true; btn.textContent = 'Kaarten vastleggen…';
+  const results = await captureAllTopicMaps();
+  btn.disabled = false; btn.textContent = '🗺 Preview topic maps';
+  if (!list) return;
+  list.innerHTML = '';
+  Object.keys(results).forEach(topic => {
+    const item = el('div');
+    const thumb = el('div', 'topic-img-thumb');
+    if (results[topic] && results[topic].png) {
+      const img = document.createElement('img');
+      img.src = results[topic].png; img.alt = topic;
+      thumb.appendChild(img);
+    } else {
+      thumb.appendChild(el('div', 'topic-map-empty', 'kaart niet beschikbaar'));
+    }
+    item.appendChild(thumb);
+    item.appendChild(el('div', 'topic-map-caption', topic));
+    list.appendChild(item);
   });
 }
 
@@ -740,13 +866,26 @@ const PRINT_CSS = `
   .noprint button { font: inherit; font-weight: 700; background: #1d4e89; color: #fff; border: 0; border-radius: 5px; padding: 9px 18px; cursor: pointer; }
 `;
 
-function evtHtml(ev, i) {
-  let h = '<div class="evt"><span class="evt-num">' + (i + 1) + '</span><div class="evt-txt">';
+function evtHtml(ev, num) {
+  let h = '<div class="evt"><span class="evt-num">' + num + '</span><div class="evt-txt">';
   h += '<b>' + esc(ev.date || '') + (ev.type ? ' (' + esc(ev.type) + ')' : '') + (ev.date || ev.type ? ': ' : '') + '</b>';
   h += esc(ev.text);
   if (ev.country) h += ' <span style="color:#8a99ad">— ' + esc(ev.country) + '</span>';
   if (ev.comment) h += '<div class="evt-com">' + esc(ev.comment) + '</div>';
   h += '</div></div>';
+  return h;
+}
+// COA/90-day outlook items: unnumbered, one labeled box per country, appended after
+// the numbered incident list on that scope's page (topic page, or the Card's page).
+function coaEventsHtml(events) {
+  if (!events.length) return '';
+  let h = '<h2 style="margin-top:16px">COA · 90-day Outlook</h2>';
+  events.forEach(ev => {
+    h += '<div style="margin-bottom:10px"><div style="font-weight:700;color:#10294a;font-size:11px;margin-bottom:4px">' +
+      esc(ev.country || '') + '</div><div class="assess">' + esc(ev.text) + '</div>';
+    if (ev.comment) h += '<div class="evt-com">' + esc(ev.comment) + '</div>';
+    h += '</div>';
+  });
   return h;
 }
 
@@ -796,29 +935,42 @@ function topicImagesHtml(topic) {
 async function generateHtml() {
   if (!BRIEF.events.length) { alert('Selecteer eerst events.'); return; }
   const btn = document.getElementById('btn-html');
-  btn.disabled = true; btn.textContent = 'Kaart vastleggen…';
-  const png = await captureMap();
-  btn.disabled = false; btn.textContent = '⎙ HTML / PDF';
+  btn.disabled = true;
+  btn.textContent = BRIEF.template === 'card' ? 'Kaart vastleggen…' : 'Kaarten per topic vastleggen…';
 
   let body = '';
   if (BRIEF.template === 'card') {
     // Incident Card: single page by design (matches the real-world "1-slide" product).
+    const png = await captureMap();
+    const located = BRIEF.events.filter(e => !e.isCoa);
     body += briefHeaderHtml();
     body += mapImgHtml(png);
-    body += '<h2>Events</h2>';
-    BRIEF.events.forEach((ev, i) => body += evtHtml(ev, i));
+    if (located.length) {
+      body += '<h2>Events</h2>';
+      located.forEach(ev => body += evtHtml(ev, ev.num));
+    }
+    body += coaEventsHtml(BRIEF.events.filter(e => e.isCoa));
     if (BRIEF.assessment) body += '<h2>Analyst Assessment</h2><div class="assess">' + esc(BRIEF.assessment) + '</div>';
     body += briefFooterHtml();
   } else {
-    // INTSUM: cover page → situation map page → one page per topic (region) → assessment page.
+    // INTSUM: cover page → one page per topic (own map + incidents + COA + imagery) → assessment page.
+    // "Capture mode": the map is moved to each topic's own framing and captured in turn.
+    const topicMaps = await captureAllTopicMaps();
     body += intsumCoverHtml();
 
-    body += '<div class="page-break">' + runningHeaderHtml() +
-      '<h2>Situation Map</h2>' + mapImgHtml(png) + '</div>';
-
     topicsFromEvents().forEach(topic => {
+      const tm = topicMaps[topic] || {};
+      const localNums = tm.localNums || new Map();
+      const topicLocated = BRIEF.events.filter(ev => (ev.region || 'Other') === topic && !ev.isCoa);
+      const topicCoas = BRIEF.events.filter(ev => (ev.region || 'Other') === topic && ev.isCoa);
+
       body += '<div class="page-break">' + runningHeaderHtml() + '<h2>' + esc(topic) + '</h2>';
-      BRIEF.events.forEach((ev, i) => { if ((ev.region || 'Other') === topic) body += evtHtml(ev, i); });
+      body += mapImgHtml(tm.png);
+      if (topicLocated.length) {
+        body += '<h2 style="margin-top:16px">Key Incidents</h2>';
+        topicLocated.forEach(ev => body += evtHtml(ev, localNums.get(ev.id)));
+      }
+      body += coaEventsHtml(topicCoas);
       const photos = topicImagesHtml(topic);
       if (photos) body += '<h2 style="margin-top:16px">Imagery</h2>' + photos;
       body += '</div>';
@@ -830,6 +982,8 @@ async function generateHtml() {
     }
     body += briefFooterHtml();
   }
+
+  btn.disabled = false; btn.textContent = '⎙ HTML / PDF';
 
   const w = window.open('', '_blank');
   if (!w) { alert('Pop-up geblokkeerd — sta pop-ups toe.'); return; }
@@ -854,16 +1008,45 @@ function pptClassifBanners(slide) {
   slide.addText(c, { x: 0, y: 0.02, w: 13.33, h: 0.28, align: 'center', fontSize: 9, bold: true, color: PPT.classif });
   slide.addText(c, { x: 0, y: 7.2, w: 13.33, h: 0.28, align: 'center', fontSize: 9, bold: true, color: PPT.classif });
 }
-function pptEvtLines(events) {
+// localNums (optional): Map(eventId -> topic-local number). Omit to use the event's
+// own global tray number (ev.num) — used for the Incident Card's single combined list.
+function pptEvtLines(events, localNums) {
   const lines = [];
   events.forEach(ev => {
-    const head = (ev.num ? ev.num + '. ' : '') + (ev.date || '') + (ev.type ? ' (' + ev.type + ')' : '');
+    const num = localNums ? localNums.get(ev.id) : ev.num;
+    const head = (num ? num + '. ' : '') + (ev.date || '') + (ev.type ? ' (' + ev.type + ')' : '');
     lines.push({ text: head + (head.trim() ? ': ' : ''), options: { bold: true, color: PPT.navy, fontSize: 11, breakLine: false } });
     lines.push({ text: ev.text + (ev.country ? '  — ' + ev.country : ''), options: { color: PPT.text, fontSize: 11, breakLine: true } });
     if (ev.comment) lines.push({ text: '     ▸ ' + ev.comment, options: { italic: true, color: PPT.muted, fontSize: 10.5, breakLine: true } });
     lines.push({ text: '', options: { fontSize: 4, breakLine: true } });
   });
   return lines;
+}
+// COA/90-day outlook text runs: unnumbered, one country label + italic outlook per
+// entry. `withHeading` adds a small section title (used when appended to the Card's
+// shared event-list text box; INTSUM instead gives COA its own titled slide).
+function coaPptLines(events, withHeading) {
+  const lines = [];
+  if (withHeading && events.length) {
+    lines.push({ text: 'COA · 90-DAY OUTLOOK', options: { bold: true, color: PPT.navy2, fontSize: 10.5, breakLine: true } });
+  }
+  events.forEach(ev => {
+    lines.push({ text: (ev.country || ''), options: { bold: true, color: PPT.navy2, fontSize: 11, breakLine: true } });
+    lines.push({ text: ev.text, options: { italic: true, color: PPT.text, fontSize: 10.5, breakLine: true } });
+    if (ev.comment) lines.push({ text: '▸ ' + ev.comment, options: { italic: true, color: PPT.muted, fontSize: 10, breakLine: true } });
+    lines.push({ text: '', options: { fontSize: 4, breakLine: true } });
+  });
+  return lines;
+}
+// Dedicated "COA · 90-day Outlook" slide for a topic (INTSUM) — omitted if the topic
+// has no COA items selected.
+function addCoaSlide(pptx, topic) {
+  const coas = BRIEF.events.filter(e => (e.region || 'Other') === topic && e.isCoa);
+  if (!coas.length) return;
+  const s = pptx.addSlide();
+  pptClassifBanners(s);
+  s.addText(topic.toUpperCase() + ' — COA · 90-DAY OUTLOOK', { x: 0.3, y: 0.4, w: 12.7, h: 0.5, fontSize: 16, bold: true, color: PPT.navy });
+  s.addText(coaPptLines(coas, false), { x: 0.3, y: 1.05, w: 12.73, h: 6.0, valign: 'top', fill: { color: PPT.bgLight }, line: { color: PPT.border } });
 }
 // One or more dedicated "Imagery" slides per topic (2x2 photo grid, paginated at 4/slide).
 function addImagerySlides(pptx, topic) {
@@ -894,13 +1077,15 @@ async function generatePptx() {
   const btn = document.getElementById('btn-pptx');
   btn.disabled = true; btn.textContent = 'Genereren…';
   try {
-    const png = await captureMap();
     const pptx = new PptxGenJS();
     pptx.defineLayout({ name: 'WIDE', width: 13.33, height: 7.5 });
     pptx.layout = 'WIDE';
 
     if (BRIEF.template === 'card') {
-      // ----- Incident Card: one slide -----
+      // ----- Incident Card: one slide, combined map + list (design stays as-is) -----
+      const png = await captureMap();
+      const located = BRIEF.events.filter(e => !e.isCoa);
+      const coas = BRIEF.events.filter(e => e.isCoa);
       const s = pptx.addSlide();
       pptClassifBanners(s);
       s.addShape('rect', { x: 0, y: 0.35, w: 13.33, h: 0.7, fill: { color: PPT.navy } });
@@ -908,14 +1093,20 @@ async function generatePptx() {
       s.addText((BRIEF.unit ? BRIEF.unit + '  ·  ' : '') + (BRIEF.period || ''), { x: 9.6, y: 0.35, w: 3.5, h: 0.7, align: 'right', fontSize: 11, color: 'CFE0F5' });
       if (png) s.addImage({ data: png, x: 0.3, y: 1.2, w: 7.9, h: 5.4 });
       else s.addText('Kaart niet beschikbaar — plak hier een schermafdruk.', { x: 0.3, y: 1.2, w: 7.9, h: 5.4, align: 'center', fontSize: 12, color: PPT.muted, fill: { color: PPT.bgLight }, line: { color: PPT.border } });
-      s.addText(pptEvtLines(BRIEF.events), { x: 8.35, y: 1.2, w: 4.68, h: 5.4, valign: 'top', fill: { color: 'FFFFFF' }, line: { color: PPT.border } });
+      s.addText([...pptEvtLines(located), ...coaPptLines(coas, true)], { x: 8.35, y: 1.2, w: 4.68, h: 5.4, valign: 'top', fill: { color: 'FFFFFF' }, line: { color: PPT.border } });
       if (BRIEF.assessment) {
         s.addText([{ text: 'ANALYST ASSESSMENT:  ', options: { bold: true, color: PPT.navy2, fontSize: 10.5 } },
                    { text: BRIEF.assessment, options: { italic: true, color: PPT.text, fontSize: 10.5 } }],
           { x: 0.3, y: 6.72, w: 12.73, h: 0.55, valign: 'top', fill: { color: PPT.bgLight }, line: { color: PPT.border } });
       }
     } else {
-      // ----- INTSUM: title + situation + per-region + assessment -----
+      // ----- INTSUM: title → per-topic (own map → incidents → COA → imagery) → assessment -----
+      // "Capture mode": the interactive map is moved to each topic's own framing and
+      // captured in turn, then restored — see captureAllTopicMaps().
+      btn.textContent = 'Kaarten per topic vastleggen…';
+      const topicMaps = await captureAllTopicMaps();
+      btn.textContent = 'Genereren…';
+
       const t = pptx.addSlide();
       pptClassifBanners(t);
       t.addText('INTELLIGENCE SUMMARY', { x: 0.6, y: 2.15, w: 12.1, h: 0.4, fontSize: 13, bold: true, color: PPT.navy2, charSpacing: 2 });
@@ -924,21 +1115,24 @@ async function generatePptx() {
       t.addText((BRIEF.unit ? BRIEF.unit + '  ·  ' : '') + (BRIEF.period || ''), { x: 0.6, y: 3.5, w: 12.1, h: 0.5, fontSize: 14, color: 'CFE0F5' });
       t.addText('Generated: ' + new Date().toUTCString(), { x: 0.6, y: 6.5, w: 12.1, h: 0.4, fontSize: 10, color: PPT.muted });
 
-      const sit = pptx.addSlide();
-      pptClassifBanners(sit);
-      sit.addText('SITUATION MAP', { x: 0.3, y: 0.4, w: 12.7, h: 0.5, fontSize: 16, bold: true, color: PPT.navy });
-      if (png) sit.addImage({ data: png, x: 0.9, y: 1.0, w: 11.5, h: 5.9 });
-      else sit.addText('Kaart niet beschikbaar.', { x: 0.9, y: 1.0, w: 11.5, h: 5.9, align: 'center', fontSize: 12, color: PPT.muted, fill: { color: PPT.bgLight }, line: { color: PPT.border } });
+      topicsFromEvents().forEach(rn => {
+        const tm = topicMaps[rn] || {};
+        const localNums = tm.localNums || new Map();
+        const evts = BRIEF.events.filter(e => (e.region || 'Other') === rn && !e.isCoa);
 
-      const regions = [...new Set(BRIEF.events.map(e => e.region || 'Other'))];
-      regions.forEach(rn => {
-        const evts = BRIEF.events.filter(e => (e.region || 'Other') === rn);
+        const mapSlide = pptx.addSlide();
+        pptClassifBanners(mapSlide);
+        mapSlide.addText(rn.toUpperCase(), { x: 0.3, y: 0.4, w: 12.7, h: 0.5, fontSize: 16, bold: true, color: PPT.navy });
+        if (tm.png) mapSlide.addImage({ data: tm.png, x: 0.9, y: 1.0, w: 11.5, h: 5.9 });
+        else mapSlide.addText('Kaart niet beschikbaar.', { x: 0.9, y: 1.0, w: 11.5, h: 5.9, align: 'center', fontSize: 12, color: PPT.muted, fill: { color: PPT.bgLight }, line: { color: PPT.border } });
+
         for (let off = 0; off < evts.length; off += 6) {
           const s = pptx.addSlide();
           pptClassifBanners(s);
-          s.addText(rn.toUpperCase() + (off ? ' (vervolg)' : ''), { x: 0.3, y: 0.4, w: 12.7, h: 0.5, fontSize: 16, bold: true, color: PPT.navy });
-          s.addText(pptEvtLines(evts.slice(off, off + 6)), { x: 0.3, y: 1.05, w: 12.73, h: 6.0, valign: 'top' });
+          s.addText(rn.toUpperCase() + ' — KEY INCIDENTS' + (off ? ' (vervolg)' : ''), { x: 0.3, y: 0.4, w: 12.7, h: 0.5, fontSize: 16, bold: true, color: PPT.navy });
+          s.addText(pptEvtLines(evts.slice(off, off + 6), localNums), { x: 0.3, y: 1.05, w: 12.73, h: 6.0, valign: 'top' });
         }
+        addCoaSlide(pptx, rn);
         addImagerySlides(pptx, rn);
       });
 
@@ -1056,6 +1250,21 @@ function renderApp() {
   docBox.appendChild(docBody);
   mLayout.appendChild(docBox);
   app.appendChild(mLayout);
+
+  const mapsWrap = el('div', 'box');
+  mapsWrap.id = 'topic-maps-wrap';
+  mapsWrap.appendChild(el('div', 'box-head', 'Topic Maps'));
+  const mapsBody = el('div', 'box-body');
+  mapsBody.appendChild(el('div', 'topic-img-hint',
+    '"Capture-modus": de kaart wordt automatisch naar elk topic verplaatst en daar vastgelegd — dit is exact de kaart die in de INTSUM-output terechtkomt.'));
+  const previewBtn = el('button', 'geo-btn', '🗺 Preview topic maps');
+  previewBtn.id = 'btn-preview-maps';
+  previewBtn.onclick = previewTopicMaps;
+  mapsBody.appendChild(previewBtn);
+  const mapsList = el('div', 'topic-maps-grid'); mapsList.id = 'topic-maps-list';
+  mapsBody.appendChild(mapsList);
+  mapsWrap.appendChild(mapsBody);
+  app.appendChild(mapsWrap);
 
   const topicWrap = el('div', 'box');
   topicWrap.id = 'topic-images-wrap';
