@@ -78,6 +78,19 @@
   .doc-field { margin-bottom: 10px; }
   .doc-field input[type="text"] { width: 100%; }
 
+  #topic-images-wrap { margin-bottom: 20px; }
+  .topic-img-hint { font-size: 11px; color: var(--muted); margin-bottom: 12px; }
+  .topic-img-sec { border-top: 1px solid var(--border); padding-top: 12px; margin-top: 12px; }
+  .topic-img-sec:first-child { border-top: none; padding-top: 0; margin-top: 0; }
+  .topic-img-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
+  .topic-img-name { font-size: 12px; font-weight: 700; color: var(--navy); }
+  .topic-img-empty { font-size: 11px; color: var(--muted); }
+  .topic-img-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 8px; }
+  .topic-img-thumb { position: relative; border: 1px solid var(--border); border-radius: 4px; overflow: hidden; aspect-ratio: 4/3; background: #eef2f7; }
+  .topic-img-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .topic-img-del { position: absolute; top: 3px; right: 3px; width: 18px; height: 18px; border-radius: 50%; border: none; background: rgba(16,41,74,0.75); color: #fff; font-size: 10px; font-weight: 700; cursor: pointer; line-height: 18px; padding: 0; }
+  .topic-img-del:hover { background: #b3261e; }
+
   .gen-bar { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 14px 16px; }
   .gen-btn { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; background: var(--navy-2); color: #fff; border: none; border-radius: 5px; padding: 10px 18px; cursor: pointer; }
   .gen-btn:hover { background: var(--navy); }
@@ -139,7 +152,8 @@ const BRIEF = {
   classification: '',
   assessment: '',
   template: 'card',
-  events: []   // {id, num, text, date, type, country, region, source, url, comment, lat, lng, geoQuery}
+  events: [],       // {id, num, text, date, type, country, region, source, url, comment, lat, lng, geoQuery}
+  topicImages: {}   // { [topicName]: [{ dataUrl, name }] } — INTSUM only, one topic = one region page/slide
 };
 
 /* ---------- helpers ---------- */
@@ -250,6 +264,7 @@ function clearDraft() {
   if (!confirm('Briefing leegmaken? Dit verwijdert alle geselecteerde events en teksten.')) return;
   BRIEF.title = 'Intelligence Briefing'; BRIEF.unit = ''; BRIEF.period = DATA.period;
   BRIEF.classification = DATA.classification; BRIEF.assessment = ''; BRIEF.events = [];
+  BRIEF.topicImages = {};
   renderAll(); save();
 }
 
@@ -267,11 +282,109 @@ function addEvent(o) {
     lat: o.lat != null ? o.lat : c.lat, lng: o.lng != null ? o.lng : c.lng,
     geoQuery: ''
   });
-  renderTray(); renderMarkers(); renderSources(); save();
+  renderTray(); renderMarkers(); renderSources(); renderTopicImages(); save();
 }
 function removeEvent(id) {
   BRIEF.events = BRIEF.events.filter(e => e.id !== id);
-  renderTray(); renderMarkers(); renderSources(); save();
+  renderTray(); renderMarkers(); renderSources(); renderTopicImages(); save();
+}
+
+/* ---------- topic images (INTSUM) ----------
+   One topic = one region among the currently selected events. Each topic gets its
+   own page (HTML/PDF) or slide(s) (PPTX) in the INTSUM template; images attached
+   here appear on that topic's page. Images are downscaled client-side (canvas) so
+   drafts stay small in localStorage and exports stay a reasonable file size — this
+   never touches the network, works fully offline. */
+function topicsFromEvents() {
+  return [...new Set(BRIEF.events.map(e => e.region || 'Other'))];
+}
+function readAndDownscaleImage(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => {
+      const img = new Image();
+      img.onload = () => {
+        const maxDim = 1400;
+        let w = img.naturalWidth, h = img.naturalHeight;
+        if (w > maxDim || h > maxDim) {
+          const scale = maxDim / Math.max(w, h);
+          w = Math.round(w * scale); h = Math.round(h * scale);
+        }
+        const canvas = document.createElement('canvas');
+        canvas.width = w; canvas.height = h;
+        canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+        resolve({ dataUrl: canvas.toDataURL('image/jpeg', 0.85), w, h });
+      };
+      img.onerror = () => reject(new Error('kon afbeelding niet lezen'));
+      img.src = reader.result;
+    };
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
+async function addTopicImages(topic, fileList) {
+  if (!fileList || !fileList.length) return;
+  if (!BRIEF.topicImages[topic]) BRIEF.topicImages[topic] = [];
+  for (const file of fileList) {
+    if (!file.type.startsWith('image/')) continue;
+    try {
+      const { dataUrl, w, h } = await readAndDownscaleImage(file);
+      BRIEF.topicImages[topic].push({ dataUrl, name: file.name, w, h });
+    } catch (e) { /* skip unreadable file */ }
+  }
+  renderTopicImages(); save();
+}
+function removeTopicImage(topic, idx) {
+  if (!BRIEF.topicImages[topic]) return;
+  BRIEF.topicImages[topic].splice(idx, 1);
+  renderTopicImages(); save();
+}
+function renderTopicImages() {
+  const wrap = document.getElementById('topic-images-wrap');
+  if (!wrap) return;
+  if (BRIEF.template !== 'intsum') { wrap.style.display = 'none'; return; }
+  wrap.style.display = '';
+  const body = document.getElementById('topic-images-list');
+  body.innerHTML = '';
+  const topics = topicsFromEvents();
+  if (!topics.length) {
+    body.appendChild(el('div', 'empty-tray', 'Selecteer eerst events — foto’s worden per topic (regio) toegevoegd.'));
+    return;
+  }
+  topics.forEach(topic => {
+    const sec = el('div', 'topic-img-sec');
+    const head = el('div', 'topic-img-head');
+    head.appendChild(el('span', 'topic-img-name', topic));
+    const input = document.createElement('input');
+    input.type = 'file'; input.accept = 'image/*'; input.multiple = true;
+    input.id = 'topicfile-' + topic.replace(/\W+/g, '_');
+    input.style.display = 'none';
+    input.onchange = () => { addTopicImages(topic, input.files); input.value = ''; };
+    const addBtn = el('button', 'geo-btn', '+ Foto’s toevoegen');
+    addBtn.onclick = () => input.click();
+    head.appendChild(addBtn); head.appendChild(input);
+    sec.appendChild(head);
+
+    const imgs = BRIEF.topicImages[topic] || [];
+    if (imgs.length) {
+      const grid = el('div', 'topic-img-grid');
+      imgs.forEach((im, i) => {
+        const thumb = el('div', 'topic-img-thumb');
+        const img = document.createElement('img');
+        img.src = im.dataUrl; img.title = im.name;
+        thumb.appendChild(img);
+        const del = el('button', 'topic-img-del', '✕');
+        del.title = 'Verwijderen';
+        del.onclick = () => removeTopicImage(topic, i);
+        thumb.appendChild(del);
+        grid.appendChild(thumb);
+      });
+      sec.appendChild(grid);
+    } else {
+      sec.appendChild(el('div', 'topic-img-empty', 'Nog geen foto’s voor dit topic.'));
+    }
+    body.appendChild(sec);
+  });
 }
 
 /* ---------- geocoding (best-effort online lookup — NOT required, this tool is offline-first) ---------
@@ -610,6 +723,18 @@ const PRINT_CSS = `
   .pf { margin-top: 18px; padding-top: 10px; border-top: 1px solid #d9e1ec; font-size: 10px; color: #8a99ad; }
   .section { break-inside: avoid; }
   .page-break { break-before: page; }
+  .cover-page { min-height: 85vh; display: flex; flex-direction: column; justify-content: space-between; }
+  .cover-mid { text-align: center; margin: auto 0; }
+  .cover-eyebrow { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #1d4e89; font-weight: 700; margin-bottom: 12px; }
+  .cover-title { font-size: 32px; font-weight: 700; color: #10294a; margin-bottom: 14px; }
+  .cover-meta { font-size: 14px; color: #44566e; margin-bottom: 8px; }
+  .cover-gen { font-size: 11px; color: #8a99ad; }
+  .rh { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #10294a; padding-bottom: 8px; margin-bottom: 14px; }
+  .rh-title { font-size: 13px; font-weight: 700; color: #10294a; text-transform: uppercase; letter-spacing: 0.5px; }
+  .rh-meta { font-size: 10px; color: #5d6f88; }
+  .topic-photos-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 8px; margin-top: 8px; }
+  .topic-photo { border: 1px solid #d9e1ec; border-radius: 4px; overflow: hidden; break-inside: avoid; }
+  .topic-photo img { width: 100%; height: 130px; object-fit: cover; display: block; }
   @media print { body { padding: 0; } .noprint { display: none; } }
   .noprint { text-align: center; margin-bottom: 16px; }
   .noprint button { font: inherit; font-weight: 700; background: #1d4e89; color: #fff; border: 0; border-radius: 5px; padding: 9px 18px; cursor: pointer; }
@@ -640,6 +765,34 @@ function mapImgHtml(png) {
     : '<div class="map-missing">Kaart kon niet worden vastgelegd — maak eventueel een schermafdruk van de kaart in de builder.</div>';
 }
 
+/* INTSUM-only: real cover page + a slim running header repeated on every following
+   printed page (classification banner top, per real intel-doc convention). */
+function classifBannerHtml() {
+  return BRIEF.classification ? '<div class="classif-banner">' + esc(BRIEF.classification) + '</div>' : '';
+}
+function intsumCoverHtml() {
+  return '<div class="cover-page">' + classifBannerHtml() +
+    '<div class="cover-mid">' +
+    '<div class="cover-eyebrow">Intelligence Summary</div>' +
+    '<div class="cover-title">' + esc(BRIEF.title || 'INTSUM') + '</div>' +
+    '<div class="cover-meta">' + esc(BRIEF.unit || '') + (BRIEF.unit && BRIEF.period ? ' · ' : '') + esc(BRIEF.period || '') + '</div>' +
+    '<div class="cover-gen">Generated ' + new Date().toUTCString() + '</div>' +
+    '</div>' + classifBannerHtml() + '</div>';
+}
+function runningHeaderHtml() {
+  return classifBannerHtml() +
+    '<div class="rh"><span class="rh-title">' + esc(BRIEF.title || 'INTSUM') + '</span>' +
+    '<span class="rh-meta">' + esc(BRIEF.unit || '') + (BRIEF.unit && BRIEF.period ? ' · ' : '') + esc(BRIEF.period || '') + '</span></div>';
+}
+function topicImagesHtml(topic) {
+  const imgs = (BRIEF.topicImages && BRIEF.topicImages[topic]) || [];
+  if (!imgs.length) return '';
+  let h = '<div class="topic-photos-grid">';
+  imgs.forEach(im => { h += '<div class="topic-photo"><img src="' + im.dataUrl + '" alt="' + esc(im.name || '') + '"></div>'; });
+  h += '</div>';
+  return h;
+}
+
 async function generateHtml() {
   if (!BRIEF.events.length) { alert('Selecteer eerst events.'); return; }
   const btn = document.getElementById('btn-html');
@@ -647,23 +800,36 @@ async function generateHtml() {
   const png = await captureMap();
   btn.disabled = false; btn.textContent = '⎙ HTML / PDF';
 
-  let body = briefHeaderHtml();
+  let body = '';
   if (BRIEF.template === 'card') {
+    // Incident Card: single page by design (matches the real-world "1-slide" product).
+    body += briefHeaderHtml();
     body += mapImgHtml(png);
     body += '<h2>Events</h2>';
     BRIEF.events.forEach((ev, i) => body += evtHtml(ev, i));
     if (BRIEF.assessment) body += '<h2>Analyst Assessment</h2><div class="assess">' + esc(BRIEF.assessment) + '</div>';
+    body += briefFooterHtml();
   } else {
-    body += '<h2>Situation Map</h2>' + mapImgHtml(png);
-    const regions = [...new Set(BRIEF.events.map(e => e.region || 'Other'))];
-    regions.forEach(rn => {
-      body += '<div class="section"><div class="region-h">' + esc(rn) + '</div>';
-      BRIEF.events.forEach((ev, i) => { if ((ev.region || 'Other') === rn) body += evtHtml(ev, i); });
+    // INTSUM: cover page → situation map page → one page per topic (region) → assessment page.
+    body += intsumCoverHtml();
+
+    body += '<div class="page-break">' + runningHeaderHtml() +
+      '<h2>Situation Map</h2>' + mapImgHtml(png) + '</div>';
+
+    topicsFromEvents().forEach(topic => {
+      body += '<div class="page-break">' + runningHeaderHtml() + '<h2>' + esc(topic) + '</h2>';
+      BRIEF.events.forEach((ev, i) => { if ((ev.region || 'Other') === topic) body += evtHtml(ev, i); });
+      const photos = topicImagesHtml(topic);
+      if (photos) body += '<h2 style="margin-top:16px">Imagery</h2>' + photos;
       body += '</div>';
     });
-    if (BRIEF.assessment) body += '<h2>Assessment / Outlook</h2><div class="assess">' + esc(BRIEF.assessment) + '</div>';
+
+    if (BRIEF.assessment) {
+      body += '<div class="page-break">' + runningHeaderHtml() +
+        '<h2>Assessment / Outlook</h2><div class="assess">' + esc(BRIEF.assessment) + '</div></div>';
+    }
+    body += briefFooterHtml();
   }
-  body += briefFooterHtml();
 
   const w = window.open('', '_blank');
   if (!w) { alert('Pop-up geblokkeerd — sta pop-ups toe.'); return; }
@@ -699,6 +865,29 @@ function pptEvtLines(events) {
   });
   return lines;
 }
+// One or more dedicated "Imagery" slides per topic (2x2 photo grid, paginated at 4/slide).
+function addImagerySlides(pptx, topic) {
+  const imgs = (BRIEF.topicImages && BRIEF.topicImages[topic]) || [];
+  if (!imgs.length) return;
+  const perSlide = 4, cols = 2, gap = 0.18;
+  const areaX = 0.5, areaY = 1.05, areaW = 12.33, areaH = 5.85;
+  const cellW = (areaW - gap * (cols - 1)) / cols;
+  for (let off = 0; off < imgs.length; off += perSlide) {
+    const batch = imgs.slice(off, off + perSlide);
+    const rows = Math.ceil(batch.length / cols);
+    const cellH = (areaH - gap * (rows - 1)) / Math.max(rows, 1);
+    const s = pptx.addSlide();
+    pptClassifBanners(s);
+    s.addText(topic.toUpperCase() + ' — IMAGERY' + (imgs.length > perSlide ? ' (' + (off / perSlide + 1) + ')' : ''),
+      { x: 0.3, y: 0.4, w: 12.7, h: 0.5, fontSize: 16, bold: true, color: PPT.navy });
+    batch.forEach((im, idx) => {
+      const col = idx % cols, row = Math.floor(idx / cols);
+      const x = areaX + col * (cellW + gap);
+      const y = areaY + row * (cellH + gap);
+      s.addImage({ data: im.dataUrl, x, y, w: cellW, h: cellH, sizing: { type: 'cover', w: cellW, h: cellH } });
+    });
+  }
+}
 
 async function generatePptx() {
   if (!BRIEF.events.length) { alert('Selecteer eerst events.'); return; }
@@ -729,6 +918,7 @@ async function generatePptx() {
       // ----- INTSUM: title + situation + per-region + assessment -----
       const t = pptx.addSlide();
       pptClassifBanners(t);
+      t.addText('INTELLIGENCE SUMMARY', { x: 0.6, y: 2.15, w: 12.1, h: 0.4, fontSize: 13, bold: true, color: PPT.navy2, charSpacing: 2 });
       t.addShape('rect', { x: 0, y: 2.6, w: 13.33, h: 1.6, fill: { color: PPT.navy } });
       t.addText(BRIEF.title || 'INTSUM', { x: 0.6, y: 2.7, w: 12.1, h: 0.9, fontSize: 30, bold: true, color: 'FFFFFF' });
       t.addText((BRIEF.unit ? BRIEF.unit + '  ·  ' : '') + (BRIEF.period || ''), { x: 0.6, y: 3.5, w: 12.1, h: 0.5, fontSize: 14, color: 'CFE0F5' });
@@ -749,6 +939,7 @@ async function generatePptx() {
           s.addText(rn.toUpperCase() + (off ? ' (vervolg)' : ''), { x: 0.3, y: 0.4, w: 12.7, h: 0.5, fontSize: 16, bold: true, color: PPT.navy });
           s.addText(pptEvtLines(evts.slice(off, off + 6)), { x: 0.3, y: 1.05, w: 12.73, h: 6.0, valign: 'top' });
         }
+        addImagerySlides(pptx, rn);
       });
 
       if (BRIEF.assessment) {
@@ -866,6 +1057,17 @@ function renderApp() {
   mLayout.appendChild(docBox);
   app.appendChild(mLayout);
 
+  const topicWrap = el('div', 'box');
+  topicWrap.id = 'topic-images-wrap';
+  topicWrap.appendChild(el('div', 'box-head', 'Topic images'));
+  const topicBody = el('div', 'box-body'); topicBody.id = 'topic-images-body';
+  topicBody.appendChild(el('div', 'topic-img-hint',
+    'Elk topic (regio) wordt een eigen pagina (HTML/PDF) of slide (PPTX) in INTSUM — foto’s hieronder verschijnen op die pagina.'));
+  const topicList = el('div'); topicList.id = 'topic-images-list';
+  topicBody.appendChild(topicList);
+  topicWrap.appendChild(topicBody);
+  app.appendChild(topicWrap);
+
   // Step 3
   const s3 = el('div', 'step-title'); s3.appendChild(el('span', 'step-num', '3')); s3.appendChild(document.createTextNode('Genereer briefing'));
   app.appendChild(s3);
@@ -877,8 +1079,8 @@ function renderApp() {
     tCard.classList.toggle('active', BRIEF.template === 'card');
     tSum.classList.toggle('active', BRIEF.template === 'intsum');
   }
-  tCard.onclick = () => { BRIEF.template = 'card'; syncTpl(); save(); };
-  tSum.onclick = () => { BRIEF.template = 'intsum'; syncTpl(); save(); };
+  tCard.onclick = () => { BRIEF.template = 'card'; syncTpl(); renderTopicImages(); save(); };
+  tSum.onclick = () => { BRIEF.template = 'intsum'; syncTpl(); renderTopicImages(); save(); };
   syncTpl();
   tpl.appendChild(tCard); tpl.appendChild(tSum);
   bar.appendChild(tpl);
@@ -905,14 +1107,24 @@ function renderAll() {
   fillCountryFilter();
   renderSources();
   renderTray();
+  renderTopicImages();
   initMapOnce();
   renderMarkers();
   if (BRIEF.events.length) fitToPins();
 }
 let mapInited = false;
 function initMapOnce() {
-  if (mapInited) { map.invalidateSize(); return; }
-  initMap(); mapInited = true;
+  // renderApp() fully rebuilds the DOM (e.g. after importDraft()), which replaces
+  // #map with a fresh, disconnected element — a live Leaflet instance left bound to
+  // the old node renders nothing and captureMap() silently fails. Detect that and
+  // recreate the map cleanly against the new container.
+  if (mapInited && map && map.getContainer() && map.getContainer().isConnected) {
+    map.invalidateSize();
+    return;
+  }
+  if (map) { try { map.remove(); } catch (e) {} }
+  initMap();
+  mapInited = true;
 }
 
 /* ---------- boot ---------- */
