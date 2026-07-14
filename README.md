@@ -12,6 +12,8 @@ project `intel-briefing-dashboard`).
 | `public/history.json` | Threat-level historie (voedt Risk Tracker) | dagelijkse Claude-taak |
 | `public/live.json` | Ruwe nieuwskoppen per land (Google News RSS) | GitHub Actions, elke 4 uur |
 | `public/world.geo.json` | Landsgrenzen voor de choropleth-kaart | nooit |
+| `public/builder.html` | Briefing Builder — losstaande module, zie hieronder | handmatig |
+| `public/vendor/` | Lokaal gevendorde libraries (Leaflet, PptxGenJS) voor `builder.html` | nooit, alleen bij library-update |
 
 ## Live feed (crawler)
 
@@ -37,6 +39,33 @@ Lokaal draaien: `node crawler/crawl.js`
 - **Dagelijks 07:00** — Claude-taak `daily-intel-dashboard-update`: webresearch,
   herschrijft `data.json`, voegt snapshot toe aan `history.json`, haalt de
   actuele `live.json` van de live site op, deployt en pusht naar GitHub.
+
+## Briefing Builder (`public/builder.html`)
+
+Losstaande module waarmee een analist zelf een briefingproduct samenstelt uit de
+dashboard-data: events selecteren (analyse-incidenten + live koppen + eigen events),
+op een kaart pinnen, per event een analist-comment toevoegen, en exporteren als
+**HTML/PDF** of **PPTX** (sjablonen: *Incident Card* en *INTSUM*).
+
+**Werkt volledig offline** — bewuste eis, want dit soort producten wordt vaak gemaakt
+zonder internet (SCIF, deployed omgeving):
+- Alle libraries zijn lokaal gevendord in `public/vendor/` (Leaflet, PptxGenJS) —
+  geen CDN's.
+- De kaart tekent landsgrenzen als vector uit het al-lokale `world.geo.json` —
+  geen online kaarttegels.
+- Pins plaats je door te slepen of door lat/lng in te typen. Een plaatsnaam-zoeker
+  (Photon/Nominatim) is aanwezig als *optioneel* gemak wanneer er toevallig internet
+  is (timeout na 3,5 s, blokkeert nooit de workflow).
+- Kaart-naar-afbeelding voor de export gebeurt met een eigen canvas-renderer
+  (`captureMap()` in builder.html) — **niet** via de externe `leaflet-image`-library,
+  die incompatibel bleek met moderne Leaflet.
+- Concepten worden automatisch lokaal opgeslagen (`localStorage`) en zijn te
+  exporteren/importeren als `.briefing.json`.
+
+Vereist wél dat de pagina via een lokale server wordt geopend (niet als los bestand
+via `file://`, want browsers blokkeren dan `fetch()` van `data.json`/`world.geo.json`)
+— bijvoorbeeld `npx http-server public -p 5173`, of de bestaande launch-config
+`intel-dashboard`.
 
 ## Frontend-wijzigingen
 

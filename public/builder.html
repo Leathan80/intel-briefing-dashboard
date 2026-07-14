@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Briefing Builder — Intel Briefing Dashboard</title>
+<!-- Vendored locally (vendor/) — this tool must work fully offline, no CDN dependency. -->
+<link rel="stylesheet" href="vendor/leaflet.css">
+<script src="vendor/leaflet.js"></script>
+<script src="vendor/pptxgen.bundle.js"></script>
+<style>
+  :root {
+    --bg: #f3f5f9; --card: #ffffff; --border: #d9e1ec;
+    --navy: #10294a; --navy-2: #1d4e89; --text: #22324a; --muted: #5d6f88;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', Calibri, sans-serif; min-height: 100vh; }
+
+  .header { background: var(--navy); padding: 16px 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+  .header-title { font-size: 15px; font-weight: 700; color: #fff; letter-spacing: 1px; text-transform: uppercase; }
+  .header-sub { font-size: 11px; color: #9fc0e8; margin-top: 3px; }
+  .back-link { font-size: 11px; color: #cfe0f5; text-decoration: none; border: 1px solid #ffffff33; padding: 5px 12px; border-radius: 3px; font-weight: 600; }
+  .back-link:hover { background: #ffffff18; }
+
+  .wrap { max-width: 1500px; margin: 0 auto; padding: 20px 24px; }
+  .step-title { font-size: 12px; color: var(--navy-2); font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin: 22px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 8px; }
+  .step-num { background: var(--navy-2); color: #fff; width: 20px; height: 20px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; }
+
+  .sel-layout { display: grid; grid-template-columns: 1.15fr 1fr; gap: 16px; align-items: start; }
+  @media (max-width: 950px) { .sel-layout { grid-template-columns: 1fr; } }
+
+  .box { background: var(--card); border: 1px solid var(--border); border-radius: 6px; }
+  .box-head { padding: 10px 14px; border-bottom: 1px solid var(--border); font-size: 11px; font-weight: 700; color: var(--navy); text-transform: uppercase; letter-spacing: 0.5px; display: flex; align-items: center; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+  .box-body { padding: 12px 14px; }
+
+  .filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+  select, input[type="text"], textarea { font: inherit; font-size: 12px; color: var(--text); border: 1px solid var(--border); border-radius: 4px; padding: 6px 8px; background: #fff; }
+  select:focus, input:focus, textarea:focus { outline: 2px solid #bcd3ee; }
+  textarea { width: 100%; resize: vertical; }
+
+  .src-tabs { display: flex; gap: 4px; }
+  .src-tab { font-size: 10px; font-weight: 700; padding: 5px 10px; border-radius: 4px; cursor: pointer; color: var(--muted); background: #eef2f7; text-transform: uppercase; letter-spacing: 0.4px; }
+  .src-tab.active { background: var(--navy-2); color: #fff; }
+
+  .src-list { max-height: 420px; overflow-y: auto; }
+  .src-item { display: flex; gap: 8px; align-items: flex-start; padding: 8px 6px; border-bottom: 1px solid #eef2f7; font-size: 11.5px; line-height: 1.45; }
+  .src-item:last-child { border-bottom: none; }
+  .src-item .txt { flex: 1; }
+  .src-item .meta { color: var(--muted); font-size: 10px; }
+  .add-btn { flex-shrink: 0; font-size: 11px; font-weight: 700; border: 1px solid var(--border); background: #eef3fa; color: var(--navy-2); border-radius: 4px; padding: 3px 9px; cursor: pointer; }
+  .add-btn:hover { background: var(--navy-2); color: #fff; }
+  .add-btn.added { background: #e6f2e6; color: #2e7d32; border-color: #bcd9bc; cursor: default; }
+
+  .badge { font-size: 9px; font-weight: 700; padding: 2px 7px; border-radius: 3px; text-transform: uppercase; letter-spacing: 0.5px; }
+
+  .tray-item { border: 1px solid var(--border); border-left: 4px solid var(--navy-2); border-radius: 5px; padding: 10px 12px; margin-bottom: 10px; background: #fbfcfe; }
+  .tray-head { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .pin-num { background: var(--navy-2); color: #fff; min-width: 22px; height: 22px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; }
+  .tray-country { font-size: 12px; font-weight: 700; color: var(--navy); flex: 1; }
+  .tray-src { font-size: 9px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.4px; }
+  .del-btn { border: none; background: none; color: #b3261e; font-size: 14px; cursor: pointer; font-weight: 700; padding: 0 4px; }
+  .tray-row { display: flex; gap: 6px; margin-bottom: 6px; flex-wrap: wrap; }
+  .tray-row input[type="text"] { flex: 1; min-width: 90px; }
+  .tray-row .short { flex: 0 0 84px; min-width: 84px; }
+  .tray-item textarea { font-size: 11.5px; margin-bottom: 6px; }
+  .geo-row { display: flex; gap: 6px; align-items: center; }
+  .geo-row input { flex: 1; }
+  .geo-btn { font-size: 10px; font-weight: 700; border: 1px solid var(--border); background: #eef3fa; color: var(--navy-2); border-radius: 4px; padding: 5px 10px; cursor: pointer; white-space: nowrap; }
+  .geo-btn:hover { background: var(--navy-2); color: #fff; }
+  .geo-status { font-size: 10px; color: var(--muted); }
+  .lbl { font-size: 9px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; margin: 4px 0 3px; }
+  .empty-tray { padding: 26px; text-align: center; color: var(--muted); font-size: 12px; border: 1px dashed var(--border); border-radius: 6px; }
+
+  .map-layout { display: grid; grid-template-columns: 1.6fr 1fr; gap: 16px; align-items: start; }
+  @media (max-width: 950px) { .map-layout { grid-template-columns: 1fr; } }
+  #map { height: 480px; border-radius: 0 0 6px 6px; }
+  .map-controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .doc-field { margin-bottom: 10px; }
+  .doc-field input[type="text"] { width: 100%; }
+
+  .gen-bar { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 14px 16px; }
+  .gen-btn { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; background: var(--navy-2); color: #fff; border: none; border-radius: 5px; padding: 10px 18px; cursor: pointer; }
+  .gen-btn:hover { background: var(--navy); }
+  .gen-btn:disabled { background: #9bb0c9; cursor: wait; }
+  .gen-btn.secondary { background: #eef3fa; color: var(--navy-2); border: 1px solid var(--border); }
+  .gen-btn.secondary:hover { background: var(--navy-2); color: #fff; }
+  .draft-note { font-size: 10px; color: var(--muted); margin-left: auto; }
+
+  .tpl-choice { display: flex; gap: 6px; }
+  .tpl-opt { font-size: 11px; font-weight: 700; padding: 8px 14px; border-radius: 5px; border: 1px solid var(--border); cursor: pointer; color: var(--muted); background: #fff; }
+  .tpl-opt.active { background: var(--navy); color: #fff; border-color: var(--navy); }
+
+  .footer { text-align: center; padding: 16px; font-size: 10px; color: #8a99ad; border-top: 1px solid var(--border); margin-top: 26px; }
+  .loading { padding: 60px; text-align: center; color: var(--muted); font-size: 13px; letter-spacing: 1px; }
+
+  .marker-pin { background: var(--navy-2); color: #fff; border: 2px solid #fff; border-radius: 50%; width: 26px; height: 26px; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; box-shadow: 0 1px 4px rgba(0,0,0,0.4); font-family: 'Segoe UI', Calibri, sans-serif; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="header-title">Briefing Builder</div>
+    <div class="header-sub">Select events · build a map · add analyst comments · export HTML / PDF / PPTX · works fully offline</div>
+  </div>
+  <a class="back-link" href="index.html">← Dashboard</a>
+</div>
+
+<div class="wrap" id="app"><div class="loading">LOADING DATA…</div></div>
+<div class="footer">Briefing Builder · drafts are saved in this browser automatically</div>
+
+<script>
+const THREAT = {
+  CRITICAL: { color: '#b3261e', bg: '#fcebea', map: '#c0392b' },
+  HIGH:     { color: '#c25600', bg: '#fdf0e3', map: '#e67e22' },
+  MODERATE: { color: '#9a7b00', bg: '#fbf6e0', map: '#e3b505' },
+  LOW:      { color: '#4f6b8f', bg: '#e9eff7', map: '#94b0c7' }
+};
+const LEVEL_NUM = { LOW: 1, MODERATE: 2, HIGH: 3, CRITICAL: 4 };
+const GEO_NAME_MAP = { 'Gaza': 'West Bank' };
+const REGION_BOUNDS = {
+  'Middle East':    [[8, 0],     [42, 66]],
+  'Ukraine/Russia': [[37, 18],   [62, 53]],
+  'Sahel':          [[2, -18],   [24, 42]],
+  'Asia-Pacific':   [[-12, 58],  [46, 148]],
+  'Americas':       [[-22, -88], [26, -55]]
+};
+const DRAFT_KEY = 'briefing-builder-draft-v1';
+
+let DATA, LIVE, GEO;
+let map = null, markerLayer = null;
+let srcMode = 'analysis';
+let nextId = 1;
+
+const BRIEF = {
+  title: 'Intelligence Briefing',
+  unit: '',
+  period: '',
+  classification: '',
+  assessment: '',
+  template: 'card',
+  events: []   // {id, num, text, date, type, country, region, source, url, comment, lat, lng, geoQuery}
+};
+
+/* ---------- helpers ---------- */
+function el(tag, cls, text) {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (text !== undefined) e.textContent = text;
+  return e;
+}
+function esc(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+function makeBadge(threat) {
+  const t = THREAT[threat] || THREAT.LOW;
+  const b = el('span', 'badge', threat);
+  b.style.background = t.bg; b.style.color = t.color; b.style.border = '1px solid ' + t.color + '44';
+  return b;
+}
+function regionOf(countryName) {
+  for (const r of DATA.regions) if (r.countries.some(c => c.name === countryName)) return r.name;
+  return '';
+}
+function timeAgo(iso) {
+  if (!iso) return '';
+  const mins = Math.round((Date.now() - new Date(iso).getTime()) / 60000);
+  if (mins < 60) return mins + 'm ago';
+  const hrs = Math.round(mins / 60);
+  if (hrs < 24) return hrs + 'h ago';
+  return Math.round(hrs / 24) + 'd ago';
+}
+// Split a leading "12 Jul — " / "11-12 Jul —" date prefix off an analysis incident.
+function splitIncident(text) {
+  const m = /^([\d\-–, ]*\d{1,2}\s*(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)[a-z]*)\s*[—-]\s*(.*)$/s.exec(text.trim());
+  if (m) return { date: m[1].trim(), text: m[2].trim() };
+  return { date: '', text: text.trim() };
+}
+function isoToShort(iso) {
+  if (!iso) return '';
+  const d = new Date(iso);
+  if (isNaN(d)) return '';
+  return d.getUTCDate() + ' ' + ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][d.getUTCMonth()];
+}
+
+/* ---------- country centroids from world.geo.json ---------- */
+const centroidCache = {};
+function centroidOf(countryName) {
+  const key = GEO_NAME_MAP[countryName] || countryName;
+  if (centroidCache[key]) return centroidCache[key];
+  const f = GEO.features.find(x => x.properties.name === key);
+  if (!f) return { lat: 20, lng: 0 };
+  let minLa = 90, maxLa = -90, minLo = 180, maxLo = -180;
+  function walk(coords) {
+    if (typeof coords[0] === 'number') {
+      const lo = coords[0], la = coords[1];
+      if (la < minLa) minLa = la; if (la > maxLa) maxLa = la;
+      if (lo < minLo) minLo = lo; if (lo > maxLo) maxLo = lo;
+    } else coords.forEach(walk);
+  }
+  walk(f.geometry.coordinates);
+  const c = { lat: (minLa + maxLa) / 2, lng: (minLo + maxLo) / 2 };
+  centroidCache[key] = c;
+  return c;
+}
+
+/* ---------- draft persistence ---------- */
+let saveTimer = null;
+function save() {
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(() => {
+    try { localStorage.setItem(DRAFT_KEY, JSON.stringify(BRIEF)); setDraftNote('Draft saved ' + new Date().toLocaleTimeString()); } catch (e) {}
+  }, 400);
+}
+function setDraftNote(t) { const n = document.getElementById('draft-note'); if (n) n.textContent = t; }
+function restoreDraft() {
+  try {
+    const raw = localStorage.getItem(DRAFT_KEY);
+    if (!raw) return;
+    const d = JSON.parse(raw);
+    Object.assign(BRIEF, d);
+    BRIEF.events = d.events || [];
+    nextId = BRIEF.events.reduce((m, e) => Math.max(m, e.id), 0) + 1;
+  } catch (e) {}
+}
+function exportDraft() {
+  const blob = new Blob([JSON.stringify(BRIEF, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = (BRIEF.title || 'briefing').replace(/\W+/g, '_') + '.briefing.json';
+  a.click();
+  URL.revokeObjectURL(a.href);
+}
+function importDraft(file) {
+  const rd = new FileReader();
+  rd.onload = () => {
+    try {
+      const d = JSON.parse(rd.result);
+      if (!Array.isArray(d.events)) throw new Error('invalid');
+      Object.assign(BRIEF, d);
+      nextId = BRIEF.events.reduce((m, e) => Math.max(m, e.id), 0) + 1;
+      renderAll(); save();
+    } catch (e) { alert('Ongeldig briefing-bestand.'); }
+  };
+  rd.readAsText(file);
+}
+function clearDraft() {
+  if (!confirm('Briefing leegmaken? Dit verwijdert alle geselecteerde events en teksten.')) return;
+  BRIEF.title = 'Intelligence Briefing'; BRIEF.unit = ''; BRIEF.period = DATA.period;
+  BRIEF.classification = DATA.classification; BRIEF.assessment = ''; BRIEF.events = [];
+  renderAll(); save();
+}
+
+/* ---------- event management ---------- */
+function eventKey(text, country) { return (country + '|' + text.slice(0, 80)).toLowerCase(); }
+function inTray(text, country) { return BRIEF.events.some(e => eventKey(e.text, e.country) === eventKey(text, country)); }
+
+function addEvent(o) {
+  const c = centroidOf(o.country || '');
+  BRIEF.events.push({
+    id: nextId++,
+    text: o.text, date: o.date || '', type: o.type || '',
+    country: o.country || '', region: o.region || regionOf(o.country || ''),
+    source: o.source, url: o.url || '', comment: '',
+    lat: o.lat != null ? o.lat : c.lat, lng: o.lng != null ? o.lng : c.lng,
+    geoQuery: ''
+  });
+  renderTray(); renderMarkers(); renderSources(); save();
+}
+function removeEvent(id) {
+  BRIEF.events = BRIEF.events.filter(e => e.id !== id);
+  renderTray(); renderMarkers(); renderSources(); save();
+}
+
+/* ---------- geocoding (best-effort online lookup — NOT required, this tool is offline-first) ---------
+   Primary offline workflow: drag the pin on the map, or type exact lat/lng below.
+   This place-name search is a convenience that only works when internet happens to be
+   available; it fails fast (short timeout) and never blocks the offline workflow. */
+function fetchWithTimeout(url, ms) {
+  const ctrl = new AbortController();
+  const t = setTimeout(() => ctrl.abort(), ms);
+  return fetch(url, { signal: ctrl.signal }).finally(() => clearTimeout(t));
+}
+async function geocode(q) {
+  try {
+    const r = await fetchWithTimeout('https://photon.komoot.io/api/?q=' + encodeURIComponent(q) + '&limit=1', 3500);
+    if (r.ok) {
+      const j = await r.json();
+      if (j.features && j.features.length) {
+        const [lng, lat] = j.features[0].geometry.coordinates;
+        return { lat, lng, label: j.features[0].properties.name || q };
+      }
+    }
+  } catch (e) {}
+  try {
+    const r = await fetchWithTimeout('https://nominatim.openstreetmap.org/search?format=json&limit=1&q=' + encodeURIComponent(q), 3500);
+    if (r.ok) {
+      const j = await r.json();
+      if (j.length) return { lat: +j[0].lat, lng: +j[0].lon, label: j[0].display_name.split(',')[0] };
+    }
+  } catch (e) {}
+  return null;
+}
+async function geoLookup(id) {
+  const ev = BRIEF.events.find(e => e.id === id);
+  if (!ev) return;
+  const input = document.getElementById('geo-' + id);
+  const status = document.getElementById('geostat-' + id);
+  const q = (input.value || '').trim();
+  if (!q) return;
+  status.textContent = 'online zoeken (optioneel)…';
+  const hit = await geocode(q + (ev.country ? ', ' + ev.country : ''));
+  if (hit) {
+    ev.lat = hit.lat; ev.lng = hit.lng; ev.geoQuery = q;
+    status.textContent = '✓ ' + hit.label;
+    syncLatLngInputs(ev.id);
+    renderMarkers(); fitToPins(); save();
+  } else {
+    status.textContent = 'geen internet of niet gevonden — sleep de pin of vul lat/lng in';
+  }
+}
+function setManualLatLng(id, latStr, lngStr) {
+  const ev = BRIEF.events.find(e => e.id === id);
+  if (!ev) return;
+  const lat = parseFloat(latStr), lng = parseFloat(lngStr);
+  if (isNaN(lat) || isNaN(lng)) return;
+  ev.lat = Math.max(-85, Math.min(85, lat));
+  ev.lng = Math.max(-180, Math.min(180, lng));
+  renderMarkers(); save();
+}
+function syncLatLngInputs(id) {
+  const ev = BRIEF.events.find(e => e.id === id);
+  const la = document.getElementById('lat-' + id), lo = document.getElementById('lng-' + id);
+  if (ev && la && lo) { la.value = ev.lat.toFixed(4); lo.value = ev.lng.toFixed(4); }
+}
+
+/* ---------- source lists ---------- */
+function renderSources() {
+  const listEl = document.getElementById('src-list');
+  listEl.innerHTML = '';
+  const regionSel = document.getElementById('f-region').value;
+  const countrySel = document.getElementById('f-country').value;
+  const q = document.getElementById('f-search').value.toLowerCase();
+
+  if (srcMode === 'analysis') {
+    DATA.regions.forEach(r => {
+      if (regionSel && r.name !== regionSel) return;
+      r.countries.forEach(c => {
+        if (countrySel && c.name !== countrySel) return;
+        c.incidents.forEach(incRaw => {
+          if (q && !incRaw.toLowerCase().includes(q) && !c.name.toLowerCase().includes(q)) return;
+          const sp = splitIncident(incRaw);
+          const item = el('div', 'src-item');
+          const txt = el('div', 'txt');
+          const head = el('div');
+          head.appendChild(el('b', '', c.flag + ' ' + c.name + ' '));
+          head.appendChild(makeBadge(c.threat));
+          if (sp.date) head.appendChild(el('span', 'meta', '  ' + sp.date));
+          txt.appendChild(head);
+          txt.appendChild(el('div', '', sp.text));
+          item.appendChild(txt);
+          const btn = el('button', 'add-btn', inTray(sp.text, c.name) ? '✓' : '+ Add');
+          if (inTray(sp.text, c.name)) btn.classList.add('added');
+          else btn.onclick = () => addEvent({ text: sp.text, date: sp.date, country: c.name, region: r.name, source: 'analysis' });
+          item.appendChild(btn);
+          listEl.appendChild(item);
+        });
+      });
+    });
+  } else {
+    const countries = (LIVE && LIVE.countries) || {};
+    DATA.regions.forEach(r => {
+      if (regionSel && r.name !== regionSel) return;
+      r.countries.forEach(c => {
+        if (countrySel && c.name !== countrySel) return;
+        (countries[c.name] || []).forEach(h => {
+          if (q && !h.title.toLowerCase().includes(q) && !c.name.toLowerCase().includes(q)) return;
+          const item = el('div', 'src-item');
+          const txt = el('div', 'txt');
+          const head = el('div');
+          head.appendChild(el('b', '', c.flag + ' ' + c.name));
+          head.appendChild(el('span', 'meta', '  ' + (h.source || '') + (h.date ? ' · ' + timeAgo(h.date) : '')));
+          txt.appendChild(head);
+          txt.appendChild(el('div', '', h.title));
+          item.appendChild(txt);
+          const btn = el('button', 'add-btn', inTray(h.title, c.name) ? '✓' : '+ Add');
+          if (inTray(h.title, c.name)) btn.classList.add('added');
+          else btn.onclick = () => addEvent({ text: h.title, date: isoToShort(h.date), country: c.name, region: r.name, source: 'live', url: h.url });
+          item.appendChild(btn);
+          listEl.appendChild(item);
+        });
+      });
+    });
+  }
+  if (!listEl.children.length) listEl.appendChild(el('div', 'src-item', 'Geen events gevonden met deze filters.'));
+}
+
+function fillCountryFilter() {
+  const regionSel = document.getElementById('f-region').value;
+  const cSel = document.getElementById('f-country');
+  const cur = cSel.value;
+  cSel.innerHTML = '<option value="">Alle landen</option>';
+  DATA.regions.forEach(r => {
+    if (regionSel && r.name !== regionSel) return;
+    r.countries.forEach(c => {
+      const o = document.createElement('option');
+      o.value = c.name; o.textContent = c.name;
+      cSel.appendChild(o);
+    });
+  });
+  cSel.value = cur;
+}
+
+/* ---------- tray ---------- */
+function renderTray() {
+  const tray = document.getElementById('tray');
+  tray.innerHTML = '';
+  if (!BRIEF.events.length) {
+    tray.appendChild(el('div', 'empty-tray', 'Nog geen events geselecteerd — kies links events of voeg een eigen event toe.'));
+    return;
+  }
+  BRIEF.events.forEach((ev, i) => {
+    ev.num = i + 1;
+    const item = el('div', 'tray-item');
+    const head = el('div', 'tray-head');
+    head.appendChild(el('span', 'pin-num', String(ev.num)));
+    head.appendChild(el('span', 'tray-country', (ev.country || 'Eigen event')));
+    head.appendChild(el('span', 'tray-src', ev.source));
+    const del = el('button', 'del-btn', '✕');
+    del.title = 'Verwijderen';
+    del.onclick = () => removeEvent(ev.id);
+    head.appendChild(del);
+    item.appendChild(head);
+
+    const row = el('div', 'tray-row');
+    const dateIn = document.createElement('input');
+    dateIn.type = 'text'; dateIn.className = 'short'; dateIn.placeholder = 'Datum'; dateIn.value = ev.date;
+    dateIn.oninput = () => { ev.date = dateIn.value; save(); };
+    const typeIn = document.createElement('input');
+    typeIn.type = 'text'; typeIn.className = 'short'; typeIn.placeholder = 'Type (DF/IED…)'; typeIn.value = ev.type;
+    typeIn.oninput = () => { ev.type = typeIn.value; save(); };
+    row.appendChild(dateIn); row.appendChild(typeIn);
+    item.appendChild(row);
+
+    const txt = document.createElement('textarea');
+    txt.rows = 2; txt.value = ev.text; txt.placeholder = 'Event-tekst';
+    txt.oninput = () => { ev.text = txt.value; save(); };
+    item.appendChild(txt);
+
+    item.appendChild(el('div', 'lbl', 'Locatie — sleep de pin op de kaart, of vul lat/lng in'));
+    const latlng = el('div', 'geo-row');
+    const latIn = document.createElement('input');
+    latIn.type = 'text'; latIn.id = 'lat-' + ev.id; latIn.placeholder = 'lat'; latIn.value = ev.lat.toFixed(4);
+    latIn.style.flex = '0 0 90px';
+    const lngIn = document.createElement('input');
+    lngIn.type = 'text'; lngIn.id = 'lng-' + ev.id; lngIn.placeholder = 'lng'; lngIn.value = ev.lng.toFixed(4);
+    lngIn.style.flex = '0 0 90px';
+    const applyLL = () => setManualLatLng(ev.id, latIn.value, lngIn.value);
+    latIn.onchange = applyLL; lngIn.onchange = applyLL;
+    latlng.appendChild(latIn); latlng.appendChild(lngIn);
+    item.appendChild(latlng);
+
+    item.appendChild(el('div', 'lbl', 'Plaatsnaam zoeken (optioneel, vereist internet)'));
+    const geo = el('div', 'geo-row');
+    const geoIn = document.createElement('input');
+    geoIn.type = 'text'; geoIn.id = 'geo-' + ev.id; geoIn.placeholder = 'bv. Hodeidah…'; geoIn.value = ev.geoQuery || '';
+    geoIn.onkeydown = e => { if (e.key === 'Enter') geoLookup(ev.id); };
+    const geoBtn = el('button', 'geo-btn', 'Zoek');
+    geoBtn.onclick = () => geoLookup(ev.id);
+    geo.appendChild(geoIn); geo.appendChild(geoBtn);
+    item.appendChild(geo);
+    item.appendChild(el('div', 'geo-status', '')).id = 'geostat-' + ev.id;
+
+    item.appendChild(el('div', 'lbl', 'Analyst comment (optioneel)'));
+    const com = document.createElement('textarea');
+    com.rows = 2; com.value = ev.comment; com.placeholder = 'Duiding bij dit event…';
+    com.oninput = () => { ev.comment = com.value; save(); };
+    item.appendChild(com);
+
+    tray.appendChild(item);
+  });
+}
+
+function addOwnEvent() {
+  addEvent({ text: '', date: '', country: '', region: '', source: 'own' });
+}
+
+/* ---------- map ---------- */
+// No tile server: this tool must work fully offline. The basemap is drawn from the
+// already-local world.geo.json as vector country outlines — nothing to fetch at
+// draw-time, and no cross-origin raster tiles to taint the export canvas either.
+function initMap() {
+  // Animation disabled: captureMap() reads the map's projection synchronously right
+  // after a view change, so the view must settle instantly — no mid-flight capture.
+  map = L.map('map', { preferCanvas: true, worldCopyJump: true, minZoom: 2, zoomAnimation: false, fadeAnimation: false, markerZoomAnimation: false });
+  L.geoJSON(GEO, {
+    style: () => ({ fillColor: '#e3e9f2', fillOpacity: 1, color: '#c3d0e0', weight: 1 })
+  }).addTo(map);
+  map.setView([22, 15], 2);
+  markerLayer = L.layerGroup().addTo(map);
+}
+function renderMarkers() {
+  if (!map) return;
+  markerLayer.clearLayers();
+  BRIEF.events.forEach((ev, i) => {
+    const icon = L.divIcon({ className: '', html: '<div class="marker-pin">' + (i + 1) + '</div>', iconSize: [26, 26], iconAnchor: [13, 13] });
+    const m = L.marker([ev.lat, ev.lng], { icon, draggable: true });
+    m.bindTooltip((ev.date ? ev.date + ' — ' : '') + ev.text.slice(0, 60));
+    m.on('dragend', () => { const p = m.getLatLng(); ev.lat = p.lat; ev.lng = p.lng; syncLatLngInputs(ev.id); save(); });
+    markerLayer.addLayer(m);
+  });
+}
+function fitToPins() {
+  if (!BRIEF.events.length) return;
+  const b = L.latLngBounds(BRIEF.events.map(e => [e.lat, e.lng]));
+  map.fitBounds(b.pad(0.35), { animate: false });
+}
+function applyRegionPreset() {
+  const v = document.getElementById('map-preset').value;
+  if (v === 'pins') fitToPins();
+  else if (REGION_BOUNDS[v]) map.fitBounds(REGION_BOUNDS[v], { animate: false });
+  else map.setView([22, 15], 2, { animate: false });
+}
+
+/* ---------- map capture (shared by HTML/PDF and PPTX) ----------
+   No raster tiles and no leaflet-image dependency (that library predates Leaflet 1.x
+   and crashes against it) — we draw the already-local GEO polygons and pins onto our
+   own canvas using Leaflet's own projection (map.latLngToContainerPoint), matching
+   exactly what's on screen. Fully deterministic, fully offline, no external library. */
+function projectRing(ring) {
+  return ring.map(([lng, lat]) => map.latLngToContainerPoint([lat, lng]));
+}
+function tracePolygon(ctx, coords) {
+  coords.forEach(ring => {
+    const pts = projectRing(ring);
+    if (!pts.length) return;
+    ctx.moveTo(pts[0].x, pts[0].y);
+    for (let i = 1; i < pts.length; i++) ctx.lineTo(pts[i].x, pts[i].y);
+    ctx.closePath();
+  });
+}
+function captureMap() {
+  return new Promise((resolve) => {
+    if (!map || !GEO) return resolve(null);
+    try {
+      const container = map.getContainer();
+      const w = container.clientWidth, h = container.clientHeight;
+      if (!w || !h) return resolve(null);
+      const scale = 2; // sharp output for PPTX/print
+      const canvas = document.createElement('canvas');
+      canvas.width = w * scale; canvas.height = h * scale;
+      const ctx = canvas.getContext('2d');
+      ctx.scale(scale, scale);
+
+      ctx.fillStyle = '#f3f5f9';
+      ctx.fillRect(0, 0, w, h);
+
+      GEO.features.forEach(f => {
+        const geom = f.geometry;
+        if (!geom) return;
+        ctx.beginPath();
+        if (geom.type === 'Polygon') tracePolygon(ctx, geom.coordinates);
+        else if (geom.type === 'MultiPolygon') geom.coordinates.forEach(poly => tracePolygon(ctx, poly));
+        else return;
+        ctx.fillStyle = '#e3e9f2';
+        ctx.fill('evenodd');
+        ctx.lineWidth = 1;
+        ctx.strokeStyle = '#c3d0e0';
+        ctx.stroke();
+      });
+
+      BRIEF.events.forEach((ev, i) => {
+        const pt = map.latLngToContainerPoint([ev.lat, ev.lng]);
+        if (pt.x < -20 || pt.y < -20 || pt.x > w + 20 || pt.y > h + 20) return;
+        ctx.beginPath();
+        ctx.arc(pt.x, pt.y, 12, 0, Math.PI * 2);
+        ctx.fillStyle = '#1d4e89';
+        ctx.fill();
+        ctx.lineWidth = 2.5; ctx.strokeStyle = '#ffffff'; ctx.stroke();
+        ctx.fillStyle = '#ffffff';
+        ctx.font = 'bold 13px Segoe UI, Arial';
+        ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+        ctx.fillText(String(i + 1), pt.x, pt.y + 0.5);
+      });
+
+      resolve(canvas.toDataURL('image/png'));
+    } catch (e) { resolve(null); }
+  });
+}
+
+/* ---------- HTML / PDF output ---------- */
+const PRINT_CSS = `
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Segoe UI', Calibri, Arial, sans-serif; color: #1a2a40; padding: 26px 32px; font-size: 12px; line-height: 1.5; }
+  .classif-banner { text-align: center; font-size: 11px; font-weight: 700; color: #8a5a00; letter-spacing: 1px; margin-bottom: 10px; text-transform: uppercase; }
+  .ph { display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 2px solid #10294a; padding-bottom: 10px; margin-bottom: 14px; }
+  .ph-title { font-size: 18px; font-weight: 700; color: #10294a; text-transform: uppercase; letter-spacing: 0.5px; }
+  .ph-sub { font-size: 11px; color: #5d6f88; margin-top: 3px; }
+  h2 { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: #1d4e89; border-bottom: 1px solid #d9e1ec; padding-bottom: 4px; margin: 16px 0 8px; }
+  .map-img { width: 100%; border: 1px solid #d9e1ec; border-radius: 4px; margin-bottom: 4px; }
+  .map-missing { border: 1px dashed #d9e1ec; border-radius: 4px; padding: 30px; text-align: center; color: #8a99ad; font-size: 11px; margin-bottom: 4px; }
+  .evt { display: flex; gap: 9px; margin-bottom: 8px; break-inside: avoid; }
+  .evt-num { background: #1d4e89; color: #fff; min-width: 20px; height: 20px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; flex-shrink: 0; }
+  .evt-txt b { color: #10294a; }
+  .evt-com { font-style: italic; color: #44566e; background: #f5f8fc; border-left: 3px solid #1d4e89; padding: 5px 9px; margin-top: 4px; border-radius: 0 4px 4px 0; }
+  .assess { background: #f5f8fc; border-left: 3px solid #1d4e89; padding: 10px 13px; font-style: italic; color: #44566e; border-radius: 0 4px 4px 0; white-space: pre-wrap; }
+  .region-h { font-size: 13px; font-weight: 700; color: #10294a; margin: 14px 0 8px; }
+  .pf { margin-top: 18px; padding-top: 10px; border-top: 1px solid #d9e1ec; font-size: 10px; color: #8a99ad; }
+  .section { break-inside: avoid; }
+  .page-break { break-before: page; }
+  @media print { body { padding: 0; } .noprint { display: none; } }
+  .noprint { text-align: center; margin-bottom: 16px; }
+  .noprint button { font: inherit; font-weight: 700; background: #1d4e89; color: #fff; border: 0; border-radius: 5px; padding: 9px 18px; cursor: pointer; }
+`;
+
+function evtHtml(ev, i) {
+  let h = '<div class="evt"><span class="evt-num">' + (i + 1) + '</span><div class="evt-txt">';
+  h += '<b>' + esc(ev.date || '') + (ev.type ? ' (' + esc(ev.type) + ')' : '') + (ev.date || ev.type ? ': ' : '') + '</b>';
+  h += esc(ev.text);
+  if (ev.country) h += ' <span style="color:#8a99ad">— ' + esc(ev.country) + '</span>';
+  if (ev.comment) h += '<div class="evt-com">' + esc(ev.comment) + '</div>';
+  h += '</div></div>';
+  return h;
+}
+
+function briefHeaderHtml() {
+  return '<div class="classif-banner">' + esc(BRIEF.classification || '') + '</div>' +
+    '<div class="ph"><div><div class="ph-title">' + esc(BRIEF.title || 'Intelligence Briefing') + '</div>' +
+    '<div class="ph-sub">' + esc(BRIEF.unit || '') + (BRIEF.unit && BRIEF.period ? ' · ' : '') + esc(BRIEF.period || '') + '</div></div></div>';
+}
+function briefFooterHtml() {
+  return '<div class="pf">' + esc(BRIEF.unit || '') + (BRIEF.unit ? ' · ' : '') + 'Generated ' + new Date().toUTCString() +
+    ' · ' + esc(BRIEF.classification || '') + '</div>' +
+    '<div class="classif-banner" style="margin-top:8px">' + esc(BRIEF.classification || '') + '</div>';
+}
+function mapImgHtml(png) {
+  return png ? '<img class="map-img" src="' + png + '">'
+    : '<div class="map-missing">Kaart kon niet worden vastgelegd — maak eventueel een schermafdruk van de kaart in de builder.</div>';
+}
+
+async function generateHtml() {
+  if (!BRIEF.events.length) { alert('Selecteer eerst events.'); return; }
+  const btn = document.getElementById('btn-html');
+  btn.disabled = true; btn.textContent = 'Kaart vastleggen…';
+  const png = await captureMap();
+  btn.disabled = false; btn.textContent = '⎙ HTML / PDF';
+
+  let body = briefHeaderHtml();
+  if (BRIEF.template === 'card') {
+    body += mapImgHtml(png);
+    body += '<h2>Events</h2>';
+    BRIEF.events.forEach((ev, i) => body += evtHtml(ev, i));
+    if (BRIEF.assessment) body += '<h2>Analyst Assessment</h2><div class="assess">' + esc(BRIEF.assessment) + '</div>';
+  } else {
+    body += '<h2>Situation Map</h2>' + mapImgHtml(png);
+    const regions = [...new Set(BRIEF.events.map(e => e.region || 'Other'))];
+    regions.forEach(rn => {
+      body += '<div class="section"><div class="region-h">' + esc(rn) + '</div>';
+      BRIEF.events.forEach((ev, i) => { if ((ev.region || 'Other') === rn) body += evtHtml(ev, i); });
+      body += '</div>';
+    });
+    if (BRIEF.assessment) body += '<h2>Assessment / Outlook</h2><div class="assess">' + esc(BRIEF.assessment) + '</div>';
+  }
+  body += briefFooterHtml();
+
+  const w = window.open('', '_blank');
+  if (!w) { alert('Pop-up geblokkeerd — sta pop-ups toe.'); return; }
+  w.document.open();
+  w.document.write('<!DOCTYPE html><html><head><meta charset="utf-8"><title>' + esc(BRIEF.title) +
+    '</title><style>' + PRINT_CSS + '</style></head><body>' +
+    '<div class="noprint"><button onclick="window.print()">⎙ Save as PDF / Print</button></div>' +
+    body + '</body></html>');
+  w.document.close();
+  w.focus();
+}
+
+/* ---------- PPTX output ---------- */
+const PPT = {
+  navy: '10294A', navy2: '1D4E89', text: '22324A', muted: '5D6F88',
+  border: 'D9E1EC', bgLight: 'F5F8FC', classif: '8A5A00'
+};
+
+function pptClassifBanners(slide) {
+  const c = BRIEF.classification || '';
+  if (!c) return;
+  slide.addText(c, { x: 0, y: 0.02, w: 13.33, h: 0.28, align: 'center', fontSize: 9, bold: true, color: PPT.classif });
+  slide.addText(c, { x: 0, y: 7.2, w: 13.33, h: 0.28, align: 'center', fontSize: 9, bold: true, color: PPT.classif });
+}
+function pptEvtLines(events) {
+  const lines = [];
+  events.forEach(ev => {
+    const head = (ev.num ? ev.num + '. ' : '') + (ev.date || '') + (ev.type ? ' (' + ev.type + ')' : '');
+    lines.push({ text: head + (head.trim() ? ': ' : ''), options: { bold: true, color: PPT.navy, fontSize: 11, breakLine: false } });
+    lines.push({ text: ev.text + (ev.country ? '  — ' + ev.country : ''), options: { color: PPT.text, fontSize: 11, breakLine: true } });
+    if (ev.comment) lines.push({ text: '     ▸ ' + ev.comment, options: { italic: true, color: PPT.muted, fontSize: 10.5, breakLine: true } });
+    lines.push({ text: '', options: { fontSize: 4, breakLine: true } });
+  });
+  return lines;
+}
+
+async function generatePptx() {
+  if (!BRIEF.events.length) { alert('Selecteer eerst events.'); return; }
+  const btn = document.getElementById('btn-pptx');
+  btn.disabled = true; btn.textContent = 'Genereren…';
+  try {
+    const png = await captureMap();
+    const pptx = new PptxGenJS();
+    pptx.defineLayout({ name: 'WIDE', width: 13.33, height: 7.5 });
+    pptx.layout = 'WIDE';
+
+    if (BRIEF.template === 'card') {
+      // ----- Incident Card: one slide -----
+      const s = pptx.addSlide();
+      pptClassifBanners(s);
+      s.addShape('rect', { x: 0, y: 0.35, w: 13.33, h: 0.7, fill: { color: PPT.navy } });
+      s.addText(BRIEF.title || 'Incident Card', { x: 0.3, y: 0.35, w: 9.4, h: 0.7, fontSize: 20, bold: true, color: 'FFFFFF' });
+      s.addText((BRIEF.unit ? BRIEF.unit + '  ·  ' : '') + (BRIEF.period || ''), { x: 9.6, y: 0.35, w: 3.5, h: 0.7, align: 'right', fontSize: 11, color: 'CFE0F5' });
+      if (png) s.addImage({ data: png, x: 0.3, y: 1.2, w: 7.9, h: 5.4 });
+      else s.addText('Kaart niet beschikbaar — plak hier een schermafdruk.', { x: 0.3, y: 1.2, w: 7.9, h: 5.4, align: 'center', fontSize: 12, color: PPT.muted, fill: { color: PPT.bgLight }, line: { color: PPT.border } });
+      s.addText(pptEvtLines(BRIEF.events), { x: 8.35, y: 1.2, w: 4.68, h: 5.4, valign: 'top', fill: { color: 'FFFFFF' }, line: { color: PPT.border } });
+      if (BRIEF.assessment) {
+        s.addText([{ text: 'ANALYST ASSESSMENT:  ', options: { bold: true, color: PPT.navy2, fontSize: 10.5 } },
+                   { text: BRIEF.assessment, options: { italic: true, color: PPT.text, fontSize: 10.5 } }],
+          { x: 0.3, y: 6.72, w: 12.73, h: 0.55, valign: 'top', fill: { color: PPT.bgLight }, line: { color: PPT.border } });
+      }
+    } else {
+      // ----- INTSUM: title + situation + per-region + assessment -----
+      const t = pptx.addSlide();
+      pptClassifBanners(t);
+      t.addShape('rect', { x: 0, y: 2.6, w: 13.33, h: 1.6, fill: { color: PPT.navy } });
+      t.addText(BRIEF.title || 'INTSUM', { x: 0.6, y: 2.7, w: 12.1, h: 0.9, fontSize: 30, bold: true, color: 'FFFFFF' });
+      t.addText((BRIEF.unit ? BRIEF.unit + '  ·  ' : '') + (BRIEF.period || ''), { x: 0.6, y: 3.5, w: 12.1, h: 0.5, fontSize: 14, color: 'CFE0F5' });
+      t.addText('Generated: ' + new Date().toUTCString(), { x: 0.6, y: 6.5, w: 12.1, h: 0.4, fontSize: 10, color: PPT.muted });
+
+      const sit = pptx.addSlide();
+      pptClassifBanners(sit);
+      sit.addText('SITUATION MAP', { x: 0.3, y: 0.4, w: 12.7, h: 0.5, fontSize: 16, bold: true, color: PPT.navy });
+      if (png) sit.addImage({ data: png, x: 0.9, y: 1.0, w: 11.5, h: 5.9 });
+      else sit.addText('Kaart niet beschikbaar.', { x: 0.9, y: 1.0, w: 11.5, h: 5.9, align: 'center', fontSize: 12, color: PPT.muted, fill: { color: PPT.bgLight }, line: { color: PPT.border } });
+
+      const regions = [...new Set(BRIEF.events.map(e => e.region || 'Other'))];
+      regions.forEach(rn => {
+        const evts = BRIEF.events.filter(e => (e.region || 'Other') === rn);
+        for (let off = 0; off < evts.length; off += 6) {
+          const s = pptx.addSlide();
+          pptClassifBanners(s);
+          s.addText(rn.toUpperCase() + (off ? ' (vervolg)' : ''), { x: 0.3, y: 0.4, w: 12.7, h: 0.5, fontSize: 16, bold: true, color: PPT.navy });
+          s.addText(pptEvtLines(evts.slice(off, off + 6)), { x: 0.3, y: 1.05, w: 12.73, h: 6.0, valign: 'top' });
+        }
+      });
+
+      if (BRIEF.assessment) {
+        const a = pptx.addSlide();
+        pptClassifBanners(a);
+        a.addText('ASSESSMENT / OUTLOOK', { x: 0.3, y: 0.4, w: 12.7, h: 0.5, fontSize: 16, bold: true, color: PPT.navy });
+        a.addText(BRIEF.assessment, { x: 0.3, y: 1.05, w: 12.73, h: 5.9, valign: 'top', italic: true, fontSize: 13, color: PPT.text, fill: { color: PPT.bgLight }, line: { color: PPT.border } });
+      }
+    }
+
+    await pptx.writeFile({ fileName: (BRIEF.title || 'briefing').replace(/\W+/g, '_') + '.pptx' });
+  } catch (e) {
+    alert('PPTX-generatie mislukt: ' + e.message);
+  } finally {
+    btn.disabled = false; btn.textContent = '⬇ PPTX';
+  }
+}
+
+/* ---------- UI skeleton ---------- */
+function renderApp() {
+  const app = document.getElementById('app');
+  app.innerHTML = '';
+
+  // Step 1
+  const s1 = el('div', 'step-title'); s1.appendChild(el('span', 'step-num', '1')); s1.appendChild(document.createTextNode('Selecteer events'));
+  app.appendChild(s1);
+  const layout = el('div', 'sel-layout');
+
+  const srcBox = el('div', 'box');
+  const srcHead = el('div', 'box-head');
+  srcHead.appendChild(el('span', '', 'Bronnen'));
+  const tabs = el('div', 'src-tabs');
+  const tA = el('span', 'src-tab active', 'Analysis incidents');
+  const tL = el('span', 'src-tab', 'Live headlines');
+  tA.onclick = () => { srcMode = 'analysis'; tA.classList.add('active'); tL.classList.remove('active'); renderSources(); };
+  tL.onclick = () => { srcMode = 'live'; tL.classList.add('active'); tA.classList.remove('active'); renderSources(); };
+  tabs.appendChild(tA); tabs.appendChild(tL);
+  srcHead.appendChild(tabs);
+  srcBox.appendChild(srcHead);
+  const srcBody = el('div', 'box-body');
+  const filters = el('div', 'filters');
+  const rSel = document.createElement('select'); rSel.id = 'f-region';
+  rSel.innerHTML = '<option value="">Alle regio’s</option>' + DATA.regions.map(r => '<option>' + esc(r.name) + '</option>').join('');
+  rSel.onchange = () => { fillCountryFilter(); renderSources(); };
+  const cSel = document.createElement('select'); cSel.id = 'f-country';
+  cSel.onchange = renderSources;
+  const search = document.createElement('input'); search.type = 'text'; search.id = 'f-search'; search.placeholder = 'Zoeken…';
+  search.oninput = renderSources;
+  filters.appendChild(rSel); filters.appendChild(cSel); filters.appendChild(search);
+  srcBody.appendChild(filters);
+  const srcList = el('div', 'src-list'); srcList.id = 'src-list';
+  srcBody.appendChild(srcList);
+  srcBox.appendChild(srcBody);
+  layout.appendChild(srcBox);
+
+  const trayBox = el('div', 'box');
+  const trayHead = el('div', 'box-head');
+  trayHead.appendChild(el('span', '', 'Geselecteerde events'));
+  const ownBtn = el('button', 'add-btn', '+ Eigen event');
+  ownBtn.onclick = addOwnEvent;
+  trayHead.appendChild(ownBtn);
+  trayBox.appendChild(trayHead);
+  const trayBody = el('div', 'box-body');
+  const tray = el('div'); tray.id = 'tray';
+  trayBody.appendChild(tray);
+  trayBox.appendChild(trayBody);
+  layout.appendChild(trayBox);
+  app.appendChild(layout);
+
+  // Step 2
+  const s2 = el('div', 'step-title'); s2.appendChild(el('span', 'step-num', '2')); s2.appendChild(document.createTextNode('Kaart & document'));
+  app.appendChild(s2);
+  const mLayout = el('div', 'map-layout');
+  const mapBox = el('div', 'box');
+  const mapHead = el('div', 'box-head');
+  mapHead.appendChild(el('span', '', 'Kaart — pins zijn versleepbaar'));
+  const mc = el('div', 'map-controls');
+  const preset = document.createElement('select'); preset.id = 'map-preset';
+  preset.innerHTML = '<option value="pins">Zoom naar pins</option><option value="world">Wereld</option>' +
+    Object.keys(REGION_BOUNDS).map(r => '<option>' + esc(r) + '</option>').join('');
+  preset.onchange = applyRegionPreset;
+  const fitBtn = el('button', 'geo-btn', 'Fit pins');
+  fitBtn.onclick = fitToPins;
+  mc.appendChild(preset); mc.appendChild(fitBtn);
+  mapHead.appendChild(mc);
+  mapBox.appendChild(mapHead);
+  const mapDiv = el('div'); mapDiv.id = 'map';
+  mapBox.appendChild(mapDiv);
+  mLayout.appendChild(mapBox);
+
+  const docBox = el('div', 'box');
+  docBox.appendChild(el('div', 'box-head', 'Documentgegevens'));
+  const docBody = el('div', 'box-body');
+  function field(label, key, placeholder) {
+    const f = el('div', 'doc-field');
+    f.appendChild(el('div', 'lbl', label));
+    const inp = document.createElement('input');
+    inp.type = 'text'; inp.placeholder = placeholder || ''; inp.value = BRIEF[key] || '';
+    inp.oninput = () => { BRIEF[key] = inp.value; save(); };
+    f.appendChild(inp);
+    return f;
+  }
+  docBody.appendChild(field('Titel', 'title', 'bv. GRINTSUM 12 JUL 1100LT'));
+  docBody.appendChild(field('Eenheid / afzender', 'unit', 'bv. S2 CLAS'));
+  docBody.appendChild(field('Periode / DTG', 'period', 'bv. 5 – 12 July 2026'));
+  docBody.appendChild(field('Classificatie', 'classification', ''));
+  const af = el('div', 'doc-field');
+  af.appendChild(el('div', 'lbl', 'Overall assessment / outlook'));
+  const ata = document.createElement('textarea');
+  ata.rows = 6; ata.placeholder = 'Overkoepelende analyse en verwachting…'; ata.value = BRIEF.assessment || '';
+  ata.oninput = () => { BRIEF.assessment = ata.value; save(); };
+  af.appendChild(ata);
+  docBody.appendChild(af);
+  docBox.appendChild(docBody);
+  mLayout.appendChild(docBox);
+  app.appendChild(mLayout);
+
+  // Step 3
+  const s3 = el('div', 'step-title'); s3.appendChild(el('span', 'step-num', '3')); s3.appendChild(document.createTextNode('Genereer briefing'));
+  app.appendChild(s3);
+  const bar = el('div', 'gen-bar');
+  const tpl = el('div', 'tpl-choice');
+  const tCard = el('span', 'tpl-opt', 'Incident Card');
+  const tSum = el('span', 'tpl-opt', 'INTSUM');
+  function syncTpl() {
+    tCard.classList.toggle('active', BRIEF.template === 'card');
+    tSum.classList.toggle('active', BRIEF.template === 'intsum');
+  }
+  tCard.onclick = () => { BRIEF.template = 'card'; syncTpl(); save(); };
+  tSum.onclick = () => { BRIEF.template = 'intsum'; syncTpl(); save(); };
+  syncTpl();
+  tpl.appendChild(tCard); tpl.appendChild(tSum);
+  bar.appendChild(tpl);
+
+  const htmlBtn = el('button', 'gen-btn', '⎙ HTML / PDF'); htmlBtn.id = 'btn-html'; htmlBtn.onclick = generateHtml;
+  const pptBtn = el('button', 'gen-btn', '⬇ PPTX'); pptBtn.id = 'btn-pptx'; pptBtn.onclick = generatePptx;
+  bar.appendChild(htmlBtn); bar.appendChild(pptBtn);
+
+  const expBtn = el('button', 'gen-btn secondary', 'Export .json'); expBtn.onclick = exportDraft;
+  const impBtn = el('button', 'gen-btn secondary', 'Import .json');
+  const impInput = document.createElement('input'); impInput.type = 'file'; impInput.accept = '.json'; impInput.style.display = 'none';
+  impInput.onchange = () => { if (impInput.files[0]) importDraft(impInput.files[0]); impInput.value = ''; };
+  impBtn.onclick = () => impInput.click();
+  const clrBtn = el('button', 'gen-btn secondary', 'Leegmaken'); clrBtn.onclick = clearDraft;
+  bar.appendChild(expBtn); bar.appendChild(impBtn); bar.appendChild(impInput); bar.appendChild(clrBtn);
+
+  const note = el('span', 'draft-note', ''); note.id = 'draft-note';
+  bar.appendChild(note);
+  app.appendChild(bar);
+}
+
+function renderAll() {
+  renderApp();
+  fillCountryFilter();
+  renderSources();
+  renderTray();
+  initMapOnce();
+  renderMarkers();
+  if (BRIEF.events.length) fitToPins();
+}
+let mapInited = false;
+function initMapOnce() {
+  if (mapInited) { map.invalidateSize(); return; }
+  initMap(); mapInited = true;
+}
+
+/* ---------- boot ---------- */
+async function load() {
+  try {
+    const bust = '?t=' + Date.now();
+    const [dataRes, geoRes, liveRes] = await Promise.all([
+      fetch('data.json' + bust, { cache: 'no-store' }),
+      fetch('world.geo.json'),
+      fetch('live.json' + bust, { cache: 'no-store' }).catch(() => null)
+    ]);
+    DATA = await dataRes.json();
+    GEO = await geoRes.json();
+    LIVE = (liveRes && liveRes.ok) ? await liveRes.json() : { countries: {} };
+  } catch (e) {
+    // Most common offline cause: the page was opened directly as a file (file://),
+    // where browsers block fetch() of local JSON for security reasons. Fix: serve
+    // the public/ folder over a local server, e.g. `npx http-server public -p 5173`
+    // (see .claude/launch.json — the "intel-dashboard" config already does this).
+    document.getElementById('app').innerHTML =
+      '<div class="loading">DATA KON NIET GELADEN WORDEN<br><br>' +
+      '<span style="font-size:11px;letter-spacing:0;text-transform:none">' +
+      'Open deze pagina via een lokale server, niet als los bestand ' +
+      '(bv. <code>npx http-server public -p 5173</code>), en zorg dat data.json / ' +
+      'world.geo.json / vendor/ naast builder.html staan.</span></div>';
+    return;
+  }
+  if (!BRIEF.period) BRIEF.period = DATA.period;
+  if (!BRIEF.classification) BRIEF.classification = DATA.classification;
+  restoreDraft();
+  if (!BRIEF.period) BRIEF.period = DATA.period;
+  if (!BRIEF.classification) BRIEF.classification = DATA.classification;
+  renderAll();
+}
+load();
+</script>
+</body>
+</html>
