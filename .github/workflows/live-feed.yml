@@ -29,9 +29,15 @@ jobs:
           curl -sf https://intel-briefing-dashboard.web.app/data.json -o public/data.json
           curl -sf https://intel-briefing-dashboard.web.app/history.json -o public/history.json
           curl -sf https://intel-briefing-dashboard.web.app/live.json -o public/live.json || true
+          curl -sf https://intel-briefing-dashboard.web.app/threat-feed.json -o public/threat-feed.json || true
 
       - name: Crawl live headlines (Google News)
         run: node crawler/crawl.js
+
+      # Threat-feed voor airdefense-academy.web.app (per-wapensysteem koppen).
+      # Niet-fataal: als alle queries falen blijft de vorige feed staan.
+      - name: Crawl threat-system headlines
+        run: node crawler/threat-feed.js || true
 
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0

@@ -1,0 +1,19 @@
+{
+  "_comment": "Zoekqueries per threat-card-id van airdefense-academy.web.app (VKS-leeromgeving js/data-threats.js). Alleen systemen met hoge nieuwswaarde; ids MOETEN matchen met de threat-card ids zodat de site de feed kan koppelen.",
+  "sa21":      "\"S-400\" OR \"SA-21\"",
+  "s500":      "\"S-500\" AND (missile OR defense OR Prometheus)",
+  "sa22":      "\"Pantsir\"",
+  "sa17":      "\"Buk-M2\" OR \"Buk-M3\" OR \"Buk missile\"",
+  "sa15":      "\"Tor-M2\" OR (\"Tor missile\" AND Russia)",
+  "mig31":     "\"MiG-31\"",
+  "su35":      "\"Su-35\"",
+  "su34":      "\"Su-34\"",
+  "su57":      "\"Su-57\"",
+  "tu95":      "\"Tu-95\"",
+  "tu160":     "\"Tu-160\"",
+  "tu22m3":    "\"Tu-22M3\" OR \"Tu-22\"",
+  "r37m":      "\"R-37M\" OR \"R-37 missile\"",
+  "krasukha4": "\"Krasukha\"",
+  "zhitel":    "\"R-330Zh\" OR (\"Zhitel\" AND (jammer OR jamming OR Russia))",
+  "voronezh":  "\"Voronezh radar\" OR \"Voronezh-DM\" OR \"Voronezh-M radar\""
+}
