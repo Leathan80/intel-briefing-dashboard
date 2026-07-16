@@ -30,6 +30,7 @@ jobs:
           curl -sf https://intel-briefing-dashboard.web.app/history.json -o public/history.json
           curl -sf https://intel-briefing-dashboard.web.app/live.json -o public/live.json || true
           curl -sf https://intel-briefing-dashboard.web.app/threat-feed.json -o public/threat-feed.json || true
+          curl -sf https://intel-briefing-dashboard.web.app/threat-review.json -o public/threat-review.json || true
 
       - name: Crawl live headlines (Google News)
         run: node crawler/crawl.js
@@ -38,6 +39,10 @@ jobs:
       # Niet-fataal: als alle queries falen blijft de vorige feed staan.
       - name: Crawl threat-system headlines
         run: node crawler/threat-feed.js || true
+
+      # Review-queue: markeer koppen die op een verouderde kaartwaarde kunnen wijzen.
+      - name: Build threat review queue
+        run: node crawler/threat-review.js || true
 
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
