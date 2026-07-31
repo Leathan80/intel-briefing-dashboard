@@ -1,501 +1,491 @@
 {
   "title": "Intelligence Briefing Dashboard",
   "subtitle": "Weekly Conflict Monitor · All Regions",
-  "period": "21 – 28 July 2026",
-  "generated": "28 July 2026",
+  "period": "24 – 31 July 2026",
+  "generated": "31 July 2026",
   "classification": "UNCLASSIFIED // FOR OFFICIAL USE ONLY",
   "sources": "Reuters · AP News · Al Jazeera · ACLED · US Embassy Alerts · LiveUAMap · BNO News · ISW · British Defence Intelligence · Kyiv Post · Sudan Tribune · Irrawaddy · CNN · NBC · CBS · Fox News · HRW · UN News · CFR · Times of Israel · NPR · CNBC · Atlantic Council · Sudan Tribune · US State Dept · OHCHR · Wikipedia · Washington Post · Amnesty International · AEI · Moscow Times · Kyiv Independent",
   "regions": [
     {
       "name": "Middle East",
       "overview": [
-        "The Gulf oil-war threshold has been crossed — Houthi strikes moved from shipping interdiction to direct attacks on core Saudi Aramco refining infrastructure at Jizan and Yanbu (25 Jul), the first such strikes since 2022, pushing Brent crude above $100/barrel and materially raising the odds of a distinct Saudi-Houthi military confrontation layered atop the US-Iran war.",
-        "A fragile US-Iran pause emerged after the war's most intense stretch — following 13 consecutive nights of US strikes and Iranian tanker attacks that collapsed Hormuz traffic, both sides held fire for three consecutive days (25-27 Jul) amid Qatar/Pakistan-mediated talks, the first genuine de-escalation signal in weeks.",
-        "Israel's containment lines are fraying on two fronts simultaneously — the 24 Jul al-Tal killings triggered the worst West Bank escalation yet, with HRW warning of mass-atrocity risk, even as Lebanon strikes intensified rather than eased, prompting both Lebanon and Jordan to be re-escalated to CRITICAL this week.",
-        "Iran-aligned proxy and insurgent networks are exploiting the wider war's bandwidth constraints — Iraq's Kataib Hezbollah is openly defying the 30 Sep disarmament deadline, Syria's ISIL cells sustain a steady tempo with Aleppo as a new front, and Jordan has shifted from an interception zone to a directly targeted state."
+        "The Iran ceasefire has collapsed and the war has widened onto two new fronts in a single week — the 25-27 Jul pause broke on 29-30 Jul with Iranian strikes on Jordan and Iraq-based US forces, triggering a US 'heavy wave' of strikes on southern Iran and a joint US-Saudi combat operation against Iran-backed militias inside Iraq, the most significant expansion of the conflict since it began.",
+        "Egypt has been drawn directly into the war for the first time — a 29 Jul drone strike on US-owned LNG shipping at Damietta port, unclaimed but assessed as deliberate, breaks Cairo's prior insulation from the conflict and compounds economic strain from the 15 Jul Suez surcharge hikes.",
+        "The Gulf oil-war threshold crossed in late July is being actively sustained, not resolved — continuing Houthi tanker strikes (22, 28 Jul) and a declared blockade of Saudi Arabia, layered on the 25 Jul Aramco refinery strikes, are keeping Brent above $100/barrel and have prompted a 14-nation Saudi-led 'Maritime Defense Alliance' proposal.",
+        "Israel is now managing simultaneous escalations on three fronts — near-daily Lebanon drone strikes and continued Gaza ceasefire-violation deaths persist alongside an unprecedented West Bank spiral, where the 24 Jul al-Tal killings triggered a formal 'wide-scale military operation' and settler reprisals the UN says have pushed settler violence to an all-time high."
       ],
       "countries": [
         {
           "name": "Gaza", "flag": "🇵🇸", "threat": "CRITICAL",
           "incidents": [
-            "22 Jul — Gaza-wide: The UN human rights office condemned Israeli strikes over the preceding week that killed at least 57 Palestinians, including 6 children.",
-            "24 Jul — Gaza: Israel issued fresh displacement orders for several areas, then struck the territory, killing at least 2 Palestinians.",
-            "26 Jul — Deir al-Balah: An Israeli air strike hit a vehicle, killing 2 Hamas security officials, including the head of Hamas's internal security service in central Gaza.",
-            "27 Jul — Gaza-wide: The cumulative death toll since the October 2025 ceasefire reached 1,203 Palestinians killed, up from 1,092 the previous week."
+            "17 Jul — Gaza Strip: Israeli attacks killed 14 Palestinians, more than half of them mourners struck by a drone during a funeral procession.",
+            "26 Jul — Deir al-Balah: An Israeli air strike killed two Hamas security officials, including the head of Hamas's internal security service, when their vehicle was hit.",
+            "30 Jul — Gaza-wide: Fresh Israeli strikes killed at least four to six people, including children, across the Strip.",
+            "30 Jul — Gaza-wide: The cumulative death toll since the October 2025 ceasefire reached at least 1,207 Palestinians killed, with Israel expanding physical control over more than half the enclave."
           ],
-          "coa": "CRITICAL maintained. Strike tempo and the cumulative death toll both rose week-on-week, showing the nominal ceasefire continuing to erode. Absent a genuine disarmament/governance breakthrough, expect continued high-tempo strikes calibrated below full re-invasion threshold, with the toll likely crossing 1,300-1,500 within 90 days."
+          "coa": "CRITICAL maintained. Strike tempo remains the highest since the ceasefire began, with the cumulative toll continuing to climb and Israel entrenching behind an expanded physical barrier over more than half the enclave. Expect continued near-daily strikes under a nominally intact truce, punctuated by multi-fatality incidents (funerals, official convoys) that sustain international condemnation without a formal collapse. Watch for Gaza operations to be used as a pressure valve or bandwidth drain as the wider Iran-Israel war intensifies."
         },
         {
           "name": "Lebanon", "flag": "🇱🇧", "threat": "CRITICAL",
           "incidents": [
-            "23 Jul — Southern Lebanon: An Israeli drone strike wounded paramedics amid escalating operations despite the withdrawal framework.",
-            "28 Jul — Nabatieh al-Fawqa: Israeli drones struck an apartment complex, causing substantial damage and fire, part of near-daily strikes continuing through the week.",
-            "Ongoing through 28 Jul — Zawtar al-Gharbiyeh: Lebanese Army deployment into the 'pilot zone' villages proceeded only slowly as Israeli strikes continued elsewhere.",
-            "Cumulative — Nationwide: Lebanese health authorities report at least 4,303 killed and 12,202 injured by Israeli attacks since March 2026, with 1.6 million+ displaced."
+            "10 Jul — Kfarrumman, Nabatieh district: Israeli drone strikes on a motorcycle and car killed one and wounded three.",
+            "28 Jul — Nabatieh al-Fawqa: Israeli drones struck an apartment complex, causing substantial damage and fire.",
+            "30 Jul — Southern Lebanon/Beirut: Israeli forces intensified overnight operations with drone strikes and explosive demolitions in several towns; drones also overflew Beirut and its southern suburbs."
           ],
-          "coa": "Upgraded back to CRITICAL from HIGH. The withdrawal framework is proving largely symbolic on the ground — Israeli strikes persisted at a pace inconsistent with genuine de-escalation, including a notable 28 July strike on an apartment complex and paramedics wounded on 23 July, undercutting last week's downgrade rationale. Expect continued drone strikes on south Lebanon targeting alleged Hezbollah infrastructure, punctuated by incidents affecting civilians and medical responders, while Lebanese Army deployment into pilot zones remains slow and largely cosmetic absent a verifiable halt in Israeli strikes."
+          "coa": "CRITICAL maintained. The US-brokered withdrawal framework remains functionally inoperative as a restraint on Israeli strikes, which continue near-daily in the Nabatieh corridor. Israeli overflights of Beirut itself signal willingness to project pressure beyond the south, raising the risk of a strike inside greater Beirut within the 90-day window. Sustained attrition raises pressure for a Hezbollah retaliatory incident, particularly if it coincides with a widening Iran-US war drawing in Lebanese Shia armed factions."
         },
         {
           "name": "Iran", "flag": "🇮🇷", "threat": "CRITICAL",
           "incidents": [
-            "20-24 Jul — Nationwide: US strikes continued for a 13th consecutive night before pausing; Iran's Health Ministry reported at least 50 killed and 500+ wounded in this phase.",
-            "22-23 Jul — Strait of Hormuz/Omani waters: Iran struck and disabled two 'rogue' supertankers and hit two tankers in Omani waters; Hormuz commercial traffic collapsed to fewer than 10 vessels per day from roughly 100.",
-            "25-27 Jul — Nationwide: The US and Iran maintained a mutual pause in strikes for a third consecutive day amid Qatar- and Pakistan-mediated talks; Iran denied agreeing to a 10-day ceasefire.",
-            "27 Jul — Nationwide: The war's cumulative cost was estimated at $40-113 billion depending on source, sharply up from $37.5bn a week earlier."
+            "25-27 Jul — Nationwide: A fragile pause held as Trump said the US halted strikes at Tehran's request pending a new ceasefire deal, while Iran denied it was engaged in talks.",
+            "29-30 Jul — Jordan/Iraq: Iran launched renewed missile and drone attacks on US forces in Jordan and on positions tied to the wider conflict, breaking the pause.",
+            "30 Jul — Qeshm Island/Ahvaz/Abadan: The US conducted a 'heavy wave' of strikes on dozens of IRGC targets across southern Iran; a couple and their two-year-old child were killed in a residential building on Qeshm.",
+            "30 Jul — Washington: The US Senate killed a Democrat-backed Iran War Powers resolution 49-50, the 13th such vote of the war."
           ],
-          "coa": "CRITICAL maintained, but a fragile pause has emerged. After 13 consecutive nights of strikes and Iranian tanker attacks that collapsed Hormuz shipping, both sides held fire for three consecutive days (25-27 Jul) amid Qatar/Pakistan-mediated talks — the first genuine de-escalation signal in weeks, though the war's pattern of repeated ceasefire collapses urges caution. Expect either a formalized interim ceasefire within 1-2 weeks or renewed strikes if Iran conducts further tanker/Hormuz attacks or US forces sustain casualties; regional spillover into Jordan, Syria, Iraq and the Gulf will track directly with the strike tempo."
+          "coa": "CRITICAL maintained; the brief pause proved a tactical lull, not a durable ceasefire. Expect continued strike-counterstrike cycles between the US and Iran, with Iran increasingly using proxy and direct strikes against third countries (Jordan, Iraq, now Egypt) to raise costs on Washington without a homeland-to-homeland breakthrough. Congressional efforts to constrain the administration have repeatedly failed, removing a near-term domestic check. Absent a Qatar/Pakistan-brokered breakthrough, expect the war to grind on past the 90-day horizon with periodic pauses followed by renewed heavy strike waves and growing regional spillover."
         },
         {
           "name": "Yemen", "flag": "🇾🇪", "threat": "CRITICAL",
           "incidents": [
-            "22 Jul — Red Sea: Houthis claimed strikes on two Saudi oil tankers, Encelia and Layla, for allegedly violating the blockade; at least 7 vessels diverted from Bab el-Mandeb.",
-            "23 Jul — Red Sea: Houthis claimed additional strikes on two more Saudi oil tankers amid the wider Iran-linked escalation.",
-            "25 Jul — Jizan/Yanbu, Saudi Arabia: Houthis struck Aramco refineries directly for the first time since 2022, sparking a fire at Jizan; Brent crude surged above $100/barrel.",
-            "Ongoing — Hodeidah governorate: Renewed clashes between government-aligned forces and Houthi forces continued near the west coast supply corridor."
+            "20 Jul — Nationwide: Houthis declared a maritime blockade of Saudi Arabia, accusing Riyadh of imposing an 'unjust and oppressive siege' on Yemen.",
+            "25 Jul — Jizan/Yanbu, Saudi Arabia: Houthis struck Aramco refineries with ballistic missiles, cruise missiles and drones — their first direct hit on Saudi oil infrastructure since 2022; Jizan's 400,000-bpd refinery shut down, restart not expected until mid-August.",
+            "28 Jul — Red Sea: Houthis fired missiles at another Saudi oil tanker, enforcing the blockade."
           ],
-          "coa": "CRITICAL maintained, escalation confirmed and accelerating. Houthi operations moved from shipping interdiction to direct strikes on core Saudi oil infrastructure within a week — a significant threshold crossing. Expect continued and possibly expanded strikes on Red Sea coast refineries and export terminals, sustained blockade enforcement, and continued oil-market volatility, raising the likelihood of a direct Saudi-Houthi military confrontation distinct from the US-Iran track."
+          "coa": "CRITICAL maintained. The Houthis have moved from harassment to sustained blockade enforcement against Saudi-linked shipping, with the Jizan and Yanbu strikes marking a qualitative escalation. Expect continued tanker strikes and possible additional refinery/export-infrastructure attacks as long as Saudi strikes on Hodeidah continue, sustaining Brent crude above $100/barrel. Watch for a full Saudi counter-offensive against Houthi positions and for the newly proposed 14-nation Maritime Defense Alliance to formalize an international naval response."
         },
         {
           "name": "Israel", "flag": "🇮🇱", "threat": "CRITICAL",
           "incidents": [
             "24 Jul — Al-Tal village, near Nablus: A settler attack on Palestinian homes triggered a shootout that killed 4 Palestinians and 2 Israelis, the deadliest single settler-related incident of the current wave.",
-            "24-25 Jul — West Bank-wide: Following the al-Tal killings, Israel launched a major counterterrorism operation; Army Radio counted roughly 30 separate settler attacks across the territory over the following weekend.",
-            "25-26 Jul — West Bank-wide: Israeli forces conducted mass arrests of Palestinians as Human Rights Watch warned of a 'surge in settler violence threatening mass atrocities.'",
-            "26 Jul — Tel Aviv: Nine people were arrested at a protest against West Bank settler violence."
+            "26-27 Jul — West Bank-wide: Netanyahu ordered a 'wide-scale military operation' across the West Bank; IDF stormed multiple towns as settler violence intensified in reprisal.",
+            "27 Jul — West Bank: UN OCHA data showed 3,033 recorded Israeli settler attacks between Jan 2025 and June 2026, with the UN warning settler violence has hit an 'all-time high.'",
+            "30 Jul — West Bank: Escalation continued with a surge in IDF checkpoints alongside ongoing settler violence."
           ],
-          "coa": "CRITICAL maintained. The al-Tal killings mark a sharp escalatory inflection in West Bank settler violence, triggering both settler reprisals and an Israeli military crackdown that risks further radicalizing the situation, layered atop Israel's continued direct combatant role in the Iran war and near-daily Gaza strikes. Expect sustained high-tempo settler attacks and IDF mass-detention operations without near-term policy correction; risk of a mass-casualty inter-communal incident within the West Bank is elevated over the next 90 days."
+          "coa": "CRITICAL maintained. The 24 Jul al-Tal killings have catalyzed the sharpest West Bank escalation since 2022, now compounded by a formal IDF 'wide-scale operation.' Expect continued settler reprisal attacks, expanded checkpoints, and elevated risk of further fatal clashes. HRW's mass-atrocity warning and the UN's 'all-time high' characterization suggest international pressure will intensify, but with no de-escalation signal from Israeli authorities the trajectory points toward continued deterioration, particularly as the West Bank becomes a secondary front while security attention is absorbed by Gaza, Lebanon and the Iran war."
         },
         {
-          "name": "Iraq", "flag": "🇮🇶", "threat": "HIGH",
+          "name": "Iraq", "flag": "🇮🇶", "threat": "CRITICAL",
           "incidents": [
-            "24 Jul — Erbil: Air defenses intercepted and destroyed 5 explosive-laden drones targeting the vicinity of Erbil International Airport, which hosts US-led coalition forces; attribution remains contested between Iranian forces and Iran-backed militias.",
-            "Ongoing through 28 Jul — Nationwide: Kataib Hezbollah and Harakat Hezbollah al-Nujaba publicly reaffirmed refusal to disarm, linking compliance to withdrawal of coalition forces ahead of the 30 Sep deadline."
+            "15 Jul — Erbil: Six drones targeted Erbil International Airport and the US Consulate; all intercepted by air defenses.",
+            "26 Jul — Erbil: A further drone attack was reported, with explosions near a US base close to Erbil airport.",
+            "29-30 Jul — Baghdad, Wasit, Nineveh, Basra, Kirkuk, Karbala, Diyala: US and Saudi forces conducted joint precision strikes on Iran-backed Popular Mobilization Forces sites, including PMF's Baghdad HQ, following 30+ militia drone attacks on US assets over 72 hours; strikes killed roughly 20 militia fighters and 6 Iranian advisers.",
+            "30 Jul — Nationwide: Militia leadership signaled intent to retaliate within 72 hours, reportedly considering targets in Iraqi Kurdistan or Baghdad."
           ],
-          "coa": "HIGH maintained. Iraq remains a secondary front of the US-Iran war, with Iran-aligned militias using deniable drone attacks against coalition infrastructure at Erbil as leverage. The 30 September disarmament deadline is set to become a flashpoint given Kataib Hezbollah's public rejection; expect continued intermittent drone/rocket incidents against Erbil with attribution likely to remain contested."
+          "coa": "Upgraded to CRITICAL from HIGH. Iraq has become an active US-Saudi combat theater against Iran-backed militias, with confirmed fatalities on both sides and an open militia threat of imminent retaliation — a material escalation beyond last week's intercepted-drone-attack posture. Expect an escalatory tit-for-tat: further militia drone/rocket attacks on US and Saudi-linked targets met with continued US-Saudi strikes on PMF-aligned factions. Baghdad's ability to restrain Iran-aligned militias will likely erode further, raising risk of the 30 Sep Kataib Hezbollah disarmament deadline collapsing into open confrontation."
         },
         {
           "name": "Saudi Arabia", "flag": "🇸🇦", "threat": "CRITICAL",
           "incidents": [
-            "22 Jul — Red Sea: Houthis claimed strikes on tankers Encelia and Layla; Encelia was confirmed hit.",
-            "23 Jul — Red Sea: Additional Houthi strikes were claimed on two more Saudi oil tankers.",
-            "25 Jul — Jizan/Yanbu: Houthi missile and drone strikes hit Aramco refineries directly — the first such attack since 2022; a fire broke out at Jizan, confirmed by satellite imagery, and Brent crude spiked above $100/barrel."
+            "25 Jul — Jizan/Yanbu: Houthi ballistic missile and drone strikes damaged Aramco's Jizan refinery (shut down, fire ongoing) and Yanbu storage facilities; Yanbu loading volumes fell roughly 40% since 19 Jul.",
+            "22 & 28 Jul — Red Sea: Two additional Houthi tanker attacks tied to the declared blockade.",
+            "29-30 Jul — Iraq: Saudi Arabia joined US forces in direct strikes on Iran-backed militias in Iraq, killing 20 fighters and 6 Iranian advisers — a significant expansion of Saudi military involvement beyond its own borders.",
+            "30 Jul — Nationwide: Saudi Arabia proposed a 'Maritime Defense Alliance,' now backed by 14 countries, to protect regional shipping routes."
           ],
-          "coa": "CRITICAL maintained; this week's Aramco refinery strikes confirm last week's upgrade. Saudi Arabia has moved from an indirect, shipping-interdiction threat environment to direct kinetic strikes on its oil export infrastructure for the first time since 2022. Expect continued and potentially expanded Houthi targeting of Red Sea coast refineries and terminals, sustained blockade enforcement, and a significantly raised probability of direct Saudi military retaliation against Houthi positions in Yemen."
+          "coa": "CRITICAL maintained. Saudi Arabia has moved from a defensive posture to active co-belligerency, now conducting offensive strikes inside Iraq alongside the US. Expect continued Aramco infrastructure vulnerability — the targeted mid-August Jizan restart is itself an attack-window risk — sustained tanker harassment, and a push to operationalize the Maritime Defense Alliance within the 90-day window. Riyadh's deepening direct military role raises the risk of further Houthi/Iranian retaliation against Saudi territory beyond Jizan/Yanbu."
         },
         {
           "name": "Syria", "flag": "🇸🇾", "threat": "CRITICAL",
           "incidents": [
-            "Through Jul — Nationwide: The Syrian Observatory for Human Rights documented 5 ISIL attacks in July, with Aleppo emerging as a new front (12 events in 2026, up from near-zero prior).",
-            "Ongoing — Nationwide: 52 ISIL attacks on government forces have been recorded in 2026, versus 16 for all of 2025.",
-            "Ongoing through 28 Jul — Nationwide: Syria retained a neutral posture in the Iran war but continued to suffer damage from Iranian missiles intercepted over its territory by Israel."
+            "Jul (ongoing) — Aleppo/Azaz/Al-Bab: Syria's Interior Ministry announced the arrest of seven suspected ISIS-cell members in a joint operation targeting cells in Aleppo city and surrounding towns.",
+            "Jul (ongoing) — Aleppo/Al-Bab: Follow-on raids saw authorities arrest additional suspected Daesh members and seize explosives and weapons.",
+            "Through Jul — Nationwide: The Syrian Observatory for Human Rights recorded five ISIS attacks in July alone; total ISIS attacks across Syria in 2026 now stand at 64, evidence the group is actively trying to regroup."
           ],
-          "coa": "CRITICAL maintained. Syria's security picture remains defined by two parallel threats: a resurgent ISIL insurgency, with Aleppo as a notable new front, sustaining a steady tempo of attacks against security forces, and continued exposure as a transit/intercept zone for the wider Iran-Israel-US missile war. Expect continued small-cell ISIL attacks testing the new government's stretched security capacity, alongside incidental damage from intercepted missiles absent a ceasefire in the Iran war."
+          "coa": "CRITICAL maintained. The Aleppo front remains the epicenter of ISIL's resurgence, with security services conducting active counter-cell operations even as attack frequency continues to climb year-on-year. Expect continued low-intensity ISIL hit-and-run attacks and periodic counter-terrorism raids in Aleppo, Azaz and Al-Bab. Syria's neutral posture in the Iran-US war remains intact for now, but as the war's geographic footprint widens into Iraq, Jordan and Egypt, the risk of Syrian territory being drawn in continues to rise."
         },
         {
-          "name": "Egypt", "flag": "🇪🇬", "threat": "MODERATE",
+          "name": "Egypt", "flag": "🇪🇬", "threat": "HIGH",
           "incidents": [
-            "15 Jul — Suez Canal-wide: The Suez Canal Authority implemented its first major surcharge revision in 3 years — loaded tanker surcharges rose from 25% to 37%, dry bulk more than doubled to 22%, and container ships now face a 12% surcharge.",
-            "Ongoing — Suez Canal: Transit volumes remain roughly 60% below pre-Red Sea-crisis levels, with carriers using selective, risk-assessed routing."
+            "15 Jul — Suez Canal-wide: The Canal Authority raised transit surcharges for most vessel classes (loaded tankers up to 37%, dry bulk to 22%, containerships 12%).",
+            "29 Jul — Damietta port: A drone strike hit the US-owned LNG floating storage vessel Energos Winter, with fire spreading to a second ship, the Gaslog Salem; no casualties, crews evacuated — the first confirmed attack on Egyptian soil since the Iran war began."
           ],
-          "coa": "MODERATE maintained. Egypt's exposure remains primarily economic rather than kinetic; the July 15 surcharge hikes reflect the Canal Authority's effort to recoup revenue amid persistently depressed transit volumes, itself now compounded by the Houthi blockade and Aramco strikes further destabilizing regional shipping confidence. Sinai security risk remains a standing, low-tempo condition rather than an escalating one this week."
+          "coa": "Upgraded to HIGH from MODERATE. A direct, if unclaimed, drone strike on Egyptian port infrastructure marks a qualitative break from last week's purely economic profile and pulls Egypt directly into the widening regional war. Expect a heightened security posture around Mediterranean ports and Suez Canal approaches, alongside continued economic pressure from elevated transit surcharges suppressing already-depressed canal volumes. A repeat attack, especially one causing casualties or targeting canal-adjacent infrastructure, would likely force a formal Egyptian military response and materially raise the threat picture further."
         },
         {
           "name": "Jordan", "flag": "🇯🇴", "threat": "CRITICAL",
           "incidents": [
-            "22 Jul — Aqaba: Missile alert sirens sounded as Jordanian forces intercepted 4 Iranian missiles and 4 drones, with 2 further missiles falling in uninhabited areas, coinciding with collapsed ceasefire talks.",
-            "Ongoing — Aqaba: The IRGC claimed the strikes specifically targeted US-linked assets at Aqaba airport, alongside Kuwait- and Syria-based US assets, as part of the same regional wave."
+            "22-23 Jul — Aqaba: Iran launched missiles and drones at Aqaba port and airport; Jordanian forces intercepted six missiles and four drones, with explosions heard over neighboring Eilat.",
+            "29-30 Jul — Aqaba: A renewed Iranian strike targeted the port city; Jordan's Foreign Ministry summoned Iran's charge d'affaires and lodged a formal protest over 'continuing, unjustified attacks.'",
+            "30 Jul — Nationwide: Air defenses shot down five additional missiles launched from Iran; an Iranian strike separately hit a building belonging to a Chinese firm, killing one person."
           ],
-          "coa": "Upgraded to CRITICAL from HIGH. Confirmed direct Iranian missile and drone attacks specifically targeting Aqaba on 22 July mark a step up from near-daily interception of transiting fire to direct targeting of Jordanian territory. Expect continued missile/drone activity against Aqaba as long as the US-Iran war continues, with elevated risk to the port, airport and adjacent Eilat from interception debris; a sustained ceasefire would likely reduce this risk quickly, while renewed US strikes would likely trigger renewed Iranian targeting of Jordan within days."
+          "coa": "CRITICAL maintained. Jordan has now been struck by Iran at least twice in nine days, a shift from a single intercepted incident to a repeated targeting pattern. Expect continued Iranian strikes on Jordanian territory as Tehran uses Aqaba to pressure US regional basing and shipping without striking Israel or Gulf states directly, sustaining risk to civilians and infrastructure. Jordan's formal diplomatic protests are unlikely to deter further strikes absent a broader Iran-US de-escalation."
         },
         {
           "name": "Libya", "flag": "🇱🇾", "threat": "MODERATE",
           "incidents": [
-            "26 Jul — Benghazi: Field Marshal Khalifa Haftar met with Zintan tribal leaders, continuing political consolidation tied to the Boulos unification initiative.",
-            "27 Jul — Tripoli: Protests over prolonged power cuts (up to 10 hours/day) spread across multiple districts, including road blockades on the coastal road in Janzour, as load-shedding resumed after two years of relative stability.",
-            "Ongoing — Tripoli: Rival militias were reported massing amid ideological rifts, raising fears of renewed clashes, though no armed clash was confirmed this week."
+            "12 Jul — Gatrun, southern Libya: A newly self-proclaimed rebel group, the 'Southern Liberation Operations Room,' attacked a Libyan National Army checkpoint.",
+            "20 Jul — Eastern Libya: Turkey expanded military and technical cooperation with Haftar's LNA, a development Egypt reportedly views with concern.",
+            "25 Jul — Tripoli and other cities: Protests erupted over power cuts and heatwave-driven electricity shortages; a civil disobedience campaign shut down roads and public buildings."
           ],
-          "coa": "MODERATE maintained. Libya's near-term risk picture is shifting from purely factional toward socioeconomic: worsening power cuts are driving civil unrest in Tripoli that could be exploited by rival armed factions already reported massing in the capital. The Haftar-GNU unification track continues to show genuine momentum, but militia buildup and unresolved Misrata-aligned opposition remain a latent trigger for renewed clashes."
+          "coa": "MODERATE maintained. Libya's trajectory remains one of political consolidation under Haftar, aided by deepening Turkish engagement, combined with rising civil unrest over basic services. The Gatrun checkpoint attack signals a new, still-marginal armed challenger in the south worth monitoring. Expect continued Tripoli-area protests over power and utilities through the summer heat season, with risk of escalation into clashes with militias if government responses remain inadequate."
         },
         {
           "name": "Tunisia", "flag": "🇹🇳", "threat": "MODERATE",
           "incidents": [
-            "4 Jul — Tunis: Ennahda Secretary-General Ajmi Ourimi and member Mosaab Gharbi were each sentenced to 3 years on terrorism-related charges.",
-            "8 Jul — Tunis: 21 people, including Ennahda leaders and former officials, were sentenced to 12-35 years in the 'Conspiracy 2' case, with Rached Ghannouchi receiving an additional 14-year sentence in absentia."
+            "4 Jul — Tunis: A court convicted Ennahda Secretary-General Ajmi Ourimi and party member Mosaab Gharbi, sentencing both to three years.",
+            "8 Jul — Tunis: A court sentenced 21 people, including Ennahda leaders and former officials, to 12-35 years; former Ennahda president Rached Ghannouchi received a 14-year sentence in absentia."
           ],
-          "coa": "MODERATE maintained. No new dated incidents were identified this week; the opposition crackdown appears to have reached a plateau following the 4-8 July sentencing wave. Expect continued international human rights criticism without near-term policy reversal, and continued monitoring for appeals processes or potential unrest triggered by the sentences."
+          "coa": "MODERATE maintained. The judicial crackdown on Ennahda appears to have reached a steady state following the early-July sentencing wave, with no new arrests or violent incidents identified this week. Expect continued appeals and international human-rights criticism, but no near-term shift toward street-level unrest absent a new triggering event."
         }
       ]
     },
     {
       "name": "Ukraine/Russia",
       "overview": [
-        "Ukraine's political-military crisis outlived its 24 July deadline — Zelensky's partial concession of dismissing Syrskyi failed to satisfy protesters, who rejected Fedorov's alternative posts and expanded demands; protests hit an 11th consecutive day by 26 Jul, running in parallel with continued mass-casualty Russian strikes including the 24 Jul Bucha arms-expo strike that killed 10.",
-        "Russia's fuel and refinery crisis is deepening — Ukrainian strikes on the Afipsky and Salavat refineries and a Novorossiysk state of emergency compound rationing already reported in 78+ Russian regions.",
-        "The South Caucasus is bifurcating further — Georgia's crackdown intensified past Day 600 of protests, Armenia absorbed a fresh Russian trade strike tied to its EU pivot, while Azerbaijan deepened Western energy ties even as it keeps threatening to leave the Council of Europe.",
-        "Belarus and Moldova show a rising but still low-intensity hybrid-pressure pattern — Moldova's new pro-EU government immediately drew Russian diplomatic friction, while Belarus combines Ukraine-border military buildup with a renewed migrant-pressure campaign against Latvia ahead of its October elections."
+        "Ukraine's political-military crisis has hardened into stalemate rather than resolving — Drapatyi's appointment as Commander-in-Chief defused some anger, but Fedorov's refusal of any post short of reinstatement kept protests running past two weeks even as the presidential office treats the matter as closed, a rift that could reopen sharply if front-line reverses or further mass-casualty strikes occur.",
+        "Russia intensified deep strikes on Kyiv and other cities in the final week of July, while Ukraine matched the escalation with fresh long-range hits on Russian refineries (29 Jul) and repeated drone/naval attacks on Novorossiysk's CPC terminal (20 Jul, 30 Jul), deepening a fuel crisis now affecting roughly two-thirds of Russian regions.",
+        "Belarus continues using the Ukraine border as a coercive lever on two tracks simultaneously — Lukashenko-confirmed Special Operations Forces dispersal alongside continued border infrastructure buildup, paired with a sustained migrant-pressure campaign against Latvia now past 111 consecutive days of crossings tied explicitly to Latvia's Ukraine support.",
+        "The wider region shows an accelerating east-west fracture that Moscow's traditional levers are struggling to reverse — Georgia's protest movement passed 600+ days with continuing state harassment of journalists and comedians, Armenia absorbed a further Russian trade squeeze, while Moldova's confirmed Tofan government and Azerbaijan's Berlin energy diplomacy both signal deepening Western alignment."
       ],
       "countries": [
         {
           "name": "Ukraine", "flag": "🇺🇦", "threat": "CRITICAL",
           "incidents": [
-            "21 Jul — Kyiv: Zelensky dismissed Commander-in-Chief Syrskyi and appointed Joint Forces Commander Mykhailo Drapatyi, a partial concession to protesters that did not reinstate Fedorov.",
-            "23 Jul — Kyiv: Fedorov rejected Zelensky's alternative posts, stating he will accept 'no position other than minister of defence,' entrenching the political standoff.",
-            "24 Jul — Bucha, Kyiv Oblast: A Russian ballistic missile struck a defense-industry exhibition, killing at least 10 and injuring 100+; Russia's MoD claimed it deliberately targeted the event.",
-            "26 Jul — Kyiv/Chernihiv: Russia launched 7 ballistic missiles and 136 drones overnight; a drone hit a Chernihiv supermarket, killing 2 including a child, as protests over Fedorov's dismissal reached an 11th consecutive day."
+            "21 Jul — Kyiv: Zelensky appointed General Mykhailo Drapatyi as new Commander-in-Chief following Syrskyi's dismissal; Fedorov rejected the offer of a technology-sector post on 23 Jul, insisting on nothing short of reinstatement as defense minister.",
+            "25 Jul — Nationwide: Protests reached their 10th consecutive day, spreading across Lviv, Ivano-Frankivsk, Uzhhorod, Dnipro and other cities.",
+            "25-27 Jul — Kyiv: Russia launched an overnight ballistic missile barrage on a residential building, followed by a further strike of 7 ballistic missiles and 136 drones that killed at least 6 civilians nationwide.",
+            "29 Jul — Southern Russia: Ukraine's General Staff confirmed strikes on two major Russian oil refineries, terminals and 18 vessels, hours after a Zelensky-Trump meeting."
           ],
-          "coa": "CRITICAL maintained, compounding. The 24 July deadline passed without resolution — the leadership rift is now a three-week standoff running in parallel with, not resolved by, continued mass-casualty Russian strikes. Expect the Fedorov standoff to persist as low-boil civil unrest given Zelensky's calculated partial concessions, while Russia sustains large-scale missile/drone salvos against Kyiv and defense-industrial targets and Ukraine continues its long-range campaign against Russian refining capacity."
+          "coa": "CRITICAL maintained, compounding. The leadership crisis has hardened into stalemate rather than resolved, running in parallel with intensified Russian strikes on Kyiv and an expanded Ukrainian long-range campaign against Russian refining capacity. Expect the Fedorov standoff to persist as low-boil civil unrest, with Drapatyi's appointment facing its first major test on force-generation and Pokrovsk-axis defense, while Russia sustains mass missile/drone barrages and Ukraine continues to escalate refinery and Black Sea terminal strikes as a countervailing lever."
         },
         {
           "name": "Russia", "flag": "🇷🇺", "threat": "HIGH",
           "incidents": [
-            "14 Jul — Bashkortostan: Ukrainian drones struck the Neftekhim Salavat facility, one of Russia's largest petrochemical plants.",
-            "26 Jul — Krasnodar Krai: Fresh drone strikes hit the Afipsky refinery and a military unit; a local state of emergency was declared in Novorossiysk, a key crude-export gateway.",
-            "26-27 Jul — Nationwide: Russia launched 147 drones against Ukraine overnight while Ukraine continued its long-range strike campaign against Russian export and oil infrastructure.",
-            "Ongoing — Nationwide: Fuel rationing continues, with petrol shortages now reported in at least 78 regions including occupied Crimea."
+            "20 Jul — Novorossiysk: A drone attack struck a tanker near the CPC terminal, forcing suspension of oil loading.",
+            "29 Jul — Southern Russia: Ukraine confirmed strikes on two major refineries and associated terminals, hitting 18 vessels.",
+            "30 Jul — Novorossiysk: A UAV strike hit the tanker Nissos Sifnos near CPC crude-receiving manifolds, sparking a fire and again disrupting shipments.",
+            "Late Jul — Nationwide: Roughly two-thirds of Russian regions are experiencing fuel shortages; Ukrainian strikes are estimated to have cut Russian oil production/export capacity by roughly 40%."
           ],
-          "coa": "HIGH maintained. Expect Ukraine to sustain or intensify strikes on refining and export infrastructure — the Krasnodar, Novorossiysk and Bashkortostan pattern suggests a deliberate effort to hit both domestic refining and export-earning nodes — pushing fuel rationing into more regions through Q3. Domestic unrest risk from fuel shortages remains a slow-burn variable rather than acute."
+          "coa": "HIGH maintained, pressure intensifying. Russia's fuel-supply crisis will likely deepen through August as Ukraine continues to prioritize refinery and Black Sea export-terminal strikes, with Novorossiysk/CPC remaining a repeat target given its outsized role in Russian and Kazakh crude exports. Expect further localized states of emergency, expanding regional fuel rationing, and continued mass strikes on Ukrainian cities as an asymmetric counter-pressure tool. Absent a ceasefire, the refinery/tanker exchange looks set to become the primary attrition axis of the war through Q4 2026."
         },
         {
           "name": "Belarus", "flag": "🇧🇾", "threat": "MODERATE",
           "incidents": [
-            "Ongoing — Brest/border zone: Lukashenko confirmed dispersal of Special Operations Forces along the Ukraine border, framed as defensive, amid continued construction of roads and ammunition/fuel storage sites near the frontier.",
-            "Ongoing — Latvia border: A renewed migrant-pressure campaign saw Latvia record 111 attempted illegal crossings from Belarus in a single day, with allegations Belarusian security forces are escorting and equipping migrants ahead of Latvia's October elections.",
-            "25 Jul — Ukraine-Belarus border: Ukraine continued fortifying its 1,084km border with Belarus with anti-drone netting, minefields and closed crossings, citing the ongoing Belarusian military buildup."
+            "22 Jul — Belarus-Ukraine border: Lukashenko confirmed he ordered Special Operations Forces dispersed along the border, framing it as defensive, amid continued construction of roads and ammunition/fuel storage sites near the frontier.",
+            "1 Jul — Latvia border: Lithuania began sending a 9-officer mission, including 2 K9 handlers, to reinforce Latvia's border guard against Belarus-directed migrant flows.",
+            "15 Jul — Latvia border: Latvia logged 111 consecutive days of migrant crossing attempts from Belarus (7,634 this year, roughly 800 more than last year), explicitly linked by officials to Latvia's support for Ukraine."
           ],
-          "coa": "MODERATE maintained. Expect Belarus to continue leaning on hybrid levers — border militarization paired with migration pressure against the Baltics — as a low-cost way to tie down NATO attention ahead of Latvia's October elections, rather than direct involvement in the Ukraine war."
+          "coa": "MODERATE maintained. Belarus will likely continue using both the SOF border dispersal and the migrant-pressure campaign as parallel hybrid levers rather than escalating toward direct military action, with the border infrastructure buildup suggesting sustained readiness rather than imminent offensive intent. Pressure on Latvia is likely to intensify through its October elections, with Baltic states increasing mutual-aid border deployments."
         },
         {
           "name": "Moldova", "flag": "🇲🇩", "threat": "MODERATE",
           "incidents": [
-            "21 Jul — Chișinău: Parliament confirmed the Tofan government (53-21); PM Tofan outlined a goal of signing an EU accession agreement by 2028 and full membership by 2030.",
-            "22 Jul — Chișinău/Moscow: Russia summoned Moldova's ambassador, alleging Moldovan security forces 'threatened and pressured' Russian embassy staff, and warned of 'symmetrical' retaliatory measures.",
-            "23 Jul — Chișinău: Moldova's Foreign Ministry warned citizens against non-essential travel to Russia and Belarus, citing reports of Russia pressuring Moldovan nationals to sign military contracts."
+            "21 Jul — Chișinău: Parliament elected businessman Vasile Tofan as prime minister (53-21), backed by President Sandu's PAS party.",
+            "22 Jul — Chișinău: The Tofan government was sworn in, naming EU accession its top priority, targeting an accession treaty signed by end-2028 and membership readiness by 2030.",
+            "Late Jul — Chișinău: The new government's national security program explicitly named Russia as the primary threat, citing energy leverage, electoral interference, propaganda and cyberattacks."
           ],
-          "coa": "MODERATE maintained. Expect the Tofan government's EU-accession push to continue drawing retaliatory friction from Moscow — likely further diplomatic incidents, disinformation and pressure on Moldovan citizens in Russia — rather than renewed airspace violations in the near term."
+          "coa": "MODERATE maintained. The Tofan government's technocratic profile will likely be tested quickly on delivery — anti-corruption reform and EU cluster negotiations are the near-term benchmarks. Expect Russia to continue applying pressure through energy leverage, disinformation and possible electoral interference rather than overt escalation, making Chișinău a bellwether for broader enlargement momentum through Q4 2026."
         },
         {
           "name": "Georgia", "flag": "🇬🇪", "threat": "HIGH",
           "incidents": [
-            "22 Jul — Tbilisi: TV Formula journalist Vakho Sanaia was jailed for 14 days over Facebook posts satirizing the parliament speaker; comedian Onise Okriashvili was attacked by unidentified men hours later.",
-            "26 Jul — Tbilisi: Police detained 10 protesters on the 606th consecutive day of protests for carrying signs criticizing Bidzina Ivanishvili.",
-            "27 Jul — Tbilisi: An activist was detained on the 607th day of protests, again over an Ivanishvili-related poster."
+            "22 Jul — Tbilisi: Journalist Vako Sanaia was arrested and sentenced to 14 days over statements about the parliament speaker; comedian Onise Okriashvili was beaten near his home the same day.",
+            "26 Jul — Tbilisi: Police detained 10 people holding posters critical of Bidzina Ivanishvili.",
+            "27 Jul — Tbilisi: Activist Nodar Tsitsriashvili was detained for displaying a similar poster, as daily protests reached 608 consecutive days."
           ],
-          "coa": "HIGH maintained. Expect the government to continue incremental judicial harassment of journalists, comedians and protest figures rather than a single dramatic crackdown, sustaining the daily-protest equilibrium past its 600-day mark."
+          "coa": "HIGH maintained. Expect the ruling Georgian Dream government to continue incremental judicial harassment of journalists, comedians and protest figures rather than a single dramatic crackdown, sustaining the daily-protest equilibrium well past its 600-day mark. Watch for EU/US statements or targeted sanctions responses if detentions of media figures continue to escalate in frequency or severity."
         },
         {
           "name": "Armenia", "flag": "🇦🇲", "threat": "MODERATE",
           "incidents": [
-            "24-27 Jul — Moscow/Yerevan: Russia's Rosselkhoznadzor announced a restriction on dairy imports from all Armenian enterprises effective 27 July, the latest in a string of Russian bans widely seen as political leverage tied to Armenia's EU/US pivot.",
-            "Ongoing — Yerevan: Pro-Russian oligarch Samvel Karapetyan, facing coup-plot charges, publicly claimed to have a 'secret plan' to remove PM Pashinyan from power."
+            "24-27 Jul — Moscow/Yerevan: Russia's Rosselkhoznadzor enforced a ban on Armenian dairy imports effective 27 Jul, affecting products that made up 78.3% of Armenia's dairy exports.",
+            "29 Jul — Yerevan: PM Pashinyan stated the Eurasian Economic Union is 'paralyzed and not functioning,' reflecting deepening EAEU-Armenia tensions."
           ],
-          "coa": "MODERATE maintained. Expect Russia to continue using targeted trade restrictions as its primary pressure tool against Yerevan's Western pivot rather than direct security action, while Karapetyan's rhetoric signals continued Russian-aligned opposition activity."
+          "coa": "MODERATE maintained. Russia will likely continue expanding sector-by-sector trade restrictions against Armenia as leverage against Yerevan's EU/US pivot. Pashinyan's public EAEU criticism signals growing willingness to accept economic cost for continued Western alignment, likely accelerating Armenian outreach to alternative markets through year-end."
         },
         {
           "name": "Azerbaijan", "flag": "🇦🇿", "threat": "LOW",
           "incidents": [
-            "21 Jul — Berlin: Aliyev signed a strategic partnership agreement with Germany covering energy, transport, infrastructure, trade and science, and confirmed a 10-year gas supply contract.",
-            "Ongoing since 13 Jul — Baku: Azerbaijan continues weighing full withdrawal from the Council of Europe after PACE suspended its delegation's voting rights."
+            "13 Jul — Shusha: President Aliyev said Azerbaijan is 'unequivocally considering' full withdrawal from the Council of Europe over the 2024 PACE decision revoking Baku's delegation voting rights.",
+            "20-21 Jul — Berlin: Aliyev made an official visit to Germany, meeting Steinmeier and Merz, and highlighted new gas supplies to Germany.",
+            "Late Jul — Berlin: Aliyev confirmed secret Russia-Germany talks had been held in Baku, positioning Azerbaijan as a diplomatic intermediary."
           ],
-          "coa": "LOW maintained. Expect Baku to continue leveraging its energy relationship with Europe as counterweight to the PACE dispute, using the Council of Europe threat as negotiating pressure rather than following through on withdrawal in the near term."
+          "coa": "LOW maintained. Azerbaijan will likely continue leveraging its energy relationship with Europe as counterweight to the PACE dispute, using the Council of Europe threat as negotiating pressure rather than following through on withdrawal. Baku's disclosed role hosting Russia-Germany contacts suggests further high-level shuttle diplomacy in Q3-Q4 2026."
         }
       ]
     },
     {
       "name": "Sahel",
       "overview": [
-        "Sudan's El Obeid siege has escalated in line with the prior 'next El Fasher' warning, though it has not yet produced a single mass-casualty event of that scale — 15 drone strikes and at least 45 civilian deaths over three weeks, plus RSF's 27 Jul retaliatory strikes on municipal buildings after SAF's highway recapture, mark the region's clearest near-term mass-atrocity risk.",
-        "Mali's FLA-JNIM cooperation has shifted from tactical to structural, formalized via a pact trading FLA acceptance of sharia governance for JNIM military backing — described this week as pushing the northern conflict into a 'dangerous new phase,' compounded by unverified reports of Russian Africa Corps forces abandoning FAMa troops mid-ambush.",
-        "The central Sahel triangle shows sustained rather than newly escalating pressure — Niger's Tillabéri remains the primary JNIM-ISSP battleground, and Burkina Faso saw further repelled JNIM attacks, though Niger in particular has a notable reporting gap this week that should not be read as reduced risk.",
-        "Sudan-Chad border dynamics and Lake Chad Basin displacement are compounding regional spillover risk — SAF and RSF are both reinforcing toward the Chad border while Boko Haram/JAS factions reposition in Lake Province, and Mauritania's 144 dead/missing Atlantic migration disaster remains the region's deadliest humanitarian incident of 2026."
+        "Sudan's El Obeid siege has escalated in line with the prior 'next El Fasher' warning but has not yet produced a mass-casualty ground event — RSF drone retaliation intensified immediately after SAF's 27 Jul highway recapture, and RSF units retreating from North Kordofan turned on civilians in reprisal raids, with HRW and UN investigators continuing to warn the trajectory mirrors El Fasher's fall.",
+        "Mali's FLA-JNIM alliance has shifted from the dramatic Anefis-Tabankort convoy battle (now confirmed at 50+ FAMa/Africa Corps dead) to a lower-visibility campaign of blockades, infrastructure sabotage and localized clashes, with genuinely little fresh, independently-verified incident reporting this week.",
+        "Niger's security emergency is bifurcating into two active fronts — the established Tillabéri JNIM-ISSP battleground is now compounded by a resurgent Boko Haram/ISWAP push into Diffa, evidenced by the 31 Jul N'Guigmi ambush that killed 14 security personnel, stretching Nigerien forces across geographically separated theaters simultaneously.",
+        "Nigeria's twin crises intensified without resolution — Zamfara saw a new mass-displacement/abduction event alongside a rescue operation, while in Borno the 36 Lassa students remain largely unaccounted for a month after their abduction despite incremental peripheral rescues, illustrating a broader pattern where tactical security wins are not translating into strategic de-escalation."
       ],
       "countries": [
         {
           "name": "Mali", "flag": "🇲🇱", "threat": "CRITICAL",
           "incidents": [
-            "21-22 Jul — Anefis/Tabankort: Reporting alleged Russia's Africa Corps personnel retreated rather than reinforcing the besieged FAMa convoy during the 18 Jul ambush, fueling Bamako-Moscow recrimination over the loss of 50+ soldiers.",
-            "22 Jul — Northern Mali: Analysts confirmed the FLA-JNIM alliance is a formalized pact — the Azawad Liberation Front accepted sharia governance in exchange for JNIM military backing against the Bamako junta.",
-            "27 Jul — Northern Mali: Analysts described the conflict as entering a 'dangerous new phase,' detailing a six-day siege of FAMa-Africa Corps positions at Anefis following the 4 Jul coordinated attack wave."
+            "18 Jul — Anefis/Tabankort: A joint JNIM-FLA ambush on a FAMa-Africa Corps convoy killed at least 50 Malian and Africa Corps personnel, per multiple outlets, firming up a casualty figure that was still unconfirmed last week.",
+            "26 Jul — Niono area, Ségou region: Africa Corps and FAMa forces clashed with JNIM/FLA fighters, reportedly killing 8 militants (per Russian state-aligned Pravda Mali; unverified independently).",
+            "Ongoing — Ségou region: FAMa's 'Operation Dougoukoloko' claimed to have cleared several JNIM/FLA hideouts, while a JNIM fuel and road blockade around Bamako imposed since roughly 10 Jul continued."
           ],
-          "coa": "CRITICAL maintained. Expect continued FLA-JNIM coordinated pressure on FAMa-Africa Corps positions in the Kidal-Anefis-Gao corridor, with the newly formalized alliance structure suggesting sustained rather than opportunistic cooperation; watch for further Russia-Mali friction over the Africa Corps 'abandonment' narrative and potential extension of FLA-JNIM coordination toward Niger's Tillabéri corridor."
+          "coa": "CRITICAL maintained. JNIM-FLA is likely to sustain a two-track strategy: continued harassment/ambush operations against FAMa-Africa Corps positions in the north and persistent economic pressure on Bamako via road blockades and infrastructure sabotage. Africa Corps' reluctance to conduct offensive operations after the Anefis losses suggests further consolidation around the capital rather than reassertion of control in the north, with continued risk of a high-casualty urban or peri-urban attack within the quarter."
         },
         {
           "name": "Niger", "flag": "🇳🇪", "threat": "CRITICAL",
           "incidents": [
-            "17 Jul — Téra, Tillabéri region: 16 Nigerien soldiers were killed and 23 wounded in a militant attack near the tri-border zone; authorities reported 15 attackers killed.",
-            "Ongoing through Jul — Tillabéri: ACLED confirmed the region remains the principal JNIM-ISSP competitive battleground, with both groups intensifying attacks to expand territorial control."
+            "17 Jul — Téra, Tillabéri region: 16 Nigerien soldiers were killed and 23 wounded in a militant attack near the tri-border zone.",
+            "31 Jul — N'Guigmi, Diffa Region: A coordinated terrorist attack and follow-on ambush killed at least 14 Nigerien Defence and Security Forces personnel near a National Guard position, roughly 1km from a prepared ambush site."
           ],
-          "coa": "CRITICAL maintained. No new discrete incident was confirmed within the 21-28 July window specifically — flagged as a reporting gap rather than reduced violence. Tillabéri remains the most contested ground in the central Sahel, with JNIM-ISSP rivalry likely to drive further attacks on military and civilian targets independent of external triggers."
+          "coa": "CRITICAL maintained; broadened framing. Niger is now facing simultaneous pressure on two active fronts rather than one — expect continued high-casualty ambushes in Tillabéri as JNIM and ISSP compete for territorial control, compounded by a resurgent Boko Haram/ISWAP push into Diffa. Nigerien forces, already stretched, are likely to struggle to reinforce both fronts simultaneously, raising the risk of further mass-casualty attacks on isolated garrisons."
         },
         {
           "name": "Burkina Faso", "flag": "🇧🇫", "threat": "CRITICAL",
           "incidents": [
-            "19-20 Jul — Djibo, Sahel region: A large-scale JNIM assault on Burkinabè defense and security force positions was repelled, per state media.",
-            "21-27 Jul — Soum region: A JNIM attempt to storm Burkinabè armed forces positions was repelled, per lower-confidence single-source reporting pending independent corroboration.",
-            "22-23 Jul — Eastern Burkina Faso: A jihadist attack on a settlement killed both military personnel and civilians and burned homes, per lower-confidence single-source reporting."
+            "28 Jul — Gorom Gorom, Sahel region: ISSP attacked a Burkinabè military/VDP-escorted humanitarian convoy carrying food and aid to the besieged town, killing at least 9 civilians; witnesses said the convoy carried no weapons."
           ],
-          "coa": "CRITICAL maintained. Confidence in this week's specific incident data is lower than for other Sahel states due to reliance on a single aggregator source; recommend independent corroboration. Broader trend of sustained JNIM pressure across the Sahel, North and East regions, in competition with ISSP, continues unchanged."
+          "coa": "CRITICAL maintained. Reporting genuinely thinned this week relative to late June/early July, when a large multi-town JNIM assault dominated coverage; only one clearly-dated new incident was confirmed. Expect continued targeting of humanitarian access routes and besieged towns (Djibo, Gorom Gorom) by both JNIM and ISSP, with civilians and aid convoys increasingly caught between blockade tactics and military escort failures."
         },
         {
           "name": "Sudan", "flag": "🇸🇩", "threat": "CRITICAL",
           "incidents": [
-            "21 Jul — Tine, North Darfur: A drone strike on a water source killed at least 21 civilians.",
-            "21-22 Jul — North Darfur: SAF sent major reinforcements to Tine, Um Baru, Karnoi and Kulbus/Jebel Moon, with RSF and the Joint Force also reinforcing near the Chad border, raising fears of renewed fighting.",
-            "Documented over a 3-week span through ~20 Jul — El Obeid: The UN recorded 15 drone strikes killing at least 45 civilians, with investigators warning RSF is replicating the El Fasher siege pattern — infrastructure attacks, sieges and restricted essential services.",
-            "27 Jul — El Obeid: RSF drone strikes hit two municipal buildings hours after SAF regained control of the highway to Khartoum, assessed as retaliatory."
+            "27 Jul — El Obeid: RSF drone strikes hit two municipal buildings at dawn, in apparent retaliation hours after SAF regained control of the Khartoum-El Obeid highway.",
+            "29 Jul — North Kordofan (Um Badr, Sodari, Abu Zaima, Hamrat al-Sheikh, El Mazroub): RSF units retreating from North Kordofan launched retaliatory attacks on civilians, looting markets and detaining residents accused of aiding SAF.",
+            "Through late Jul — El Obeid/North Kordofan: HRW/UN reporting describes 10 consecutive days of drone strikes killing at least 50 civilians, an intensification from the prior week's tally of 45+ over three weeks."
           ],
-          "coa": "CRITICAL maintained. El Obeid's siege pattern is intensifying in line with the prior warning of a repeat El Fasher-scale atrocity — 15 drone strikes and 45+ civilian deaths over three weeks, continued infrastructure targeting, and immediate RSF retaliation for SAF's highway recapture — though no single mass-casualty event of El Fasher's scale has yet occurred. El Obeid remains the highest-probability mass-atrocity flashpoint in the region; SAF/RSF reinforcement near the Chad border also raises direct spillover risk within the 90-day horizon."
+          "coa": "CRITICAL maintained. No mass-casualty ground-assault event has yet occurred in El Obeid, but SAF's highway recapture appears to have triggered an intensified RSF retaliatory drone campaign — a worrying escalation indicator. Given explicit UN/HRW warnings of El Fasher-style atrocity risk, a ground assault on El Obeid within the quarter cannot be ruled out, particularly if RSF consolidates its North Kordofan retreat into a renewed encirclement effort."
         },
         {
           "name": "Chad", "flag": "🇹🇩", "threat": "HIGH",
           "incidents": [
-            "21-22 Jul — Chad-Sudan border: SAF, the Joint Force and RSF reinforced positions along the border near Tine, Um Baru, Karnoi, Kulbus and Jebel Moon, raising direct spillover risk for eastern Chad.",
-            "21 Jul — Lake Chad: Video evidence showed Boko Haram (JAS) fighters relocating families and camps amid intensified Nigerian and Chadian military pressure, consistent with warnings of a resurgence attempt in Lake Province."
+            "20-22 Jul — Kalbus/Al-Tina, West Darfur border: SAF, the Joint Force and RSF all reinforced positions near the Chad border; an RSF drone strike on Al-Tina town killed and injured civilians and military personnel, with explosions and airstrikes heard from refugee camps inside Chad.",
+            "30 Jul — N'Djamena: Chad and France reported progress rebuilding military relations, a sign N'Djamena is diversifying security partnerships amid the border pressure."
           ],
-          "coa": "HIGH maintained. No single new discrete attack inside Chad was confirmed this week, but rising risk is building from both directions — SAF/RSF reinforcement toward the Chad border and Boko Haram repositioning in Lake Province — either of which could produce a triggering incident within the 90-day horizon."
+          "coa": "HIGH maintained. No new dated attack inside Chadian territory itself was confirmed this week, but spillover risk from the Darfur side is rising, with fighting now directly audible and visible from Chadian refugee camps. Expect continued reinforcement of the Chad-Sudan border by all three armed actors, with elevated risk of a direct spillover incident if RSF pushes on Al-Tina."
         },
         {
           "name": "Mauritania", "flag": "🇲🇷", "threat": "HIGH",
           "incidents": [
-            "18 Jul — Off Nouadhibou: A vessel that departed The Gambia with roughly 180 people spent 25 days at sea; only 38 survivors were rescued, with 1 body recovered.",
-            "Reported 21-22 Jul (UNHCR) — Off Nouadhibou: 144 refugees and migrants were confirmed dead or missing across a series of incidents, confirmed by UNHCR, IOM and MSF as the deadliest 2026 Atlantic migration-route incident."
+            "14-18 Jul — Off Nouadhibou: 144 refugees and migrants were confirmed dead or missing across a series of Atlantic-route incidents, confirmed by UNHCR, IOM and MSF as the deadliest 2026 migration-route disaster; no further dated maritime incident was found for the 24-31 Jul window specifically."
           ],
-          "coa": "HIGH maintained. Continued high-profile UN, IOM and MSF statements this week indicate sustained international attention on Mauritania's coast guard and rescue capacity as the primary departure point on the world's deadliest migration route."
+          "coa": "HIGH maintained. No new incident was identified this week — reported as such rather than invented — though this does not indicate reduced structural risk on the Atlantic migration route. Expect continued but lower-visibility departures from Mauritanian and neighboring shores, with elevated risk of further mass-casualty incidents as Q3 weather and current conditions typically worsen, given limited rescue capacity out of Nouadhibou."
         },
         {
           "name": "Nigeria", "flag": "🇳🇬", "threat": "CRITICAL",
           "incidents": [
-            "20-21 Jul — Sokoto/Zamfara: Operation Fansan Yamma rescued 27 kidnap victims in coordinated actions along the Gummi-Sokoto road and surrounding areas.",
-            "25 Jul — Zamfara: Bandits abducted the Bungudu LGA chairman from his residence, killing 2 police officers and 2 vigilantes; 4-5 abducted family members were later rescued but the chairman remains in captivity.",
-            "27 Jul — Borno: Troops of Operation Hadin Kai foiled an ISWAP/JAS infiltration attempt on Forward Operating Base Logomani and evacuated 21 female students from Monguno after intelligence indicated armed operatives carrying IEDs near an IDP camp.",
-            "Ongoing — Lassa, Borno: 36 students and 1 staff member abducted on 30 Jun remain in captivity, with no verified release this window."
+            "23 Jul — Maru LGA, Zamfara: Bandits sustained attacks over four consecutive days on Tashar Mayanchi and 10+ neighboring communities; at least 20 people killed, 40+ residents abducted.",
+            "26 Jul — Magami village, Kaura Namoda LGA, Zamfara: Troops of Operation Fansan Yamma rescued 48 kidnap victims following a bandit attack; 1 civilian killed and 2 injured in the resulting firefight.",
+            "27-28 Jul — Borno State: Troops of Operation Hadin Kai foiled a terrorist infiltration attempt and evacuated 21 students; six abductees were separately rescued in Mussa, Askira/Uba LGA.",
+            "Ongoing — Lassa, Borno: The 36 students and 1 staff member abducted 29-30 Jun remain largely in captivity a month on, despite a mid-July proof-of-life video."
           ],
-          "coa": "CRITICAL maintained. Zamfara/Sokoto bandit activity and Borno ISWAP/JAS pressure both continue at high tempo, with active countermeasures achieving partial rescues but not eliminating abduction risk — bandits remain willing to target local government officials directly. The Lassa captives remain the priority unresolved hostage situation."
+          "coa": "CRITICAL maintained. Both the northwest (Zamfara banditry) and northeast (Borno ISWAP/JAS) theaters remained highly active this week, with the state notching tactical rescues that have not resolved the underlying mass-abduction crisis. Expect continued cyclical bandit raids in Zamfara and persistent ISWAP/JAS infiltration pressure in Borno; the Lassa students are at meaningful risk of remaining in captivity well beyond the 90-day horizon absent a negotiated release or decisive rescue operation."
         }
       ]
     },
     {
       "name": "Asia-Pacific",
       "overview": [
-        "South China Sea escalation has crossed a frequency threshold — a single unprecedented melee at Second Thomas Shoal on 20 Jul became a sustained pattern of at least four physical China-Philippines confrontations within one week at both Second Thomas and Scarborough Shoals, prompting the Philippines' elevation to CRITICAL.",
-        "Taiwan Strait gray-zone activity is diversifying beyond ship and aircraft sortie counts — the 21 Jul coordinated PLA helicopter-drone median-line crossing followed by two days of live-fire drills demonstrates Beijing experimenting with new incursion modalities ahead of Taiwan's Han Kuang exercise (5-14 Aug).",
-        "Two governments openly reconsidered nuclear postures this week in opposite directions — Japan's Defense Minister called for breaking the nuclear-weapons-debate taboo while North Korea's Kim Yo Jong doubled down on rejecting denuclearization, indicating the regional nuclear-restraint architecture is under strain from both a treaty ally and the primary proliferator.",
-        "Civil conflict and internal-security fronts in Myanmar, Pakistan and Indonesia show no sign of abating despite parallel political processes, suggesting electoral and political milestones in fragile states are not translating into reduced kinetic activity."
+        "South China Sea friction has plateaued at an elevated baseline rather than continuing to escalate week-on-week — after the 20 and 24 July Second Thomas/Scarborough clashes, no new physical confrontation was confirmed through 31 July, coinciding with a five-day US-Philippines-Japan joint maritime exercise and a US carrier strike group patrol, though the underlying dispute and China's demonstrated willingness to use physical force remain unresolved.",
+        "China is running a coordinated two-front gray-zone pressure campaign against Taiwan and the Philippines simultaneously — Taiwan Strait median-line incursions and Fujian live-fire drills were timed directly against Taiwan's Han Kuang exercise, while South China Sea coercion against Manila continued in parallel, indicating a deliberate strategic choice to test multiple flashpoints in the same window.",
+        "Political violence emerged as an underappreciated new risk vector this week, distinct from the region's established insurgency/airstrike conflicts — Pakistan's AJK election produced up to 30 deaths in security force-JAAC clashes, and Thailand-Cambodia border fighting resumed with 38+ killed and 300,000 newly displaced before a fresh ceasefire, both sharp deteriorations from 'stable' or 'holding' assessments just one week prior.",
+        "Myanmar's airstrike campaign shows no sign of tapering and is broadening geographically, with simultaneous Rakhine/Mandalay/Sagaing/Chin operations within the same week reinforcing its status as the region's most acute civilian-harm crisis, while Indonesia's Papua conflict shows a similar self-reinforcing escalation dynamic between TNI operations and TPNPB-OPM reprisal killings of alleged informants."
       ],
       "countries": [
         {
           "name": "North Korea", "flag": "🇰🇵", "threat": "HIGH",
           "incidents": [
-            "16-17 Jul — DMZ area: Satellite imagery confirmed at least 21 identical drive-through structures near bases south of Kaesong, 52km from Seoul, assessed as TEL/MLRS maintenance and storage infrastructure.",
-            "22 Jul — Manila: US, Japanese and South Korean foreign ministers held trilateral talks reaffirming a 'robust deterrence posture' against North Korea.",
-            "26 Jul — Pyongyang: Kim Yo Jong denounced renewed denuclearization calls, calling North Korea's nuclear arsenal its 'ultimate shield,' coinciding with warnings of additional DPRK troop deployments to Russia."
+            "19 Jul (satellite analysis published) — Kaesong vicinity: RFA satellite imagery confirmed roughly 52m-long structures at a North Korean base south of Kaesong, with at least 21 buildings assessed as multiple-rocket-launcher storage/maintenance facilities.",
+            "27 Jul — Pyongyang: Kim Yo Jong rejected the ASEAN Regional Forum's renewed call for 'complete denuclearization,' calling it 'stupid' and 'foolish.'",
+            "28 Jul — Pyongyang: Kim Jong Un presided over ceremonies marking the 73rd anniversary of the Korean War armistice, reaffirming frontline-unit fortification policy."
           ],
-          "coa": "HIGH maintained. North Korea will continue hardening frontline precision-strike infrastructure along the DMZ while publicly foreclosing denuclearization diplomacy. Expect continued trilateral US-ROK-Japan coordination but no direct crisis trigger in the near term; monitor for missile tests timed to regional exercises and continued satellite-confirmed infrastructure buildout."
+          "coa": "HIGH maintained. Expect continued incremental militarization of the DMZ corridor near Kaesong alongside a hardened rhetorical posture rejecting any denuclearization framework raised in multilateral fora. A discrete provocation is plausible within 30-60 days, timed to US-ROK exercises or diplomatic milestones, but sustained low-level friction remains more probable than a major crisis absent an external trigger."
         },
         {
           "name": "Myanmar", "flag": "🇲🇲", "threat": "CRITICAL",
           "incidents": [
-            "19 Jul — Ma-Ei, Taungup Township, Rakhine: A junta fighter jet dropped bombs killing 5 civilians and injuring 14, including a monk and three children.",
-            "19-20 Jul — Sagaing Region: A paramotor strike killed 9 civilians, including 2 children, and destroyed 25+ homes and a church.",
-            "21 Jul — Paletwa Township, Chin State: An artillery exchange during Tatmadaw-Arakan Army fighting killed a civilian woman between Meeletwa and Yokewa villages.",
-            "Cumulative — Nationwide: The verified toll from airstrikes reached 274 civilian deaths since 20 April 2026, with researchers separately recording 450+ civilian deaths from mass killings in H1 2026."
+            "17-20 Jul — Mindat, Chin State: Junta aircraft conducted repeated bombing runs, including 30+ bombs dropped on 20 Jul.",
+            "19 Jul — Ma-Ei, Taungup Township, Rakhine: A junta jet dropped three 500-lb bombs, killing 5 civilians and injuring 14, including a monk and three children.",
+            "25-26 Jul — Rakhine/Mandalay/Sagaing: A coordinated wave of airstrikes and drone attacks killed at least 6 civilians and injured 26+, destroying 25+ homes and a church."
           ],
-          "coa": "CRITICAL maintained. No de-escalation indicators despite the junta's rhetoric of a '100-day ultimatum' for talks; airstrike and drone-attack tempo against AA/EAO-held territory in Rakhine, Sagaing and Chin States remains sustained to intense, with continued mass-casualty events tied to contested resource corridors."
+          "coa": "CRITICAL maintained. Airstrike tempo remains undiminished and has broadened geographically, consistent with cumulative reporting of 450+ civilian deaths from mass-casualty incidents in H1 2026. Expect continued indiscriminate use of airstrikes against AA/PDF-held territory through the 90-day window, with civilian infrastructure remaining at elevated risk and no credible de-escalation signal present."
         },
         {
           "name": "Pakistan", "flag": "🇵🇰", "threat": "CRITICAL",
           "incidents": [
-            "21-24 Jul — Azad Kashmir: The JAAC long march remained suspended pending negotiations with the Army Chief's office; internet service partially restored in Mirpur/AJK after a 48-day blackout.",
-            "27 Jul — Mirpur Division, AJK: The first phase of a staggered general election was held under heavy security — 17,000+ personnel plus ~2,100 Army troops — against a backdrop of 30-40 protest-related deaths since June.",
-            "Ongoing — Balochistan: Operation Shaban's toll continued climbing, reaching 139 militants killed since 5 July, including 2 female suicide bombers apprehended before detonation."
+            "27-28 Jul — Rawalakot, AJK: Phase-1 AJK polling was marred by deadly clashes between security forces and JAAC supporters marching on Muzaffarabad; 2 security personnel killed and up to 30 protesters reported killed over two days.",
+            "27 Jul — AJK-wide: PML-N won 9 of 13 contested Mirpur-division seats in preliminary phase-1 results.",
+            "16 Jul — Balochistan: Operation Shaban's toll reached 129 militants killed since 5 Jul.",
+            "31 Jul — AJK-wide: The campaign period closed ahead of phase-2 polling (2 Aug, 21 constituencies, 1.7 million+ eligible voters)."
           ],
-          "coa": "CRITICAL maintained. The staggered, three-phase AJK election design reflects a state assessment that simultaneous polling posed unacceptable security risk; expect comparable heavy-security postures for the remaining phases (2 and 10 Aug). Operation Shaban will likely continue as a grinding counter-insurgency campaign without a clear end-state."
+          "coa": "CRITICAL maintained. The AJK election-violence death toll marks a significant new escalation vector distinct from the Balochistan counter-terror campaign, indicating JAAC-security force friction has crossed into lethal confrontation for the first time this cycle. Expect heightened security lockdown ahead of and during phase-2 (2 Aug) and phase-3 (10 Aug) polling, with continued risk of further clashes, while Operation Shaban continues grinding through August without a clear end-state."
         },
         {
           "name": "India", "flag": "🇮🇳", "threat": "MODERATE",
           "incidents": [
-            "17 Jul — Chandel district, Manipur: KYKL cadre Yangabam Boicha Meitei was arrested near the Indo-Myanmar border with a pistol and communications equipment.",
-            "19-20 Jul — Chakpikarong PS, Chandel: Three KYKL cadres were arrested near the border.",
-            "24-26 Jul — Manipur: Additional militant cadres and drug peddlers were arrested in separate security-force crackdowns, with arms and drugs caches recovered."
+            "21 Jul — Chandel district, Manipur: Security forces arrested 3 KYKL cadres near the Indo-Myanmar border.",
+            "21 Jul — Ukhrul district, Manipur: Security forces destroyed 2 illegal insurgent bunkers."
           ],
-          "coa": "MODERATE maintained. Steady-state counter-insurgency arrests continue along the Indo-Myanmar border in Manipur's Chandel/Ukhrul belt, with no mass-casualty incident this week — a continuation rather than escalation of the established pattern; narco-insurgency overlap suggests security forces are prioritizing interdiction of cross-border logistics."
+          "coa": "MODERATE maintained. Manipur counter-insurgency operations continue at a steady tempo along the porous Indo-Myanmar border corridor, with periodic KYKL arrests and bunker destruction. No indicators of a broadening conflict or major flare-up were found for this period."
         },
         {
           "name": "China", "flag": "🇨🇳", "threat": "HIGH",
           "incidents": [
-            "21 Jul — Taiwan Strait: A PLA helicopter and drone jointly crossed the median line and lingered in the restricted zone for roughly 9.5 hours, the first coordinated helicopter-drone incursion of this duration.",
-            "23-24 Jul — Fujian coast: The PLA conducted a two-day live-fire drill in the Strait after Beijing labeled Taiwan President Lai's recent speech 'reckless.'",
-            "20, 23-25 Jul — South China Sea: Chinese coast guard/maritime forces were involved in a physical melee with Philippine Navy personnel at Second Thomas Shoal and three separate water-cannon or dangerous-maneuver incidents near Scarborough Shoal within a single week."
+            "20-21 Jul — Taiwan Strait (R9 restricted zone): A PLA helicopter and UAV crossed the median line together and lingered east of it for roughly 9.5 hours, the first extended-duration median-line loiter by a PLA helicopter.",
+            "23-24 Jul — Waters off Dongshan Island, Fujian: The PLA conducted two consecutive days of live-fire drills, timed against Taiwan's Han Kuang exercise.",
+            "20 Jul — Second Thomas Shoal: Chinese Coast Guard personnel rammed and physically clashed with Philippine Navy craft, injuring a service member.",
+            "24 Jul — Scarborough Shoal: China Coast Guard used water cannon and blocking maneuvers against Philippine resupply vessels."
           ],
-          "coa": "HIGH maintained, trending toward the top of the band. Beijing is layering simultaneous gray-zone pressure on two fronts — sustained median-line normalization near Taiwan and intensified multi-incident-per-week coercion against the Philippines — ahead of Taiwan's Han Kuang exercise. Expect continued incremental median-line crossings and further live-fire drills timed to Taiwanese political statements."
+          "coa": "HIGH maintained. Beijing is layering simultaneous gray-zone pressure on two fronts — sustained median-line normalization near Taiwan and physical coercion against the Philippines — timed to Taiwan's Han Kuang exercise. Expect continued incremental median-line crossings and further live-fire drills timed to Taiwanese political statements, alongside a persistent but lower-frequency baseline of South China Sea friction."
         },
         {
           "name": "Taiwan", "flag": "🇹🇼", "threat": "HIGH",
           "incidents": [
-            "21 Jul — Taiwan Strait: The first coordinated PLA helicopter/drone incursion east of the median line lingered roughly 9.5 hours in the restricted R9 zone.",
-            "23-24 Jul — Off Fujian: The PLA conducted a two-day live-fire drill in response to President Lai's speech.",
-            "24-28 Jul — Keelung: An Nvidia employee was detained as Taiwan's AI-chip smuggling investigation expanded, following the earlier Super Micro Taiwan raid."
+            "9-29 Jul — Islandwide: The Han Kuang 41 exercise, the largest and longest in the program's history, ran its full 10-day course rehearsing invasion-response scenarios.",
+            "20-21 Jul — Taiwan Strait: PLA helicopter/UAV median-line crossing and extended loiter in the R9 restricted zone drew a direct Taiwanese MND response.",
+            "24 Jul — Keelung: Prosecutors detained an Nvidia employee, expanding the AI-chip smuggling probe to 7 suspects; roughly 50 servers worth NT$700M were seized."
           ],
-          "coa": "HIGH maintained. Taipei faces a two-track pressure campaign — external gray-zone military normalization and internal legislative friction over defense funding — heading into Han Kuang Exercise No. 42 (5-14 Aug), which will simulate PLA drills concealing invasion preparation. Recommend close monitoring of Han Kuang execution against the backdrop of intensified median-line activity."
+          "coa": "HIGH maintained. The chip-smuggling investigation is escalating in scale and international scope, with further arrests likely as the multi-jurisdictional probe matures. Militarily, expect the PLA to sustain or increase gray-zone pressure in the immediate aftermath of Han Kuang, testing Taiwan's post-exercise readiness posture, with incremental normalization of median-line crossings anticipated as a persistent baseline."
         },
         {
           "name": "Philippines", "flag": "🇵🇭", "threat": "CRITICAL",
           "incidents": [
-            "20 Jul — Second Thomas Shoal: Chinese Coast Guard personnel rammed and exchanged blows with Philippine Navy crew near the Sierra Madre — the first confirmed direct physical violence in the dispute, injuring a servicemember.",
-            "23 Jul — Scarborough Shoal: China fired water cannon at a Philippine Bureau of Fisheries vessel for over 2 minutes, while a second Chinese vessel conducted a dangerous maneuver against a Philippine resupply boat.",
-            "24 Jul — Scarborough Shoal: A Chinese vessel fired water cannon at a Philippine ship carrying a CNN crew, the third faceoff in a single week.",
-            "25 Jul — Scarborough Shoal: A Chinese coast guard vessel approached a Philippine fisheries ship within 7 meters in a 'reckless' near-collision maneuver."
+            "20 Jul — Second Thomas Shoal: China Coast Guard personnel rammed a Philippine inflatable craft and exchanged blows with batons/oars, injuring a service member; US Secretary of State Rubio issued a formal condemnation.",
+            "21-25 Jul — South China Sea: The Philippines conducted the 17th Multilateral Maritime Cooperative Activity, a five-day joint exercise with the US and Japan.",
+            "24 Jul — Scarborough Shoal: China Coast Guard used water cannon and blocking maneuvers to prevent a Philippine fishermen resupply mission.",
+            "27 Jul — South China Sea: A US Navy carrier strike group was reported patrolling the contested waters, signaling sustained US presence beyond the joint drills."
           ],
-          "coa": "Upgraded to CRITICAL from HIGH. What was flagged last week as a singular first-of-its-kind melee proved to be the opening incident in a sustained pattern — four physical confrontations in six days, an unprecedented frequency, with the US Embassy in Manila publicly condemning China's 'escalatory' actions. Expect continued high-frequency coast guard and maritime militia harassment at both shoals, with elevated risk of a further physical-injury incident; watch for a US Mutual Defense Treaty invocation threshold being tested if a Philippine service member is killed or a vessel is sunk."
+          "coa": "CRITICAL maintained. Direct physical confrontation frequency appears to have plateaued after the 20-24 July clashes, likely reflecting the deterrent effect of the concurrent joint exercise and continued US carrier presence. The underlying dispute remains unresolved and China's willingness to use physical force has now been demonstrated repeatedly, lowering the threshold for recurrence; expect intermittent flare-ups tied to Philippine resupply missions."
         },
         {
           "name": "South Korea", "flag": "🇰🇷", "threat": "HIGH",
           "incidents": [
-            "Ongoing through Jul — Nationwide: The Kimsuky (APT43) group conducted a spear-phishing campaign against a South Korean military organization using AI-generated deepfake images of military ID cards.",
-            "22 Jul — Manila: South Korea joined the trilateral foreign ministers' meeting reaffirming deterrence posture against North Korea."
+            "Late Jul — Nationwide: A new Kimsuky (APT43) campaign was confirmed compromising South Korean groupware/collaboration-software vendors as an intermediary vector to reach downstream defense and institutional customers, using a mail-server exploit and Gomir-variant malware."
           ],
-          "coa": "HIGH maintained. Kimsuky's use of generative-AI-crafted deepfake credentials marks a tactical evolution in North Korean cyber-espionage tradecraft targeting South Korea's defense-industrial base; expect continued targeting of software vendors and defense-adjacent contractors."
+          "coa": "HIGH maintained. Kimsuky/APT43 has shifted tactics toward supply-chain compromise of software vendors rather than direct targeting, indicating a maturing and harder-to-detect intrusion methodology. Expect continued disclosure of downstream victims as the vendor-compromise investigation unfolds, with likely additional advisories from South Korean cybersecurity authorities."
         },
         {
           "name": "Vietnam", "flag": "🇻🇳", "threat": "MODERATE",
           "incidents": [
-            "19 Jul (carried over) — South China Sea: Vietnam continued to press its accusation that the Chinese survey vessel Haiyang Dizhi 8 and its escorts violated its EEZ and continental shelf.",
-            "11 Jul — International: 14 countries marked the 10th anniversary of the Hague Tribunal ruling against China's South China Sea claims with a joint statement; Vietnam notably did not co-sign, consistent with its bilateral-management approach."
+            "11 Jul — International: 14 countries issued a joint statement marking the 10th anniversary of the 2016 Hague Tribunal ruling against China's South China Sea claims; Vietnam notably did not co-sign, continuing its bilateral-management approach."
           ],
-          "coa": "MODERATE maintained; sparse new reporting this window. Vietnam likely continues its established pattern of quiet diplomatic protest over public confrontation regarding Chinese survey and EEZ activity; recommend re-verification of the Haiyang Dizhi 8 situation in the next cycle given the gap in fresh sourcing."
+          "coa": "MODERATE maintained; sparse new reporting this window. Vietnam likely continues its established pattern of quiet bilateral hedging — deepening defense ties with the Philippines while avoiding multilateral statements that could provoke direct confrontation with Beijing."
         },
         {
           "name": "Japan", "flag": "🇯🇵", "threat": "MODERATE",
           "incidents": [
-            "19-23 Jul — Tokyo: Defense Minister Shinjirō Koizumi stated Japan 'cannot avoid' a nuclear weapons debate and doubled down on 'breaking the taboo,' citing North Korea's missile program and China's military presence.",
-            "Ongoing — Tokyo: PM Takaichi confirmed intent to discuss revising Japan's three security documents, including its non-nuclear principles, alongside the Japan Innovation Party's separate push for nuclear-submarine acquisition."
+            "19 Jul — Tokyo: Defense Minister Shinjiro Koizumi stated Japan 'cannot avoid' a national debate on nuclear weapons ahead of a year-end review of key security documents.",
+            "21-23 Jul — Tokyo: Koizumi's remarks drew sustained coverage, citing Finland's parliamentary authorization of nuclear weapons basing and France's warhead expansion as comparative justifications."
           ],
-          "coa": "MODERATE maintained, watch for upgrade. This is a significant political escalation rather than a kinetic one — a sitting Defense Minister openly inviting debate on nuclear weapons is unprecedented for postwar Japan. No new Senkaku incident was found this week beyond the previously reported faceoff; expect continued domestic political maneuvering around the security-document revision process."
+          "coa": "MODERATE maintained, watch for upgrade. This is a significant political escalation rather than a kinetic one — a sitting Defense Minister openly inviting a nuclear-weapons debate is unprecedented for postwar Japan. Expect continued domestic political maneuvering around the security-document revision process, though an actual policy shift remains unlikely within the 90-day window."
         },
         {
           "name": "Indonesia", "flag": "🇮🇩", "threat": "HIGH",
           "incidents": [
-            "21 Jul — Yahukimo Regency, Papua: TPNPB-OPM fighters shot and killed three Indigenous civilians, alleging they were military intelligence informants; Indonesian authorities rejected the claim.",
-            "Ongoing — Papua: TNI continued reinforcing 'vulnerable' locations following the 2 Jul killing of an American pilot at Balinggama airstrip, Yahukimo.",
-            "5 Jul (carried over) — Papua: A centralized drone command center for Papua operations was inaugurated, alongside plans for two new territorial military commands in Nabire and Sorong."
+            "17 Jul — KM 4 Logpon area, Dekai District, Yahukimo: Indonesian security forces killed 3 TPNPB-OPM members in an operation.",
+            "20-21 Jul — Seradala District, Yahukimo: TPNPB-OPM claimed responsibility for executing 3 civilians accused of acting as informants for TNI operations."
           ],
-          "coa": "HIGH maintained. The 21 Jul Yahukimo killings, following the earlier security operation and the pilot killing, indicate the Trans Papua road corridor remains the epicenter of TPNPB-OPM activity, with TNI responding via permanent infrastructure buildup rather than only reactive deployments, signaling a shift toward sustained militarization."
+          "coa": "HIGH maintained. The Yahukimo killings reflect an escalating cycle of TPNPB-OPM targeting of perceived collaborators alongside TNI's continued militarization of the Trans Papua corridor. Expect continued tit-for-tat violence — TNI/police operations against TPNPB-OPM cells alternating with reprisal killings of alleged informants — with limited prospect of de-escalation absent a political dialogue track."
         },
         {
-          "name": "Thailand", "flag": "🇹🇭", "threat": "LOW",
+          "name": "Thailand", "flag": "🇹🇭", "threat": "MODERATE",
           "incidents": [
-            "24 Jul — Nationwide: PM Anutin Charnvirakul marked the first anniversary of the July 2025 border conflict, stating there was 'nothing to celebrate' while affirming the security situation 'has returned to normal.'",
-            "Ongoing — Border area: More than 20,000 displaced Cambodians remain unable to return home due to continued Thai military presence in contested territory, and the border crossing remains officially closed."
+            "24 Jul — Thai-Cambodia border (6+ locations): Deadly fighting erupted, killing at least 38 and wounding 200 by 28 Jul, with roughly 300,000 newly displaced on both sides.",
+            "28 Jul — Kuala Lumpur (mediated by PM Anwar Ibrahim): Thai Acting PM Phumtham and Cambodian PM Hun Manet agreed to a new unconditional ceasefire.",
+            "29 Jul — Border areas: The Thai army accused Cambodia of violating the new ceasefire; Cambodia denied the allegation.",
+            "31 Jul — Border areas: UN reporting confirms 20,000+ Cambodians remain displaced and border crossings remain closed."
           ],
-          "coa": "LOW maintained. The ceasefire holds structurally but the PM's own 'no cause for celebration' rhetoric signals persistent underlying friction; displacement and border closure issues remain unresolved political liabilities for both governments. No new kinetic incident was found this window."
+          "coa": "Upgraded to MODERATE from LOW. This represents a significant deterioration from the prior 'ceasefire holding' assessment — active fighting resumed on 24 July with substantial casualties and mass new displacement before a fresh ceasefire was brokered on 28 July, followed immediately by mutual violation accusations. Expect intermittent border skirmishes to continue testing the new ceasefire through the 90-day window, with displacement figures unlikely to improve meaningfully given closed crossings."
         },
         {
           "name": "Bangladesh", "flag": "🇧🇩", "threat": "MODERATE",
           "incidents": [
-            "22 Jul (carried over) — Dhaka: The BNP publicly distanced itself from the July National Charter-backed reform agenda, deepening its rift with the NCP and Jamaat over constitutional reform implementation.",
-            "6-7 Jul (carried over) — Savar: A crude-bomb attack on an NCP rally injured 4, consistent with the pattern of low-level political violence."
+            "22 Jul — Dhaka: The BNP publicly distanced itself from the July National Charter-backed reform agenda, favoring its own 31-point reform outline.",
+            "22 Jul — Dhaka: Jamaat-e-Islami and the NCP criticized BNP's refusal to take the oath as members of the Constitutional Reform Council, framing it as contradicting the spirit of the 2024 July Uprising."
           ],
-          "coa": "MODERATE maintained; sparse new reporting this window. Absent new incident data, the underlying trend of persistent low-level political violence under the BNP government likely continues, with the widening BNP-NCP/Jamaat rift over constitutional reform likely to generate further public friction."
+          "coa": "MODERATE maintained. The BNP-NCP/Jamaat rift has hardened into an explicit public divergence over implementation mechanics, raising the risk of a genuine constitutional impasse ahead of the national election. Expect continued political friction and possible parliamentary gridlock, though outright unrest is not yet indicated."
         },
         {
           "name": "Sri Lanka", "flag": "🇱🇰", "threat": "MODERATE",
           "incidents": [
-            "Ongoing — Nationwide: The Human Rights Commission's investigation into the Negombo prison violence (25-28 dead, 100+ injured) expanded to cover subsequent incidents, including denial of access during an unannounced visit to Welikada Prison.",
-            "Ongoing — Nationwide: Torture allegations regarding transferred inmates remain under UN and Amnesty International scrutiny; overcrowding was cited as a root cause, with Negombo Prison (built for ~640) holding roughly 2,400 inmates."
+            "5-6 Jul — Negombo Prison: The Human Rights Commission confirmed the prison violence left at least 28 dead, including 7 prison officials, a more precise figure than the prior 25-28 estimate.",
+            "7-8 Jul — Welikada Prison: HRCSL officers were initially denied access during an unannounced inspection visit; access was granted the following day.",
+            "Ongoing — Multiple prisons: HRCSL is investigating allegations of torture of inmates transferred from Negombo and the deaths of two inmates in custody."
           ],
-          "coa": "MODERATE maintained. The Human Rights Commission's expanded, multi-facility investigation suggests findings will extend beyond Negombo itself. Expect a formal report within the 90-day horizon, with continued international pressure in parallel; risk of further unrest is elevated if the investigation stalls."
+          "coa": "MODERATE maintained. The HRCSL investigation is expanding in scope beyond the initial Negombo incident to include transfer-related torture allegations and in-custody deaths at receiving prisons, with international pressure building for accountability. Risk of further unrest at overcrowded facilities receiving transferred inmates remains elevated."
         }
       ]
     },
     {
       "name": "Americas",
       "overview": [
-        "Two simultaneous constitutional crises are converging on early August — Colombia's 7 Aug inauguration remains venue-undefined with Petro actively obstructing preparations, while Venezuela saw dueling nationwide mobilizations on 28 Jul testing the durability of the interim order.",
-        "Peru's power transfer completed successfully with Keiko Fujimori's 28 Jul inauguration, but inherits an unresolved extortion and sicariato crisis that her mega-prison agenda cannot address on a timescale shorter than several months.",
-        "Infrastructure and governance fragility, not conventional conflict, remain the dominant driver of instability in the Caribbean — Cuba's grid-collapse-driven protest wave continues spreading geographically, and Haiti's Gang Suppression Force has effectively conceded it cannot meet its original timeline.",
-        "Economic stabilization is quietly outpacing political crisis in the Andean periphery — Bolivia's IMF deal is close to finalized with unrest sharply down since June, while Ecuador has shifted from emergency-footing to institutionalizing militarized counter-gang policy through 2029."
+        "Colombia's inauguration venue crisis has resolved procedurally but not politically — Congress ratified Cali's Arena USC after a last-minute volcanic-activity scare forced abandonment of the Cauca option, but Petro's confirmed boycott over unsubstantiated fraud claims means Colombia inaugurates its next president outside Bogotá for the first time in modern history amid heavy security and an unresolved legitimacy dispute.",
+        "Cuba's blackout-driven protest wave has outlasted its most symbolically dangerous test — cacerolazo demonstrations recurred in Havana, Santiago and Cienfuegos even after tactical power restorations around the 26 July Revolution Day anniversary, while Havana's messaging has pivoted to blaming Washington rather than addressing the underlying grid collapse.",
+        "Venezuela's post-Maduro governance remains internationally contested and legally ambiguous — Acting President Delcy Rodríguez faces a formal UN fact-finding mission rebuke over the ICC withdrawal even as Washington calibrates open-ended support for her, while earthquake recovery and continuing opposition/Chavista mobilization keep the domestic environment fluid heading into a National Assembly mandate decision.",
+        "Elsewhere, modest stabilization is visible but fragile — Bolivia's $1.9bn IMF deal and Peru's completed transition to Fujimori offer positive signals, yet a fresh arrest order against Evo Morales could re-ignite Bolivia's paused blockade movement, while Haiti's under-strength Gang Suppression Force remains unable to reverse gangs' 85% control of Port-au-Prince and is now requesting a mandate extension through 2028."
       ],
       "countries": [
         {
           "name": "Venezuela", "flag": "🇻🇪", "threat": "CRITICAL",
           "incidents": [
-            "26-27 Jul — Nationwide: María Corina Machado's opposition called simultaneous assemblies in all 335 municipalities for 28 Jul, while competing Chavista-aligned coalitions convened rival marches in Caracas for the same date.",
-            "27 Jul — Caracas: Venezuela formally notified the UN of its withdrawal from the Rome Statute/ICC, calling the move 'firm and irrevocable.'",
-            "27 Jul — Nationwide: One month after the late-June earthquakes, the UN launched a roughly $300 million appeal for survivors, with tens of thousands still unaccounted for and warnings of an impending health crisis in overcrowded shelters."
+            "28 Jul — Caracas: Machado-aligned opposition supporters marched demanding release of political prisoner Gabriel Barros, while a simultaneous Chavista counter-mobilization denounced perceived US influence.",
+            "29 Jul — Geneva: The UN Independent International Fact-Finding Mission on Venezuela publicly urged Caracas to reverse its Rome Statute/ICC withdrawal, warning it would weaken accountability for alleged crimes against humanity.",
+            "30 Jul — International: President Trump publicly stated Acting President Delcy Rodríguez 'has to say' Maduro remains the legitimate president, underscoring continued ambiguity over the legal basis and duration of her caretaker mandate."
           ],
-          "coa": "CRITICAL maintained. No single decisive event, but converging pressure points — the 28 Jul dueling mobilizations, ICC withdrawal, and earthquake humanitarian strain — sustain elevated risk. Expect the mobilizations to pass without decisive rupture but to harden factional lines between the interim government, the Machado-aligned opposition and residual Chavista structures; the ICC exit removes a legal accountability lever and should be read alongside continued US-Venezuela alignment on oil-sector restructuring. The earthquake recovery will remain a chronic drag on governability through October."
+          "coa": "CRITICAL maintained. No single decisive event, but converging pressure points — the 28 Jul dueling mobilizations, the ICC withdrawal dispute, and continued earthquake humanitarian strain — sustain elevated risk. Expect Rodríguez's caretaker authority to remain internationally contested but functionally unchallenged domestically, with the National Assembly's window to extend her mandate becoming a near-term flashpoint. Opposition mobilization under Machado will likely continue at low intensity around prisoner-release demands rather than escalate into mass unrest."
         },
         {
           "name": "Haiti", "flag": "🇭🇹", "threat": "CRITICAL",
           "incidents": [
-            "19 Jul — Kapenyen, Artibonite: A Kokorat San Ras gang attack killed at least 7 and injured about 10 in this anti-gang resistance stronghold.",
-            "20 Jul — UN Headquarters: The UN Special Representative briefed the Security Council on Gang Suppression Force progress; deployment remains at roughly 1,000 of the 5,550 authorized personnel.",
-            "22 Jul — Haiti: GSF leadership requested a two-year mandate extension through 2028, an implicit admission that near-term benchmarks will not be met.",
-            "Ongoing — Nationwide: Armed groups now control an estimated 85% of the Port-au-Prince metropolitan area, with over 2,000 killed and roughly 1.5 million displaced since January 2026."
+            "20 Jul — New York (UNSC): GSF Special Representative Jack Christofides briefed the Security Council, presenting the force's first detailed operational roadmap and formally requesting a mandate extension through September 2028.",
+            "Ongoing — Port-au-Prince: The GSF remains at roughly 1,000 of 5,550 authorized personnel, continuing patrols and gang-barricade clearance; full operational capacity is not expected until October 2026.",
+            "Ongoing — Port-au-Prince/Artibonite/Centre: Gangs control an estimated 85% of the Port-au-Prince metro area and are expanding into Artibonite, Centre and the Kenscoff highlands."
           ],
-          "coa": "CRITICAL maintained. The GSF's request for a two-year extension, made just months into deployment, is itself a significant signal the mission is falling well short of pace. Absent a substantial and rapid increase in troop contributions (currently ~18% of authorized strength), expect continued gang territorial consolidation in Port-au-Prince and further incursions into Artibonite, Centre and the Kenscoff/Grand Fond corridor."
+          "coa": "CRITICAL maintained. The GSF will likely remain understrength through the reporting period, reaching only partial operational capacity by October, meaning no material reduction in gang territorial control is expected before year-end. The mandate-extension request through September 2028 signals the mission itself now expects a multi-year, not near-term, resolution; displacement pressure into Artibonite, Centre and Kenscoff suggests gang expansion beyond the capital will continue."
         },
         {
           "name": "Colombia", "flag": "🇨🇴", "threat": "CRITICAL",
           "incidents": [
-            "21 Jul — Bogotá: Gustavo Petro filed a lawsuit seeking annulment of Abelardo de la Espriella's electoral victory proclamation, alleging degraded controls over electoral forms.",
-            "Mid-late Jul — Bogotá: Petro barred any military garrison or police facility from being used for the 7 Aug inauguration; the Senate voted to move the site to Cauca department, while De la Espriella's team reportedly sought Cali instead — the venue remained formally undefined as of 27 Jul.",
-            "14 Jul (carried over) — Chocó: In the wake of the 39-hostage ELN abduction/rescue, the ELN unleashed a wave of 50+ violent actions over six days, with over 50,000 residents effectively confined by armed groups fighting for territorial control."
+            "28 Jul — Bogotá: The House of Representatives voted 117-7 to relocate the 7 Aug presidential inauguration to Cali's Arena USC, after the Senate's earlier approval of Popayán (Cauca) was abandoned over volcanic activity risk near the Puracé Volcano.",
+            "29 Jul — Bogotá: The Senate ratified the Cali venue 58-30, the first Colombian presidential inauguration held outside Bogotá in modern history.",
+            "29 Jul — Cali: A special security plan was announced for 7 Aug, including a Unified Command Post, added troop deployments and access controls around Arena USC."
           ],
-          "coa": "CRITICAL maintained. The inauguration-venue standoff is now a live constitutional crisis with the 7 Aug transfer date essentially unresolved with under two weeks to go. Expect a real risk of a contested or dual-track inauguration, with legal challenges and heightened potential for street mobilization by both camps; ELN/Clan del Golfo violence in Chocó will likely persist regardless of who is inaugurated, reflecting a territorial dynamic largely insulated from Bogotá's political turmoil."
+          "coa": "CRITICAL maintained. The procedural venue fight is resolved, but the underlying legitimacy dispute is not — Petro remains firm he will boycott the ceremony over unproven fraud allegations dismissed by the Registry, Electoral Council and Inspector General. Expect the 7 Aug inauguration to proceed in Cali under heavy security with no violent disruption of the ceremony itself, though the fraud narrative will likely persist as a legitimacy irritant. ELN/Clan del Golfo violence in Chocó continues unabated, insulated from Bogotá's political turmoil."
         },
         {
           "name": "Cuba", "flag": "🇨🇺", "threat": "CRITICAL",
           "incidents": [
-            "18-19 Jul — Havana (Lawton, San Agustín, La Coronela, La Lisa) and Santiago de Cuba, Cienfuegos: Pot-banging protests continued and spread, with chants of 'Freedom' and 'We want the light.'",
-            "25 Jul — Nationwide: Widespread daily outages persisted following the three total grid collapses of early-to-mid July.",
-            "26 Jul — Havana: State TV aired a broadcast timed to the Moncada Barracks anniversary intended to preempt protest activity; pot-banging protests continued regardless in multiple Havana neighborhoods.",
-            "25-27 Jul — Santiago de Cuba: At least one youth was detained following a protest, triggering a further wave of neighbors leaving their homes in response."
+            "24 Jul — Havana/Santiago de Cuba/Cienfuegos: The Assembly of Cuban Resistance called for coordinated pot-banging protests ahead of the politically sensitive 26 Jul Revolution Day anniversary; cacerolazo protests occurred despite pre-emptive power restorations in some neighborhoods.",
+            "26 Jul — Nationwide: Grid deficit exceeded 2,200 MW on Revolution Day itself, with outages affecting all provinces amid fuel-oil and diesel reserves fully exhausted since May.",
+            "30 Jul — Havana: President Díaz-Canel dismissed a 20 Jul US State Department report on Cuba as a 'propaganda pamphlet,' redirecting blame for blackout-driven unrest onto Washington."
           ],
-          "coa": "CRITICAL maintained, now the largest sustained protest wave since July 2021 and still spreading geographically. Expect localized pot-banging protests to continue and likely intensify through hurricane season, which further stresses the fragile grid, punctuated by periodic total or partial collapses; government response will likely continue to rely on targeted arrests rather than systemic fixes."
+          "coa": "CRITICAL maintained, now the largest sustained protest wave since July 2021 and still spreading geographically. The regime's tactic of selectively restoring power to defuse planned protest dates has proven only partially effective; expect continued near-daily localized cacerolazos through August as fuel shortages persist, with Díaz-Canel's rhetorical strategy of externalizing blame onto the US likely to continue rather than pivot toward infrastructure fixes."
         },
         {
           "name": "Ecuador", "flag": "🇪🇨", "threat": "HIGH",
           "incidents": [
-            "20 Jul — Manta, La Revancha: Two armed men shot at a resident inside a home; two suspected sicarios were later detained.",
-            "25 Jul — Manta: A motorcyclist was shot dead in broad daylight, pushing the Manta-Montecristi-Jaramijó district's 2026 violent-death toll to 292.",
-            "28 Jul — Portoviejo, Riochico: A man was shot dead, bringing Portoviejo's separate 2026 death toll to 134; ACLED confirmed June was Manabí province's worst month for organized-crime violence since 2022.",
-            "Mid-Jul — Nationwide: A third executive decree locked the militarized state-of-exception strategy in place as official policy through 2029, beyond the current 60-day emergency window."
+            "21 Jul — Manabí (Manta, San Mateo)/San Martín: Human Rights Watch published 'A Dangerous Partnership,' documenting abuses in joint US-Ecuador counter-narcotics operations, including a March 2026 incident where soldiers detained and tortured four men with electric shocks and water-boarding-style methods."
           ],
-          "coa": "HIGH maintained. Manabí will likely remain Ecuador's principal violence hotspot as the Los Choneros-Los Lobos dispute over trafficking routes continues unresolved. The decision to institutionalize the militarized strategy through 2029 signals recognition that this is now a chronic rather than emergency-phase conflict, raising the likelihood of normalized elevated violence rather than either escalation or meaningful de-escalation."
+          "coa": "HIGH maintained; no confirmed new Manabí gang-violence incident was found dated specifically within this window, reported as a gap rather than an absence of risk. The HRW findings add a reputational and legal-accountability dimension to the ongoing militarized campaign, which remains locked in through 2029, and may generate diplomatic friction in Washington but is unlikely to alter Noboa's security posture near-term."
         },
         {
           "name": "Peru", "flag": "🇵🇪", "threat": "HIGH",
           "incidents": [
-            "22 Jul — Lima: President-elect Fujimori formally called for Bukele-style CECOT-modeled mega-prisons, alongside anonymous judges for criminal trials and mandatory prison labor.",
-            "22 Jul — Lima, Carabayllo corridor: A bicycle-borne sicario executed a combi driver, intensifying fear across the public transport sector.",
-            "27 Jul — Lima: Relatives of victims of state violence under Alberto Fujimori protested on the eve of Keiko Fujimori's inauguration, rejecting her government.",
-            "28 Jul — Lima: Keiko Fujimori was sworn in as Peru's first elected female president after her narrow runoff win, pledging an 'iron fist' security agenda; her party holds the largest but not a majority congressional bloc."
+            "28 Jul — Lima: Keiko Fujimori was formally inaugurated as President, pledging an 'iron fist' security policy including five CECOT-style mega-prisons, anonymous judges for criminal trials and mandatory prison labor."
           ],
-          "coa": "HIGH maintained. The inauguration proceeded without major disruption, but the extortion/sicariato crisis driving her mandate is unresolved and her security agenda is not yet implemented — a seven-month mega-prison construction timeline is unlikely to affect the extortion economy before Q4 2026 at the earliest. Expect continued transport-sector killings and extortion-linked violence in Lima/Callao at or near the current pace, alongside potential friction with human-rights and victims' groups."
+          "coa": "HIGH maintained. The transition proceeded without major disruption, but the extortion and sicariato crisis driving her mandate remains unresolved, with her security agenda not yet implemented — the mega-prison program will take considerably longer than 90 days to materialize. Expect continued transport-sector killings and extortion-linked violence in Lima/Callao at or near the current pace through the transition period."
         },
         {
           "name": "Bolivia", "flag": "🇧🇴", "threat": "MODERATE",
           "incidents": [
-            "22 Jul — La Paz: The Economy Minister confirmed Bolivia is 'days away' from a $2.5-2.8 billion IMF financing agreement, with over half the funds arriving by early September for central bank reserve reinforcement.",
-            "Ongoing — El Alto/Chonchocoro: Túpac Katari farmers'-federation leader Vicente Salazar remains in pretrial detention on terrorism-related charges tied to the blockade campaign, with a habeas corpus petition still pending."
+            "29 Jul — La Paz/Washington: The IMF and Bolivia reached agreement on a $1.9 billion financing program, pending IMF executive board approval, expected to unlock over $5 billion combined with World Bank/IDB support.",
+            "30 Jul — Santa Cruz: Departmental prosecutors issued an arrest order against former president Evo Morales over his alleged role in organizing the May-June road blockades, on six charges including armed uprising and terrorism."
           ],
-          "coa": "MODERATE maintained. The IMF agreement, if finalized as expected, should ease near-term FX and reserve pressure and support continued de-escalation of nationwide demonstrations, which have already dropped sharply since May. The Salazar case remains a latent risk: an adverse ruling or extended detention could reactivate the farmers'-federation mobilization base."
+          "coa": "MODERATE maintained, mixed signals. The IMF program is a stabilizing development that should ease near-term FX and reserve pressure. The Morales arrest order is a watch item: his rural/Indigenous support base had only paused, not abandoned, its protest campaign in late June, and its response over coming weeks will determine whether unrest reignites."
         },
         {
           "name": "Dominican Republic", "flag": "🇩🇴", "threat": "LOW",
           "incidents": [
-            "24-25 Jul — Enriquillo, Barahona: Authorities detained two Dominican nationals transporting 11 undocumented Haitians by bus on human-trafficking charges, illustrative of routine enforcement activity.",
-            "Ongoing (June data) — Nationwide: 34,226 Haitians were deported in June alone, consistent with the roughly 10,000/week pace."
+            "30 Jul — Santo Domingo: Migration authorities reported the 2026 deportation campaign has cost RD$5 billion so far, with 226,000 Haitians deported year-to-date, continuing routine weekly operations."
           ],
-          "coa": "LOW maintained. No new dated escalatory incidents were found this window; the deportation campaign continues at its established pace absent a policy announcement change."
+          "coa": "LOW maintained. No new violent security incident was found this window; the deportation campaign continues at or near its established pace, sustained by officials' own acknowledgment of a 'revolving door' dynamic of repeated re-crossings."
         },
         {
           "name": "Jamaica", "flag": "🇯🇲", "threat": "LOW",
           "incidents": [
-            "Data through mid-Jul — Nationwide: 288-291 murders were recorded year-to-date, 22-24% below the same period last year, with the murder clearance rate at 111% versus 71% a year earlier.",
-            "June data — Nationwide: Police lethality rose sharply, with 11 suspects killed by police in a single 48-hour window, prompting community protests and roadblocks in Montego Bay."
+            "21 Jul — Kingston: Police fatal shootings continued their decline — 8 killed by security forces in July through the 21st, down from 20 in June, for 167 cumulative year-to-date.",
+            "30 Jul — Harbour View, Kingston: One man was killed and a firearm seized in a police shootout."
           ],
-          "coa": "LOW maintained. The murder-reduction trend is expected to continue absent a major disruptive event. The main watch item is not organized crime but police-community relations: continued high police-lethality rates could catalyze further localized unrest even as overall crime statistics improve."
+          "coa": "LOW maintained. Both murders and police-involved fatalities are trending favorably, though isolated violent incidents continue; officials caution against complacency. Community-protest risk over police lethality remains latent but not currently active."
         }
       ]
     }
