@@ -174,12 +174,12 @@
         {
           "name": "Moldova", "flag": "🇲🇩", "threat": "MODERATE",
           "incidents": [
-            "Through the window — Chisinau: The government is expected to let its Gazprom supply contract lapse on 30 September; Chisinau is now supplied via South-East Europe, but Transnistria remains entirely Russian-supplied with the cost billed to state Moldovagaz — a standing lever for a winter destabilisation attempt.",
-            "Through the window — Nationwide: Political turbulence persists after the 3 July resignation of PM Alexandru Munteanu amid corruption allegations, which collapsed the government.",
+            "11–22 Jul — Chisinau: President Sandu nominated pro-European businessman Vasile Tofan as prime minister after Alexandru Munteanu's 3 July resignation amid corruption allegations; parliament confirmed Tofan 53–21 on 22 July, tasked with reviving the economy and pushing EU accession by 2028.",
+            "Through the window — Chisinau: Energy Minister Dorin Junghietu said Moldova has contracted most of the gas it needs for the 2026–27 heating season and is consolidating Moldovagaz's 12 distribution companies, telling Transnistria to build its own reserves as the Moldova–Gazprom supply contract lapses on 30 September.",
             "Late Aug – early Sep — International press: Reporting continued on a Kremlin goal of 'collapsing NATO and the EU from within,' naming Moldova the priority after Ukraine, with GRU-linked training camps in Serbia and Bosnia for Moldovan recruits.",
             "Through Aug — Transnistria: The Russian troop presence of about 1,500 was unchanged, with no new escalation."
           ],
-          "coa": "MODERATE maintained. With the September 2025 parliamentary election won by PAS and no new national vote scheduled, the near-term risk is hybrid and energy-centred rather than kinetic: the 30 September Gazprom cutoff and Transnistria's total dependency create a winter-crisis lever, and Moscow will keep running influence operations, disinformation and proxy-protest funding. Lingering instability from the July government collapse compounds the picture. Transnistria stays a latent lever rather than an active front; kinetic escalation risk remains low but non-trivial, concentrated on any enclave energy or humanitarian crisis Moscow engineers."
+          "coa": "MODERATE maintained. There is no national election on the near-term calendar — the 28 September 2025 parliamentary vote was won decisively by President Sandu's PAS (50.2%, 55 of 101 seats) and the next is not due until 2029 — so the live risk is governing continuity and energy rather than an election-interference window. Vasile Tofan's government, in office since 22 July after Munteanu's corruption-linked resignation, must now manage the 30 September expiry of the Gazprom contract and Transnistria's total dependency on Russian gas without a Moldovan lever to offer in return. Expect continued Russian hybrid pressure — disinformation, proxy financing of unrest, and pressure exploiting Transnistria's energy dependence — rather than a kinetic threat. Transnistria's roughly 1,500 Russian troops remain a latent lever; kinetic escalation risk stays low, with the winter energy transition the specific flashpoint to watch."
         },
         {
           "name": "Georgia", "flag": "🇬🇪", "threat": "HIGH",
@@ -407,11 +407,12 @@
         {
           "name": "Bangladesh", "flag": "🇧🇩", "threat": "MODERATE",
           "incidents": [
-            "1 Sep — Dhaka: The army chief met the head of government to discuss the military's role assisting civil administration ahead of national elections.",
-            "Through the window — Dhaka: July Charter implementation remained deadlocked, and relations with India stayed cold over Sheikh Hasina's continued political activity from Indian soil.",
-            "In the window — Nationwide: No significant security incident was reported."
+            "9 Sep — Hathazari Field Firing Range, Chattogram: A tank exploded during an army live-fire exercise, killing two soldiers and seriously wounding an officer.",
+            "Through the window — Nationwide: The BNP government of Prime Minister Tarique Rahman, in office since its February 2026 election landslide, continued governing against a Jamaat-e-Islami opposition and a banned Awami League whose activists keep staging flash protests despite arrests.",
+            "Through the window — India: Relations stayed cold over exiled former PM Sheikh Hasina's continued political activity from Indian soil; Hasina has designated her cousin Sheikh Selim as acting Awami League president in her absence.",
+            "Ongoing — Chittagong Hill Tracts: Implementation of the 1997 peace accord remains incomplete (65 of 72 provisions fulfilled), with periodic Bengali-settler and indigenous Jumma tension despite an April peace dialogue with the Kuki-Chin National Front."
           ],
-          "coa": "MODERATE maintained. The transitional political landscape stays fractious — Charter-implementation disputes, Awami League proscription grievances and economic strain — with India relations frozen over Hasina's status and affecting trade, border, water and transit issues. The pre-election period will see rising political-violence risk, heavier military involvement in law and order, and campus and communal unrest; no single flashpoint is likely to breach MODERATE, but cumulative instability is rising. The Bangladesh entry should be reviewed next cycle against the post-transition political timeline."
+          "coa": "MODERATE maintained. Bangladesh's political transition is now past the February 2026 election, not before it: the BNP holds a large parliamentary majority under PM Tarique Rahman, with Jamaat-e-Islami as the main parliamentary opposition and the banned Awami League operating as an extra-parliamentary opposition through flash protests and arrests. Expect continued sporadic BNP–Jamaat clashes at the local level, periodic Awami League protest crackdowns, and slow-moving Chittagong Hill Tracts tension short of a major flare-up. India relations stay frozen over Hasina's asylum status, constraining trade, border, water and transit cooperation. No single flashpoint is likely to breach MODERATE this quarter, but the combination of an unresolved Awami League ban and unaddressed CHT grievances keeps cumulative instability elevated."
         },
         {
           "name": "Sri Lanka", "flag": "🇱🇰", "threat": "LOW",
