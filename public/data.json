@@ -1,521 +1,627 @@
 {
   "title": "Intelligence Briefing Dashboard",
   "subtitle": "Weekly Conflict Monitor · All Regions",
-  "period": "4 – 10 September 2026",
-  "generated": "10 September 2026",
+  "period": "10 – 17 September 2026",
+  "generated": "17 September 2026",
   "classification": "UNCLASSIFIED // FOR OFFICIAL USE ONLY",
   "sources": "Reuters · AP News · Al Jazeera · ACLED · ISW · LiveUAMap · BNO News · US Embassy Alerts · Critical Threats · Kyiv Independent · Kyiv Post · Militarnyi · Ukrainska Pravda · Moscow Times · Meduza · RFE/RL · Euromaidan Press · Sudan Tribune · Dabanga · TruthNigeria · Premium Times · Daily Trust · Vanguard · Irrawaddy · Myanmar Now · Burma News International · DVB · NK News · Yonhap · AEI · The Federal · CNN · NBC · NYT · Washington Post · Bloomberg · PBS · The New Humanitarian · HRW · UN News · OHCHR · Times of Israel · Al-Monitor · France24 · Euronews · FDD · OC Media · JAMnews · Civil Georgia · iSANS · ICG · GIS Reports · MercoPress · Infobae · Colombia One · Rio Times · Latin Times · Haitian Times · Jamaica Gleaner · ANTARA · Rappler · Wikipedia",
   "regions": [
     {
       "name": "Middle East",
       "overview": [
-        "The US–Iran war has become a sustained tanker war in and around the Strait of Hormuz: the US struck three Iranian oil tankers on 5 September and five more on 8 September, and the IRGC answered with ballistic-missile salvos at a US carrier and destroyer near the strait (5 Sep), the al-Azraq base in Jordan (8 Sep) and US bases in Kuwait and the UAE (3 Sep). Commercial Hormuz transit is falling, an oil-spill incident is a live risk, and Oman-mediated 'transit route' talks have produced no ceasefire.",
-        "Yemen's civil war has fully reignited and pulled Saudi Arabia back into an active two-way conflict: heavy Houthi–government ground fighting opened on 3 September, the government declared an offensive toward Sanaa on 8 September, the Houthis hit Saudi oil and energy infrastructure at Abha, Khamis Mushait, Jazan and Najran the same day (73 wounded), and Saudi Arabia flew 32-plus airstrikes across northern Yemen on 9 September — the worst fighting since the 2022 truce, with credible Houthi threats to close Bab al-Mandeb.",
-        "Israel's northern fronts escalated even as diplomacy advanced: near-daily Israeli strikes on south Lebanon (4–7 Sep, 10-plus killed) followed renewed Hezbollah drone attacks on IDF troops, while Beirut's cabinet formally adopted a Hezbollah-disarmament plan on 5 September over the walkout of its five Shia ministers; Israeli strikes and ground incursions also continued in southern Syria, where Suwayda clashes resumed.",
-        "The Palestinian arena kept degrading structurally beneath the regional war: Gaza's nominal ceasefire ground on with the post-truce toll passing roughly 1,350, West Bank settler violence hit record levels with two Palestinians killed near Qusra on 8 September, and Israel's October election campaign sharpened into a referendum on Netanyahu, the hostages and Gaza. Egypt, Libya and Tunisia saw no kinetic incidents but continued negative drift."
+        "The Yemen war crossed a strategic threshold when the Houthis captured the Yemeni side of Bab al-Mandeb on 10 September — Mokha, Hays, Al Khawkhah and the Hanish/Perim islands — giving the group direct control over one of the world's key chokepoints alongside its existing Red Sea leverage; Saudi-backed government forces have counter-attacked but the group's momentum, and the stakes for Riyadh, Cairo's Suez recovery and global shipping, have sharply increased.",
+        "The US-Iran war remains a grinding, multi-front stalemate: Hormuz tanker incidents (a US drone strike off Hormozgan, a disputed mine/missile attack on the supertanker El Gaia) and intermittent Iranian missile strikes on Jordan, Iraq and Saudi Arabia continue on a near-weekly cadence, while a third US House vote to end the war and 200 days of silence from presumed successor Mojtaba Khamenei both signal mounting strain without yet shifting the operational trajectory.",
+        "Disarmament processes in Lebanon and Iraq are advancing on paper while stalling in practice: Beirut's cabinet-approved Hezbollah disarmament plan is moving toward a contested 'phase two' south of the Litani, and Baghdad officials are already reframing Iraq's 30 September militia deadline as a mere coalition-withdrawal date rather than a binding disarmament requirement, with Iran-aligned armed actors in both countries retaining weapons as leverage.",
+        "Israel's simultaneous management of Gaza, Lebanon, Syria, the West Bank and its Iran-alliance commitments is increasingly shaped by the 27 October election calendar: record West Bank settler violence, near-daily Gaza strikes and a sharply intensified pace of ground incursions into southwestern Syria (Quneitra/Daraa, roughly 45 operations in two weeks) are all trending upward, while China's Xi Jinping used a first-in-a-decade Cairo visit to press a 'new Middle East security order' and expand investment as the war's duration opens diplomatic space for outside powers."
       ],
       "countries": [
         {
-          "name": "Gaza", "flag": "🇵🇸", "threat": "CRITICAL",
+          "name": "Gaza",
+          "flag": "🇵🇸",
+          "threat": "CRITICAL",
           "incidents": [
-            "5 Sep — Gaza City (al-Tuffah): Israeli airstrikes destroyed the al-Sakhrah commercial complex, wounding about 12.",
-            "6 Sep — West of Gaza City: An Israeli drone strike on a civilian car killed a man and his five-year-old daughter and wounded six.",
-            "6 Sep — Deir al-Balah: Israeli artillery hit a classroom in a girls' school sheltering displaced families, killing a child.",
-            "8 Sep — Khan Younis / Bureij: Israeli strikes levelled homes as the Gaza Health Ministry put the post-ceasefire toll at about 1,352 killed and 4,511 wounded, up from roughly 1,288 a week earlier."
+            "10 Sep — Beit Lahiya: An Israeli strike killed at least 4, including two children, as the IDF said it hit Hamas weapons-storage sites in three separate areas of the Strip.",
+            "13 Sep — Gaza City (Tal al-Hawa): An Israeli drone strike on a vehicle killed 2 and wounded 13.",
+            "14 Sep — Gaza-wide: The Gaza Health Ministry put the cumulative post-ceasefire toll at 1,344 killed, including roughly 315 children and 160 women.",
+            "Mid-Sep — Gaza-wide: UN officials voiced 'deep concern' over continued Israeli strikes killing civilians despite the nominal ceasefire framework."
           ],
-          "coa": "CRITICAL maintained. The October 2025 ceasefire holds only nominally and the attritional pattern — near-daily Israeli strikes, periodic special-forces snatch raids and a steadily climbing civilian toll — will continue with no structural change expected; absent a renegotiated enforcement mechanism the toll is likely to cross 1,600–1,800 by December. Principal escalation risks are a botched raid producing Israeli captives or dead, a mass-casualty strike that forces international pressure, or collapse of the Rafah crossing arrangement. Aid access and reconstruction remain nominal. Israel's October election dynamics are the main external variable: a Smotrich–Ben Gvir ultimatum or a government collapse could bring a renewed large-scale operation."
+          "coa": "CRITICAL maintained. The ceasefire remains nominally in force while Israeli strikes against declared Hamas infrastructure and personnel continue at a near-daily tempo, sustaining a slow-burn casualty rate of roughly 15–20 killed per week. Absent a renegotiated enforcement mechanism, UN and humanitarian pressure will intensify but is unlikely to alter Israeli operational calculus, particularly as the government prioritizes military messaging ahead of the 27 October election. Watch for a possible spike in tempo tied to hostage-related developments or a deliberate signal to Hamas during Israel's wider multi-front posture against Iran-aligned actors."
         },
         {
-          "name": "Lebanon", "flag": "🇱🇧", "threat": "CRITICAL",
+          "name": "Lebanon",
+          "flag": "🇱🇧",
+          "threat": "CRITICAL",
           "incidents": [
-            "4 Sep — Kfar Reman: An Israeli airstrike killed three people and wounded more than 23.",
-            "5 Sep — Beirut: The cabinet formally approved the LAF plan to dismantle Hezbollah's arsenal, starting south of the Litani; the five Shia ministers walked out before the vote.",
-            "5 Sep — Southern Lebanon and the Beqaa: Israel struck five locations in response to an attempted Hezbollah drone strike on IDF troops in the occupied buffer zone.",
-            "6 Sep — Nabatieh, Arab Salim and Kfar Reman: Israeli dawn airstrikes killed at least four and wounded about 20."
+            "Early Sep — South Lebanon: Israeli dawn air strikes on Nabatieh and surrounding towns killed at least 10, part of a sustained campaign that has left the south's former economic hub largely emptied.",
+            "5 Sep — Beirut: The cabinet approved the LAF's multi-phase 'Homeland Shield' disarmament plan starting south of the Litani; five Shiite ministers walked out before the vote.",
+            "Mid-Sep — South Lebanon: Schools reopened on 15 September, many still doubling as shelters for residents displaced by ongoing strikes.",
+            "Mid-Sep — Tehran/Beirut: Iran's Security Council secretary publicly pledged continued support to Hezbollah to resist disarmament pressure, underscoring Tehran's stake in the outcome."
           ],
-          "coa": "CRITICAL maintained. Two contradictory tracks are now running. Politically, the 5 September cabinet decision is the first formal state commitment to disarmament and gives the Rome and US-mediated process a document to work from; in practice the LAF will move slowly, avoid direct confrontation and frame activity as reassurance rather than enforcement. Militarily, Israel has widened its strike campaign and Hezbollah has resumed drone attacks on troops, so the tit-for-tat in the south is likely to intensify over the quarter, with recurring multi-casualty days and episodic strikes on the Beqaa. Base case: no Israeli withdrawal, no serious disarmament, slow-bleed escalation — with a strike on Beirut's southern suburbs or a Hezbollah attack that kills Israeli soldiers the trigger for a sharper round."
+          "coa": "CRITICAL maintained. Expect the dual-track pattern to continue — Israeli strikes on Hezbollah military infrastructure in the south persisting near-weekly, while the LAF cautiously advances toward a 'phase two' (the Litani–Awali buffer zone) that Hezbollah has already rejected in principle. Iranian rhetorical and possibly material backing for Hezbollah raises the risk of the group testing the LAF's resolve or Israel's redlines, particularly if Tehran seeks a diversionary front amid its own war posture. A negotiated Israeli withdrawal from occupied Lebanese territory remains unlikely within this horizon."
         },
         {
-          "name": "Iran", "flag": "🇮🇷", "threat": "CRITICAL",
+          "name": "Iran",
+          "flag": "🇮🇷",
+          "threat": "CRITICAL",
           "incidents": [
-            "3 Sep — Persian Gulf: An Iranian regular-army missile and drone attack hit US bases in Kuwait and the UAE.",
-            "5 Sep — Strait of Hormuz: The IRGC fired ballistic missiles at a US aircraft carrier and a destroyer near the strait with no hits; the US responded by striking three Iranian oil tankers.",
-            "8 Sep — Strait of Hormuz / Jordan: The US struck five more Iranian oil tankers; Iran retaliated against al-Azraq air base in Jordan and said it had hit tankers on an 'unauthorised' Hormuz route and three US-linked vessels.",
-            "2 Sep — Tehran: The rial hit a record of about 2.2 million per US dollar amid a second consecutive day of bazaar and trader strikes over the currency collapse."
+            "14 Sep — Off Hormozgan: A US drone struck two boats, killing most aboard; Iranian media described the target as fishing vessels.",
+            "13–14 Sep — Strait of Hormuz: The supertanker El Gaia caught fire; Iran claimed a naval mine, while US CENTCOM said the vessel had been hit by an Iranian missile the prior month and then struck again by drone.",
+            "17 Sep — UN Security Council: A vote on restoring the 1737 sanctions committee was scheduled, with Russia and China opposing reestablishment and Iran's envoy protesting denial of access as an 'abuse of power.'",
+            "15 Sep — Tehran: Presumed successor Mojtaba Khamenei marked 200 days in his post with no public appearance, video or statement, feeding uncertainty over succession and central command authority."
           ],
-          "coa": "CRITICAL maintained. The war has shifted from periodic strike waves into a sustained maritime war in and around Hormuz, with each US tanker strike answered by IRGC missile salvos at US warships or regional bases. Commercial transit is falling and a tanker-strike oil spill is a live environmental and economic risk. Oman-mediated talks have produced a claimed transit-route understanding but no ceasefire, and Tehran's rhetoric that 'the era of proportionate responses is over' signals a widening target set. Iranian long-range missile reliability appears degraded — ISW estimates roughly a 50% failure rate against Jordan — slightly lowering the odds of a successful direct strike on Israel but not the intent. The UN snapback and nuclear dispute is unresolved. Base case for the quarter: continued naval attrition, intermittent base strikes across the Gulf and Jordan, further rial deterioration and sporadic domestic unrest, with an Omani-brokered Hormuz de-confliction the most plausible off-ramp but not the base case."
+          "coa": "CRITICAL maintained. Expect continued low-to-mid-intensity maritime and proxy warfare rather than decisive escalation or ceasefire — tanker seizures/strikes in Hormuz, contested mine claims, and intermittent missile strikes on US and allied positions across Iraq, Jordan and the Gulf states. A third US House vote to end the war signals growing domestic political friction that could eventually constrain Washington but has not yet altered operational tempo. Continued opacity around Mojtaba Khamenei's role is a wildcard: a leadership vacuum or contested succession could accelerate internal regime instability or trigger a hardline escalation to project strength. Rial depreciation and roughly 90% inflation will continue to erode regime capacity to sustain the conflict, raising medium-term regime-stability risk."
         },
         {
-          "name": "Yemen", "flag": "🇾🇪", "threat": "CRITICAL",
+          "name": "Yemen",
+          "flag": "🇾🇪",
+          "threat": "CRITICAL",
           "incidents": [
-            "3 Sep — Taiz / Al-Jawf / Al-Bayda: Heavy fighting erupted between the Houthis and government forces — a Houthi offensive in Taiz and a government counter-offensive in Al-Jawf and Al-Bayda — the deadliest since the 2022 truce collapsed.",
-            "8 Sep — Al-Jawf / Al-Bayda: The Presidential Leadership Council declared an offensive to retake Sanaa, capturing Yatma and advancing on Dhi Na'im.",
-            "8 Sep — Saudi Arabia: A Houthi drone and missile barrage on Abha, Khamis Mushait, Jazan and Najran wounded 73 and started fires at oil and energy facilities.",
-            "9 Sep — Marib / Al-Jawf / Taiz / Hodeidah: Houthi media reported 32 Saudi airstrikes as Yemen's UN envoy warned of a wider war and the Houthis threatened to close Bab al-Mandeb."
+            "10 Sep — Hodeidah/Taiz coast: Houthi forces captured the Hays and Al Khawkhah districts and the port town of Mokha, along with Perim (Mayun) Island, giving them direct control of the Yemeni side of the Bab al-Mandeb strait for the first time.",
+            "13 Sep — Red Sea coast: Saudi-backed government forces launched counter-attacks, including airstrikes on Houthi positions at Mokha and Dhubab in Taiz province, after conceding what officials called a 'painful' defeat.",
+            "14 Sep — Saudi border: The Houthis claimed a large-scale missile/drone attack on King Khalid Air Base near Khamis Mushait, in stated retaliation for over 300 Saudi airstrikes across Yemen in the preceding five days.",
+            "Ongoing — Nationwide: The UN estimates more than 80,000 people displaced by fighting since the start of September, as the country risks sliding back into full civil war."
           ],
-          "coa": "CRITICAL maintained. The civil war has fully reignited and the roughly eight-day post-24 August lull is over. Expect sustained ground combat along the Marib–Al-Jawf–Al-Bayda and Taiz axes, a slow and probably stalling government push toward Sanaa, and continued Houthi long-range strikes on Saudi infrastructure as their primary coercive tool now that the naval blockade has failed to coerce Riyadh. Bab al-Mandeb closure threats are credible enough to keep insurance and rerouting pressure high, and a renewed campaign against Red Sea commercial shipping is likely within the quarter. Humanitarian conditions will deteriorate sharply, and a Saudi ground offensive is now materially more probable given direct attacks on the Kingdom."
+          "coa": "CRITICAL maintained, escalating within the band. The Houthi capture of Mokha and the Hanish/Perim islands marks a strategic inflection: the group now holds physical leverage over one of the world's key chokepoints alongside its established threat to Hormuz-adjacent traffic, materially raising the stakes for Saudi Arabia, Egypt and global shipping insurers. Expect continued Saudi-Yemeni government efforts to reclaim Red Sea coastal positions, met by further Houthi missile/drone strikes deeper into Saudi territory (Abha, Khamis Mushait, Jazan, possibly Riyadh-area targets). A negotiated de-escalation is unlikely within 90 days given the scale of recent Houthi gains; watch for formal Houthi blockade enforcement against Saudi-linked shipping and further internationalization of the conflict if Western naval assets intervene to protect the strait."
         },
         {
-          "name": "Israel", "flag": "🇮🇱", "threat": "CRITICAL",
+          "name": "Israel",
+          "flag": "🇮🇱",
+          "threat": "CRITICAL",
           "incidents": [
-            "7 Sep — Jerusalem: Protesters gathered at the Prime Minister's Residence to mark the anniversary of the 'Beautiful Six' hostages' deaths, with families pressing the government over the final 13 deceased hostages.",
-            "7 Sep — Rosh HaAyin: Gadi Eisenkot launched the Yashar party's Knesset slate, warning Israel is being led 'dangerously,' with polls putting the coalition below 61 seats and elections expected in October.",
-            "8 Sep — Qusra area, West Bank: Israeli troops shot dead a Palestinian during a settler raid on the village and killed another who entered a nearby settler outpost and stabbed and critically wounded a 20-year-old Israeli.",
-            "w/o 8 Sep — Jalud, West Bank: A months-long near-daily settler siege of a Palestinian family's home was documented as the UK announced sanctions over settler violence."
+            "Ongoing — West Bank: Settler violence continues at an average of roughly 6.6 incidents a day, on pace to exceed 2,000 attacks for 2026 — the highest rate on record per UN monitoring.",
+            "Ongoing — West Bank: Sustained settlement expansion and demolitions have displaced or partially displaced 107 Palestinian communities since January 2023, with the pace accelerating ahead of the election.",
+            "Ongoing — Multi-front: Israel remains simultaneously engaged in Gaza, Lebanon, southwest Syria and, via the US alliance, the Iran/Yemen war, with no negotiated resolution on any front.",
+            "Campaign period — Nationwide: Netanyahu's campaign for the 27 October election centers on hostage returns and military achievements, while challenger Gadi Eisenkot positions around war-management competence; the outcome could shape near-term escalation or de-escalation choices on every front."
           ],
-          "coa": "CRITICAL maintained. West Bank settler violence has moved from escalating to record levels — the UN calls it an 'all-time high' — with settler–military coordination driving Palestinian displacement in the Nablus and Ramallah hill villages; expect continued weekly killings, at least one mass-mobilisation settler incident and more Western sanctions with little Israeli enforcement change. Domestically the quarter is dominated by an election campaign that is a referendum on Netanyahu, Gaza and the hostages, and a coalition collapse or a Smotrich–Ben Gvir ultimatum is a real risk that could trigger a renewed large-scale Gaza operation. Externally Israel is fighting on the Lebanon and Syria fronts simultaneously and absorbing intermittent Houthi launches at Eilat and the Tel Aviv area; compound-escalation risk is elevated."
+          "coa": "CRITICAL maintained. Expect settler violence to remain at or above record levels through the October election as political incentives favor visible facts-on-the-ground in the West Bank, with a material risk of a mass-casualty incident triggering wider unrest. Militarily, Israel will likely sustain its current operational tempo in Gaza and southwest Syria while calibrating Lebanon strikes to LAF disarmament progress. The election itself is the dominant variable: a Netanyahu win likely preserves the current multi-front posture, while an Eisenkot-led coalition could seek negotiated off-ramps on at least one front — most plausibly Lebanon — without substantially altering the Iran or Gaza postures within this window."
         },
         {
-          "name": "Iraq", "flag": "🇮🇶", "threat": "CRITICAL",
+          "name": "Iraq",
+          "flag": "🇮🇶",
+          "threat": "CRITICAL",
           "incidents": [
-            "2 Sep — Erbil: An IRGC missile and drone strike on a US base destroyed a maintenance centre, warehouses and a surveillance-aerostat guidance system and set fuel tanks ablaze, with reported US casualties.",
-            "3 Sep — Iraq: Iran struck US-linked sites in Iraq alongside Bahrain and Jordan after US strikes on Iran.",
-            "Through the window — Baghdad: Militia disarmament ahead of the 30 September deadline is in complete deadlock; Kata'ib Hezbollah and Harakat Hezbollah al-Nujaba tie any disarmament to a US withdrawal, and a Qaani–PM meeting reportedly ended with the Iranian delegation leaving angry.",
-            "Early Sep — Iraqi Kurdistan: Unusual US force movements were reported tied to the September coalition-drawdown timeline."
+            "14 Sep — Sulaimani province: Five missiles struck three sites (a Komala family camp at Zirgwez, near Gurgachya on the Sirwan, and the Qaradagh area) in the early hours; no casualties reported.",
+            "15 Sep — Erbil province (Soran district): A one-way attack drone struck a KDPI base at Balisan; material damage only, no casualties.",
+            "15 Sep — Baghdad: Iran-aligned militias (Kataib Hezbollah, Harakat al-Nujaba, Kataib Sayyid al-Shuhada) signaled their weapons will not be surrendered by the 30 September deadline as the last US troops prepare to withdraw.",
+            "Mid-Sep — Baghdad: Iraq's National Security Advisor clarified that 30 September marks the coalition's departure date rather than a binding disarmament deadline, confirming the deadlock; the IRGC-Quds Force reportedly instructed militia leaders to retain weapons as leverage against Washington while avoiding direct confrontation with Iraqi security forces."
           ],
-          "coa": "CRITICAL maintained. Iraq is now a live front of the US–Iran war rather than a spillover zone. The 30 September disarmament deadline will almost certainly pass unmet; the realistic outcomes are a face-saving nominal handover, a quiet indefinite extension, or — lower probability but rising — intra-Shia armed confrontation if Baghdad attempts enforcement. Expect continued IRGC and militia strikes on US and Kurdish targets in Erbil and on bases, US and Israeli strikes on militia infrastructure in response, and KRG leadership remaining an explicit Iranian target set. The coalition drawdown from Kurdistan proceeding on schedule amid active hostilities is a specific instability risk for the fourth quarter."
+          "coa": "CRITICAL maintained. The 30 September deadline is highly unlikely to produce genuine militia disarmament; expect it to pass with rhetorical commitments, partial or symbolic handovers by weaker factions, and continued retention of heavy weapons by the core IRGC-aligned groups. Strikes on Iranian-Kurdish opposition targets in the KRI, as seen this week, will likely continue intermittently, distinct from and lower-intensity than direct anti-US strikes. The central risk within this window is a renewed direct militia attack on US positions timed either to the deadline's passage or to a broader Iranian signaling need, which would sharply escalate Iraq's role in the wider war."
         },
         {
-          "name": "Saudi Arabia", "flag": "🇸🇦", "threat": "CRITICAL",
+          "name": "Saudi Arabia",
+          "flag": "🇸🇦",
+          "threat": "CRITICAL",
           "incidents": [
-            "8 Sep — Abha / Khamis Mushait / Jazan / Najran: A major Houthi drone and missile attack on southern Saudi Arabia wounded 73, including women and children, and started fires at oil and energy facilities, halting operations at some sites; the Saudi-led coalition vowed a 'resolute response.'",
-            "9 Sep — Northern Yemen: Saudi and Houthi sources reported 32 Saudi airstrikes on Marib, Al-Jawf, Taiz and Hodeidah.",
-            "Through the window — Yemen: Weeks of escalating government–Houthi clashes shattered the four-year truce, with ISW assessing the Houthis have deliberately shifted to targeting Saudi oil facilities."
+            "14 Sep — Khamis Mushait/Abha/Taif: Houthi ballistic missile and drone attacks injured 13 civilians and damaged seven homes and two vehicles; the Houthis claimed a large-scale strike on King Khalid Air Base, asserting damage to hangars, radar, runways and ammunition depots.",
+            "15 Sep — Mecca approach: Saudi air defenses detected and destroyed a drone south of Mecca before it entered restricted airspace.",
+            "Ongoing — Yemen: The Saudi-led coalition sustained an air campaign against Houthi positions, with Houthi sources claiming over 300 strikes in the five days preceding 14 September, including repeated hits on Sadaa.",
+            "Ongoing — Southwestern border: Continued rocket/drone alert postures across Abha, Khamis Mushait, Jazan and Najran reflect a persistent, multi-axis Houthi threat to Saudi territory."
           ],
-          "coa": "CRITICAL maintained. The lull is over and Saudi Arabia is back in an active two-way war with the Houthis — absorbing strikes on southern oil and energy infrastructure and conducting sustained airstrikes across northern Yemen. Expect repeated Houthi long-range attacks on Abha, Jazan and Najran and possibly deeper toward eastern Aramco facilities over the quarter, sustained upward pressure on Brent, and continued build-out of the Jeddah maritime coalition. A Saudi ground offensive into Yemen is now materially more likely. The escalation ceiling is a mass-casualty or major-production-loss strike on core Aramco assets, which would be a global oil-market event."
+          "coa": "CRITICAL maintained. The tanker-war-adjacent exchange between Riyadh and the Houthis is likely to intensify rather than subside, driven directly by the Houthi capture of Bab al-Mandeb and Saudi Arabia's determination to prevent a Houthi-controlled chokepoint from becoming a permanent strategic fact. Continued Saudi airstrikes into Yemen will likely be met with further long-range missile/drone attacks against southwestern Saudi cities, with oil infrastructure further north (Jeddah, Jizan, Riyadh-area targets) not ruled out. Coalition-building with the internationally recognized Yemeni government to reclaim Red Sea coastal positions is the most likely near-term Saudi objective, though success within 90 days is uncertain given recent Houthi momentum."
         },
         {
-          "name": "Syria", "flag": "🇸🇾", "threat": "CRITICAL",
+          "name": "Syria",
+          "flag": "🇸🇾",
+          "threat": "CRITICAL",
           "incidents": [
-            "1 Sep — As-Suwayda: Clashes coincided with student protests, wounding about 10 Syrian security personnel.",
-            "6–7 Sep — West of As-Suwayda: Intermittent clashes resumed between government forces and Hijri-aligned Druze armed groups, killing two civilians.",
-            "Early Sep — Rural Suwayda: Four Syrian internal-security personnel were wounded confronting 'outlaw groups.'",
-            "Late Aug – early Sep — Quneitra / western Damascus countryside: Israeli artillery shelling near Beit Jinn and ground incursions near al-Rafid continued; the US Syria envoy publicly criticised the strikes."
+            "15–16 Sep — Suwayda: Fresh clashes between government-aligned security forces and the Druze National Guard militia erupted around Mazraa and spread across the western/northern countryside; one militia fighter killed, roughly 10 internal security personnel wounded.",
+            "13 Sep — Quneitra: Israeli forces raided al-Rufayd and al-Hamadiyah villages overnight, detaining at least three local men.",
+            "16 Sep — Daraa (Yarmouk River Basin): Israeli troops raided the town of Abdin, searching homes and confiscating residents' mobile phones; no casualties reported.",
+            "First half of Sep — Quneitra/Daraa: Israel conducted an estimated 45 distinct ground operations into southwestern Syria in the first two weeks of the month alone, alongside a rising rate of artillery strikes, some hitting residential areas."
           ],
-          "coa": "CRITICAL maintained. The Suwayda ceasefire is functionally broken again, with Hijri-aligned Druze factions demanding autonomy and repeatedly clashing with government forces; expect recurring low-level fighting and periodic spikes, with Suwayda remaining outside effective Damascus control through the quarter. The SDF dissolution and army-integration process continues on paper, but Suwayda is the visible proof of the state's weak writ. Israeli strikes and incursions in the south-west will continue as a declared buffer policy, and the unresolved Israel–Turkey standoff over Syrian airbases remains the main wider-escalation risk. Sharaa-government consolidation is slow and contested."
+          "coa": "CRITICAL maintained. The Suwayda ceasefire remains effectively nominal, with recurring low-casualty flare-ups between Druze militias and Damascus-aligned forces continuing on a roughly weekly cadence, sustained by deep mistrust following last year's mass-casualty violence. Israel's ground-incursion tempo into Quneitra and Daraa is trending upward with no sign of near-term restraint, functioning as both a security buffer-building exercise and an implicit deterrent against any Damascus move to reassert control near the Golan. Watch for a more serious Suwayda flashpoint that could again draw a direct Israeli air response, as occurred in July 2025."
         },
         {
-          "name": "Egypt", "flag": "🇪🇬", "threat": "HIGH",
+          "name": "Egypt",
+          "flag": "🇪🇬",
+          "threat": "HIGH",
           "incidents": [
-            "No kinetic incident occurred on Egyptian soil in the window.",
-            "2 Sep — Cairo: Xi Jinping met President Sisi on his first Egypt visit in a decade and called for a new regional security framework.",
-            "Through the window — Suez Canal: Transits and revenue remained roughly 50–60% below normal because of the Red Sea and Hormuz conflicts, with North Sinai still a closed military zone."
+            "2 Sep (effects ongoing) — Cairo: Xi Jinping made his first state visit to Egypt in a decade, meeting Sisi and calling for a 'new Middle East security order' free of external interference; Chinese investment in Egypt is now estimated near $10 billion.",
+            "Mid-Sep — Cairo: Sisi said Suez Canal revenues have fallen by roughly $9 billion over the past two years due to regional instability, even as FY2025/26 revenue rose 23% year-on-year to $4.67 billion amid a partial, fragile recovery.",
+            "No direct kinetic incident on Egyptian territory was identified for the 10–17 September window."
           ],
-          "coa": "HIGH maintained. Genuinely quiet week on security; Egypt's exposure is indirect. Suez Canal revenue loss is a serious and worsening fiscal drag with no relief in sight while the Red Sea and Yemen fronts are hot, and the Xi–Sisi engagement signals Cairo hedging toward Beijing on both economics and security architecture. The main risks are spillover from a Gaza escalation into Rafah and Sinai, a stray missile or drone during a Hormuz–Red Sea exchange, or renewed Houthi targeting of Bab al-Mandeb traffic that further chokes the canal. The base case is continued heightened alert around the canal and the Sumed pipeline without a direct strike; a second attack on Egyptian soil would warrant immediate re-elevation."
+          "coa": "HIGH maintained. Egypt's core exposure remains economic rather than kinetic. The Houthi capture of the Yemeni side of Bab al-Mandeb on 10 September is a material new downside risk to the nascent Suez Canal traffic recovery Sisi has been counting on for H2 2026 — a prolonged Houthi blockade posture could reverse the 23% revenue gain rather than allow the further improvement officials have projected. China's high-profile investment push offers Cairo a partial economic cushion and diplomatic hedge, but is unlikely to offset canal revenue losses within this horizon. No change to Egypt's direct security posture is expected, but its role as a Gaza mediator and its Suez revenue trajectory should be watched closely as leading indicators of how the wider war is reshaping regional trade flows."
         },
         {
-          "name": "Jordan", "flag": "🇯🇴", "threat": "CRITICAL",
+          "name": "Jordan",
+          "flag": "🇯🇴",
+          "threat": "CRITICAL",
           "incidents": [
-            "3 Sep — Jordan: Iranian strikes hit Jordanian territory alongside Bahrain and Iraq after US strikes on Iran.",
-            "8 Sep — Al-Azraq (Muwaffaq Salti) air base: Iran fired a wave of about 10 ballistic missiles at the base in retaliation for the US strike on five Iranian tankers; Jordanian and US air defences engaged and Jordan said airspace stayed fully open.",
-            "Through the window — Jordanian airspace: ISW noted a roughly 50% failure rate on Iranian ballistic missiles fired at Jordan, suggesting degraded Iranian long-range capability."
+            "9 Sep — Muwaffaq Salti air base, Azraq: Jordanian air defenses intercepted 18 of 20 Iranian ballistic missiles fired at the base; no injuries reported.",
+            "Late Aug (background) — Muwaffaq Salti: The same base absorbed direct hits in an earlier wave, damaging a Jordanian A-10 and roughly eight F-15s, illustrating its continued status as a live target.",
+            "10–17 Sep — Jordanian airspace: No further confirmed Iranian strike was identified in this window, suggesting a relative lull following the 9 September barrage, though this cannot be read as a durable pause given the pace of prior attacks."
           ],
-          "coa": "CRITICAL maintained. Jordanian territory is now a recurring impact zone in the US–Iran war — its bases host US drones and Patriot batteries and are being targeted roughly weekly. Amman is deliberately keeping airspace open and downplaying disruption to protect aviation revenue and avoid the appearance of co-belligerency, but debris, intercepts and the risk of a missile getting through are constant. Base case: continued periodic Iranian salvos as long as the US tanker campaign runs, no Jordanian retaliation, and managed but real economic and political strain. The main escalation trigger is an Iranian missile causing significant Jordanian civilian casualties, which would force a harder posture."
+          "coa": "CRITICAL maintained. Jordan remains a recurring secondary target for Iranian strikes against US assets at Muwaffaq Salti, and the apparent lull since 9 September should not be read as de-escalation given the volatility of the broader war. Expect continued high alert-status air-defense posture, with further Iranian barrages likely tied to US or Israeli actions elsewhere (Hormuz, Iraq, Yemen). Jordan's decision to keep its airspace open despite repeated targeting reflects a calculated bet on continued US/Jordanian interception effectiveness; a successful high-casualty strike would sharply raise both domestic political pressure and regional escalation risk."
         },
         {
-          "name": "Libya", "flag": "🇱🇾", "threat": "MODERATE",
+          "name": "Libya",
+          "flag": "🇱🇾",
+          "threat": "MODERATE",
           "incidents": [
-            "No verified kinetic incident occurred in the window.",
-            "~7 Sep — Tripoli: Reporting described a significant militia buildup in the capital, raising fears of imminent armed clashes.",
-            "Late Aug – early Sep — Tripoli: A UNSMIL-backed outline agreement was reached for presidential and parliamentary elections within about 24 months under a single executive, with power-sharing under discussion."
+            "Late Aug – early Sep — Tripoli: Reports of militia buildup around the capital heightened fears of an imminent clash between forces aligned with PM Dbeibah and the Special Deterrence Force (RADA) militia.",
+            "Ongoing — Tripoli: Civil unrest driven by chronic power blackouts and collapsing municipal services has included blockades of government ministries and a shutdown of the strategically important Mellitah oil and gas complex.",
+            "Ongoing — Tripoli: US envoy Massad Boulos met PM Dbeibah to explore east-west military coordination, indicating active international engagement to prevent escalation."
           ],
-          "coa": "MODERATE maintained, trending toward the top of the band. There is no active front, but the Tripoli militia rivalry is the live risk — the capital has a history of sudden multi-day armed clashes over institutional appointments and turf, and the current buildup fits that pattern. The new UNSMIL election framework is a modestly positive signal but does not resolve the east–west institutional split or the GNU–GNS deadlock, and disputes over oil revenue and Central Bank control remain a recurring trigger for blockades. Base case: continued brittle stalemate with a roughly one-in-three chance over the quarter of a short, sharp Tripoli clash that would justify an upgrade to HIGH."
+          "coa": "MODERATE maintained, with risk indicators trending upward. Libya's risk profile is rising within the band, driven by the convergence of a militia power struggle (Dbeibah vs. RADA) with genuine popular unrest over service failures — a combination that has historically preceded Tripoli clashes. The Mellitah shutdown is a notable escalation indicator given its economic significance. Absent a negotiated de-escalation, the Boulos mediation being the most concrete current effort, a limited armed confrontation in Tripoli within the next 90 days is plausible, though a full-scale return to civil war remains less likely given continued UNSMIL-brokered election-framework engagement."
         },
         {
-          "name": "Tunisia", "flag": "🇹🇳", "threat": "MODERATE",
+          "name": "Tunisia",
+          "flag": "🇹🇳",
+          "threat": "MODERATE",
           "incidents": [
-            "1 Sep — Nationwide: Protests marked five years since President Saied's power grab as older grievances resurfaced.",
-            "8 Sep — Tunis: Journalists and activists protested outside a court over the prosecution of prominent journalist Mohamed Yousfi on charges widely seen as fabricated — a new press-freedom flashpoint.",
-            "Through the window — Nationwide: Localised protests over water and power cuts and environmental grievances continued, broadening unrest beyond anti-Saied politics into cost-of-living hardship."
+            "4 Sep — Tunis: Journalist Mohamed Yousfi, editor-in-chief of investigative outlet Al-Qatiba, was arrested ahead of a scheduled radio appearance on charges of illicit enrichment and money laundering, widely seen as politically motivated.",
+            "~15 Sep — Tunis: Journalists and activists staged street protests demanding Yousfi's release, continuing a pattern of press-freedom demonstrations.",
+            "Ongoing — Nationwide: Protests continued over water and electricity cuts, rising prices and medicine shortages, compounding political grievances tied to President Saied's five-year-old emergency-rule consolidation."
           ],
-          "coa": "MODERATE maintained. No security escalation; the trajectory is slow authoritarian consolidation with a widening protest base. Expect the monthly anti-Saied demonstrations to continue and grow modestly as post-heatwave service failures compound political grievances, and the crackdown on journalists, opposition figures and civil society to intensify. Economic fragility — the IMF standoff, subsidy pressure and migration politics — is the structural risk. Unrest stays below the threshold of regime-threatening mobilisation in the near term, but the combination of livelihood protests and elite repression is the classic Tunisian pre-crisis pattern and warrants close watching."
+          "coa": "MODERATE maintained. Expect continued low-intensity but persistent protest activity combining press-freedom and economic grievances, with periodic journalist and activist arrests under the 2022 'false news' decree sustaining international criticism without triggering a change in government posture. Saied's consolidation of power shows no sign of reversing; the more relevant risk indicator for this horizon is whether infrastructure-driven unrest scales into broader, sustained mobilization, which would be a more significant departure from the current pattern than the press-freedom protests alone."
         }
       ]
     },
     {
       "name": "Ukraine/Russia",
       "overview": [
-        "Diplomacy without a pause: US envoys Witkoff and Kushner shuttled from Moscow (5 Sep) to Kyiv (6 Sep), both sides briefly halted strikes on each other's capitals from 5–7 September, and then Russia resumed on 8 September. 'Substantive progress' and possible late-September trilateral talks were claimed, but there is no ceasefire and Moscow's Donbas and NATO demands stand.",
-        "The pre-winter grid campaign is now live: Russia hit Kyiv and Odesa hard on 8–9 September (more than 17 killed over two days, a TV building struck mid-broadcast) and struck Naftogaz facilities 13 times in a week, shifting to harder-to-intercept jet-powered drones — the energy campaign ISW forecast has begun against thinning Ukrainian interceptor stocks.",
-        "Ukraine's deep-strike campaign escalated in range and frequency: strikes hit Sochi (3 Sep), the Ryazan refinery and Rostov airfield and air defences (5–6 Sep), the Salavat petrochemical complex in Bashkortostan some 1,300 km from the border (7 Sep) and the Novorossiysk naval base and oil terminal (9 Sep); Russian refining is stuck near a 20-year low with fuel rationing in a majority of regions.",
-        "Twin political stress tests: Russia holds its first wartime State Duma elections on 18–20 September, including in occupied Ukraine, while in Kyiv the NABU/SAP probe widened to the Prosecutor General's office with 5–6 September raids and a former Presidential Office chief was served suspicion for laundering more than UAH 460 million — the corruption crisis around Zelensky's circle is deepening."
+        "No ceasefire, deepening mutual strike campaigns: Witkoff/Kushner shuttle diplomacy (Kyiv and Moscow, early September) produced no breakthrough and only a push for renewed trilateral talks, and both sides have doubled down militarily instead — Russia sustaining near-nightly barrages on Kyiv and Odesa's grid ahead of winter, and Ukraine executing its deepest-ever drone strikes into Russia's Arctic energy infrastructure alongside continued refinery strikes on Ryazan and Rostov.",
+        "War-driven fuel and energy stress is now a two-front story: Russia's domestic fuel crisis (roughly 70% of gasoline demand met, refining at a 24-year low) is colliding with the State Duma elections on 18–20 September, including illegal voting staged in occupied Ukrainian territory, just as Moldova approaches its own energy inflection point with the 30 September expiry of the Gazprom–Transnistria supply contract.",
+        "Governance fault lines are widening in Kyiv: the NABU/SAPO 'Operation Carthage' probe has now claimed a sitting Prosecutor General, Ruslan Kravchenko, dismissed by the Rada on 15 September, and continues to press toward Zelensky's inner circle, testing Ukraine's institutional resilience at the same moment Western partners are being asked for winter energy and air-defense support.",
+        "Democratic backsliding is intensifying on the EU's eastern edge ahead of key votes: Georgia's ruling party is moving to legally eliminate its last standing parliamentary opposition weeks before the 4 October local elections, while Belarus and Russia continue coordinated exercise activity and hybrid migration pressure has pivoted from Poland toward Latvia — a broadening, multi-vector pressure campaign against NATO's eastern flank and EU-aligned states beyond Ukraine itself."
       ],
       "countries": [
         {
-          "name": "Ukraine", "flag": "🇺🇦", "threat": "CRITICAL",
+          "name": "Ukraine",
+          "flag": "🇺🇦",
+          "threat": "CRITICAL",
           "incidents": [
-            "4 Sep — Kyiv: A Russian drone struck the SBU headquarters in the city centre, injuring five; Zelensky said the strike targeted acting SBU chief Oleksandr Poklad, who was unharmed.",
-            "5–7 Sep — Moscow / Kyiv: US envoys Witkoff and Kushner met Putin then Zelensky; a mutual halt on strikes against both capitals held only through 7 September before Russia resumed.",
-            "8 Sep — Kyiv / Odesa: A combined strike of 166 drones and 32 cruise missiles plus ballistic and anti-ship missiles killed five and injured more than 30 in Kyiv and hit a live TV broadcast; nationwide five killed and 63 injured.",
-            "9 Sep — Kyiv / Odesa / Zaporizhzhia: A 24-storey residential block was hit in Kyiv's Darnytskyi district; nationwide 12 were killed and 66 injured over the day."
+            "8 Sep — Kyiv: The 5–8 September truce ordered around the Witkoff/Kushner shuttle visit expired; Russia resumed strikes, killing at least 5 and injuring 30 across five districts, as Ukraine's air force reported downing 142 drones and all but one of 32 cruise missiles.",
+            "15 Sep — Kyiv: A Russian drone attack on a filling station killed at least 1 and injured 12, part of a sustained multi-night barrage on the capital.",
+            "15 Sep — Kyiv: The Verkhovna Rada voted 317–0 to dismiss Prosecutor General Ruslan Kravchenko at Zelensky's request, after Kravchenko resigned on 7 September amid the NABU/SAPO 'Operation Carthage' probe into a group allegedly bribed to protect fraudulent call centers; Kravchenko had separately moved to file charges against NABU Director Semen Kryvonos.",
+            "Early–mid Sep — Odesa region: Continued Russian strikes on port and energy infrastructure, following a 1–4 September wave that hit a thermal power plant and substations, consistent with a pre-winter campaign against Ukraine's grid."
           ],
-          "coa": "CRITICAL maintained, compounding. No ceasefire is likely within the horizon despite the Witkoff–Kushner channel; talks may reconvene in late September but Moscow's maximalist terms are unchanged. Expect Russia to escalate combined drone and missile strikes on Kyiv, Odesa and energy and gas infrastructure through October–December to degrade the grid before winter, using more jet-powered drones and larger salvos against thinning Ukrainian interceptor stocks. Frontline pressure continues around Kostiantynivka–Druzhkivka, the Pokrovsk–Myrnohrad flank and Kupyansk with no operational breakthrough likely, alongside localised Ukrainian counterattacks in Sumy and Dobropillia. The NABU/SAP cases now reaching the Presidential Office and Prosecutor General are the most serious internal-political risk to Zelensky since 2022. Ukraine's deep-strike campaign on refineries and ports will intensify as its principal coercive lever."
+          "coa": "CRITICAL maintained. Expect no negotiated ceasefire in the near term — the Witkoff/Kushner rounds produced only a push for renewed trilateral talks, with Zelensky publicly stating 'the war will continue.' Russia will sustain and likely intensify combined missile and drone strikes on Kyiv, Odesa and grid infrastructure through autumn as a pre-winter coercive campaign, while Ukraine continues deep strikes against Russian refining and energy targets. Domestically, the NABU/SAPO corruption probe has now claimed the Prosecutor General and continues to reach toward Zelensky's inner circle; watch for further senior resignations, coalition friction in the Rada, and Western donor scrutiny of governance just as winter-support and air-defense requests are being negotiated with Washington."
         },
         {
-          "name": "Russia", "flag": "🇷🇺", "threat": "CRITICAL",
+          "name": "Russia",
+          "flag": "🇷🇺",
+          "threat": "CRITICAL",
           "incidents": [
-            "3 Sep — Sochi: Ukrainian naval and aerial drones hit the seaport, two oil depots and an air-defence site; debris from a separate wave struck an apartment block in Pavlovsky Posad near Moscow.",
-            "5–6 Sep — Ryazan / Rostov: Ukrainian drones struck the Ryazan refinery, the Rostov-on-Don airfield and three air-defence assets including a radar and two Pantsir-S1 systems.",
-            "7 Sep — Bashkortostan: Ukrainian drones hit the Gazprom Neftekhim Salavat refining and petrochemical complex some 1,300 km from the border, starting a fire.",
-            "9 Sep — Novorossiysk: Ukrainian drones struck the naval base and an oil terminal, with fires reported."
+            "6 Sep — Ryazan/Rostov-on-Don: Ukrainian drones struck the Ryazan oil refinery and targeted multiple cities; explosions and a four-hour drone presence were reported over Rostov-on-Don.",
+            "9 Sep — Arctic Russia: Ukraine's Unmanned Systems Forces conducted their deepest strike of the war to date, hitting a gas-processing plant roughly 2,700 km from the border.",
+            "Ongoing through Sep — Nationwide: The fuel crisis continues, with Russia meeting only around 70% of domestic gasoline demand, crude processing at a 24-year low (~3.6 million bpd), a fuel export ban still in force and dozens of regions maintaining purchase restrictions.",
+            "18–20 Sep — Nationwide and occupied Ukraine: State Duma elections, the first since the 2022 invasion, proceed under a near-total Kremlin lock on the outcome, with voting also staged in occupied Crimea, Sevastopol, Luhansk, Donetsk, Zaporizhzhia and Kherson, condemned internationally as illegal."
           ],
-          "coa": "CRITICAL maintained. The fuel crisis is likely to persist into the fourth quarter as Ukrainian strikes outpace repairs — petrol is available at fewer than three in ten stations, rationing spans more than half of 83 regions and refining is near a 20-year low — with the diesel and marine-fuel export ban running to 30 September and possibly beyond. The Kremlin will manage the 18–20 September Duma vote tightly, with a United Russia majority assured and polling planned in occupied Ukraine, Abkhazia and South Ossetia, and may time diplomatic signalling around it. Ukrainian long-range strikes on refineries, oil terminals, Black Sea ports and airfields will continue and probably expand, with sporadic civilian casualties in Kursk, Bryansk and Belgorod. There is no change to Russia's war aims or its rejection of a genuine front-line ceasefire."
+          "coa": "CRITICAL maintained. United Russia is set to retain its constitutional majority in a tightly managed Duma vote, but the election lands against an unprecedented, war-driven fuel crisis reaching ordinary Russians — a genuine, if still contained, source of domestic friction. Expect Moscow to continue prioritizing strikes on Ukrainian energy infrastructure to impose leverage ahead of winter while absorbing continued Ukrainian deep strikes on refineries and Arctic and Black Sea energy assets that will keep pressuring refining capacity and export flows. Political risk to the regime remains low in the short term, but sustained fuel and logistics strain, plus the illegitimate occupied-territory voting, will keep feeding both domestic discontent and Western sanctions and isolation narratives."
         },
         {
-          "name": "Belarus", "flag": "🇧🇾", "threat": "MODERATE",
+          "name": "Belarus",
+          "flag": "🇧🇾",
+          "threat": "MODERATE",
           "incidents": [
-            "25 Aug – 10 Sep — Belarus / Russia: A Belarusian air-force operational-tactical exercise ran through the window, with a live-fire phase at Russia's Ashuluk range from 5 September.",
-            "1 Sep — Bishkek: Lukashenko attended the SCO summit and held informal talks with Putin, Erdoğan and Pakistan's prime minister.",
-            "3 Sep — Regional: The CSTO announced its 'Indestructible Brotherhood' and 'Barrier' exercises for October, involving more than 5,000 personnel; there is no 'Zapad-2026' — Zapad ran in September 2025.",
-            "Through ~6 Sep — EU border: 78 drones were recorded in Belarusian airspace since 10 August (76 Russian, two Ukrainian) as Latvia, Lithuania and Poland extended border operations and buffer zones into November."
+            "15–18 Sep — Grodno/Brest Oblasts: Belarus conducted 'defensive' military drills near the Polish and Lithuanian borders, officially framed around border protection, counter-sabotage and counter-drone training.",
+            "14 Sep — Lithuania: Lithuania launched its own military exercises across 12 municipalities in response to continued Russian and Belarusian probing of NATO's eastern border.",
+            "Late Sep (upcoming) — Russia: CSTO's 'Interaction-2026' command-and-staff exercise, part of the broader 'Indestructible Brotherhood' drill series involving 5,000-plus personnel, is scheduled at a Russian Central Military District training ground.",
+            "Ongoing — Latvia: Migrant-trafficking pressure via Belarus has shifted toward Latvia (111 attempted crossings reported in one week) while Poland's Belarus-border crossings have fallen over 98% year-on-year due to hardened security measures."
           ],
-          "coa": "MODERATE maintained. Belarus remains a facilitation and pressure platform rather than a direct belligerent. Expect the October CSTO drills plus continued smaller Belarusian air-force and readiness activity, sustaining a moderate but non-threatening posture on the Ukrainian and NATO borders, with Russian and occasional Ukrainian drones transiting Belarusian airspace. Hybrid migration pressure on Poland, Lithuania and Latvia stays elevated, with buffer zones extended into November. US-brokered prisoner releases continue toward a target of about 1,000, with roughly 890 still jailed, paired with ongoing domestic repression. Direct Belarusian entry into the war remains low-probability over the horizon."
+          "coa": "MODERATE maintained. Belarus continues to function primarily as a facilitation and pressure platform for Moscow rather than an independent escalation risk. Expect continued Belarusian and CSTO exercise activity through October, culminating in Interaction-2026, sustained low-level drone transits toward EU airspace, and a redirected hybrid migration campaign now concentrating on Latvia rather than Poland — prompting further Baltic-state border hardening and NATO eastern-flank reinforcement rhetoric. There is no indication of Belarusian forces entering direct combat operations."
         },
         {
-          "name": "Moldova", "flag": "🇲🇩", "threat": "MODERATE",
+          "name": "Moldova",
+          "flag": "🇲🇩",
+          "threat": "MODERATE",
           "incidents": [
-            "11–22 Jul — Chisinau: President Sandu nominated pro-European businessman Vasile Tofan as prime minister after Alexandru Munteanu's 3 July resignation amid corruption allegations; parliament confirmed Tofan 53–21 on 22 July, tasked with reviving the economy and pushing EU accession by 2028.",
-            "Through the window — Chisinau: Energy Minister Dorin Junghietu said Moldova has contracted most of the gas it needs for the 2026–27 heating season and is consolidating Moldovagaz's 12 distribution companies, telling Transnistria to build its own reserves as the Moldova–Gazprom supply contract lapses on 30 September.",
-            "Late Aug – early Sep — International press: Reporting continued on a Kremlin goal of 'collapsing NATO and the EU from within,' naming Moldova the priority after Ukraine, with GRU-linked training camps in Serbia and Bosnia for Moldovan recruits.",
-            "Through Aug — Transnistria: The Russian troop presence of about 1,500 was unchanged, with no new escalation."
+            "Ongoing — Chisinau: Moldova's Energy Ministry confirmed the country will not return to its old Gazprom/Transnistria energy model as the 30 September 2026 expiry of the Moldovagaz–Transnistria supply contract approaches, with a Swiss/Hungarian group already substituting as the effective gas supplier since 2025.",
+            "Ongoing — Nationwide: Continued Russian-linked hybrid pressure and disinformation activity is being countered by Moldova's Center for Strategic Communication and Combating Disinformation under President Sandu's office.",
+            "No major kinetic or political-crisis incident specific to 10–17 September was found; coverage this week is dominated by forward-looking analysis of the Gazprom contract deadline rather than new events."
           ],
-          "coa": "MODERATE maintained. There is no national election on the near-term calendar — the 28 September 2025 parliamentary vote was won decisively by President Sandu's PAS (50.2%, 55 of 101 seats) and the next is not due until 2029 — so the live risk is governing continuity and energy rather than an election-interference window. Vasile Tofan's government, in office since 22 July after Munteanu's corruption-linked resignation, must now manage the 30 September expiry of the Gazprom contract and Transnistria's total dependency on Russian gas without a Moldovan lever to offer in return. Expect continued Russian hybrid pressure — disinformation, proxy financing of unrest, and pressure exploiting Transnistria's energy dependence — rather than a kinetic threat. Transnistria's roughly 1,500 Russian troops remain a latent lever; kinetic escalation risk stays low, with the winter energy transition the specific flashpoint to watch."
+          "coa": "MODERATE maintained. The approaching 30 September Gazprom–Transnistria contract expiration is the key near-term flashpoint — a lapse without a negotiated replacement risks renewed energy-supply disruption in Transnistria and associated humanitarian and political pressure on Chisinau, which Moscow could exploit for hybrid destabilization. Absent a specific trigger, expect continued low-intensity disinformation and influence operations rather than overt escalation; monitor closely for the Gazprom/Moldovagaz negotiation outcome and Transnistrian authorities' response in the final days of September."
         },
         {
-          "name": "Georgia", "flag": "🇬🇪", "threat": "HIGH",
+          "name": "Georgia",
+          "flag": "🇬🇪",
+          "threat": "HIGH",
           "incidents": [
-            "3 Sep — Tbilisi: New blackmail and bribery charges advanced against former PM Irakli Garibashvili.",
-            "7 Sep — Russia: Former Prosecutor General Otar Partskhaladze, wanted in Georgia and UK-sanctioned, announced he would command a new pro-Russian volunteer unit to fight against Ukraine.",
-            "8 Sep — Tbilisi: Former Defence Minister Burchuladze was offered a plea deal amid new bribery charges; continuous Rustaveli Avenue protests passed roughly day 650.",
-            "9 Sep — Geneva: 34 countries plus the EU raised Georgia's human-rights record and 'justice concerns' at the UN Human Rights Council as a court upheld multi-year sentences over the Chiatura mine protests."
+            "16 Sep — Tbilisi: Georgian Dream expanded its Constitutional Court suit to seek a ban on 'For Georgia,' the last major opposition party still holding parliamentary-threshold status, extending an earlier push against four other parties and threatening to outlaw the entire organized opposition ahead of the 4 October local elections.",
+            "Ongoing — Tbilisi: Rustaveli Avenue protests continue past the 650-day mark despite the extended crackdown; PACE and international observers continue to state that conditions for genuinely democratic elections do not currently exist in Georgia.",
+            "Run-up to 4 Oct — Nationwide: Local elections approach under an ongoing opposition-ban campaign, prior 'coup attempt' charges against opposition leaders from the 2025 election cycle, and continued detentions of protest organizers."
           ],
-          "coa": "HIGH maintained. Georgian Dream will intensify the crackdown ahead of the 4 October local elections — more prosecutions and plea-deal pressure on opposition figures — and there is a credible risk it uses any election-day unrest as a pretext to move against leading opposition parties. The opposition's split over whether to boycott hands Georgian Dream near-total municipal control on low turnout. Daily Rustaveli protests and the weekly Saturday march continue past their first anniversary with routine detentions. Western pressure is growing — the UNHRC statement, a possible extension of the EU visa-suspension mechanism to ordinary passports — but will not shift Georgian Dream behaviour within the horizon. Trajectory: continued drift toward Moscow, deepening civil repression, low kinetic risk."
+          "coa": "HIGH maintained. Georgian Dream is very likely to press forward with Constitutional Court bans on remaining opposition parties in the immediate run-up to the 4 October local elections, further narrowing the political field and likely triggering renewed mass protest activity around the election date itself. Expect continued detentions and prosecutions of opposition and civil-society figures, sustained Western criticism without material policy consequences, and a real possibility of a significant flashpoint on or immediately after 4 October, consistent with the pattern from the October 2025 election cycle. The level should be watched for a possible upgrade to CRITICAL around the election date if unrest intensifies."
         },
         {
-          "name": "Armenia", "flag": "🇦🇲", "threat": "HIGH",
+          "name": "Armenia",
+          "flag": "🇦🇲",
+          "threat": "HIGH",
           "incidents": [
-            "3 Sep — Regional: Armenia is pushing to break ground on the TRIPP ('Trump Route') corridor and courting Central Asian participation; the Armenia–Azerbaijan treaty remains initialled but unsigned.",
-            "4 Sep — Yerevan: A judge was assigned to the criminal case against Catholicos Karekin II and six bishops, deepening the government's confrontation with the Apostolic Church.",
-            "8 Sep — Yerevan: Armenia's former army chief renounced his citizenship in protest against the government.",
-            "9 Sep — Yerevan: Armenia appealed to the EAEU over Russian restrictions on Armenian products as economic friction with Moscow continued."
+            "1 Sep — Bishkek: Pashinyan and Putin met on the SCO summit sidelines for roughly an hour, discussing Armenia's EU-accession intentions — a notable public airing of Yerevan's West-leaning shift directly with Moscow.",
+            "9 Sep — Yerevan: Reporting indicated Pashinyan instructed allies to temporarily freeze anti-Russian rhetoric, suggesting a tactical recalibration in Yerevan's balancing act between Moscow, Washington and Brussels.",
+            "Mid-Sep — Yerevan: Reports of upheaval within Armenia's state security apparatus followed the August dismissal of Security Council Secretary Armen Grigoryan; Pashinyan's campaign against Catholicos Karekin II and the Apostolic Church leadership continues.",
+            "15 Sep (adjacent) — Yerevan: Armenia's Constitutional Court was expected to rule on the US-backed TRIPP transit corridor ahead of a parliamentary vote; Azerbaijan's foreign minister has acknowledged construction will not start until 2027, later than originally planned."
           ],
-          "coa": "HIGH maintained. Peace-process momentum with Azerbaijan holds — no border fire since the August 2025 Washington summit — and TRIPP planning advances, but signature and ratification still hinge on constitutional change via a 2027 referendum. The dominant risk is domestic: Pashinyan's escalating confrontation with the Apostolic Church and with security-establishment figures could generate unrest heading into the 2026 parliamentary campaign. Economic friction with Russia over EAEU export curbs continues alongside Yerevan's EU-accession pivot, and CSTO relations stay frozen. The threat is driven by internal instability rather than external attack."
+          "coa": "HIGH maintained. Armenia continues to advance the Azerbaijan peace/TRIPP track diplomatically even as the corridor's physical implementation slips into 2027, while simultaneously managing a delicate, multi-vector balancing act with Russia and the West. Domestically, the Pashinyan–Church confrontation and signs of turnover in the security apparatus are the most likely sources of near-term political volatility; watch for further personnel changes, Church-related mobilization by religious conservatives, and any Azerbaijani reaction to delays in TRIPP's construction timeline."
         },
         {
-          "name": "Azerbaijan", "flag": "🇦🇿", "threat": "MODERATE",
+          "name": "Azerbaijan",
+          "flag": "🇦🇿",
+          "threat": "MODERATE",
           "incidents": [
-            "3 Sep — Baku: President Aliyev addressed an international mine-action conference, noting more than 13% of Azerbaijani territory is mine- or UXO-affected.",
-            "7 Sep — Karabakh: A contractor working on reconstruction was threatened with arrest after requesting payment, amid continued consolidation over reclaimed territory.",
-            "9 Sep — Karabakh: Azerbaijan began gold mining in reserves formerly under Armenian control.",
-            "Through the window — Baku: Relations with Moscow continued to stabilise on the post-December 2024 compensation track; the option of lifting the arms embargo on Ukraine was held in reserve, not exercised."
+            "Ongoing — Baku/Moscow: Aliyev's declaration of full normalization between Russia and Azerbaijan continues to hold, with no new border or aviation incidents identified for the 10–17 September window.",
+            "Ongoing — Baku/Yerevan: Azerbaijan continues engagement on the TRIPP corridor and broader peace process with Armenia, though Baku's own foreign minister has confirmed construction will not begin until 2027, a modest slippage from the original target.",
+            "No new incident specific to the 10–17 September period was identified beyond the above; reporting for this window remains limited, consistent with the country's de-escalated posture."
           ],
-          "coa": "Downgraded to MODERATE from HIGH. There were no bilateral incidents with Armenia, no border activity and continued normalisation on both the Armenian and Russian tracks, so residual risk is now diplomatic and domestic rather than kinetic. Expect Baku to keep leveraging its position — hosting a Netanyahu visit, expanding defence-industrial ties with Ukraine, holding the arms-embargo lift as a signal to Moscow rather than exercising it — while continuing domestic repression and resource extraction over reclaimed Karabakh. The level should be revisited and re-elevated if treaty signature stalls or border rhetoric returns."
+          "coa": "MODERATE maintained. Azerbaijan's trajectory remains stable and de-escalatory: continued normalization with both Russia and Armenia, with Baku positioned as a relative beneficiary of the TRIPP process despite its delayed construction start. The main risks over the next 90 days are exogenous — a stalling or collapse of the Armenia peace process, a resurgence of Russia-Azerbaijan friction, or spillover tension tied to Armenia's internal instability. Absent such a trigger, no threat-level change is warranted."
         }
       ]
     },
     {
       "name": "Sahel",
       "overview": [
-        "Junta consolidation versus jihadist initiative: Mali's JNIM fuel blockade passed its one-year mark on 3 September with no relief corridor, and Niger's post-coup-attempt purge and press crackdown deepened — a newspaper editor was detained on 7 September — while both juntas turn inward and the frontline grievances that fuel the insurgencies go unaddressed; Tillabéri villages were attacked again on 2–3 September.",
-        "Sudan's war has become a Kordofan war: RSF drone strikes hit an El Obeid market on 4 September (six killed) and the Um Rawaba courthouse on 8 September (13-plus killed), while SAF took Hamrat al-Wiz (6 Sep) and Jebel Moya (3 Sep) and a 5 September UN Panel of Experts report formally attributed the El Fasher rape-and-killing campaign to RSF command; the El Obeid mass-atrocity risk is undiminished.",
-        "The Chad–Sudan border is militarised but was static this week: no new strike inside Chad in the window, but the border including Adré stays closed, the army is on maximum alert and President Déby's retaliation order still stands — one more Sudanese strike could force a direct confrontation.",
-        "Nigeria pulls in two directions: a secret three-month government–Boko Haram ceasefire in the north-east, revealed on 7–9 September, contrasts with unabated north-west banditry — Tofa in Sokoto (about 10 killed, some 40 abducted) and Giwa in Kaduna (26 abducted) on 7 September — and an ISWAP reprisal threat around Lake Chad after a commander's killing."
+        "Economic warfare remains JNIM's primary jihadist tool: the group destroyed roughly 20 more fuel tankers in a 13-14 September ambush on the Kayes-Nioro axis, extending a blockade on Bamako now in its second year with over 300 tankers burned cumulatively, while ACLED assesses the same 'economic warfare' tactic is spreading toward mining infrastructure and coastal West Africa (Togo, Benin, northern Ghana).",
+        "Juntas are responding to internal threats with repression rather than reform: Niger's post-mutiny purge deepened with a military reshuffle and a 30-month prison sentence for a journalist over a WhatsApp clip, illustrating a regional pattern — also visible in Mali and Burkina Faso — where regime security and information control take priority over transparent counter-insurgency reporting.",
+        "Sudan's North Kordofan campaign continues to escalate and threatens wider Sahel-adjacent spillover: SAF is consolidating an El Obeid-Bara-Dilling corridor after seizing Hamrat al-Wiz, while RSF sustains drone strikes on civilian infrastructure in El Obeid amid a worsening cholera outbreak, with the war's momentum keeping Chad's eastern border on maximum alert.",
+        "Negotiated de-escalation with one jihadist faction is leaving rival factions as the primary residual threat: Nigeria's reported secret ceasefire with Boko Haram/JAS explicitly excludes ISWAP, which remains a reprisal-attack risk around Lake Chad even as unabated north-west banditry — a Bello Turji-linked raid killing roughly 10 and abducting 40 in Sokoto's Tofa area — continues to drive the bulk of national fatalities."
       ],
       "countries": [
         {
-          "name": "Mali", "flag": "🇲🇱", "threat": "CRITICAL",
+          "name": "Mali",
+          "flag": "🇲🇱",
+          "threat": "CRITICAL",
           "incidents": [
-            "3 Sep — Bamako / Kayes / Nioro du Sahel: The JNIM fuel blockade entered its second year with no breakthrough; the capital is still supplied only by military-escorted convoys and more than 300 tankers have been destroyed cumulatively.",
-            "Through the window — Kayes and Nioro axes: JNIM convoy interdiction and FAMa and Africa Corps counter-operations continued, though no single incident could be independently dated within the window."
+            "13–14 Sep — Kayes-Nioro du Sahel axis: JNIM/FLM fighters ambushed a military-escorted convoy of roughly 40 fuel tankers between Kaniera and Lakamane, setting multiple vehicles ablaze; at least 20 tankers were destroyed.",
+            "15 Sep — Bamako/Kayes: FAMa said troops 'responded forcefully' to the ambush, underscoring the army's continued reliance on armed escorts to move fuel.",
+            "Ongoing — Bamako: The JNIM blockade, in place since September 2025, persists into its second year; over 300 tankers have now been burned nationwide, with the capital still dependent on convoy resupply and experiencing rationing and reduced street lighting."
           ],
-          "coa": "CRITICAL maintained. JNIM's most likely course is to hold the western fuel siege as its primary strategic lever while pairing it with periodic mass-casualty convoy ambushes on the Kayes–Bamako and Nioro axes to keep escort costs unsustainable; a symbolic strike into Bamako itself around the blockade anniversary or a national holiday is plausible. Expect continued FAMa and Africa Corps reliance on airstrikes with associated civilian-harm allegations, and further FLA pressure in the north around Kidal and Gao keeping the army two-fronted. Most dangerous course: the blockade tips Bamako into a governance crisis — sustained blackouts, transport collapse, price-driven unrest — that the junta answers with repression, accelerating elite defection of the kind just seen in Niamey. Watch fuel-queue length, official rationing decrees, school closures and embassy drawdowns."
+          "coa": "CRITICAL maintained. JNIM will almost certainly sustain and periodically intensify convoy interdiction on the Kayes-Nioro and Kayes-Bamako axes, using the blockade as leverage for political and religious demands while avoiding a full urban assault on the capital. FAMa/Africa Corps escorted convoys will continue to get fuel through at high cost, preventing total collapse but not restoring normal supply; expect further tanker losses, rising fuel and food prices, and growing strain on Bamako's basic services. Watch for blockade tactics spreading further toward the Senegal, Mauritania and Guinea borders and mining infrastructure, consistent with JNIM's stated economic-warfare strategy."
         },
         {
-          "name": "Niger", "flag": "🇳🇪", "threat": "CRITICAL",
+          "name": "Niger",
+          "flag": "🇳🇪",
+          "threat": "CRITICAL",
           "incidents": [
-            "2–3 Sep — Anzourou area, Tillabéri: Coordinated armed raids on Darbani, Diamballa, Namarigoungou and Zibane killed and wounded civilians and looted livestock, with two girls drowning while fleeing.",
-            "Through 6–7 Sep — Niamey: The junta's purge and detentions of soldiers and alleged accomplices from the 28–29 August coup attempt continued, with power consolidating around Tiani's Presidential Guard.",
-            "7 Sep — Niamey: Ali Soumana, editor of the weekly Le Courrier, was arrested and charged, extending the post-coup-attempt press crackdown."
+            "7 Sep — Niamey: Police arrested Ali Soumana, editor-in-chief of weekly Le Courrier, on defamation-related charges after his paper alleged customs fraud involving the Prime Minister.",
+            "11 Sep — Niamey: Junta leader Tiani signed a decree appointing Brigadier General Mamane Sani Kiaou as new armed forces chief of staff, part of the post-mutiny military reshuffle.",
+            "16 Sep — Niamey: A court sentenced Hassane Zada, an editor at Toubal Info and Canal 3 correspondent, to 30 months in prison and a fine over a WhatsApp audio clip deemed insulting to Tiani.",
+            "Ongoing — Nationwide: The purge following the 28-29 August coup attempt continues, with dozens of soldiers and officials, including former defence minister Kalla Moutari, detained."
           ],
-          "coa": "CRITICAL maintained. The junta's most likely path is deeper securitisation: continued detentions across the officer corps, tighter Africa Corps integration into the palace guard, further closure of independent media and no concession on the western frontline. Islamic State Sahel Province and JNIM are likely to exploit the distraction with village massacres, road ambushes and at least one company-scale assault on an isolated base in Tillabéri or Tahoua within the window. Most dangerous course: a second mutiny or a targeted strike against Tiani by aggrieved frontline officers, with Africa Corps drawn into internal fighting — a scenario that would fracture the counter-insurgency and open ground west of Niamey. Watch for named senior-officer arrests, unexplained garrison rotations and 'foiled plot' communiqués."
+          "coa": "CRITICAL maintained. The junta will almost certainly continue consolidating control through military reshuffles, arrests and judicial intimidation of the press rather than through political liberalization, reflecting persistent distrust within the officer corps after the August mutiny. This repression-driven stabilization is likely to hold Niamey secure in the near term but risks deepening resentment among mid-tier officers, keeping the coup-within-the-coup risk elevated. Concurrently, JNIM/ISSP pressure in Tillaberi is expected to continue largely unabated, as security resources remain partly absorbed by internal purge and regime-protection activity rather than counter-insurgency operations."
         },
         {
-          "name": "Burkina Faso", "flag": "🇧🇫", "threat": "CRITICAL",
+          "name": "Burkina Faso",
+          "flag": "🇧🇫",
+          "threat": "CRITICAL",
           "incidents": [
-            "In the window — Nationwide: The near-total blackout on security reporting persisted; no incident could be verified from open sources, and the blackout itself is a deterioration indicator rather than a sign of calm.",
-            "Ongoing — North and East: The open JNIM–Islamic State Sahel war in Liptako-Gourma and the sieges of Djibo, Sebba and Titao are assessed to be continuing at prior intensity but are unquantifiable this week."
+            "10–17 Sep — Nationwide: The severe reporting blackout persisted, with no verified, dated incident located for this specific window from major wire services or regional outlets — itself an information-vacuum indicator rather than a sign of calm.",
+            "Background — Sebba/Titao/Djibo axis: Government forces have claimed intensified offensive operations against JNIM-affiliated fighters, claims that remain difficult to independently verify given the reporting environment.",
+            "Background — Nationwide: ACLED's September assessment notes JNIM continues to blockade cities and besiege towns across Burkina Faso as part of a broader Sahel-wide economic-warfare campaign, while also expanding operations toward coastal West Africa."
           ],
-          "coa": "CRITICAL maintained. JNIM's most likely course is to keep tightening blockades on Djibo, Sebba, Titao and Diapaga, contest the Ouagadougou–Dori and Ouagadougou–Djibo axes, and mount periodic massed assaults on military and VDP posts, each capable of 30–100-plus security-force deaths, while Islamic State Sahel fights JNIM for primacy in the tri-border. The junta will continue mass VDP mobilisation and airstrikes, with recurring civilian-massacre allegations against both sides. Most dangerous course: the fall or negotiated abandonment of Djibo, or a spectacular attack in Ouagadougou, triggering another round of coup-plot claims and purges. With independent verification largely gone, treat sudden refugee-flow increases into Côte d'Ivoire, Ghana, Togo and Benin, or NGO evacuation notices, as the leading indicators."
+          "coa": "CRITICAL maintained. Given the persistent absence of independently verifiable reporting, the JNIM-versus-Islamic State Sahel Province contest for Liptako-Gourma and the sieges of Djibo, Sebba and Titao should be assumed to be continuing at a high tempo rather than resolving. Government claims of battlefield gains should be treated cautiously pending independent confirmation. Analysts should prioritize satellite imagery, displacement data and cross-border refugee reporting from Mali, Niger, Ghana, Togo and Benin as proxy indicators of the security trajectory inside Burkina Faso."
         },
         {
-          "name": "Sudan", "flag": "🇸🇩", "threat": "CRITICAL",
+          "name": "Sudan",
+          "flag": "🇸🇩",
+          "threat": "CRITICAL",
           "incidents": [
-            "3 Sep — Jebel Moya, Sennar state: SAF claimed recapture of the strategic heights from the RSF and allied forces.",
-            "4 Sep — El Obeid, North Kordofan: An RSF drone strike on a city marketplace killed six and injured 18.",
-            "6 Sep — Hamrat al-Wiz, North Kordofan: SAF and allied forces seized the town from the RSF, tightening a supply corridor toward the capital.",
-            "8 Sep — Um Rawaba, North Kordofan: An RSF drone strike on the courthouse at peak hours killed at least 13 and injured 22."
+            "6 Sep — Hamrat al-Wiz, North Kordofan: SAF and allied forces seized the town from RSF, extending the army's defensive buffer around Jabrat al-Sheikh and Bara and securing the highway corridor toward Khartoum.",
+            "8 Sep — Um Rawaba, North Kordofan: An RSF drone strike hit a courthouse at peak hours, killing at least 13 and injuring 22 civilians, part of an ongoing drone campaign into the reporting period.",
+            "14 Sep — Addis Ababa: Sudan's Islamist Popular Congress Party and the SLM-AW faction agreed to broaden talks toward an inclusive civilian-led political settlement, a diplomatic track running parallel to the military escalation.",
+            "Ongoing — El Obeid: The city remains under RSF siege with continuing drone strikes on power, water and fuel infrastructure; roughly 1.3 million IDPs are sheltering there amid a worsening cholera outbreak."
           ],
-          "coa": "CRITICAL maintained, escalating. The RSF's most likely course is to sustain the drone campaign against El Obeid and surrounding North Kordofan towns — markets, courthouses, power and water nodes, hospitals — to make the city ungovernable ahead of a ground assault, while defending Bara and the western approaches; SAF will keep grinding up the Kordofan corridor town by town and pressing in Sennar and Blue Nile. Most dangerous course: an RSF ground offensive on El Obeid producing an El-Fasher-scale massacre of the roughly 1.3 million people, mostly displaced, sheltering there, with a fresh surge west into Darfur and across into Chad. Kordofan displacement, already above 200,000, and West Darfur outflows of about 18,000 a week into Chad will keep rising. The 5 September UN Panel of Experts findings on El Fasher should be read as an early-warning indicator. No ceasefire is likely in the window."
+          "coa": "CRITICAL maintained, escalating. SAF is likely to continue consolidating and expanding its North Kordofan corridor (El Obeid-Bara-Dilling axis) following recent gains, while RSF will almost certainly respond with intensified drone strikes against civilian and logistics targets in El Obeid and along contested supply routes, sustaining a high civilian casualty and displacement rate. The Addis Ababa track suggests fragmenting political alignments among armed and political factions, but is unlikely to translate into a ceasefire within the next quarter given the momentum of the Kordofan campaign. Expect continued risk of siege dynamics in El Obeid comparable to el-Fasher, further mass displacement toward Chad and South Sudan, and growing pressure on humanitarian access."
         },
         {
-          "name": "Chad", "flag": "🇹🇩", "threat": "CRITICAL",
+          "name": "Chad",
+          "flag": "🇹🇩",
+          "threat": "CRITICAL",
           "incidents": [
-            "In the window — Eastern border: No new cross-border strike or clash inside Chad could be verified; the nationwide military alert declared after the late-August Sudanese strikes remains in force.",
-            "Ongoing — Adré and other crossings: Borders with Sudan stay closed and thousands of troops remain deployed along the roughly 1,300-km frontier.",
-            "Ongoing — Eastern Chad: Refugee inflow continues toward the roughly one million Sudanese already sheltering in the east, with West Darfur fighting pushing about 18,000 people a week across the border."
+            "10–17 Sep — Eastern border: No new dated cross-border strike or clash inside Chad was confirmed within the window; the most recent confirmed incidents remain from late August.",
+            "20 Aug (background, driving current posture) — Ennedi-Est: Sudanese aircraft and drones pursued and struck a vehicle convoy over 100 km inside Chadian territory.",
+            "Late Aug (background) — Near Tine, eastern border: A Sudanese air/drone strike on a fuel market killed 12 and wounded 7; Chad accused SAF of the strike.",
+            "Ongoing — Eastern border: Chad remains at its highest alert level, with roughly 100 armoured vehicles and signal-jamming trucks deployed near Tine; the border with Sudan remains effectively closed amid continued refugee inflows (Chad hosts over 1 million displaced, including 940,000-plus Sudanese refugees)."
           ],
-          "coa": "CRITICAL maintained. Most likely course is a continued high-alert posture without direct retaliation: border closures, diplomatic protest, troop reinforcement and quiet tolerance of RSF logistics through eastern Chad that periodically draws SAF air and drone strikes onto Chadian soil. Renewed Sudanese strikes near Adré, Tiné, Wadi Fira or the Ennedi routes are likely within the window given the density of cross-border RSF resupply. Most dangerous course: a mass-casualty strike on a Chadian town or a refugee concentration that forces Déby to act on the retaliation order, pulling Chad into the war on the SAF's opposing side. Watch for N'Djamena statements naming SAF specifically, army convoy movements east, French advisory-mission announcements and any Chadian air activity near the border."
+          "coa": "CRITICAL maintained. Chad is likely to maintain its heightened military posture along the eastern border through the period, balancing deterrence against SAF/RSF spillover with efforts to avoid direct confrontation with Sudan's warring parties. Further cross-border strikes or incursions attributed to either SAF or RSF remain a realistic possibility given the intensity of the North Kordofan campaign just across the border, which could trigger renewed diplomatic protests or a further alert escalation. Refugee flows into Ouaddai and Ennedi are expected to continue at a steady-to-rising pace, sustaining humanitarian strain even absent a major new cross-border incident."
         },
         {
-          "name": "Mauritania", "flag": "🇲🇷", "threat": "HIGH",
+          "name": "Mauritania",
+          "flag": "🇲🇷",
+          "threat": "HIGH",
           "incidents": [
-            "In the window — Atlantic route: No new mass shipwreck or large rescue was reported.",
-            "Ongoing — Nationwide: The EU-backed mass-arrest-and-deportation campaign toward Senegal and Mali continued as background, with rights groups still documenting abuses."
+            "Late Aug/early Sep — Nouadhibou, Rosso, Dakar: Roughly 1,046 migrants who survived Atlantic crossing attempts disembarked in distressed condition across three West African cities, part of a wave of boats intercepted or stranded en route to the Canary Islands.",
+            "Ongoing — Nationwide: The EU-backed deportation campaign continues, with rights groups reporting continued mass arrests, detention in poor conditions and summary removals of migrants to Mali and Senegal.",
+            "Ongoing — Hodh Chargui/eastern border: Continued arrival of Malian refugees fleeing JNIM's insurgency and fuel blockade adds to an existing population of over 300,000 Malians sheltering in the region."
           ],
-          "coa": "HIGH maintained. Most likely course is a continuation of the current pattern: Mauritania sustains EU-financed pushbacks and interior sweeps, periodic coastguard mass rescues off Nouadhibou, and recurrent deadly drifts on the Atlantic route as departures displace south toward Senegal and The Gambia, with diplomatic friction with Senegal over expelled nationals simmering. Spillover from Mali's Kayes-region JNIM blockade is the key escalation vector — tanker-driver abductions, refugees and possible JNIM probing of the south-eastern border. Most dangerous course: a single shipwreck with 100-plus dead reigniting scrutiny of the EU deal, or a JNIM incident on Mauritanian soil breaking the group's long-standing tacit non-aggression toward Nouakchott. Watch IOM and UNHCR monthly departure figures and any security activity in Hodh Ech Chargui."
+          "coa": "HIGH maintained. Mauritania is likely to sustain its EU-backed interdiction and deportation posture along the Atlantic migration route, continuing to draw human-rights criticism without a substantive change in policy. Spillover risk from Mali's JNIM blockade and Kayes-region attacks remains the primary security variable to watch, given JNIM's demonstrated willingness to strike near the Senegal/Mauritania border; a direct JNIM incursion into Mauritanian territory cannot be ruled out but has not yet materialized. Refugee inflows from Mali are expected to continue rising gradually, adding pressure to Hodh Chargui absorption capacity."
         },
         {
-          "name": "Nigeria", "flag": "🇳🇬", "threat": "CRITICAL",
+          "name": "Nigeria",
+          "flag": "🇳🇬",
+          "threat": "CRITICAL",
           "incidents": [
-            "7 Sep — Tofa, Rabah LGA, Sokoto: Bandits raided the town for about four hours, killing seven to ten or more residents and abducting around 40.",
-            "7 Sep — Giwa LGA, Kaduna: Bandit raids on three districts killed two elders, abducted 26 and injured one, with rustled cattle recovered after a firefight.",
-            "7 Sep — Pulka, Gwoza LGA, Borno: An ISWAP assault on an Operation Hadin Kai position was repelled with air support; the national security adviser warned of ISWAP reprisals after the killing of senior commander Abubakar Mainok.",
-            "7–9 Sep — North-east: Reporting revealed a secret three-month government–Boko Haram ceasefire in effect since June, linked to the release of 360 Ngoshe captives, with a possible 40-day extension under discussion and no public confirmation from Abuja."
+            "7 Sep — Kaduna State (Giwa and surrounding districts): Bandits killed 5 and abducted 27 villagers in nighttime raids on farming settlements.",
+            "7 Sep — Tofa, Rabah LGA, Sokoto: Bandits linked to warlord Bello Turji raided the community overnight, killing at least 10 and kidnapping around 40 residents.",
+            "10–11 Sep — Zamfara State: Troops of Joint Task Force North West (Operation Fansan Yamma) foiled a bandit attack and rescued 3 kidnap victims in separate operations.",
+            "Ongoing — North-east: Reports first surfacing 7-9 September indicate a secret three-month ceasefire between the federal government and Boko Haram/JAS since June, tied to the release of 360 civilians abducted from Ngoshe; the truce may be extended roughly 40 more days but explicitly excludes ISWAP, which remains a reprisal-attack risk around Lake Chad."
           ],
-          "coa": "CRITICAL maintained. Most likely course: the quiet government–Boko Haram (JAS faction) truce holds and is extended, modestly reducing violence around the Mandara mountains and enabling further hostage releases, while ISWAP — outside the deal and now motivated to avenge Mainok — steps up assaults on military bases around Lake Chad, Dikwa, Bama and Gwoza, and north-west bandit networks continue village raids and highway and school abductions across Sokoto, Zamfara, Katsina and Kaduna at current or higher tempo. Plateau and Benue farmer–herder killings will resume with the harvest. Most dangerous course: the secret truce leaks fully and collapses amid political backlash just as ISWAP escalates, or a mass school abduction in the north-west. Watch for official confirmation or denial of the ceasefire, further batch hostage releases and ISWAP claims referencing Mainok."
+          "coa": "CRITICAL maintained. North-west banditry in Sokoto, Zamfara and Kaduna is expected to continue at a high, largely unabated tempo despite ongoing JTF operations, with Bello Turji-linked networks remaining a primary driver of mass-casualty raids and kidnap-for-ransom. The reported Boko Haram/JAS ceasefire, if it holds or is extended, may reduce attack frequency directly attributable to JAS in the north-east, but is a fragile and non-transparent arrangement vulnerable to public exposure or breakdown; ISWAP's exclusion from the deal keeps the Lake Chad basin at elevated risk of reprisal attacks as ISWAP seeks to assert primacy over its rival faction. Overall, expect continued high fatality counts nationally driven primarily by north-west banditry rather than north-east jihadist violence in the near term."
         }
       ]
     },
     {
       "name": "Asia-Pacific",
       "overview": [
-        "The maritime grey zone stayed dominant but non-kinetic this week: China sustained record Coast Guard and navy presence at Scarborough Shoal, east of Taiwan and the Senkakus, ran five straight days of East China Sea intelligence flights past Japan, and advanced likely early-warning-radar construction on Yagong Island in the Paracels, drawing a formal Vietnamese protest — but 3–10 September produced diplomatic sparring, including a Chinese memo handed to the Philippine defence secretary on stage in Seoul, rather than new ramming or water-cannon incidents.",
-        "Myanmar remains the region's deadliest conflict and is intensifying on the rivers: junta airstrikes continued to kill civilians (Ye-U 7 Sep, seven killed; Rakhine jet strikes 3 Sep; Loikaw and Minbu 5 Sep, 11 killed), while the KIA landed a major blow to the Bhamo resupply line with a 2 September Ayeyarwady river ambush that netted more than 100 junta prisoners.",
-        "Pakistan's Baloch insurgency hit its highest tempo yet: the BLA claimed 28 operations across 12 districts and 52 personnel killed in the first week of September, including a daylight Frontier Corps convoy ambush at Ziarat Cross on 6 September it says killed 18 soldiers — establishing Balochistan as the region's second major conflict driver alongside Myanmar as Pakistani forces also fight TTP infiltration on the Afghan border.",
-        "India's Manipur crisis widened onto a new Naga–Kuki-Zo axis, with village arson in Kangpokpi on 1 September, seven-plus killed in late August and an HRW alarm on 3 September — warranting an upgrade to HIGH. Elsewhere the week was calmer: North Korea marked its founding day on 9 September with no missile activity since 20 August but a deepening troop commitment to Russia, the Thai–Cambodia ceasefire held with a UN conciliation track opening, and Sri Lanka was quiet enough to downgrade to LOW."
+        "South China Sea grey-zone coercion is intensifying and diversifying across three fronts simultaneously: China's 11 September declaration of a 'nature reserve' at Scarborough Shoal, continued suspected radar construction at Yagong Island in the Paracels, and sustained PLA/coast guard activity around Taiwan collectively show Beijing pressing multiple claims in parallel, while Vietnam's own record-pace Spratly build-out complicates the narrative of China as the sole reclamation actor.",
+        "Diplomatic friction with China is becoming more overt and less controlled: a 9 September Seoul Defense Dialogue incident, in which a Chinese attache's mid-speech memo to the Philippine defence secretary triggered a viral public rebuke, is a sign that grey-zone assertiveness is increasingly spilling into undiplomatic public confrontation and strengthening informal coordination among China's rivals.",
+        "Two of the region's most severe internal conflicts, Myanmar and Balochistan, continued to intensify rather than stabilize: Myanmar's junta sustained a mass-casualty air campaign against civilians, including a 12 September strike on two boarding schools in Kyauktaw that killed an estimated 23 students, while the Baloch insurgency set new weekly operational records against Pakistani security forces, including a 14 September ambush claiming 9 killed near Lasbela.",
+        "Korean Peninsula dynamics show a genuine bifurcation between diplomatic opening and military hardening: Seoul is actively pursuing a Trump-Kim summit, potentially tied to a November APEC visit, while North Korea simultaneously resumed short-range missile testing on 12 September, commissioned a second advanced guided-missile destroyer, and deepened alliance language with Moscow — pursuing dialogue readiness and military buildup as parallel, not competing, tracks."
       ],
       "countries": [
         {
-          "name": "North Korea", "flag": "🇰🇵", "threat": "HIGH",
+          "name": "North Korea",
+          "flag": "🇰🇵",
+          "threat": "HIGH",
           "incidents": [
-            "2 Sep — Tongchon: Commercial satellite imagery showed the demolition of civilian villages around the Tongchon missile base to enable base expansion.",
-            "6 Sep — East Sea: North Korea commissioned the guided-missile destroyer Kang Kon into the East Sea Fleet, with Kim framing the navy's role as 'restraining' adversary fleet deployments.",
-            "9 Sep — Pyongyang: A 78th national founding-day ceremony was held with no parade or missile event; the launch streak since the 20 August barrage continues.",
-            "3–10 Sep — Russia: Ukrainian military intelligence assessed Kim could be asked for up to about 50,000 additional troops at an expected September Putin–Kim meeting, on top of the roughly 11,000 already in Kursk."
+            "6 Sep — Wonsan: North Korea commissioned its second Choe Hyon-class guided-missile destroyer, Kang Kon, an 88-VLS-cell, roughly 5,000-tonne vessel, confirming continued rapid naval buildup with two more hulls under construction.",
+            "12 Sep — Wonsan area: North Korea fired several short-range ballistic missiles roughly 250 km into the East Sea, the first launch since 20 August, coming one day after a five-day US–South Korea–Japan trilateral maritime drill.",
+            "15 Sep — Pyongyang: Kim Jong Un told Putin, marking the DPRK's 78th founding anniversary, that he would 'expand and deepen' cooperation with Russia, reaffirming the mutual-defence pact framework.",
+            "Ongoing — Inter-Korean border: Seoul officials describe an 'unprecedented' DPRK fortification build-up, including mines and additional barbed wire, continuing in parallel with the renewed missile activity."
           ],
-          "coa": "HIGH maintained. Expect the quiet-on-launches posture to hold through the 10 October party founding anniversary, after which a demonstration launch or satellite attempt becomes more likely as a political marker. The near-term signal to watch is a Kim–Putin meeting and any formalised new troop tranche to Russia, which would harden the axis and could draw a coordinated South Korea–US–Japan response. Naval modernisation and Tongchon air-defence construction indicate continued conventional build-out rather than crisis initiation. US–DPRK diplomatic feelers are a wildcard that could freeze provocations if a leaders' meeting firms up; absent that, treat the founding-day-to-anniversary window as elevated but not acute."
+          "coa": "HIGH maintained. Expect the DPRK to continue calibrated missile testing timed to allied exercises while accelerating naval and DMZ fortification, using the Kim-Putin channel to formalize further troop or materiel contributions to Russia ahead of a possible November meeting. A Trump-initiated summit remains plausible around the November APEC window, but Pyongyang is likely to keep testing and naval commissioning as leverage rather than pause them for diplomacy; South Korea will continue pursuing 'dialogue plus deterrence,' limiting near-term escalation risk but not resolving the underlying arms trajectory."
         },
         {
-          "name": "Myanmar", "flag": "🇲🇲", "threat": "CRITICAL",
+          "name": "Myanmar",
+          "flag": "🇲🇲",
+          "threat": "CRITICAL",
           "incidents": [
-            "2 Sep — Ayeyarwady River, Shwegu–Bhamo stretch: KIA joint forces ambushed a junta river flotilla moving toward Bhamo, striking about eight vessels, sinking one and burning another, and claiming more than 100 prisoners.",
-            "3 Sep — Rakhine (Sittwe, Ponnagyun, Rathedaung): The junta deployed about four fighter jets against Arakan Army-held areas.",
-            "5 Sep — Loikaw / Shadaw / Minbu / Myaing: Junta airstrikes and ground raids killed 11 civilians.",
-            "7 Sep — Ye-U Township, Sagaing: Junta gyrocopters and an Mi-35 helicopter struck a vehicle-repair workshop by a village market with no fighting in the area, killing seven civilians and wounding three."
+            "7 Sep — Ye-U, Sagaing Region: Junta gyrocopters and an Mi-35P helicopter bombed a civilian vehicle-repair workshop near a market despite no fighting nearby, killing 7 civilians.",
+            "12 Sep — Kyauktaw Township, Rakhine State: A military jet bombed two private boarding schools overnight, killing an estimated 23 students.",
+            "1–15 Sep — Karenni State (Demoso, Loikaw, Shadaw): Sustained Myanmar Air Force strikes killed at least 11 civilians, including children.",
+            "2–15 Sep — Ngazun Township, Mandalay Region and Rakhine State: Daily junta drone, helicopter and jet attacks on forest areas sheltering displaced civilians killed 7 in Ngazun, while heavy fighting continued around Kyaukphyu and Sittwe."
           ],
-          "coa": "CRITICAL maintained, deteriorating. The junta's civilian-directed air campaign is a fixed feature and will continue at three to four civilian deaths a day in Rakhine plus recurring Sagaing, Magway and Karenni strikes, with periodic mass-casualty events at markets, schools and religious sites. The decisive operational contest is the Bhamo resupply corridor: KIA and PDF interdiction of the Ayeyarwady river route is degrading the junta's ability to sustain its Bhamo garrison, so anticipate intensified junta air support and possible localised withdrawals over the quarter. The military-backed post-election government confers no legitimacy and changes nothing on the ground. Baseline trajectory: continued attritional stalemate with resistance gains in Kachin and northern Shan and sustained junta air dominance."
+          "coa": "CRITICAL maintained, deteriorating. The junta will almost certainly continue and likely intensify air operations against civilian and resistance-held areas as it seeks to consolidate territory, with Kachin, Rakhine, Karenni and Sagaing remaining the primary flashpoints. Resistance forces will continue to interdict junta river and road resupply and hold captured ground, but junta air superiority will keep civilian casualties high and displacement rising. Expect continued deterioration with no negotiated de-escalation likely in this window."
         },
         {
-          "name": "Pakistan", "flag": "🇵🇰", "threat": "CRITICAL",
+          "name": "Pakistan",
+          "flag": "🇵🇰",
+          "threat": "CRITICAL",
           "incidents": [
-            "1 Sep — Pasni, Gwadar: The BLA opened its September campaign, attacking a joint police and Levies post and coastal checkpoints.",
-            "3 Sep — Afghan border opposite North Waziristan: The military said security forces killed 15 militants during an attempted infiltration.",
-            "6 Sep — Ziarat Cross, Balochistan: A BLA 'Fateh Squad' ambushed a Frontier Corps convoy in daylight, claiming 18 soldiers killed and two vehicles destroyed.",
-            "9 Sep — Balochistan-wide: The BLA claimed 28 operations across 12 districts for 1–7 September with 52 personnel killed, admitting 12 fighters lost."
+            "14 Sep — Kashari/Wallapat, Lasbela: The BLA's Fateh Squad ambushed a Frontier Corps bomb disposal convoy with an IED followed by direct fire; the group claims 9 personnel killed, 11-plus wounded.",
+            "14 Sep — Lasbela, Jiwani, Mashkel, Kachhi: The BLA/Baloch Republican Guards claimed a coordinated wave of operations, including a convoy attack, arson at a lithium exploration site, and road blockades.",
+            "15 Sep — Malant, Tump: An IED strike hit a Frontier Corps vehicle; the BLA claims 3 FC personnel killed.",
+            "Ongoing — Afghan border: TTP attack tempo in 2026 is tracking above 2025's already record-setting pace, with Islamabad continuing to condition improved ties with the Taliban on verifiable action against TTP and BLA elements it says operate from Afghan soil."
           ],
-          "coa": "CRITICAL maintained. The BLA has institutionalised a province-wide, multi-district operational tempo with a shift toward large set-piece convoy ambushes rather than only harassment, signalling improved coordination and a manpower base that absorbs losses. Expect this rate to hold or rise through year-end, with Chagai, Pishin, Mastung and Kalat as the hot belt and periodic spectacular attacks on Frontier Corps convoys, rail and Gwadar and CPEC-linked targets. TTP pressure in Khyber Pakhtunkhwa and cross-border friction with Afghanistan compound the two-front strain, and Islamabad will likely continue cross-border airstrikes into Afghanistan, raising escalation risk with the Taliban. There is no political off-ramp in Balochistan; AJK grievances remain a secondary flashpoint."
+          "coa": "CRITICAL maintained. The BLA/BRG campaign shows no sign of plateauing — expect continued near-daily IED and ambush operations against military convoys and CPEC-adjacent infrastructure across Lasbela, Kalat, Turbat, Mastung and Kachhi, alongside sustained but lower-intensity TTP pressure from the Afghan border. Pakistan-Afghanistan relations will likely remain strained without a substantive Taliban crackdown, keeping cross-border friction elevated. Security-force casualty rates are likely to remain among the highest recorded for this insurgency, with continued risk of mass-casualty urban attacks in Quetta or provincial capitals."
         },
         {
-          "name": "India", "flag": "🇮🇳", "threat": "HIGH",
+          "name": "India",
+          "flag": "🇮🇳",
+          "threat": "HIGH",
           "incidents": [
-            "1 Sep — Kangpokpi district, Manipur: Armed groups opened fire and burned about 30 houses in Liangmei Naga villages along the Imphal–Tamenglong road amid Naga–Kuki-Zo fighting.",
-            "3 Sep — Manipur: Human Rights Watch issued an alarm over renewed ethnic violence, citing at least seven killed in late August in hill-district clashes, mutual abductions of about 48 people and six Naga hostages found dead.",
-            "Context — Manipur: The violence has opened a new Naga–Kuki-Zo axis distinct from the Meitei–Kuki valley–hill fault line; the announced 28 September Kuki-Zo shutdown remains pending."
+            "14–15 Sep — Tamenglong/Noney districts, Manipur: Suspected militants attacked villages, killing 4 people, including a couple, and injuring their 6-year-old son, part of the expanding Naga-Kuki-Zo violence.",
+            "14 Sep — Manipur: The Kuki-Zo Council warned that continued armed-group activity risks pushing Manipur 'to full-scale conflict.'",
+            "Ongoing — Kangpokpi district: Naga groups continue blocking the highway despite a 14 August Supreme Court directive to plan reopening; over 260 deaths and 60,000-plus displaced since the crisis began in 2023, with 34 deaths specifically since the Naga-Kuki violence started in February."
           ],
-          "coa": "Upgraded to HIGH from MODERATE. The Manipur conflict is broadening rather than settling: the Naga–Kuki-Zo front along the Kangpokpi and Imphal–Tamenglong corridor adds a new driver on top of the unresolved Meitei–Kuki dispute, and reciprocal abductions raise the risk of tit-for-tat massacres. Expect continued low-level arson, ambushes and road blockades through the quarter, with the 28 September Kuki-Zo shutdown and any central move on statehood or administrative arrangements as escalation triggers; President's Rule and central forces are containing but not resolving the situation. Elsewhere in India — Jammu and Kashmir, the Naxal belt — the week was quiet with no window-specific escalation. The risk of a single high-casualty Manipur incident re-triggering wider valley unrest remains real, with added exposure from Myanmar spillover."
+          "coa": "HIGH maintained. Expect continued low-level but lethal tit-for-tat attacks along the new Naga-Kuki-Zo fault line, compounding the unresolved Meitei-Kuki dimension, with highway blockades sustaining economic strangulation of Kuki-Zo areas. Central government intervention has so far been limited to judicial directives rather than security-force de-escalation measures; absent a stronger federal posture, the risk of further village-level arson and displacement will remain elevated through the period, with periodic spikes around any highway-reopening attempt."
         },
         {
-          "name": "China", "flag": "🇨🇳", "threat": "HIGH",
+          "name": "China",
+          "flag": "🇨🇳",
+          "threat": "HIGH",
           "incidents": [
-            "3 Sep — Waters east of Taiwan: The China Coast Guard announced 'routine law-enforcement patrols' on Taiwan's Pacific side, continuing a normalised pattern of continuous cutter presence since June.",
-            "3–7 Sep — East China Sea: PLA Y-9 intelligence aircraft operated on five consecutive days, with Japanese fighters scrambling each time and no territorial-airspace violation.",
-            "5 Sep — Taiwan ADIZ: Taiwan tracked 20 PLA aircraft sorties, 12 crossing the median line, plus six navy and five official ships.",
-            "Late Aug – early Sep — Paracels: Satellite imagery showed a likely early-warning radar facility under construction on Yagong Island with parallel buildup on Antelope Reef; Vietnam lodged a formal protest."
+            "9 Sep — Seoul Defense Dialogue: A Chinese embassy military attache handed a memo reasserting China's rejection of the 2016 UNCLOS arbitration ruling to Philippine Defense Secretary Teodoro mid-speech; he read it aloud and rebuked Beijing on stage, triggering a viral diplomatic spat.",
+            "11 Sep — Scarborough Shoal: China declared a 3,524-hectare 'nature reserve' encompassing the shoal; the Philippines called it a deceptive veneer for an illegitimate claim, and the US publicly rejected China's position on 12 September.",
+            "Late Aug–early Sep (continuing) — Yagong Island, Paracels: Satellite imagery shows apparent early-warning radar construction; Vietnam formally protested, and reported land reclamation at nearby Antelope Reef appears to have completed its first stage.",
+            "Mid-Sep — Taiwan Strait: Taiwan detected 4 PLA aircraft, 6 PLAN vessels and 2 China Coast Guard 'official ships' operating around the island in a single day, with two aircraft entering Taiwan's southwestern and eastern ADIZ."
           ],
-          "coa": "HIGH maintained. The sea-over-air rebalancing continues to hold: PLA ADIZ air incursions are down roughly 52% year-on-year while Coast Guard and navy maritime presence is at or above record levels and is being made permanent through continuous patrols east of Taiwan, Scarborough encirclement and Senkaku contiguous-zone presence. Paracel construction is a medium-term ISR and basing upgrade that strengthens Beijing's control of the northern South China Sea and will keep drawing Vietnamese and Philippine protest. Expect the coercion to stay grey-zone and below the use-of-force threshold through the quarter, with elevated risk of an unintended collision at Scarborough or east of Taiwan, and episodic exercise surges tied to Taiwan's November referendum and local elections or a US arms announcement."
+          "coa": "HIGH maintained. China will likely continue simultaneous, incremental coercion across Scarborough Shoal, the Paracels and the Taiwan Strait/Senkakus rather than concentrating pressure on one flashpoint, using administrative and legal measures alongside coast guard and PLA presence to normalize expanded control while staying below the threshold for open conflict. The Seoul memo incident suggests Beijing's diplomatic messaging is becoming more overt and less calibrated, raising the risk of further unforced errors that strengthen regional coordination against it."
         },
         {
-          "name": "Taiwan", "flag": "🇹🇼", "threat": "HIGH",
+          "name": "Taiwan",
+          "flag": "🇹🇼",
+          "threat": "HIGH",
           "incidents": [
-            "5 Sep — Taiwan Strait / ADIZ: 20 PLA aircraft, six navy and five official ships were tracked, with 12 median-line crossings into the northern, central and south-eastern ADIZ.",
-            "7 Sep — Around Taiwan: Taiwan tracked 17 Chinese vessels, 13 of them navy, and two PLA aircraft, all crossing the median line.",
-            "1–7 Sep — Around Taiwan: Running September totals reached 26 PLA aircraft and 69 ship tracks."
+            "27 Aug (effective into this period) — Taipei: The legislature passed the 2026 budget after a record 266-day delay, including roughly NT$63.4 billion (~US$7.6 billion) for domestically made drones, after rejecting the government's original special drone budget and substituting its own plan.",
+            "Mid-Sep — Around Taiwan: A single-day snapshot recorded 4 PLA aircraft, 6 navy vessels and 2 coast guard/official ships, with two aircraft crossing into the southwestern and eastern ADIZ; Taiwan's MND flagged continued PLA emphasis on strengthening island-landing and amphibious capabilities.",
+            "Ongoing — Overall PLA sortie volume around Taiwan has reverted toward pre-May-2024 baseline levels since early 2026, suggesting an adjustment in Beijing's coercion strategy rather than de-escalation."
           ],
-          "coa": "HIGH maintained. Cross-strait military pressure remains steady-state at the new normal — continuous naval and Coast Guard presence, routine median-line crossings, lower air tempo. The NT$240 billion drone special budget passed on 27 August and the November nuclear-policy referendum are the domestic markers for the quarter; expect Beijing to time a larger Joint Sword-style exercise to a political trigger such as a Lai speech, a US arms-sale announcement or transit diplomacy. The Nvidia AI-chip smuggling probe and submarine-programme progress continue in the background. Baseline: sustained pressure, no imminent crisis, with collision risk the main tail hazard."
+          "coa": "HIGH maintained. Expect continued steady-state PLA presence, aircraft and vessel incursions and ADIZ transits, without a return to the 2024-25 surge tempo, alongside accelerating Taiwanese investment in asymmetric drone capability now that budget gridlock has eased. Cross-strait friction will likely remain centered on economic and administrative coercion and information operations rather than kinetic escalation in this window, with the domestic nuclear-referendum debate adding another politically charged variable tied to resilience-under-blockade planning."
         },
         {
-          "name": "Philippines", "flag": "🇵🇭", "threat": "CRITICAL",
+          "name": "Philippines",
+          "flag": "🇵🇭",
+          "threat": "CRITICAL",
           "incidents": [
-            "8 Sep — Seoul: Chinese representatives handed Defence Secretary Teodoro a memo asserting Beijing's South China Sea position while he was on stage discussing grey-zone coercion; Teodoro rebuked China publicly.",
-            "9 Sep — Beijing: China's foreign ministry accused the Philippines of 'stirring up trouble' in response.",
-            "3–10 Sep — West Philippine Sea: No new water-cannon, ramming or collision incident was confirmed at Scarborough or Pag-asa, but sustained Coast Guard and navy encirclement continued, with Philippine vessels reportedly pushed about 40 nautical miles from Scarborough."
+            "9 Sep — Seoul Defense Dialogue: A Chinese military attache delivered a note reasserting Beijing's nine-dash-line position to Defense Secretary Teodoro mid-speech; he read it aloud on stage and publicly rebuked China, a viral incident that further inflamed bilateral relations.",
+            "11 Sep — Scarborough Shoal: China's declaration of a 'nature reserve' over the shoal was rejected by the Philippines' National Maritime Council as an attempt to legalize an illegitimate claim, depriving Filipino fishers of traditional access.",
+            "12 Sep — Washington: US Secretary of State Rubio issued a statement backing the Philippines and rejecting China's Scarborough claim.",
+            "Ongoing — PLA Southern Theater Command reported forward-deploying light combat aircraft and air-defense frigates to the South China Sea, while China has installed multiple floating structures in and around Scarborough Shoal since the reserve declaration."
           ],
-          "coa": "CRITICAL maintained. The confrontation has stabilised at a high but sub-kinetic level: China maintains near-permanent presence and multiple semi-permanent structures and buoys around Scarborough and heavy deployment near Pag-asa, while Manila's push for a regional 'rulebook' has stalled. Expect resupply runs to Filipino fishermen and to Pag-asa to keep drawing water cannon and close-quarters manoeuvring, with periodic injuries, and the US carrier gap to remain an aggravating factor for at least part of the quarter. A serious collision, or a Chinese move to physically occupy or build at Scarborough, are the escalation scenarios to watch; diplomacy will not change Coast Guard behaviour."
+          "coa": "CRITICAL maintained. Expect continued high-frequency but sub-kinetic CCG/PLAN presence and infrastructure moves, including floating barriers, at Scarborough, paired with intensifying diplomatic confrontation following the Seoul incident. Manila will likely continue leaning on US and broader international backing to internationalize the dispute, while Beijing's more overt public messaging risks further unforced diplomatic missteps. The risk of a physical collision or blockade incident at Scarborough remains elevated given the pace of Chinese structure emplacement."
         },
         {
-          "name": "South Korea", "flag": "🇰🇷", "threat": "HIGH",
+          "name": "South Korea",
+          "flag": "🇰🇷",
+          "threat": "HIGH",
           "incidents": [
-            "8 Sep — Seoul: At the Seoul Defense Dialogue, Defence Minister Ahn Gyu-back said North Korea is fortifying the DMZ 'beyond precedent' with layered fencing and mines and called for resumed US–DPRK dialogue 'backed by strong deterrence,' hoping for a Trump–Kim meeting.",
-            "8–10 Sep — Seoul: The Seoul Defense Dialogue hosted about 1,000 delegates from 67 nations, with the NATO Military Committee chair attending.",
-            "Through the window — Seoul: No new North Korean launches; Kimsuky and other DPRK cyber-espionage activity against ministries and defence firms continued."
+            "7–9 Sep — Seoul: The Seoul Defense Dialogue convened roughly 1,200 military officials and experts; Defence Minister Ahn Gyu-back publicly called for a resumption of Trump-Kim talks, framing it as being about 'peace on the Korean Peninsula.'",
+            "Early Sep — Seoul: South Korea's National Intelligence Service assessed a Trump-Kim summit as 'possible at any time,' with reporting suggesting Trump may seek to meet Kim around a November APEC trip to China.",
+            "11 Sep — Conclusion of a five-day US–South Korea–Japan trilateral maritime exercise, followed one day later by North Korea's short-range ballistic missile launches."
           ],
-          "coa": "HIGH maintained. The Lee government is consolidating a 'dialogue plus deterrence' line and actively courting a Trump–Kim summit; if that materialises, expect a near-term freeze on peninsula provocations and possibly reciprocal South Korean gestures at the DMZ. Absent a summit, the DPRK founding-day-to-party-anniversary window through 10 October carries elevated launch risk. Domestically the post-31 August cabinet, including a new defence minister, is bedding in at around 40% approval. DPRK cyber operations against South Korean targets will continue regardless of the diplomatic track. Baseline: stable, with upside if summit diplomacy advances."
+          "coa": "HIGH maintained. Seoul will continue pursuing parallel tracks: active diplomatic encouragement of a Trump-Kim meeting, plausibly around the November APEC window, alongside continued trilateral deterrence exercises with the US and Japan. Expect North Korea to respond to further drills with calibrated missile tests, without derailing the diplomatic opening. The gap between rhetorical de-escalation and continued DMZ militarization on both sides will persist as the central risk indicator to watch."
         },
         {
-          "name": "Vietnam", "flag": "🇻🇳", "threat": "MODERATE",
+          "name": "Vietnam",
+          "flag": "🇻🇳",
+          "threat": "MODERATE",
           "incidents": [
-            "Late Aug – early Sep — Paracels (Yagong Island): After satellite imagery showed a likely Chinese early-warning radar site under construction, Vietnam's foreign ministry said it 'resolutely opposes' the activity and demanded it stop, sustaining diplomatic protest through the window.",
-            "Through the window — Spratlys: The South China Sea was otherwise quiet for Vietnam, with Chinese patrols continuing around Vietnamese-held features."
+            "28 Aug (protest continuing to resonate) — Hanoi: Vietnam's Foreign Ministry formally protested apparent Chinese construction, assessed as an early-warning radar site, on Yagong Island in the Paracels, demanding immediate cessation.",
+            "Early Sep — Analysis reporting highlighted that Chinese land reclamation at nearby Antelope Reef appears to have completed its first stage, roughly 16 km from Yagong.",
+            "Ongoing through Sep — Vietnam continues its own Spratly infrastructure build-out across 27 sites and 18 reefs, having added 534 acres in the past year and approaching parity with China's total historical reclamation in the Spratlys."
           ],
-          "coa": "MODERATE maintained. Hanoi will keep the dispute in the diplomatic-protest lane while continuing its own Spratly reclamation across all 21 held features and deepening the parallel political track with Beijing. Chinese Paracel construction is a strategic irritant, not a near-term clash trigger; expect rhetorical friction and occasional standoffs around oil-and-gas blocks and fishing grounds but no kinetic escalation this quarter. Vietnam continues hedging via defence diplomacy with the US, Japan and the Philippines, historically underreporting maritime incidents when they occur."
+          "coa": "MODERATE maintained. Vietnam will likely continue a dual-track approach — sustained formal diplomatic protest against Chinese Paracels construction while simultaneously accelerating its own Spratly militarization, which increasingly rivals China's in scale. This asymmetry is likely to become a more prominent regional talking point without triggering direct Vietnam-China confrontation in this window."
         },
         {
-          "name": "Japan", "flag": "🇯🇵", "threat": "MODERATE",
+          "name": "Japan",
+          "flag": "🇯🇵",
+          "threat": "MODERATE",
           "incidents": [
-            "3–7 Sep — East China Sea: Chinese Y-9 intelligence aircraft operated on five consecutive days, with Japanese fighters scrambling each time and no territorial-airspace incursion.",
-            "Through the window — Senkaku Islands: Record-level China Coast Guard presence continued, extending a pattern of near-daily contiguous-zone entries."
+            "Ongoing (baseline continuing into 2026) — Senkaku Islands: Chinese Coast Guard vessels have patrolled Senkaku-administered waters almost daily, a tempo regional trackers describe as sustained into 2026 following a record 357 days in the contiguous zone in 2025.",
+            "Background — Senkaku Islands: Japanese and Chinese coast guard vessels have faced off near the islands after Japan's coast guard moved to expel Chinese ships approaching a Japanese fishing boat, part of a standing confrontation pattern.",
+            "Ongoing — The broader Japan-China diplomatic dispute continues to color maritime friction, with PLA intelligence flights near Japan reported as a standing pattern rather than a discrete this-week event."
           ],
-          "coa": "MODERATE maintained; watch for a possible upgrade given rising rhetorical intensity. Expect continued near-daily Coast Guard contiguous-zone presence at the Senkakus, periodic territorial-sea intrusions and recurring intelligence flights along the south-western approaches prompting Japanese scrambles. The 2026 Defense White Paper framing of China as the 'greatest strategic challenge' locks in the posture, and Japan–China relations remain cold. Escalation risk is low but a fishing-boat incident or an airspace violation could spike tensions quickly, as could a North Korean missile overflight. Baseline: steady pressure, no crisis."
+          "coa": "MODERATE maintained; continue to watch for a possible upgrade. Expect the high-tempo but non-escalatory Chinese Coast Guard presence around the Senkakus to continue, with periodic close-quarters incidents remaining likely given the elevated baseline. The combination of record CCG presence, an unresolved diplomatic rift with Beijing, and PLA activity elsewhere in the region raises the probability of an upgrade-triggering incident in the coming weeks."
         },
         {
-          "name": "Indonesia", "flag": "🇮🇩", "threat": "HIGH",
+          "name": "Indonesia",
+          "flag": "🇮🇩",
+          "threat": "HIGH",
           "incidents": [
-            "2 Sep — Mile 60, Tembagapura, Mimika (Central Papua): TPNPB gunmen fired on a 15-vehicle Freeport Indonesia convoy, hitting three vehicles with no casualties; police recovered three 5.56 mm casings.",
-            "Through the window — Papua highlands: TNI operations against the TPNPB continued in Puncak Jaya and Intan Jaya following the mid-August drone strikes."
+            "Early Sep — Tembagapura district, Central Papua: Suspected TPNPB fighters fired on a 15-vehicle PT Freeport Indonesia convoy near Mile Point 60, hitting three vehicles; no casualties reported.",
+            "Ongoing — Indonesian authorities report boosting security around Freeport operations in response to escalating attacks on convoys.",
+            "Ongoing — TNI sweep-and-drone operations in Intan Jaya and Puncak Jaya continue at a similar tempo to prior months, though no newly confirmed September-dated strike was identified in this search."
           ],
-          "coa": "HIGH maintained. The TPNPB will keep targeting economic and security infrastructure — Freeport convoys and mining roads, telecom towers, aircraft at highland airstrips — with periodic civilian casualties, while the TNI sustains offensive sweeps and armed-drone strikes in Puncak and Intan Jaya. Expect the tempo to stay elevated through the quarter with no political dialogue track, and a real risk of a mass-casualty event — an ambush of workers or a downed aircraft — that internationalises the issue. The militarised counter-insurgency approach and drone use are drawing human-rights criticism that will grow if civilian tolls rise, and media and monitor access stays highly restricted."
+          "coa": "HIGH maintained. Expect the TPNPB to continue harassment-style attacks on Freeport logistics convoys in the Tembagapura/Mile Point corridor, prompting further TNI security reinforcement rather than a change in the campaign's character. The broader TNI sweep-and-drone campaign in Intan Jaya/Puncak likely continues at a similar tempo; maintain HIGH with a bias toward continued low-level attrition rather than a discrete escalation this period."
         },
         {
-          "name": "Thailand", "flag": "🇹🇭", "threat": "MODERATE",
+          "name": "Thailand",
+          "flag": "🇹🇭",
+          "threat": "MODERATE",
           "incidents": [
-            "3 Sep — Phnom Penh: Cambodia's defence ministry briefed 22 foreign military attachés on the border situation; the December 2025 ceasefire is holding.",
-            "~10 Sep — Announced: Thailand and Cambodia will hold their first meeting under a UN conciliation process on the maritime boundary in Singapore the following week.",
-            "Through the window — Border: Land borders remain fully closed since June 2025, with Chanthaburi border-fence friction continuing."
+            "15–16 Sep — Singapore: Thailand and Cambodia held the first meeting of a UN-backed compulsory conciliation process under UNCLOS over their long-running Gulf of Thailand maritime boundary dispute, with both foreign ministers delivering opening statements.",
+            "Context — Thailand entered the process 'in good faith' after having proposed direct bilateral talks first; Cambodia is seeking a single all-purpose maritime boundary treaty covering an area believed to hold roughly 12 trillion cubic feet of gas.",
+            "Background — Thailand terminated the 2001 joint development framework agreement in May 2026, a direct consequence of last year's deadly border clashes; the land-border ceasefire from 27 December 2025 continues to hold with no new violation reported this period."
           ],
-          "coa": "MODERATE maintained, with a de-escalation tilt. The ceasefire should hold through the quarter, reinforced by the new UN conciliation process and continued third-party attention. Residual risks are localised clashes around contested temple and land sectors, landmine incidents, and nationalist politics on both sides as Cambodian conscription begins in 2026. The closed land border imposes an ongoing economic and humanitarian cost but is not itself an escalation driver. Trajectory: slow diplomatic thaw, low risk of renewed major fighting."
+          "coa": "MODERATE maintained, with a de-escalation tilt. The Thailand-Cambodia relationship is likely to continue de-escalating on the ground while the maritime dispute shifts into a potentially lengthy UNCLOS conciliation process with an uncertain resolution timeline. Expect continued rhetorical sparring over process without a return to armed confrontation in this window; the land ceasefire remains the primary stability indicator to monitor."
         },
         {
-          "name": "Bangladesh", "flag": "🇧🇩", "threat": "MODERATE",
+          "name": "Bangladesh",
+          "flag": "🇧🇩",
+          "threat": "MODERATE",
           "incidents": [
-            "9 Sep — Hathazari Field Firing Range, Chattogram: A tank exploded during an army live-fire exercise, killing two soldiers and seriously wounding an officer.",
-            "Through the window — Nationwide: The BNP government of Prime Minister Tarique Rahman, in office since its February 2026 election landslide, continued governing against a Jamaat-e-Islami opposition and a banned Awami League whose activists keep staging flash protests despite arrests.",
-            "Through the window — India: Relations stayed cold over exiled former PM Sheikh Hasina's continued political activity from Indian soil; Hasina has designated her cousin Sheikh Selim as acting Awami League president in her absence.",
-            "Ongoing — Chittagong Hill Tracts: Implementation of the 1997 peace accord remains incomplete (65 of 72 provisions fulfilled), with periodic Bengali-settler and indigenous Jumma tension despite an April peace dialogue with the Kuki-Chin National Front."
+            "Sep — Nationwide: A High Court ruling struck down two prior constitutional amendments, shifting judicial oversight responsibilities to the Supreme Court.",
+            "Ongoing — Nationwide: Human-rights reporting continues to describe an ongoing pattern of extralegal political violence and intimidation of religious and ethnic minorities under the BNP/Tarique Rahman government.",
+            "No specific dated Chittagong Hill Tracts clash or Awami League flash-protest event for the 10-17 September window could be verified in available reporting."
           ],
-          "coa": "MODERATE maintained. Bangladesh's political transition is now past the February 2026 election, not before it: the BNP holds a large parliamentary majority under PM Tarique Rahman, with Jamaat-e-Islami as the main parliamentary opposition and the banned Awami League operating as an extra-parliamentary opposition through flash protests and arrests. Expect continued sporadic BNP–Jamaat clashes at the local level, periodic Awami League protest crackdowns, and slow-moving Chittagong Hill Tracts tension short of a major flare-up. India relations stay frozen over Hasina's asylum status, constraining trade, border, water and transit cooperation. No single flashpoint is likely to breach MODERATE this quarter, but the combination of an unresolved Awami League ban and unaddressed CHT grievances keeps cumulative instability elevated."
+          "coa": "MODERATE maintained. Absent a confirmed acute trigger this period, expect continued low-level, diffuse political violence tied to the post-Awami-League-ban political realignment and periodic Chittagong Hill Tracts indigenous-settler tension, without a clear escalatory event in the immediate term. Judicial and constitutional developments, including the September High Court ruling, may become a slower-burn source of political contestation over the coming months. Recommend continued monitoring given the historical volatility of the CHT and the anniversary-adjacent sensitivity around past September unrest."
         },
         {
-          "name": "Sri Lanka", "flag": "🇱🇰", "threat": "LOW",
+          "name": "Sri Lanka",
+          "flag": "🇱🇰",
+          "threat": "LOW",
           "incidents": [
-            "2 Sep — Maritime: Sri Lankan and US authorities seized about 463 kg of crystal methamphetamine linked to a Pakistan-based trafficking network.",
-            "7 Sep — Geneva: A UN human-rights report found little progress on accountability for civil-war-era crimes and enforced disappearances.",
-            "9 Sep — Colombo: President Dissanayake assured India that Sri Lankan territory would not be used against Indian security interests, and three defence-cooperation agreements were signed with India."
+            "Recent — Maritime: Sri Lankan and US authorities seized approximately 463 kg of crystal methamphetamine from a Pakistan-based trafficking network, a law-enforcement issue rather than a security-threat escalation.",
+            "Ongoing — Colombo: Sri Lanka is hosting 'India Week 2026,' underscoring continued deepening of India-Sri Lanka ties under the NPP government.",
+            "Governance note — The ICC stripped Sri Lanka of hosting rights for the February 2027 Women's Champions Trophy over concerns about government interference in cricket administration; tourist arrivals fell 3.3% in August."
           ],
-          "coa": "Downgraded to LOW from MODERATE. This is a second consecutive quiet week: no unrest, stable governance under the NPP, prison unrest contained, and deepening rather than deteriorating ties with India. Expect continued stability, with the main watch items being economic-adjustment protests tied to the IMF programme, the new counter-terrorism law's implementation and its civil-liberties criticism, and the pace of India–Sri Lanka defence cooperation. No indicators point to security deterioration this quarter; review monthly, with a large-scale prison riot or a custodial-death scandal the main risk to the assessment."
+          "coa": "LOW maintained. Sri Lanka's security environment is likely to remain stable, with organized-crime and narcotics interdiction and routine civil demonstrations as the principal ongoing activity rather than any resurgent conflict dynamic. The NPP government's continued tilt toward India, despite its historical anti-Indian orientation, is likely to persist as the notable strategic trend, alongside stable but not acute governance friction. No indicators support reversing the recent downgrade."
         }
       ]
     },
     {
       "name": "Americas",
       "overview": [
-        "The US boat-strike campaign resumed after a roughly two-month pause: a 9 September Caribbean strike killed three, bringing the Operation Southern Spear toll to about 230 across some 70 vessel strikes, and SOUTHCOM's 2 September one-year update framed the operation as ongoing. A strike on or near Venezuelan territory remains the top regional escalation risk.",
-        "Venezuela's US-controlled oil model is now the governing reality: the 1 September award of a 100-year concession over 17 oil fields to a US-government-linked partnership, plus Trump ruling out any election timetable on 2 September, is generating sovereignty pushback from Latin American governments and setting up domestic backlash as banks warn price relief is years away.",
-        "Explosive-drone and boat-IED warfare is spreading in Colombia: a US Embassy alert for Cesar on 3 September, a roughly 20-drone ELN swarm attack that killed three soldiers at Ocaña on 4–5 September, a Timbiquí boat-IED around 10 September, and emergency counter-drone deployments show the ELN and FARC dissidents escalating against security forces and civilians with no negotiated off-ramp.",
-        "Governance and legitimacy clocks are running down in Haiti and Bolivia: Haiti's Gang Suppression Force mandate expires on 30 September with December elections effectively unviable, and Bolivia's state-of-emergency cover has lapsed into a fuel-shortage crisis with Evo Morales mobilising against President Paz. Peru and Ecuador continue governing by rolling emergency decree, and Cuba was quiet enough for a second week to move down a band."
+        "Drone warfare has become a defining threat vector across the northern Andes and Caribbean rim: Colombia's ELN is now conducting near-weekly explosive-drone swarm attacks against military and police targets in Norte de Santander and Cesar, prompting a roughly $1.68 billion national counter-drone program, while Venezuela's oil-and-security crisis and Ecuador's expanding US-backed counter-narcotics footprint suggest the region is converging on drone/counter-drone capability as the primary battlefield innovation of 2026.",
+        "US military and economic engagement is deepening and formalizing across multiple fronts simultaneously: beyond the ongoing Southern Spear boat-strike campaign against Venezuela (roughly 230 killed, still active) and the disputed 100-year Venezuelan oil concession, Washington has expanded Special Forces and naval deployments into Ecuador under the 'Shield of the Americas' coalition, indicating a broader, more permanent US security posture in the hemisphere.",
+        "State-of-emergency governance has become the default crisis-management tool across the region: Ecuador's new 60-day decree and coastal curfews, Peru's prison-focused emergency across five facilities and 17 districts, and Bolivia's 90-day extension of its state of exception all reflect the severity of organized-crime penetration and a growing normalization of suspended civil liberties as a governing default.",
+        "Haiti's trajectory is diverging sharply from the rest of the region as it approaches a critical inflection point: while Cuba has stabilized enough to warrant a downgrade and the Dominican Republic and Jamaica remain comparatively low-risk, Haiti faces the 30 September expiry of the Gang Suppression Force's mandate, decided by a UN Security Council vote just after this reporting window, which will likely determine whether gang consolidation in Port-au-Prince becomes effectively irreversible within the next 90 days."
       ],
       "countries": [
         {
-          "name": "Venezuela", "flag": "🇻🇪", "threat": "CRITICAL",
+          "name": "Venezuela",
+          "flag": "🇻🇪",
+          "threat": "CRITICAL",
           "incidents": [
-            "1 Sep — Caracas: The US-backed interim government awarded a 100-year concession over 17 oil fields to a US-based partnership, with Washington to control about 55% of output.",
-            "2 Sep — Washington: A SOUTHCOM one-year update on Operation Southern Spear claimed record maritime-traffic reductions; the same day Trump said Venezuela is 'not ready' for elections and set no timetable.",
-            "9 Sep — Caribbean: The US carried out the roughly 70th boat strike of the campaign, killing three and ending an approximately two-month lull; the running toll is about 230 killed.",
-            "1 Sep — Maiquetía: Caracas's main international airport reopened with temporary modules two months after the June earthquake, at about 70% capacity."
+            "2 Sep — Caribbean/Eastern Pacific: The US 'Southern Spear' campaign continued vessel strikes; the cumulative tally reached at least 230 killed across roughly 70 strikes since the campaign began in September 2025.",
+            "2 Sep — Washington: President Trump said Venezuela is 'not ready' for elections and declined to set a timetable, five days after announcing a 100-year, roughly 20%-of-reserves oil concession to a US-linked entity; Venezuela's transitional government disputes the term as 25 years rather than 100.",
+            "10–17 Sep — Caribbean/Pacific: No confirmed new US strike on Venezuelan land territory was found for this window; boat-strike operations in international waters continue at pace."
           ],
-          "coa": "CRITICAL maintained. Overt US–Venezuela military confrontation has settled into a US-backed negotiated transition, but the boat-strike campaign has resumed. Expect it to continue at a low but non-zero tempo of one to two vessel strikes a month rather than return to the late-2025 peak, with a strike on or near Venezuelan territory the principal escalation risk and SOUTHCOM assets remaining offshore as leverage. Politically, the oil-concession model under Delcy Rodríguez is now the governing reality: watch for hardline-Chavista and opposition friction over sovereignty and the absence of an election timetable, regional pushback, and sporadic Caracas protests over prisoners, fuel prices and the concession terms. Investment-bank scepticism that output or price relief is near sets up domestic disappointment; Maduro's US trial, set for June 2027, will periodically re-inflame sovereignty protests."
+          "coa": "CRITICAL maintained. Expect the boat-interdiction campaign to continue at a similar tempo with periodic new strike announcements, while the oil-concession dispute over contract length becomes a persistent friction point between Washington and Caracas' transitional authorities that could stall implementation. Absent a fresh territorial provocation, direct US strikes on Venezuelan soil are unlikely to resume in this window, but political normalization remains indefinitely deferred, sustaining governance uncertainty. Monitor for legal and human-rights fallout from strike video evidence and for any shift in the 25-versus-100-year concession dispute that could reignite unrest."
         },
         {
-          "name": "Colombia", "flag": "🇨🇴", "threat": "CRITICAL",
+          "name": "Colombia",
+          "flag": "🇨🇴",
+          "threat": "CRITICAL",
           "incidents": [
-            "3 Sep — Cesar department: The US Embassy issued a security alert over an elevated risk of ELN explosive-drone attacks on police and military posts.",
-            "4–5 Sep — Ocaña, Norte de Santander: An ELN attack on a military compound using about 20 explosive-laden drones followed by a ground assault killed three soldiers and injured four.",
-            "w/c 8 Sep — Cesar: The government announced a 'security shock plan,' deploying counter-drone systems to El Copey, Curumaní, La Jagua de Ibirico, Pelaya and Valledupar.",
-            "10 Sep — Timbiquí, Cauca: A boat-borne IED exploded in the town, injuring about eight marines and damaging 100 to 200 homes; attributed to a FARC-dissident faction."
+            "4 Sep — Ocana, Norte de Santander: An ELN-attributed swarm of roughly 20 explosive-laden drones struck a military compound, killing at least 3 soldiers and wounding 4.",
+            "7 Sep — Guamalito, El Carmen, Norte de Santander: A police station was attacked again with explosive drones combined with rifle fire, three days after the Ocana attack.",
+            "3 Sep — Cesar department: The US Embassy issued a security alert warning of elevated ELN drone-attack risk; the government rolled out a 'shock plan,' deploying counter-drone systems to five Cesar towns and Valledupar.",
+            "Ongoing — Nationwide: The government continues rollout of the roughly $1.68 billion 'Escudo Nacional Antidrones' program, against a backdrop of over 460 drone attacks by armed groups recorded since April 2023."
           ],
-          "coa": "CRITICAL maintained. The de la Espriella government's hardline posture and the end of 'Total Peace' mean no negotiated off-ramp; expect the ELN and the FARC dissidents to keep escalating drone-swarm and boat-IED attacks on security forces and civilian infrastructure, concentrated in Cesar and Norte de Santander near the Venezuelan border and along the Cauca and Nariño Pacific coast. Counter-drone deployments will blunt but not stop attacks. Rising civilian harm — Timbiquí displacement, the earlier child-casualty scandal — will drive domestic political pressure and the confinement of Afro-descendant and Indigenous communities. Cross-border ELN sanctuary in Venezuela is a wildcard given the US presence there."
+          "coa": "CRITICAL maintained. The ELN/FARC-dissident drone-attack trend is unlikely to abate and will probably continue concentrating in Norte de Santander, Cesar and Cauca, with military and police outposts as primary targets. Government counter-drone deployments will expand but face a capability gap against low-cost, high-volume swarm tactics; expect continued casualties among security forces and growing pressure on the government to demonstrate results from the National Anti-Drone Shield. Watch for possible spillover incidents near the Venezuelan border given cross-border ELN sanctuary dynamics and heightened Southern Spear activity."
         },
         {
-          "name": "Haiti", "flag": "🇭🇹", "threat": "CRITICAL",
+          "name": "Haiti",
+          "flag": "🇭🇹",
+          "threat": "CRITICAL",
           "incidents": [
-            "29 Aug – 2 Sep — Petite Rivière de l'Artibonite: Renewed armed-group violence displaced residents from Jean Denis and Pont Benoît, tracked by IOM.",
-            "4 Sep — Port-au-Prince: Foreign Minister Raina Forbin formally asked the UN Security Council to renew and fully resource the Gang Suppression Force, whose mandate expires on 30 September.",
-            "~8 Sep — Artibonite: Police reported about six alleged gang members killed during a road-clearing operation.",
-            "Ongoing — Kenscoff: Fallout from the 23–24 August massacre continued, with hostage releases and metro-area displacement still climbing."
+            "23–24 Aug — Kenscoff: A Viv Ansanm-attributed gang attack killed at least 47 people, including 22 reportedly executed at a church compound, and kidnapped 50-plus, displacing over 2,600 residents.",
+            "4 Sep — Washington/Port-au-Prince: Haiti's government formally requested the OAS/UN Security Council extend the Gang Suppression Force's mandate through September 2028, presenting a roadmap ahead of the force's 30 September expiry.",
+            "Ongoing — Port-au-Prince: Gang coalitions continue to control an estimated 70-85%-plus of the metropolitan area; over 2,000 people have been killed since the start of 2026 and roughly 1.5 million are internally displaced.",
+            "30 Sep (imminent) — A UN Security Council vote on Gang Suppression Force mandate renewal is the key event to watch immediately after this reporting period."
           ],
-          "coa": "CRITICAL maintained, worsening. The 30 September Gang Suppression Force mandate expiry is the pivot point: a lapse or an under-funded renewal would remove the only external check on Viv Ansanm as gangs consolidate control of roughly 90% of the capital and push into five or more departments, Artibonite especially. Expect continued gang offensives on previously safe communes, mass abductions, and rising civilian casualties from police drone strikes. The 13 December elections are almost certainly not deliverable nationwide; watch for an official postponement that deepens the legitimacy crisis of the transitional authorities. Humanitarian access is shrinking."
+          "coa": "CRITICAL maintained, worsening. The Gang Suppression Force's mandate renewal vote on 30 September is the pivotal near-term event; a lapse or reduced mandate would likely accelerate territorial gains by Viv Ansanm-aligned factions and further erode state presence in and around Port-au-Prince. Even with renewal, force posture appears insufficient to reverse gang control within 90 days. Expect continued mass-casualty attacks on previously safe communes, following the Kenscoff pattern, rising displacement, and near-certain non-viability of December 2026 elections absent a major security inflection."
         },
         {
-          "name": "Cuba", "flag": "🇨🇺", "threat": "HIGH",
+          "name": "Cuba",
+          "flag": "🇨🇺",
+          "threat": "HIGH",
           "incidents": [
-            "28 Aug – 10 Sep — Nationwide: No further national grid collapse was recorded, with the island still on prolonged localised blackouts of 12 to 20-plus hours a day in the provinces.",
-            "Late Aug – early Sep — Havana and other cities: Sporadic localised blackout protests continued and were dispersed quickly by state security.",
-            "20 Aug — Washington: Fresh US sanctions on 10 Cuban state firms continued to accelerate foreign-firm withdrawal."
+            "11 Sep — Nationwide: State utility UNE forecast a roughly 2,000 MW shortfall at Friday peak demand, reflecting continued rolling blackouts.",
+            "1 Sep — Nationwide: Blackouts affected roughly 70% of the island simultaneously at the start of the month.",
+            "10–17 Sep — Nationwide: No full nationwide grid collapse was identified within the window; the most recent full collapse, the sixth of 2026, occurred 3 August.",
+            "Ongoing — Fuel shortages linked to halted Russian shipments and US sanctions pressure remain the structural drivers; sporadic localized protests continue amid the rolling-blackout regime."
           ],
-          "coa": "Downgraded to HIGH from CRITICAL. No acute event occurred in the window and the acute grid-collapse phase has passed, though systemic fragility — any of eight ageing thermal plants failing can trigger a cascade — still justifies HIGH. Base case is continued rolling blackouts, periodic localised protests dispersed quickly, and a low but real probability of another full national grid collapse, especially through hurricane season. Economic contraction and migration outflow continue, and US sanctions pressure is unlikely to ease. A large-scale protest event on the scale of July 2021 remains the low-probability, high-impact scenario, most likely triggered by a multi-day total blackout in Havana during peak heat — which would warrant immediate re-elevation."
+          "coa": "HIGH maintained. Expect continued rolling, multi-hour blackouts without a full grid collapse in the near term, barring a major infrastructure failure or hurricane impact. Localized, sporadic protests are likely to persist at a level below the unrest seen after earlier full collapses. The HIGH rating should hold unless a seventh nationwide collapse occurs or fuel shortages deepen sharply going into Q4."
         },
         {
-          "name": "Ecuador", "flag": "🇪🇨", "threat": "CRITICAL",
+          "name": "Ecuador",
+          "flag": "🇪🇨",
+          "threat": "CRITICAL",
           "incidents": [
-            "3–10 Sep — Nationwide: The window was quiet on headline incidents; the state of emergency continued across about 10 provinces with homicide rates at record levels.",
-            "Ongoing — Guayas / Los Ríos / Manabí / Esmeraldas: Organised-crime violence and prison tension persisted alongside deepening US security cooperation at Manta and Esmeraldas."
+            "15 Sep — Eight provinces and 3 cantons: President Noboa declared a new 60-day state of emergency, suspending inviolability of home and correspondence and authorizing warrantless raids, citing 442 intentional homicides recorded between mid-August and early September.",
+            "17–30 Sep — El Oro, Guayas, Los Rios, Manabi: A night curfew from midnight to 5am was imposed.",
+            "Ongoing — Manta/Esmeraldas: Deepening US security cooperation continues, with a US Army Special Forces group operating alongside Esmeraldas provincial authorities and naval and air assets deployed to cover the Manta coastal corridor under the 'Shield of the Americas' counter-narcotics coalition."
           ],
-          "coa": "CRITICAL maintained, driven by the sustained homicide and organised-crime baseline rather than a new event. Expect continued state-of-emergency renewals, high homicide rates concentrated in the coastal provinces and the northern border, periodic prison massacres between Los Choneros and Los Lobos, and a persistent risk of urban IED attacks in Guayaquil tied to government anti-gang operations. US cooperation deepens through basing and interdiction, and further publicised joint operations and possible US strikes on vessels off Ecuador's Pacific coast are likely. Fuel-subsidy tensions are a protest driver layered on top of the security crisis."
+          "coa": "CRITICAL maintained. The new state of emergency and coastal curfew will likely suppress visible crime in curfew zones short-term but risk displacing criminal activity to non-curfewed provinces and rural corridors. Expect continued high homicide rates driven by territorial disputes among trafficking organizations, alongside expanding and increasingly formalized US military presence at Manta and Esmeraldas. Watch for friction between expanded warrantless-search authority and human-rights or legal challenges, and for possible renewal or expansion of the state of emergency if homicide rates do not fall."
         },
         {
-          "name": "Peru", "flag": "🇵🇪", "threat": "HIGH",
+          "name": "Peru",
+          "flag": "🇵🇪",
+          "threat": "HIGH",
           "incidents": [
-            "5 Sep — Junín / Cusco / Ayacucho and other regions: Sweeping states of emergency were declared across 17 districts amid an extortion surge, plus crackdowns in Piura.",
-            "6 Sep — Nationwide: A supreme decree imposed a 60-day state of emergency covering five high-security prisons to disrupt extortion rings run from cells.",
-            "Ongoing — Nationwide: The El Niño 60-day emergency across about 893 districts continued, with transport-sector extortion and strike threats persisting under the Jerí government."
+            "5 Sep — Five maximum-security prisons (Lima, Tacna, Pasco, La Libertad): A 60-day state of emergency was declared across the facilities, with the military deployed to at least three by the following Monday to sever phone-directed extortion networks.",
+            "5 Sep — Junin, Cusco, Ayacucho: States of emergency were declared across 17 districts amid an extortion surge, with additional crackdowns in Piura.",
+            "Ongoing — Nationwide: Reported extortion cases rose from 4,761 in 2021 to over 22,000 in 2024, a trend partly attributed to criminal networks including Venezuela's Tren de Aragua."
           ],
-          "coa": "HIGH maintained. Extortion-driven violence — record case volumes, attacks on transport and small business — will keep forcing the Jerí government into reactive emergency decrees with limited effect. Expect further prison-focused measures, possible military deployment to Lima, Callao and Trujillo, and recurring 24-to-48-hour transport strikes, with El Niño flooding and landslide impacts compounding through the rainy season. The 2 September rupture of ties with Iran is largely symbolic for domestic security. Political instability under a weak executive remains a background risk."
+          "coa": "HIGH maintained. Expect continued state-of-emergency governance in high-extortion districts and prison facilities, with military-police deployments aimed at severing phone-directed extortion networks. Structural drivers, including prison-based command-and-control and transnational gang presence, are unlikely to be resolved within 90 days, so incremental crackdowns will likely continue without a decisive reduction in extortion case volume."
         },
         {
-          "name": "Bolivia", "flag": "🇧🇴", "threat": "HIGH",
+          "name": "Bolivia",
+          "flag": "🇧🇴",
+          "threat": "HIGH",
           "incidents": [
-            "1 Sep — La Paz: The government took emergency control of state oil firm YPFB's fuel imports for up to 180 days amid worsening diesel and gasoline shortages.",
-            "Late Aug – early Sep — Beni: Producers blocked the San Pablo bridge east of Trinidad demanding repeal of the decree that ended subsidised diesel for large consumers.",
-            "9 Sep — Nationwide: The US Embassy warned of planned protests and road blockades as the 20 June state of emergency lapsed and Evo Morales mobilised supporters for marches toward La Paz."
+            "11 Sep — La Paz: The government confirmed fuel subsidies will be fully eliminated starting January 2027, part of a $1.9 billion, 36-month IMF financing agreement now before Congress for ratification.",
+            "14 Sep — La Paz: The cabinet approved a decree extending the state of exception by a further 90 days.",
+            "15 Sep — La Paz: The government stated no blockades were currently in force and warned it would declare a state of siege only if blockades return; sectors in Santa Cruz and Cochabamba were reported threatening new marches and blockades over the diesel subsidy cuts."
           ],
-          "coa": "HIGH maintained. Fuel scarcity is now the dominant driver: as the state-of-emergency cover expires, expect a fresh wave of blockades by transporters, farmers and Morales-aligned groups through October, with the government using the military to clear roads reactively. Morales's push for President Paz's resignation and the suspension of his own prosecution keeps a destabilisation campaign live, and diesel-subsidy cuts will keep generating rural unrest. The risk of a renewed nationwide blockade crisis comparable to May and June is moderate-to-high, with reserves and inflation the deciding variables; a de-escalation to MODERATE is defensible only once the October window passes without major unrest."
+          "coa": "HIGH maintained. Overt Morales-aligned mobilization has receded since June, and the government's extension of the state of exception signals continued vigilance rather than acute crisis. The scheduled January 2027 full subsidy removal is the key forward risk: sectors in Santa Cruz and Cochabamba are already signaling readiness to remobilize over diesel costs, and a renewed blockade wave in Q4 2026 ahead of the subsidy cliff is plausible. Maintain HIGH with a bias toward reassessment if new large-scale blockades materialize."
         },
         {
-          "name": "Dominican Republic", "flag": "🇩🇴", "threat": "LOW",
+          "name": "Dominican Republic",
+          "flag": "🇩🇴",
+          "threat": "LOW",
           "incidents": [
-            "3 Sep — Santo Domingo: The Dominican Republic and Haiti signed a border-cooperation pact; within days the government broke ground on a new border-wall section and detained 58 Haitians.",
-            "Early Sep — Nationwide: The migration authority logged 35,276 Haitian deportations in August, the highest single-month figure of 2026."
+            "5 Sep — Independencia province: The Defense Ministry broke ground on a new 14.5 km border-wall segment, part of the 'Frontera Fuerte' project targeting 164 km of barrier along the 391 km Haiti border.",
+            "6 Sep — Dajabon: Migration officers detained 58 Haitian nationals in a sweep targeting unauthorized border crossers.",
+            "Ongoing — Roughly 79,938 Haitians were deported via the Dajabon crossing alone in the first eight months of 2026, a record pace and a 16.2% year-on-year increase."
           ],
-          "coa": "LOW maintained. Expect the roughly 1,000-a-day expulsion pace to hold or rise, continued border-wall construction, and periodic small detention sweeps. Friction points are international rights criticism over statelessness and racial profiling, possible Haitian-government protest despite the pact, and localised border incidents, with the arrival of US TPS-termination deportees adding pressure. Internal stability is solid; the principal risk is a border clash or a mass-casualty incident during an expulsion operation, and continued rights-group documentation of detention conditions as the main reputational risk."
+          "coa": "LOW maintained. Expect continued acceleration of both physical border-hardening and mass deportations of Haitian nationals, likely intensifying as Haiti's security situation deteriorates further ahead of the Gang Suppression Force mandate decision. Human-rights criticism will persist but is unlikely to alter government policy. Internal security risk to the Dominican Republic itself remains low, though migration pressure and diplomatic friction will continue to build."
         },
         {
-          "name": "Jamaica", "flag": "🇯🇲", "threat": "LOW",
+          "name": "Jamaica",
+          "flag": "🇯🇲",
+          "threat": "LOW",
           "incidents": [
-            "~5–6 Sep — Bull Bay, St Andrew: Police killed a suspect linked to a string of murders.",
-            "8–9 Sep — Watson Grove, Portmore: Police fatally shot two men in an intelligence-led operation; INDECOM was notified.",
-            "9 Sep — Mount Salem, Montego Bay: A gunfight left three police officers wounded and a wanted man dead.",
-            "9–10 Sep — Robins Bay, St Mary: Gunmen fired into a bar, killing three including the owner and a bystander."
+            "16 Sep — St Andrew (Karl Samuda Avenue): Police fatally shot a man known as 'Mad Dog,' prompting residents to mount a burning roadblock on Red Hills Road in protest.",
+            "13 Sep — Knightsdale Drive, Kingston 20: A triple-fatality police shooting followed an alleged confrontation with armed individuals.",
+            "11 Sep — Lincoln Alley, St Andrew: Police fatally shot a wanted man during an alleged confrontation.",
+            "9 Sep — Mount Salem: A wanted man was killed and three police officers injured in a shootout."
           ],
-          "coa": "LOW maintained. The 2026 homicide decline — still tracking roughly 40% below 2024 — is likely to hold into year-end, supported by continued state-of-emergency-style operations, though clusters in St James, St Catherine and St Mary will persist and multiple-victim shootings will continue to draw attention. Watch the INDECOM caseload from the rise in police-involved killings this week: a controversial incident could generate political and oversight friction. Bushfire and drought conditions are a secondary strain on emergency services, and peak Atlantic hurricane season in September and October is the more material near-term risk to stability."
+          "coa": "LOW maintained. The 2026 homicide-reduction trend, still tracking roughly 40% below 2024, appears to be holding, keeping the overall threat level LOW, but a flagged spike in multiple-fatality police shootings and the 16 September community protest signal rising police-accountability friction that could translate into localized unrest if unaddressed. Watch for continued community protests around high-profile police-involved deaths. Hurricane-season risk remains a parallel, non-conflict hazard through the remainder of the season."
         }
       ]
     }
