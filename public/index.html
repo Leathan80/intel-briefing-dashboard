@@ -649,9 +649,20 @@ function sparkline(name) {
 }
 
 /* ---------- method ----------
-   Beschrijft de huidige praktijk van de threat levels, zoals de geplande taak
-   daily-intel-dashboard-update die uitvoert. Er is (bewust) geen vast
-   criteriamodel: pas deze tekst aan als de werkwijze van die taak verandert. */
+   Beschrijft hoe de threat levels tot stand komen. De omschrijvingen per niveau
+   (LEVEL_DEFS) staan OOK in de SKILL.md van de geplande taak
+   daily-intel-dashboard-update, die ze toepast: wijzig ze altijd op beide plekken. */
+const LEVEL_DEFS_FROM = '2026-10-01';   // eerste beoordelingscyclus met deze omschrijvingen
+const LEVEL_DEFS = [
+  ['CRITICAL', 'Active armed conflict on the country’s own territory, or direct military attacks on it, in the past week: war, sustained insurgency or large-scale armed violence with regular fatalities, or loss of state control over significant territory.',
+   'Ongoing hostilities; lethal attacks most weeks; strikes by or against state forces; territory held by armed groups.'],
+  ['HIGH', 'A serious threat without full-scale armed conflict: recurrent lethal violence by terrorist or armed groups, a credible risk of military escalation, or acute instability.',
+   'Repeated deadly attacks; missile launches, armed standoffs or coercion at sea; coup risk; violent unrest; collapse of basic services.'],
+  ['MODERATE', 'Localised or intermittent security incidents, political tension or unrest with limited violence, or military activity that raises tension without hostilities.',
+   'Occasional incidents in one area; protests or repression with few casualties; large exercises or border frictions.'],
+  ['LOW', 'No armed conflict or organised political violence; incidents are limited to crime, isolated events or routine security operations.',
+   'Criminal violence; single incidents; routine police or military operations.'],
+];
 function buildMethodPanel(panelIdx) {
   const panel = el('div', 'panel');
   panel.id = 'panel-' + panelIdx;
@@ -663,16 +674,31 @@ function buildMethodPanel(panelIdx) {
   const total = Object.values(counts).reduce((a, b) => a + b, 0);
 
   const intro = el('div', 'm-note');
-  intro.innerHTML = 'Each country on this dashboard carries one of four threat levels. They are <strong>analytical judgements</strong> about the security situation in the past seven days, not the output of a scoring model: there are no fixed numeric thresholds per level. This page describes how they are produced in practice.';
+  intro.innerHTML = 'Each country on this dashboard carries one of four threat levels. A level is an <strong>analytical judgement</strong> of the security situation in the country over the past seven days, made against the written definitions below. It is not the output of a scoring model: there are no numeric thresholds, but every level has a fixed meaning.';
   box.appendChild(intro);
 
+  // Staan er nog niveaus online van vóór de omschrijvingen? Dan dat eerlijk melden.
+  const gen = Date.parse(DATA.generated);
+  if (!isNaN(gen) && gen < Date.parse(LEVEL_DEFS_FROM + 'T00:00:00')) {   // beide lokale tijd
+    const oud = el('div', 'm-note');
+    oud.innerHTML = '<strong>Note:</strong> the levels currently shown (' + DATA.generated + ') were set before these definitions were introduced. From the assessment cycle of 1 October 2026 onward, every country is assessed against them, so several levels may change in that cycle.';
+    box.appendChild(oud);
+  }
+
   const lv = el('div', 'm-card');
-  const rows = ['CRITICAL', 'HIGH', 'MODERATE', 'LOW'].map(l =>
-    '<tr><td>' + threatBadgeHtml(l) + '</td><td style="text-align:right;font-weight:600">' + (counts[l] || 0) + '</td></tr>').join('');
-  lv.innerHTML = '<h3 style="margin-top:4px">The four levels</h3>' +
-    '<p>From highest to lowest: CRITICAL, HIGH, MODERATE and LOW. The level expresses how severe and how active the threat picture is compared with the other countries on this dashboard. It is a relative ordering for this monitor, not a travel advisory and not an official government classification.</p>' +
-    '<table><tr><th>Level</th><th style="text-align:right">Countries now</th></tr>' + rows +
-    '<tr><td><em>Total</em></td><td style="text-align:right">' + total + '</td></tr></table>';
+  const rows = LEVEL_DEFS.map(([l, betekenis, signalen]) =>
+    '<tr><td>' + threatBadgeHtml(l) + '</td><td>' + betekenis + '<div style="color:var(--muted);font-size:13px;margin-top:4px">Typical signs: ' + signalen + '</div></td>' +
+    '<td style="text-align:right;font-weight:600">' + (counts[l] || 0) + '</td></tr>').join('');
+  lv.innerHTML = '<h3 style="margin-top:4px">What the levels mean</h3>' +
+    '<table><tr><th>Level</th><th>Meaning</th><th style="text-align:right">Now</th></tr>' + rows +
+    '<tr><td></td><td><em>Total</em></td><td style="text-align:right">' + total + '</td></tr></table>' +
+    '<h3>Rules for applying them</h3><ul>' +
+    '<li>A level describes the situation <strong>in the country itself</strong>. Being close to a war, or involved in diplomacy about one, does not raise a level on its own.</li>' +
+    '<li>When a country fits more than one description, the <strong>highest applicable level</strong> applies.</li>' +
+    '<li>A quiet week lowers a level only if the underlying conflict or threat has actually eased. <strong>A lack of reporting</strong> (for example a news blackout) <strong>is not calm</strong>.</li>' +
+    '<li>Every level is checked against these definitions in each cycle, not only when something changes; each change is argued on the country card.</li>' +
+    '</ul>' +
+    '<p style="color:var(--muted);font-size:13px">The levels are a relative ordering for this monitor, not a travel advisory and not an official government classification.</p>';
   box.appendChild(lv);
 
   const how = el('div');
@@ -681,12 +707,12 @@ function buildMethodPanel(panelIdx) {
     '<ol>' +
     '<li><strong>Schedule.</strong> The assessments are refreshed once a week (currently on Thursday morning). The date of the latest cycle is shown as <em>Generated</em> at the bottom of every page; the period covered is the seven days up to that date.</li>' +
     '<li><strong>Research per region.</strong> For each of the five regions an AI research agent (Claude) searches open sources for significant security incidents in the past seven days, starting from the previous assessment so that only new or changed information has to be found.</li>' +
-    '<li><strong>Proposal.</strong> Per country the agent returns three to four dated incidents, a proposed threat level <em>only if the situation has changed</em> (with the reasoning), and an updated 90-day course-of-action outlook. Incidents that cannot be found are not invented; quiet weeks simply produce fewer incidents.</li>' +
-    '<li><strong>Review.</strong> The supervising analysis step (also Claude) checks every proposal for plausibility, dating and whether a level change is argued, and rejects or rewrites where needed before anything is published.</li>' +
+    '<li><strong>Proposal.</strong> Per country the agent returns three to four dated incidents, a threat level tested against the definitions above (with the reasoning if it changes), and an updated 90-day course-of-action outlook. Incidents that cannot be found are not invented; quiet weeks simply produce fewer incidents.</li>' +
+    '<li><strong>Review.</strong> The supervising analysis step (also Claude) checks every proposal for plausibility, dating and fit with the level definitions, and rejects or rewrites where needed before anything is published.</li>' +
     '<li><strong>Publication and history.</strong> The reviewed assessment replaces the previous one, and the levels of all countries are stored as a snapshot. The <em>Risk Tracker</em> tab compares snapshots to show risers, fallers and trends.</li>' +
     '</ol>' +
-    '<h3>What moves a level</h3>' +
-    '<p>A level stays as it is unless the new week gives a reason to change it; a proposed change has to come with an argument, and the review step decides. The underlying instructions do not define explicit criteria per level. In practice the argument refers to the incidents found — for example how serious they are, how often they occur, whether the situation is escalating or calming down — and to the 90-day outlook, but these are not weighted by a formula. Levels are therefore best read as a consistent week-to-week judgement within this dashboard, and the incidents and course-of-action text on each country card show the reasoning behind them.</p>' +
+    '<h3>History</h3>' +
+    '<p>The written definitions apply from the cycle of 1 October 2026. Snapshots in the <em>Risk Tracker</em> from before that date reflect analyst judgement without written definitions, so a change in that first cycle can be a correction to the definitions rather than a change on the ground.</p>' +
     '<h3>Sources</h3>' +
     '<p>The research starts from a fixed set of primary sources: Reuters, AP News, Al Jazeera, ACLED, ISW, LiveUAMap, BNO News and US Embassy alerts. In practice the agents also use regional and specialist outlets. All sources used in the current cycle:</p>';
   box.appendChild(how);
