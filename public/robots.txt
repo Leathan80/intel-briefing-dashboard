@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /builder.html
+Disallow: /review.html
+Allow: /
+
+Sitemap: https://intel-briefing-dashboard.web.app/sitemap_index.xml
