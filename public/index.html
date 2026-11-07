@@ -69,6 +69,10 @@
   .coa-box { margin-top: 10px; background: #f5f8fc; border-left: 2px solid var(--navy-2); padding: 8px 10px; border-radius: 0 4px 4px 0; }
   .coa-label { font-size: 9px; color: var(--navy-2); font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 5px; }
   .coa-text { font-size: 11px; color: var(--muted); line-height: 1.5; font-style: italic; }
+  .fc-list { margin-top: 8px; }
+  .fc { font-size: 11px; line-height: 1.45; margin-top: 5px; color: var(--text, #1b2a3a); }
+  .fc-prob { font-weight: 700; color: var(--navy-2); }
+  .fc-by { color: var(--muted); white-space: nowrap; }
 
   .section-title { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 14px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
 
@@ -398,6 +402,20 @@ function buildRegion(region, panelIdx, regionIdx) {
     const coa = el('div', 'coa-box');
     coa.appendChild(el('div', 'coa-label', 'COA · 90-day horizon'));
     coa.appendChild(el('div', 'coa-text', c.coa));
+    const fcs = openForecasts(c);
+    if (fcs.length) {
+      const lst = el('div', 'fc-list');
+      lst.appendChild(el('div', 'coa-label', 'Testable forecasts'));
+      fcs.forEach(f => {
+        const row = el('div', 'fc');
+        row.appendChild(el('span', 'fc-prob', capFirst(f.prob) + ': '));
+        row.appendChild(document.createTextNode(f.statement + ' '));
+        row.appendChild(el('span', 'fc-by', '(by ' + fmtDay(f.by) + ')'));
+        row.title = 'Resolves: ' + f.resolution;
+        lst.appendChild(row);
+      });
+      coa.appendChild(lst);
+    }
     body.appendChild(coa);
     const liveBox = el('div');
     liveBox.dataset.live = c.name;
@@ -680,6 +698,20 @@ const LEVEL_DEFS = [
   ['LOW', 'No armed conflict or organised political violence; incidents are limited to crime, isolated events or routine security operations.',
    'Criminal violence; single incidents; routine police or military operations.'],
 ];
+/* Toetsbare verwachtingen (sinds de cyclus van 12 nov 2026). Woorden van de PHIA-kansschaal;
+   dezelfde lijst staat in tools/archive.mjs en in de SKILL.md van de taak. */
+const PHIA_SCALE = [['remote chance', '≤5%'], ['highly unlikely', '10–20%'], ['unlikely', '25–35%'],
+  ['realistic possibility', '40–50%'], ['likely', '55–75%'], ['highly likely', '80–90%'], ['almost certain', '≥95%']];
+function openForecasts(c) {
+  const gen = Date.parse(DATA.generated + ' UTC');
+  return (c.forecasts || []).filter(f => !(Date.parse(f.by) < gen));
+}
+function capFirst(s) { return String(s || '').charAt(0).toUpperCase() + String(s || '').slice(1); }
+function fmtDay(iso) {
+  const t = Date.parse(iso + 'T00:00:00Z');
+  return isNaN(t) ? iso : new Date(t).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+}
+
 function buildMethodPanel(panelIdx) {
   const panel = el('div', 'panel');
   panel.id = 'panel-' + panelIdx;
@@ -748,6 +780,19 @@ function buildMethodPanel(panelIdx) {
     '</ul>' +
     '<div class="m-note"><strong>Use as orientation, not as a basis for decisions.</strong> Always check the original reporting and official sources before acting on anything shown here.</div>';
   box.appendChild(live);
+
+  const fc = el('div', 'm-card');
+  fc.innerHTML =
+    '<h3 style="margin-top:4px">Testable forecasts</h3>' +
+    '<p>From the cycle of 12 November 2026, the outlook for a country can include up to two <strong>testable forecasts</strong>: a concrete event, a date by which it should have happened, and a criterion that an outsider can check in open sources. The likelihood is stated in the words of the UK PHIA probability yardstick:</p>' +
+    '<table><tr><th>Term</th><th>Probability</th></tr>' +
+    PHIA_SCALE.map(([t, p]) => '<tr><td>' + capFirst(t) + '</td><td>' + p + '</td></tr>').join('') + '</table>' +
+    '<ul>' +
+    '<li>A published forecast is <strong>never rewritten</strong>. If the judgement changes, a new forecast replaces it and the old one stays on record.</li>' +
+    '<li>Forecasts run for two weeks to three months. After the date they leave the dashboard, but every forecast is kept in an archive so that the outcomes can be scored afterwards.</li>' +
+    '<li>Forecasts aim at genuine uncertainty. A forecast that something will almost certainly not change says little, even when it comes true.</li>' +
+    '</ul>';
+  box.appendChild(fc);
   panel.appendChild(box);
   return panel;
 }
@@ -966,6 +1011,13 @@ function printCountry(name) {
   country.incidents.forEach(i => body += '<li>' + esc(i) + '</li>');
   body += '</ul>';
   body += '<h2>Course of Action · 90-day horizon</h2><div class="coa">' + esc(country.coa) + '</div>';
+  const fcs = openForecasts(country);
+  if (fcs.length) {
+    body += '<h2>Testable forecasts</h2><ul>';
+    fcs.forEach(f => body += '<li><strong>' + esc(capFirst(f.prob)) + ':</strong> ' + esc(f.statement) +
+      ' (by ' + esc(fmtDay(f.by)) + ')<br><span style="color:#5b6b80">Resolves: ' + esc(f.resolution) + '</span></li>');
+    body += '</ul>';
+  }
   body += headlinesHtml(country.name);
   pagerShell(country.name + ' — Intelligence 1-Pager', body);
 }

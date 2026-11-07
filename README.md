@@ -12,6 +12,9 @@ project `intel-briefing-dashboard`).
 | `public/history.json` | Threat-level historie (voedt Risk Tracker) | dagelijkse Claude-taak |
 | `public/live.json` | Ruwe nieuwskoppen per land (Google News RSS) | GitHub Actions, elke 4 uur |
 | `public/world.geo.json` | Landsgrenzen voor de choropleth-kaart | nooit |
+| `archive/incidents.json` | Alle incidenten gestructureerd (datum, plaats, type, actor), alleen aangroeiend | `tools/archive.mjs`, vanuit de wekelijkse taak en `deploy.ps1` |
+| `archive/forecasts.json` | Alle toetsbare verwachtingen (PHIA-kansschaal), nooit herschreven | idem |
+| `tools/archive.mjs` | Controleert `events`/`forecasts` in data.json en werkt het archief bij; stopt de deploy bij fouten | handmatig |
 | `public/builder.html` | Briefing Builder — losstaande module, zie hieronder | handmatig |
 | `public/vendor/` | Lokaal gevendorde libraries (Leaflet, PptxGenJS) voor `builder.html` | nooit, alleen bij library-update |
 

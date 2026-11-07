@@ -480,7 +480,10 @@ function renderSources() {
       if (regionSel && r.name !== regionSel) return;
       r.countries.forEach(c => {
         if (countrySel && c.name !== countrySel) return;
-        c.incidents.forEach(incRaw => {
+        c.incidents.forEach((incRaw, idx) => {
+          // Sinds 12 nov 2026 staat elk incident ook gestructureerd in c.events (zelfde volgorde);
+          // met coördinaten komt de pin direct op de plaats in plaats van op het midden van het land.
+          const ev = (c.events && c.events.length === c.incidents.length) ? c.events[idx] : null;
           if (q && !incRaw.toLowerCase().includes(q) && !c.name.toLowerCase().includes(q)) return;
           const sp = splitIncident(incRaw);
           const item = el('div', 'src-item');
@@ -494,7 +497,8 @@ function renderSources() {
           item.appendChild(txt);
           const btn = el('button', 'add-btn', inTray(sp.text, c.name) ? '✓' : '+ Add');
           if (inTray(sp.text, c.name)) btn.classList.add('added');
-          else btn.onclick = () => addEvent({ text: sp.text, date: sp.date, country: c.name, region: r.name, source: 'analysis' });
+          else btn.onclick = () => addEvent({ text: sp.text, date: sp.date, country: c.name, region: r.name, source: 'analysis',
+            type: ev ? ev.type : '', lat: ev && ev.lat != null ? ev.lat : null, lng: ev && ev.lng != null ? ev.lng : null });
           item.appendChild(btn);
           listEl.appendChild(item);
         });
