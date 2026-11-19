@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T08:00:20.272Z",
+ "updated": "2026-11-19T06:33:18.251Z",
  "scale": [
   "remote chance",
   "highly unlikely",
@@ -381,6 +381,174 @@
    "region": "Americas",
    "level": "HIGH",
    "cycle": "2026-11-13"
+  },
+  "2026-11-19-gaza-1": {
+   "id": "2026-11-19-gaza-1",
+   "made": "2026-11-19",
+   "statement": "Israeli strikes or fire kill 25 or more Palestinians in the Gaza Strip on a single day.",
+   "prob": "realistic possibility",
+   "by": "2027-02-19",
+   "resolution": "Yes if the Gaza Health Ministry or civil defence, as reported by Reuters, AP, Al Jazeera or OCHA, reports at least 25 people killed by Israeli attacks within one calendar day (or one 24-hour reporting period) between 2026-11-19 and 2027-02-19.",
+   "country": "Gaza",
+   "region": "Middle East",
+   "level": "CRITICAL",
+   "cycle": "2026-11-19"
+  },
+  "2026-11-19-yemen-1": {
+   "id": "2026-11-19-yemen-1",
+   "made": "2026-11-19",
+   "statement": "The Houthis attack (with a missile, drone, uncrewed boat or boarding) a commercial vessel in the Red Sea, Bab al-Mandeb or Gulf of Aden.",
+   "prob": "realistic possibility",
+   "by": "2027-02-19",
+   "resolution": "Yes if UKMTO, JMIC, Reuters or AP report an attack on a merchant ship in the Red Sea, Bab al-Mandeb or Gulf of Aden that is claimed by the Houthis or attributed to them by UKMTO/JMIC or a Western government, between 2026-11-19 and 2027-02-19.",
+   "country": "Yemen",
+   "region": "Middle East",
+   "level": "CRITICAL",
+   "cycle": "2026-11-19"
+  },
+  "2026-11-19-iraq-1": {
+   "id": "2026-11-19-iraq-1",
+   "made": "2026-11-19",
+   "statement": "Iraqi government security forces deploy inside the town of Jurf al-Sakhar (Babil), the Kataib Hezbollah stronghold.",
+   "prob": "realistic possibility",
+   "by": "2027-01-31",
+   "resolution": "Yes if Reuters, AP, AFP, Shafaq News or Rudaw report that Iraqi army, police or other state forces (excluding PMF units of Kataib Hezbollah itself) have entered and established a presence inside Jurf al-Sakhar town, with or without fighting, by 2027-01-31. A visit by inspection committees alone does not count.",
+   "country": "Iraq",
+   "region": "Middle East",
+   "level": "HIGH",
+   "cycle": "2026-11-19"
+  },
+  "2026-11-19-ukraine-1": {
+   "id": "2026-11-19-ukraine-1",
+   "made": "2026-11-19",
+   "statement": "A new round of negotiations on ending the war is held in which Russian and Ukrainian delegations both take part (directly or through US-mediated proximity talks) together with an official EU or European-government delegation at the same venue.",
+   "prob": "realistic possibility",
+   "by": "2027-01-31",
+   "resolution": "Yes if Reuters, AP or the Kyiv Independent reports that a negotiating session took place with Russian, Ukrainian and EU (or named European government) delegations present at the same talks by that date. Separate bilateral meetings, such as Europeans meeting only Ukraine or the US, do not count.",
+   "country": "Ukraine",
+   "region": "Ukraine/Russia",
+   "level": "CRITICAL",
+   "cycle": "2026-11-19"
+  },
+  "2026-11-19-russia-1": {
+   "id": "2026-11-19-russia-1",
+   "made": "2026-11-19",
+   "statement": "Russia reopens the road section of the Kerch (Crimean) Bridge to general vehicle traffic in at least one direction after the 16–17 November 2026 span collapse.",
+   "prob": "unlikely",
+   "by": "2027-02-19",
+   "resolution": "Yes if Russian official channels (Transport Ministry, Grand Service Express or Crimean authorities), as reported by Reuters, AP, the Moscow Times or Meduza, state that ordinary vehicle traffic has resumed across the road bridge by that date. Rail-only traffic, ferries or a temporary pontoon do not count.",
+   "country": "Russia",
+   "region": "Ukraine/Russia",
+   "level": "CRITICAL",
+   "cycle": "2026-11-19"
+  },
+  "2026-11-19-niger-1": {
+   "id": "2026-11-19-niger-1",
+   "made": "2026-11-19",
+   "statement": "A single armed attack in Niger's Tillabéri region kills 20 or more people (civilians, soldiers or both).",
+   "prob": "likely",
+   "by": "2027-01-31",
+   "resolution": "Yes if Reuters, AP, AFP, RFI, ACLED or an official Nigerien statement reports, on or before 31 Jan 2027, a single attack in Tillabéri region occurring after 19 Nov 2026 with a reported toll of at least 20 dead (attackers' own losses excluded).",
+   "country": "Niger",
+   "region": "Sahel",
+   "level": "CRITICAL",
+   "cycle": "2026-11-19"
+  },
+  "2026-11-19-sudan-1": {
+   "id": "2026-11-19-sudan-1",
+   "made": "2026-11-19",
+   "statement": "The Sudanese Armed Forces and allied forces (including the Joint Force) take control of the town of Al-Nahud in West Kordofan from the RSF.",
+   "prob": "realistic possibility",
+   "by": "2027-02-19",
+   "resolution": "Yes if Sudan Tribune, Sudans Post, Dabanga, Reuters or AP reports, on or before 19 Feb 2027, that SAF or allied forces control Al-Nahud town (an SAF claim corroborated by footage or a second independent source counts).",
+   "country": "Sudan",
+   "region": "Sahel",
+   "level": "CRITICAL",
+   "cycle": "2026-11-19"
+  },
+  "2026-11-19-india-1": {
+   "id": "2026-11-19-india-1",
+   "made": "2026-11-19",
+   "statement": "A single armed attack, ambush or clash in Manipur kills at least five people.",
+   "prob": "realistic possibility",
+   "by": "2027-01-31",
+   "resolution": "Yes if Reuters, AP, PTI or a major Indian national outlet (The Hindu, Indian Express, NDTV) reports, between 2026-11-20 and 2027-01-31, one incident in Manipur (one attack, ambush or gunfight at one location on one day) with at least five people killed, including militants. Separate incidents may not be combined.",
+   "country": "India",
+   "region": "Asia-Pacific",
+   "level": "HIGH",
+   "cycle": "2026-11-19"
+  },
+  "2026-11-19-taiwan-1": {
+   "id": "2026-11-19-taiwan-1",
+   "made": "2026-11-19",
+   "statement": "Taiwan's MND reports at least 45 PLA aircraft sorties around Taiwan in a single daily (24-hour) report.",
+   "prob": "realistic possibility",
+   "by": "2027-01-31",
+   "resolution": "Yes if any MND daily 'PLA activities in the waters and airspace around Taiwan' release issued between 2026-11-20 and 2027-01-31 reports 45 or more PLA aircraft sorties, as published by the MND or reported by Focus Taiwan, Taipei Times, Reuters or AP.",
+   "country": "Taiwan",
+   "region": "Asia-Pacific",
+   "level": "HIGH",
+   "cycle": "2026-11-19"
+  },
+  "2026-11-19-bangladesh-1": {
+   "id": "2026-11-19-bangladesh-1",
+   "made": "2026-11-19",
+   "statement": "Political violence linked to the Awami League protest campaign (clashes, bombings, arson or police fire) kills at least five people in Bangladesh on a single day.",
+   "prob": "realistic possibility",
+   "by": "2027-01-31",
+   "resolution": "Yes if Reuters, AP, AFP, The Daily Star or Prothom Alo report, between 2026-11-20 and 2027-01-31, at least five deaths on one calendar day nationwide in clashes, attacks, arson or security-force fire connected to Awami League protests, lockdowns or Hasina's return, or to reprisals against them.",
+   "country": "Bangladesh",
+   "region": "Asia-Pacific",
+   "level": "HIGH",
+   "cycle": "2026-11-19"
+  },
+  "2026-11-19-venezuela-1": {
+   "id": "2026-11-19-venezuela-1",
+   "made": "2026-11-19",
+   "statement": "At least one member of Venezuela's armed forces (FANB) is killed in an armed clash with or attack by the ELN or FARC dissidents on Venezuelan territory.",
+   "prob": "unlikely",
+   "by": "2027-02-15",
+   "resolution": "Yes if Reuters, AP, EFE, Efecto Cocuyo, El Pitazo or the FANB itself report that at least one Venezuelan soldier or National Guard member was killed by the ELN or a FARC dissident group inside Venezuela between 19 November 2026 and 15 February 2027.",
+   "country": "Venezuela",
+   "region": "Americas",
+   "level": "MODERATE",
+   "cycle": "2026-11-19"
+  },
+  "2026-11-19-colombia-1": {
+   "id": "2026-11-19-colombia-1",
+   "made": "2026-11-19",
+   "statement": "The Colombian government carries out at least four new aerial bombing operations against armed groups after 15 November 2026 (El Tiempo counted nine under President De la Espriella by that date).",
+   "prob": "likely",
+   "by": "2027-02-15",
+   "resolution": "Yes if the President, the Defence Ministry or the Military Forces announce or acknowledge at least four new aerial bombing operations conducted between 16 November 2026 and 15 February 2027, as reported by El Tiempo, El Espectador, Infobae or EFE.",
+   "country": "Colombia",
+   "region": "Americas",
+   "level": "CRITICAL",
+   "cycle": "2026-11-19"
+  },
+  "2026-11-19-haiti-1": {
+   "id": "2026-11-19-haiti-1",
+   "made": "2026-11-19",
+   "statement": "Taliban gang leader Jeff Larose ('Jeff Canaan') is killed or taken into custody.",
+   "prob": "unlikely",
+   "by": "2027-02-15",
+   "resolution": "Yes if Haitian authorities, the Salvadoran government or the GSF confirm Larose's death, capture or surrender, as reported by AP, Reuters, the Miami Herald or the Haitian Times, by 15 February 2027.",
+   "country": "Haiti",
+   "region": "Americas",
+   "level": "CRITICAL",
+   "cycle": "2026-11-19"
+  },
+  "2026-11-19-bolivia-1": {
+   "id": "2026-11-19-bolivia-1",
+   "made": "2026-11-19",
+   "statement": "Bolivian police or armed forces launch an operation inside the Tropico de Cochabamba (Chapare) aimed at arresting Evo Morales.",
+   "prob": "unlikely",
+   "by": "2027-02-15",
+   "resolution": "Yes if Reuters, AP, EFE or Bolivian national media (El Deber, Los Tiempos, Pagina Siete) report that security forces moved into the Chapare in an attempt to execute an arrest warrant against Morales, whether or not the arrest succeeds, by 15 February 2027.",
+   "country": "Bolivia",
+   "region": "Americas",
+   "level": "MODERATE",
+   "cycle": "2026-11-19"
   }
  }
 }
